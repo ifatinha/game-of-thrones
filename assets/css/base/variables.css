@@ -12,4 +12,10 @@ font-family: 'Roboto', sans-serif;
     --typography-01: 'Cinzel', serif;
     --typography-02: 'EB Garamond', serif;
     --typography-03: 'Roboto', sans-serif;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --transition   : .3s all ease;
 }

@@ -1,0 +1,37 @@
+.header {
+    position: absolute;
+    width   : 100%;
+    z-index : 2;
+}
+
+.nav {
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 1rem 0px;
+}
+
+.nav-brand {
+    width: 200px;
+}
+
+.nav-brand img {
+    height    : 100%;
+    object-fit: cover;
+}
+
+.nav-bar {
+    align-items    : center;
+    gap            : 2rem;
+    justify-content: center;
+}
+
+.nav-bar li a {
+    font-family: var(--typography-02);
+    font-size  : 1.5rem;
+}
+
+.nav-language {
+    font-family   : var(--typography-03);
+    font-size     : 1.125rem;
+    text-transform: uppercase;
+}
