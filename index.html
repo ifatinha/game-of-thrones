@@ -19,30 +19,60 @@
                 <div class="nav-brand">
                     <img src="assets/images/logo.png" alt="Game Of Thrones">
                 </div>
-                <ul class="flex nav-bar" id="desktop">
+                <ul class="flex nav-bar" id="desktopNavbar">
                     <li><a href="#main">Main</a></li>
-                    <li><a href="#strory">Story</a></li>
+                    <li><a href="#story">Story</a></li>
                     <li><a href="#media">Media</a></li>
                     <li><a href="#news">News</a></li>
                     <li><a href="#characters">Characters</a></li>
                     <li><a href="#episodes">Episodes</a></li>
                     <li><a href="#map">Map</a></li>
                 </ul>
-                <div class="nav-language">
-                    <a href="#"> EN <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="language-list" style="display: none;">
-                        <li><a href="#">BR</a></li>
-                        <li><a href="#">ES</a></li>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">DE</a></li>
-                        <li><a href="#">UK</a></li>
-                    </ul>
+
+                <div id="mobileNavbar">
+                    <div class="flex menu-mobile">
+                        <span class="menu-line"></span>
+                    </div>
+
+                    <div class="menu-overlay">
+                        <a href="#main" class="close-mobile-btn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                        <ul class="overlay-list">
+                            <li><a href="#main">Main</a></li>
+                            <li><a href="#story">Story</a></li>
+                            <li><a href="#media">Media</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#characters">Characters</a></li>
+                            <li><a href="#episodes">Episodes</a></li>
+                            <li><a href="#map">Map</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
+    <!-- main -->
+    <main class="main" id="main"></main>
+
+    <!-- story -->
+    <section id="story"></section>
+
+    <!-- media -->
+    <section id="media"></section>
+
+    <!-- news -->
+    <section id="news"></section>
+
+    <!-- characters -->
+    <section id="characters"></section>
+
+    <!-- episodes -->
+    <section id="episodes"></section>
+
+    <!-- map -->
+    <section id="map"></section>
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous" defer></script>
     <script src="assets/js/script.js" defer></script>

@@ -26,12 +26,136 @@
 }
 
 .nav-bar li a {
+    color      : var(--white);
     font-family: var(--typography-02);
     font-size  : 1.5rem;
+    transition : var(--transition);
 }
 
-.nav-language {
-    font-family   : var(--typography-03);
-    font-size     : 1.125rem;
-    text-transform: uppercase;
+.nav-bar li a:hover {
+    color: var(--primary-color);
+}
+
+/* desktop navbar */
+#desktopNavbar {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    #desktopNavbar {
+        display: flex;
+    }
+}
+
+/* mobile navbar */
+#mobileNavbar {
+    display: flex;
+}
+
+@media screen and (min-width: 992px) {
+    #mobileNavbar {
+        display: none;
+    }
+}
+
+.menu-mobile {
+    align-items    : center;
+    cursor         : pointer;
+    height         : 30px;
+    justify-content: center;
+    width          : 30px;
+}
+
+.menu-line {
+    background-color: var(--primary-color);
+    border-radius   : 8px;
+    display         : inline-block;
+    height          : 3px;
+    position        : relative;
+    width           : 100%;
+}
+
+.menu-line::after,
+.menu-line::before {
+    background-color: var(--primary-color);
+    border-radius   : inherit;
+    content         : "";
+    height          : 3px;
+    position        : absolute;
+    right           : 0;
+    width           : 80%;
+}
+
+.menu-line::after {
+    top: 8px;
+}
+
+.menu-line::before {
+    top: -8px;
+}
+
+.menu-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    height          : 0;
+    inset           : 0;
+    overflow        : auto;
+    position        : fixed;
+    transition      : var(--transition);
+    width           : 100%;
+    z-index         : 3;
+}
+
+.close-mobile-btn {
+    color     : var(--white);
+    font-size : 3rem;
+    position  : absolute;
+    right     : 1rem;
+    transition: var(--transition);
+    top       : 1rem;
+    z-index   : 5;
+}
+
+.close-mobile-btn:hover {
+    color: var(--primary-color);
+}
+
+.overlay-list {
+    margin-bottom: 1rem;
+    position     : relative;
+    top          : 16%;
+    text-align   : center;
+    width        : 100%;
+    z-index      : 5;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .overlay-list {
+        top: 25%;
+    }
+}
+
+.overlay-list li {
+    padding: 0.625rem;
+    width  : 100%;
+}
+
+.overlay-list li a {
+    color      : var(--white);
+    display    : inline-block;
+    font-family: var(--typography-02);
+    font-size  : 2rem;
+    transition : var(--transition);
+    width      : 100%;
+}
+
+.overlay-list li a:hover {
+    color: var(--primary-color);
+}
+
+.open-menu-mobile {
+    height: 100%;
+}
+
+.close-menu-mobile {
+    height: 0;
 }
