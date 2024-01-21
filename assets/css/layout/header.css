@@ -61,62 +61,43 @@
 .menu-mobile {
     align-items    : center;
     cursor         : pointer;
-    height         : 30px;
+    height         : 40px;
     justify-content: center;
-    width          : 30px;
+    width          : 40px;
 }
 
 .menu-line {
-    background-color: var(--primary-color);
+    background-color: var(--white);
     border-radius   : 8px;
     display         : inline-block;
-    height          : 3px;
+    height          : 4px;
     position        : relative;
     width           : 100%;
 }
 
 .menu-line::after,
 .menu-line::before {
-    background-color: var(--primary-color);
+    background-color: var(--white);
     border-radius   : inherit;
     content         : "";
-    height          : 3px;
+    height          : 4px;
     position        : absolute;
     right           : 0;
     width           : 80%;
 }
 
 .menu-line::after {
-    top: 8px;
+    top: 10px;
 }
 
 .menu-line::before {
-    top: -8px;
+    top: -10px;
 }
 
 .menu-overlay {
     background-color: rgba(0, 0, 0, 0.9);
     height          : 0;
-    inset           : 0;
     overflow        : auto;
-    position        : fixed;
-    transition      : var(--transition);
-    width           : 100%;
-    z-index         : 3;
-}
-
-.close-mobile-btn {
-    color     : var(--white);
-    font-size : 3rem;
-    position  : absolute;
-    right     : 1rem;
-    transition: var(--transition);
-    top       : 1rem;
-    z-index   : 5;
-}
-
-.close-mobile-btn:hover {
-    color: var(--primary-color);
 }
 
 .overlay-list {

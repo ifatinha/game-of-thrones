@@ -28,3 +28,12 @@ a {
 .grid {
     display: grid;
 }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    inset           : 0;
+    position        : fixed;
+    transition      : var(--transition);
+    width           : 100%;
+    z-index         : 3;
+}

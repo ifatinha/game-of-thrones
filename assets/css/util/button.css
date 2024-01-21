@@ -1,3 +1,17 @@
+.close-btn {
+    color     : var(--white);
+    font-size : 3rem;
+    position  : absolute;
+    right     : 1rem;
+    transition: var(--transition);
+    top       : 0;
+    z-index   : 5;
+}
+
+.close-btn:hover {
+    color: var(--primary-color);
+}
+
 .btn {
     border-radius: 4px;
     border       : 2px solid transparent;

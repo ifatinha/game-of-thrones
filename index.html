@@ -34,8 +34,8 @@
                         <span class="menu-line"></span>
                     </div>
 
-                    <div class="menu-overlay">
-                        <a href="#main" class="close-mobile-btn">
+                    <div class="overlay menu-overlay">
+                        <a href="#main" class="close-btn" id="closeMenuMobileBtn">
                             <i class="fa-solid fa-xmark"></i>
                         </a>
                         <ul class="overlay-list">
@@ -72,8 +72,26 @@
                         enemy returns after dormant for a millennia.</p>
                 </div>
                 <div class="flex main-btns">
-                    <a href="#" class="btn btn-white"><i class="fa-solid fa-play"></i> Watch Trailer</a>
-                    <a href="#" class="btn btn-border-white">Read More <i class="fa-solid fa-book-open"></i></a>
+                    <a href="#main" class="btn btn-white" id="whactTrailerBtn"><i class="fa-solid fa-play"></i> Watch
+                        Trailer</a>
+                    <a href="https://gameofthrones.fandom.com/wiki/Game_of_Thrones" target="_blank"
+                        class="btn btn-border-white">
+                        Read More <i class="fa-solid fa-book-open"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="modalTrailer">
+            <a href="#main" class="close-btn" id="closeTrailerBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+            <div class="container">
+                <div class="flex overlay-trailer">
+                    <div class="video-trailer">
+                        <video controls id="trailer">
+                            <source src="assets/videos/Official-Series-Trailer.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
