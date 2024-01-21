@@ -1,0 +1,74 @@
+#story {
+    background           : linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .9)), url("../../images/bg-01.jpg");
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-position  : center center;
+    background-size      : cover;
+    width                : 100%;
+}
+
+.story-section {
+    color         : var(--white);
+    font-family   : var(--typography-02);
+    flex-direction: column;
+    width         : 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .story-section {
+        flex-direction: row;
+    }
+}
+
+.story-bg {
+    display   : none;
+    flex-basis: 40%;
+    position  : relative;
+}
+
+@media screen and (min-width: 992px) {
+    .story-bg {
+        display: block;
+    }
+}
+
+.story-bg img {
+    object-fit: cover;
+    width     : 100%;
+}
+
+.story-overlay {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8));
+    inset     : 0;
+    position  : absolute;
+}
+
+.story-desc {
+    flex-basis: 100%;
+    padding   : 0 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .story-desc {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .story-desc .section-title {
+        margin-left: 4rem;
+    }
+}
+
+.story-desc p {
+    font-size    : 1.25rem;
+    letter-spacing: 0.8px;
+    margin-bottom: 2.375rem;
+}
+
+@media screen and (min-width: 992px) {
+    .story-desc p {
+        margin-left: 2rem;
+        padding    : 0 6.25rem;
+    }
+}

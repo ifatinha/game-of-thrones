@@ -7,6 +7,7 @@ body {
 .body {
     font-family: var(--typography-03);
     font-size  : 16px;
+    line-height: 2rem;
 }
 
 a {
@@ -26,7 +27,14 @@ a {
 }
 
 .grid {
-    display: grid;
+    display              : grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
 }
 
 .overlay {
@@ -36,4 +44,14 @@ a {
     transition      : var(--transition);
     width           : 100%;
     z-index         : 3;
+}
+
+.section-title {
+    color         : var(--white);
+    font-family   : var(--typography-01);
+    font-size     : 2.375rem;
+    font-weight   : 600;
+    padding       : 2rem 0;
+    text-transform: uppercase;
+    text-align    : left;
 }
