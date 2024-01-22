@@ -4,6 +4,10 @@ body {
     width : 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     font-family: var(--typography-03);
     font-size  : 16px;
@@ -44,6 +48,11 @@ a {
     transition      : var(--transition);
     width           : 100%;
     z-index         : 3;
+}
+
+.section {
+    padding-bottom: 30px;
+    padding-top   : 30px;
 }
 
 .section-title {

@@ -1,0 +1,114 @@
+#media {
+    background-color: var(--black);
+}
+
+#media .section-title {
+    text-align: center;
+}
+
+.media-container {
+    width: 100%;
+}
+
+.media-menu {
+    align-items    : center;
+    gap            : 1rem;
+    justify-content: end;
+    margin-bottom  : 2rem;
+    text-align     : right;
+    width          : 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .media-menu {
+        gap: 6rem;
+    }
+}
+
+.media-menu a {
+    color      : var(--white);
+    font-family: var(--typography-03);
+    font-size  : 24px;
+    font-weight: 600;
+    transition : var(--transition);
+}
+
+.media-menu a:hover {
+    opacity: .7;
+}
+
+.media-trailers {
+    color: var(--white);
+    gap  : 2em;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .media-trailers {
+        grid-template-rows: repeat(2, 200px) 50px;
+    }
+
+    #trailer1 {
+        grid-column: 1 / 7;
+        grid-row   : 1 / 4;
+    }
+
+    #trailer2 {
+        grid-column: 7 / 10;
+        grid-row   : 1/2;
+    }
+
+    #trailer3 {
+        grid-column: 10 / -1;
+        grid-row   : 1/2;
+    }
+
+    #trailer4 {
+        grid-column: 7/-1;
+        grid-row   : 2/4;
+    }
+}
+
+.trailer {
+    border       : 2px solid rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    height       : 100%;
+    position     : relative;
+    width        : 100%;
+}
+
+.trailer-poster {
+    height : 100%;
+    z-index: -1;
+}
+
+.trailer-poster img {
+    border-radius: 5px;
+    height       : 100%;
+    object-fit   : cover;
+    width        : 100%;
+}
+
+.trailer-btn {
+    align-items    : center;
+    display        : flex;
+    height         : 100%;
+    inset          : 0;
+    justify-content: center;
+    position       : absolute;
+    width          : 100%;
+}
+
+.trailer-btn a {
+    align-items    : center;
+    background     : var(--white);
+    display        : flex;
+    height         : 50px;
+    justify-content: center;
+    width          : 50px;
+}
+
+.trailer-btn i {
+    color    : var(--black);
+    font-size: 1.25rem;
+}

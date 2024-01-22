@@ -42,3 +42,7 @@
     background-color: var(--white);
     color           : var(--black);
 }
+
+.btn-round {
+    border-radius: 50%;
+}
