@@ -78,8 +78,9 @@
 }
 
 .trailer-poster {
-    height : 100%;
-    z-index: -1;
+    border-radius: 5px;
+    height       : 100%;
+    z-index      : -1;
 }
 
 .trailer-poster img {
@@ -91,6 +92,7 @@
 
 .trailer-btn {
     align-items    : center;
+    background     : rgba(0, 0, 0, 0.3);
     display        : flex;
     height         : 100%;
     inset          : 0;
@@ -111,4 +113,19 @@
 .trailer-btn i {
     color    : var(--black);
     font-size: 1.25rem;
+}
+
+.trailer-desc {
+    align-items    : center;
+    bottom         : 4px;
+    position       : absolute;
+    justify-content: space-between;
+    padding        : 0 4px;
+    text-transform : capitalize;
+    width          : 100%;
+}
+
+.trailer-desc h2,
+.trailer-desc p {
+    font-weight: 600;
 }
