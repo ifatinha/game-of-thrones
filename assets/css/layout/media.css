@@ -37,6 +37,10 @@
     opacity: .7;
 }
 
+.media-menu a.active-menu {
+    opacity: .7;
+}
+
 .media-trailers {
     color: var(--white);
     gap  : 2em;
@@ -105,14 +109,13 @@
     align-items    : center;
     background     : var(--white);
     display        : flex;
-    height         : 50px;
+    height         : 40px;
     justify-content: center;
-    width          : 50px;
+    width          : 40px;
 }
 
 .trailer-btn i {
-    color    : var(--black);
-    font-size: 1.25rem;
+    color: var(--black);
 }
 
 .trailer-desc {
@@ -128,4 +131,8 @@
 .trailer-desc h2,
 .trailer-desc p {
     font-weight: 600;
+}
+
+.owl-carousel .item {
+    margin-bottom: 1.5rem;
 }

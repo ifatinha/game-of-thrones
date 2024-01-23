@@ -9,6 +9,10 @@
     <meta name="copyright" content="Todos os direitos livres">
     <meta name="robots" content="index, follow">
 
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.theme.default.min.css">
+
     <!-- css -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -138,58 +142,171 @@
             <h1 class="section-title">Media</h1>
             <div class="media-container">
                 <div class="flex media-menu">
-                    <a href="#media">Trailers</a>
-                    <a href="#media">Screenshots</a>
+                    <a href="#media" class="active-menu" id="trailers">Trailers</a>
+                    <a href="#media" id="screenshots">Screenshots</a>
                 </div>
-                <div class="grid media-trailers">
-                    <div class="trailer" id="trailer1">
-                        <div class="trailer-poster">
-                            <img src="assets/images/trailer-01.jpg" alt="Trailer Poster">
-                        </div>
-                        <div class="trailer-btn">
-                            <a href="#" class="btn-round" aria-label="Play">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </div>
-                        <div class="flex trailer-desc">
-                            <h2 class="font-24">Game Of Thrones: Official teaser HBO Max</h2>
-                            <p class="font-24">02:13</p>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="grid media-trailers">
+                            <div class="trailer" id="trailer1">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-01.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official teaser HBO Max</h2>
+                                    <p class="text-medium">02:13</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer2">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-02.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>Official Season 1 trailer</h2>
+                                    <p>02:36</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer3">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-03.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>Official Season 2 trailer</h2>
+                                    <p>02:10</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer4">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-04.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official Season 3trailer</h2>
+                                    <p class="text-medium">01:18</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="trailer" id="trailer2">
-                        <div class="trailer-poster">
-                            <img src="assets/images/trailer-02.jpg" alt="Trailer Poster">
-                        </div>
-                        <div class="trailer-btn">
-                            <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
-                        </div>
-                        <div class="flex trailer-desc">
-                            <h2>Game Of Thrones: Trailer 2011</h2>
-                            <p>03:43</p>
+                    <div class="item">
+                        <div class="grid media-trailers">
+                            <div class="trailer" id="trailer1">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-05.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official Season 4 trailer</h2>
+                                    <p class="text-medium">01:44</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer2">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-06.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>Official Season 5 trailer</h2>
+                                    <p>01:46</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer3">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-07.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>Official Season 6 trailer</h2>
+                                    <p>01:42</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer4">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-08.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official Season 7 trailer</h2>
+                                    <p class="text-medium">01:49</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="trailer" id="trailer3">
-                        <div class="trailer-poster">
-                            <img src="assets/images/trailer-03.jpg" alt="Trailer Poster">
-                        </div>
-                        <div class="trailer-btn">
-                            <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
-                        </div>
-                        <div class="flex trailer-desc">
-                            <h2>Game Of Thrones: Trailer 2012</h2>
-                            <p>03:13</p>
-                        </div>
-                    </div>
-                    <div class="trailer" id="trailer4">
-                        <div class="trailer-poster">
-                            <img src="assets/images/trailer-04.jpg" alt="Trailer Poster">
-                        </div>
-                        <div class="trailer-btn">
-                            <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
-                        </div>
-                        <div class="flex trailer-desc">
-                            <h2 class="font-24">Game Of Thrones: Trailer 2013</h2>
-                            <p class="font-24">02:13</p>
+                    <div class="item">
+                        <div class="grid media-trailers">
+                            <div class="trailer" id="trailer1">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-09.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official Season 8 trailer</h2>
+                                    <p class="text-medium">02:03</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer2">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-10.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>A Decade of Game of Thrones</h2>
+                                    <p>05:17</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer3">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-11.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2>Game of Thrones (HBO)</h2>
+                                    <p>01:37</p>
+                                </div>
+                            </div>
+                            <div class="trailer" id="trailer4">
+                                <div class="trailer-poster">
+                                    <img src="assets/images/trailer-12.jpg" alt="Trailer Poster">
+                                </div>
+                                <div class="trailer-btn">
+                                    <a href="#" class="btn-round" aria-label="Play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="flex trailer-desc">
+                                    <h2 class="text-medium">Official Series Trailer</h2>
+                                    <p class="text-medium">03:29</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +325,10 @@
 
     <!-- map -->
     <section id="map"></section>
+
     <!-- scripts -->
+    <script src="assets/util/OwlCarousel/docs/assets/vendors/jquery.min.js" defer></script>
+    <script src="assets/util/OwlCarousel/dist/owl.carousel.min.js" defer></script>
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous" defer></script>
     <script src="assets/js/script.js" defer></script>
 </body>

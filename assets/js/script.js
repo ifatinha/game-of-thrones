@@ -40,3 +40,36 @@ window.onclick = function (event) {
         modalTrailer.style.display = "none";
     }
 }
+
+/** owlCarousel */
+$('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 2
+        },
+        992: {
+            items: 1
+        }
+    }
+});
+
+/** active menu media */
+const trailers = document.querySelector("#trailers");
+const screenshots = document.querySelector("#screenshots");
+
+trailers.addEventListener("click", () => {
+    trailers.classList.add("active-menu");
+    screenshots.classList.remove("active-menu");
+})
+
+screenshots.addEventListener("click", () => {
+    screenshots.classList.add("active-menu");
+    trailers.classList.remove("active-menu");
+})

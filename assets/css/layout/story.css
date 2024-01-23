@@ -44,13 +44,15 @@
 }
 
 .story-desc {
-    flex-basis: 100%;
-    padding   : 0 1rem;
+    flex-basis   : 100%;
+    margin-bottom: 3.75rem;
+    padding      : 0 1rem;
 }
 
 @media screen and (min-width: 992px) {
     .story-desc {
-        flex-basis: 60%;
+        flex-basis   : 60%;
+        margin-bottom: 0;
     }
 }
 
@@ -60,10 +62,14 @@
     }
 }
 
+.story-desc .section-title {
+    margin-top: 3.75rem;
+}
+
 .story-desc p {
-    font-size    : 1.25rem;
+    font-size     : 1.25rem;
     letter-spacing: 0.8px;
-    margin-bottom: 2.375rem;
+    margin-bottom : 2.375rem;
 }
 
 @media screen and (min-width: 992px) {

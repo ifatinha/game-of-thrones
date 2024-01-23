@@ -11,7 +11,7 @@ html {
 body {
     font-family: var(--typography-03);
     font-size  : 16px;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 a {
@@ -51,8 +51,8 @@ a {
 }
 
 .section {
-    padding-bottom: 30px;
-    padding-top   : 30px;
+    padding-bottom: 40px;
+    padding-top   : 40px;
 }
 
 .section-title {
@@ -65,10 +65,8 @@ a {
     text-align    : left;
 }
 
-.font-24 {
-    font-size: 1.5rem;
-}
-
-.font-18 {
-    font-size: 1.125rem;
+@media screen and (min-width: 992px) {
+    .text-medium {
+        font-size: 1.5rem;
+    }
 }
