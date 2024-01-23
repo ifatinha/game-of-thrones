@@ -37,9 +37,17 @@
     opacity: .7;
 }
 
-.media-menu a.active-menu {
+.active-menu {
     opacity: .7;
 }
+
+/* .media-tab.owl-carousel {
+    display: none;
+}
+
+#trailerContent {
+    display: block;
+} */
 
 .media-trailers {
     color: var(--white);
@@ -136,3 +144,5 @@
 .owl-carousel .item {
     margin-bottom: 1.5rem;
 }
+
+/* media gallery */

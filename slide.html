@@ -7,26 +7,108 @@
     <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/util/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <title>Slide</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            text-decoration: none;
+            text-align: center;
+            width: 50%;
+        }
+
+        /* .tablink:hover {
+            background-color: #777;
+        } */
+
+        .tabs {
+            width: 100%;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        .active {
+            background-color: green;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="owl-carousel owl-theme">
-        <div class="item" style="background-color: darkred;">
-            <h4>1</h4>
-        </div>
-        <div class="item">
-            <h4>2</h4>
-        </div>
-        <div class="item">
-            <h4>3</h4>
+    <div class="container">
+        <nav>
+            <a href="#" class="tablink" data-page="home" id="defaultTabOpen">Page 01</a>
+            <a href="#" class="tablink" data-page="news">Page 02</a>
+        </nav>
+
+        <div class="tabs">
+            <div id="home" class="tabcontent">
+                <h3>Home</h3>
+                <p>Home is where the heart is..</p>
+            </div>
+
+            <div id="news" class="tabcontent">
+                <h3>News</h3>
+                <p>Some news this fine day!</p>
+            </div>
         </div>
     </div>
 
+    <script defer>
+        const links = document.querySelectorAll(".tablink");
 
+        function removeAllTabs() {
+            const tabs = document.querySelectorAll(".tabcontent");
+            tabs.forEach((tab) => {
+                tab.style.display = "none";
+            })
+        }
+
+        function removeActiveLinks() {
+            links.forEach((link) => {
+                link.classList.remove("active");
+            })
+        }
+
+        function selectTabContent(link) {
+            link.addEventListener("click", () => {
+                removeAllTabs();
+                removeActiveLinks();
+                link.classList.add("active");
+                const tabcontent = document.querySelector(`#${link.dataset.page}`);
+                tabcontent.style.display = "block";
+            })
+        }
+
+        links.forEach(selectTabContent);
+
+        document.querySelector("#defaultTabOpen").click();
+    </script>
     <script src="assets/util/OwlCarousel/docs/assets/vendors/jquery.min.js" defer></script>
     <script src="assets/util/OwlCarousel/dist/owl.carousel.min.js" defer></script>
-    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>

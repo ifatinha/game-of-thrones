@@ -142,11 +142,11 @@
             <h1 class="section-title">Media</h1>
             <div class="media-container">
                 <div class="flex media-menu">
-                    <a href="#media" class="active-menu" id="trailers">Trailers</a>
-                    <a href="#media" id="screenshots">Screenshots</a>
+                    <a href="#media" class="active-menu" id="trailers" data-media="trailerContent">Trailers</a>
+                    <a href="#media" id="screenshots" data-media="screenshotsContent">Screenshots</a>
                 </div>
 
-                <div class="owl-carousel owl-theme">
+                <div class="media-tab owl-carousel owl-theme" id="trailerContent">
                     <div class="item">
                         <div class="grid media-trailers">
                             <div class="trailer" id="trailer1">
@@ -309,6 +309,19 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="media-tab owl-carousel owl-theme" id="screenshotsContent">
+                    <div class="item">
+                        <div class="flex media-screenshots">
+                            <div class="screenshort-item"></div>
+                            <div class="screenshort-item"></div>
+                            <div class="screenshort-item"></div>
+                            <div class="screenshort-item"></div>
+                        </div>
+                    </div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
                 </div>
             </div>
         </div>
