@@ -73,3 +73,10 @@ a {
         font-size: 1.5rem;
     }
 }
+
+.line {
+    background-color: var(--white);
+    height          : 1px;
+    margin          : 4px auto;
+    width           : 20%;
+}
