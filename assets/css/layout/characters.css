@@ -51,11 +51,16 @@
 
 .character-quote {
     font-family     : var(--typography-02);
-    min-height      : 150px;
-    padding         : 1rem 2rem;
+    height          : auto;
+    padding         : 1rem;
     text-align      : center;
     text-transform  : uppercase;
-    background-color: darkblue;
+}
+
+@media screen and (min-width: 576px) {
+    .character-quote {
+        min-height      : 150px;
+    }
 }
 
 .character-quote h2 {
