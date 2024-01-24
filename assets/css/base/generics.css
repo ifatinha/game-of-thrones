@@ -35,6 +35,10 @@ a {
     grid-template-columns: 1fr;
 }
 
+.center {
+    text-align: center;
+}
+
 @media screen and (min-width: 992px) {
     .grid {
         grid-template-columns: repeat(12, 1fr);
@@ -51,8 +55,8 @@ a {
 }
 
 .section {
-    padding-bottom: 40px;
-    padding-top   : 40px;
+    padding-bottom: 3.75rem;
+    padding-top   : 3.75rem;
 }
 
 .section-title {
@@ -62,7 +66,6 @@ a {
     font-weight   : 600;
     padding       : 2rem 0;
     text-transform: uppercase;
-    text-align    : left;
 }
 
 @media screen and (min-width: 992px) {
