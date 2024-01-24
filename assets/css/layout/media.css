@@ -3,12 +3,6 @@
     height          : auto;
 }
 
-@media screen and (min-width: 992px) {
-    #media {
-        height: 100%;
-    }
-}
-
 .media-container {
     width: 100%;
 }
