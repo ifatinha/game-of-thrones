@@ -1,0 +1,69 @@
+#episodes {
+    background: var(--black);
+}
+
+#episodes .section-title {
+    margin-bottom: 2rem;
+}
+
+.episode-container {
+    color: var(--white);
+    gap  : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    #episodeMain {
+        grid-column: 1 / 10;
+    }
+
+    #episodeList {
+        grid-column     : 10 / -1;
+    }
+}
+
+#episodeList {
+    grid-template-columns: 1fr;
+}
+
+.episode-cover {
+    position: relative;
+    width   : 100%;
+}
+
+.episode-cover img {
+    height    : 100%;
+    object-fit: cover;
+}
+
+.overlay-episode {
+    background: rgba(0, 0, 0, 0.4);
+    inset     : 0;
+    position  : absolute;
+}
+
+.episode-cover_desc {
+    padding: 2rem 0 0;
+}
+
+.episode-cover_title {
+    font-size  : 1.25rem;
+    font-weight: 700;
+}
+
+.episode-cover_info {
+    display        : flex;
+    justify-content: space-between;
+    font-size      : 0.875rem;
+    margin-bottom  : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .episode-cover_info {
+        justify-content: space-between;
+    }
+}
+
+.episode-cover_sinopse {
+    max-width: 550px;
+    width    : 100%;
+}

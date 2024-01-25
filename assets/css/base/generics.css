@@ -39,6 +39,10 @@ a {
     text-align: center;
 }
 
+.right {
+    text-align: right;
+}
+
 @media screen and (min-width: 992px) {
     .grid {
         grid-template-columns: repeat(12, 1fr);
