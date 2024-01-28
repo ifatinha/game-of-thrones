@@ -16,7 +16,8 @@
 }
 
 #knownWorld {
-    color: var(--white);
+    color        : var(--white);
+    margin-bottom: 2rem;
 }
 
 #knownWorld>p {
