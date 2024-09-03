@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,600;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+:root {
+    --primary-color: #769899;
+    --white        : #ffffff;
+    --gray         : #bdbdbd;
+    --black        : #000;
+    --typography-01: 'Cinzel', serif;
+    --typography-02: 'EB Garamond', serif;
+    --typography-03: 'Roboto', sans-serif;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --transition   : .3s all ease;
+}

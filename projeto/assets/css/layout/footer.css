@@ -1,0 +1,101 @@
+.footer .container {
+    padding-top   : 2rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer .container {
+        padding-top: 7.5rem;
+    }
+}
+
+.footer-container {
+    align-items    : start;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    margin-bottom  : 3.5rem;
+}
+
+.footer-item {
+    flex            : 1 1 100%;
+    padding         : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .footer-item {
+        flex-basis: 25%;
+    }
+}
+
+.footer-brand {
+    max-width       : 200px;
+}
+
+.footer-brand img {
+    height         : 100%;
+    object-fit     : cover;
+    object-position: center;
+}
+
+.footer-list ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-list li a {
+    font-weight   : 600;
+    text-transform: uppercase;
+    transition    : var(--transition);
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    align-items    : center;
+    flex-direction : column;
+    gap            : 1rem;
+    justify-content: center;
+    margin-bottom  : 3.75rem;
+    text-align     : center;
+}
+
+.f-social-list {
+    align-items: center;
+    gap        : 2rem;
+}
+
+.f-social-list a {
+    font-size: 1.5rem;
+}
+
+.f-social-list a i {
+    transition: var(--transition);
+}
+
+.f-social-list a i:hover {
+    transform: scale(1.1);
+}
+
+.footer-end h1 {
+    color         : var(--white);
+    font-family   : var(--typography-02);
+    font-size     : 3rem;
+    font-weight   : 700;
+    letter-spacing: 1px;
+    line-height   : 1.2;
+    text-transform: uppercase;
+}
+
+.footer-end {
+    align-items          : center;
+    background           : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/footer-bg2.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    justify-content      : center;
+    min-height           : 650px;
+    text-align           : center;
+    width                : 100%;
+}

@@ -1,0 +1,166 @@
+#map {
+    background           : linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../images/westeros.jpg");
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-position  : center;
+    background-size      : cover;
+}
+
+.map-title {
+    color         : var(--white);
+    font-family   : var(--typography-02);
+    font-size     : 1.625rem;
+    font-weight   : 600;
+    padding       : 2rem 0;
+    text-transform: uppercase;
+}
+
+#knownWorld {
+    color        : var(--white);
+    margin-bottom: 2rem;
+}
+
+#knownWorld>p {
+    font-size    : 1.125rem;
+    margin-bottom: 3rem;
+}
+
+.continents {
+    width: 100%;
+}
+
+.continent {
+    grid-column     : 1 /-1;
+    flex-wrap       : wrap;
+    /* margin-bottom: 3rem; */
+}
+
+.continent-desc,
+.continent-img {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+    .continent-desc,
+    .continent-img {
+        flex-basis: 50%;
+    }
+
+    .continent:nth-child(2) .continent-desc {
+        order: 2;
+    }
+
+    .continent:nth-child(2) .continent-img {
+        order: 1;
+    }
+}
+
+.continent-desc {
+    padding: 2rem 1rem;
+}
+
+.continent-desc_intro {
+    margin-bottom: 2rem;
+}
+
+.continent-desc_intro h3 {
+    font-size     : 1.5rem;
+    font-family   : var(--typography-01);
+    margin-bottom : 2rem;
+    text-transform: uppercase;
+}
+
+.continent-desc_intro span {
+    display      : block;
+    font-style   : italic;
+    margin-bottom: 0.5rem;
+}
+
+.continent-desc p {
+    margin-bottom: 1rem;
+}
+
+.continent-img img {
+    height         : 100%;
+    object-fit     : cover;
+    object-position: center;
+}
+
+.map-container {
+    overflow: hidden;
+    width   : 100%;
+}
+
+.map-img {
+    overflow     : hidden;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .map-img {
+        grid-column: 1 / 9;
+        height     : 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .map-img {
+        height       : 250px;
+        margin-bottom: 1rem;
+    }
+}
+
+.map-img div {
+    height  : 100%;
+    overflow: hidden;
+    width   : 100%;
+}
+
+.map-img img {
+    height    : 100%;
+    object-fit: cover;
+}
+
+.map-info {
+    flex-direction: column;
+    gap           : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .map-info {
+        grid-column: 9 / -1;
+        padding    : 0 1rem;
+    }
+}
+
+.map-info-item {
+    color   : var(--white);
+    overflow: hidden;
+}
+
+.map-info-item img {
+    height         : 100%;
+    object-fit     : cover;
+    object-position: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .map-info-item:nth-child(1),
+    .map-info-item:nth-child(2) {
+        height          : 200px;
+        background-color: darkblue;
+    }
+}
+
+.kingdom-name {
+    font-family   : var(--typography-01);
+    font-weight   : 600;
+    margin        : 1rem 0;
+    text-transform: uppercase;
+}
+
+.kingdom-desc {
+    font-family: var(--typography-02);
+}

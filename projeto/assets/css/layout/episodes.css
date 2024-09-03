@@ -1,0 +1,130 @@
+#episodes {
+    background: var(--black);
+}
+
+#episodes .section-title {
+    margin-bottom: 2rem;
+}
+
+.episode-container {
+    color: var(--white);
+    gap  : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .episode-main {
+        grid-column: 1 / 9;
+    }
+}
+
+.episode-main {
+    width: 100%;
+}
+
+.episode-cover {
+    overflow: hidden;
+    position: relative;
+    width   : 100%;
+}
+
+.episode-cover img {
+    height    : 100%;
+    object-fit: cover;
+}
+
+.overlay-episode {
+    background: rgba(0, 0, 0, 0.4);
+    inset     : 0;
+    position  : absolute;
+}
+
+.episode-cover_desc {
+    padding: 2rem 0 0;
+}
+
+.episode-cover_title {
+    font-size  : 1.25rem;
+    font-weight: 700;
+}
+
+.episode-cover_info {
+    display        : flex;
+    justify-content: space-between;
+    font-size      : 0.875rem;
+    margin-bottom  : 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .episode-cover_info {
+        justify-content: space-between;
+    }
+}
+
+.episode-cover_sinopse {
+    height          : auto;
+    max-width       : 550px;
+    width           : 100%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    .episode-cover_sinopse {
+        min-height: 150px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 640px) {
+    .episode-cover_sinopse {
+        min-height: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .episode-list {
+        grid-column: 9 / -1;
+        padding    : 0 1rem;
+    }
+}
+
+.episode-list {
+    flex-direction: column;
+    gap           : 10px;
+    width         : 100%;
+}
+
+.episode-list_item {
+    cursor    : pointer;
+    overflow  : hidden;
+    transition: var(--transition);
+    width     : 100%;
+}
+
+.episode-info {
+    flex-direction : column;
+    font-size      : 0.875rem;
+    inset          : 0;
+    justify-content: space-between;
+    padding        : 4px;
+    position       : absolute;
+}
+
+.episode-info p:nth-child(2) {
+    justify-content: space-between;
+}
+
+.episode-list_item a {
+    font-size     : 1.125rem;
+    text-align    : center;
+    text-transform: uppercase;
+    width         : 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .episode-list_item a {
+        font-size: 1.25rem;
+    }
+}
+
+.episode-list_item a i {
+    margin-left: 4px;
+}
