@@ -1,9 +1,5 @@
-@use "./../util/util";
+@use "../base/typography"as *;
 
-header {
-    background-color: darkblue;
-
-    @include util.devices(l) {
-        background-color: darkcyan
-    }
+.container {
+    @include font-primary(16);
 }
