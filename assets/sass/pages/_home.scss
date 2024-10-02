@@ -1,0 +1,45 @@
+@use "../base/mixins"as *;
+@use "../base/typography"as *;
+@use "../global/responsive"as *;
+
+.home {
+    @include bg-gradient("../images/home-bg.jpg");
+    @include flex(center, center);
+    height    : 120%;
+    position  : relative;
+    text-align: center;
+    width     : 100%;
+
+    &-container {
+        background: orange;
+        bottom    : 160px;
+        max-width : 750px;
+        margin    : 0 auto;
+        width     : 100%;
+        position  : absolute;
+
+        @include devices(t){
+            bottom: 280px;
+        }
+
+        @include devices(m){
+            bottom: 120px;
+        }
+    }
+
+    &-title {
+        @include font-primary();
+        font-size    : get-font-size(40);
+        line-height  : 42px;
+        margin-bottom: 1rem;
+
+        @include devices(m) {
+            font-size: get-font-size(24);
+        }
+    }
+
+    &-description {
+        @include font-secondary();
+        font-size: get-font-size(18);
+    }
+}

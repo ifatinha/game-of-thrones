@@ -86,7 +86,8 @@ html {
 }
 
 html,
-body {
+body,
+main {
   height: 100%;
   width: 100%;
 }
@@ -207,6 +208,7 @@ a {
   padding-bottom: 1rem;
   position: absolute;
   width: 100%;
+  z-index: 9999;
 }
 .header__container {
   align-items: center;
@@ -216,6 +218,54 @@ a {
 }
 .header__brand {
   max-width: 140px;
+}
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  height: 120%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.home-container {
+  background: orange;
+  bottom: 160px;
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .home-container {
+    bottom: 280px;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .home-container {
+    bottom: 120px;
+  }
+}
+.home-title {
+  font-family: "Game of Thrones", serif;
+  font-size: 2.5rem;
+  line-height: 42px;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .home-title {
+    font-size: 1.5rem;
+  }
+}
+.home-description {
+  font-family: "Constantia", serif;
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=main.css.map */

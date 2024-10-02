@@ -1,5 +1,5 @@
 @mixin flex($align-items, $justify-content, $gap: 1rem) {
-    align-items     : $align-items;
+    align-items    : $align-items;
     display        : flex;
     gap            : $gap;
     justify-content: $justify-content;
@@ -9,4 +9,18 @@
     &:hover {
         @content
     }
+}
+
+@mixin bg-gradient($url) {
+    background         : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($url);
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+}
+
+@mixin bg-img($url) {
+    background         : url($url);
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
 }
