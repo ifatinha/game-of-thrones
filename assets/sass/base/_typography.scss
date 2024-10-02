@@ -1,20 +1,18 @@
 @use "sass:math";
 @use "sass:map";
 @use "../util/functions"as *;
+@import "../../fonts/font-face";
 
-@mixin _set-font-style($font-family, $size, $weight, $line-height) {
-   font-family: $font-family;
-   font-size  : px-to-rem($size);
-   font-weight: $weight;
-   line-height: $line-height;
+// 12, 14, 16, 18, 40, 80
+
+@mixin font-primary() {
+   font-family: "Game of Thrones", serif;
 }
 
-@mixin font-primary($size, $weight: 400, $line-height: 1.5) {
-   $font-primary: sans-serif;
-   @include _set-font-style($font-primary, $size, $weight, $line-height);
+@mixin font-secondary() {
+   font-family: "Constancia", serif;
 }
 
-@mixin font-secondary($size, $weight: 400, $line-height: 1.5) {
-   $font-secondary: sans-serif;
-   @include _set-font-style($font-secondary, $size, $weight, $line-height);
+@function get-font-size($size) {
+   @return px-to-rem($size);
 }

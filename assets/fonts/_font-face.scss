@@ -1,0 +1,15 @@
+// fonts/font-face.scss
+
+@font-face {
+    font-family: "Game of Thrones";
+    src        : url("../fonts/game-of-thrones/GameOfThrones.ttf") format("truetype");
+    font-weight: normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: "Constantia";
+    src        : url("../fonts/constantia/constan.ttf") format("truetype");
+    font-weight: normal;
+    font-style : normal;
+}

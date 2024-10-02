@@ -111,11 +111,20 @@ a {
   }
 }
 
-.container {
-  font-family: sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("../fonts/game-of-thrones/GameOfThrones.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Constantia";
+  src: url("../fonts/constantia/constan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "Game of Thrones", serif;
 }
 
 /*# sourceMappingURL=main.css.map */

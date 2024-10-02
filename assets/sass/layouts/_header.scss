@@ -1,5 +1,5 @@
-@use "../base/typography"as *;
+@import "../base/typography";
 
-.container {
-    @include font-primary(16);
+h1{
+    @include font-primary();
 }

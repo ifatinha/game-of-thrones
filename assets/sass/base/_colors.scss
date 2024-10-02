@@ -1,16 +1,45 @@
 @use "sass:map";
 
-$theme-color:(
-    "primary-color": #000000,
-    "second-color": #ffffff,
+$theme-color: (
+    black: #000000,
+    dark-charcoal: #464646,
+    deep-charcoal: #252020,
+    light-gray: #d9d9d9,
+    pure-white: #ffffff,
+    soft-silver: #e5e5e5,
+    smoky-gray: #838383,
+    steel-gray: #777777,
+    sky-blue: #30bbe9,
 );
 
-@mixin color($key) {
+
+@mixin apply-color($key) {
     @if map.has-key($theme-color, $key) {
-        color: map.get($theme-color, $key);
+        color: map-get($map: $theme-color, $key: $key);
     }
 
     @else {
-        @warn "A cor #{$key} não está definida em $theme-color.";
+        @warn "A cor '#{$key}' não está definida em '$theme-colors'.";
+    }
+}
+
+@mixin apply-bg-color($key) {
+    @if map.has-key($theme-color, $key) {
+        background-color: map-get($map: $theme-color, $key: $key);
+    }
+
+    @else {
+        @warn "A cor '#{$key}' não está definida em '$theme-colors'.";
+    }
+}
+
+@function get-color($key) {
+    @if map.has-key($theme-color, $key) {
+        @return map-get($map: $theme-color, $key: $key);
+    }
+
+    @else {
+        @warn "A cor '#{$key}' não está definida em '$theme-colors'.";
+        @return null;
     }
 }
