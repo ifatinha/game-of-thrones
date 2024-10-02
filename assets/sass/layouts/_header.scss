@@ -1,5 +1,9 @@
 @import "../base/typography";
 
-h1{
+h1 {
+    @include font-primary();
+}
+
+h2 {
     @include font-primary();
 }
