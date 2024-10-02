@@ -101,8 +101,82 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("../fonts/game-of-thrones/GameOfThrones.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Constantia";
+  src: url("../fonts/constantia/constan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.menu__burger {
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  min-height: 52px;
+  min-width: 38px;
+}
+.menu__burger:hover .menu__burger-bars::after,
+.menu__burger:hover .menu__burger-bars::before {
+  width: 100%;
+}
+.menu__burger-visually {
+  font-family: "Game of Thrones", serif;
+  clip: rect(0, 0, 0, 0);
+  font-size: 0.875rem;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.menu__burger-bars {
+  background-color: #ffffff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: all 0.25s linear;
+  width: 24px;
+}
+.menu__burger-bars::after, .menu__burger-bars::before {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transition: all 0.25s linear;
+  width: 100%;
+}
+.menu__burger-bars::after {
+  transform: translate(0, -8px);
+}
+.menu__burger-bars::before {
+  transform: translate(0, 8px);
+}
+
+.js-open-menu .menu__burger-bars {
+  background: transparent;
+}
+.js-open-menu .menu__burger-bars::before {
+  transform: rotate(45deg);
+}
+.js-open-menu .menu__burger-bars::after {
+  transform: rotate(-45deg);
+}
+
 .container {
   margin: 0 auto;
+  padding: 0 1%;
   width: 100%;
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
@@ -128,12 +202,20 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  font-family: "Game of Thrones", serif;
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  width: 100%;
 }
-
-h2 {
-  font-family: "Game of Thrones", serif;
+.header__container {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.header__brand {
+  max-width: 140px;
 }
 
 /*# sourceMappingURL=main.css.map */

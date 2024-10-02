@@ -1,0 +1,77 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
+
+.menu__burger {
+    @include apply-color("pure-white");
+    @include flex(center, center, 8px);
+    background-color: transparent;
+    border          : none;
+    cursor          : pointer;
+    min-height      : 52px;
+    min-width       : 38px;
+
+    @include hover {
+
+        .menu__burger-bars::after,
+        .menu__burger-bars::before {
+            width: 100%;
+        }
+
+    }
+
+    &-visually {
+        @include font-primary();
+        clip: rect(0, 0, 0, 0);
+        font-size: get-font-size(14);
+        height   : 1px;
+        overflow : hidden;
+        padding  : 0;
+        position : absolute;
+        width    : 1px;
+    }
+
+    &-bars {
+        @include apply-bg-color("pure-white");
+        display   : block;
+        height    : 2px;
+        position  : relative;
+        transition: all .25s linear;
+        width     : 24px;
+
+        &::after,
+        &::before {
+            @include apply-bg-color("pure-white");
+            content   : "";
+            display   : block;
+            height    : 100%;
+            position  : absolute;
+            right     : 0;
+            transition: all .25s linear;
+            width     : 100%;
+        }
+
+        &::after {
+            transform: translate(0, -8px);
+        }
+
+        &::before {
+            transform: translate(0, 8px);
+        }
+    }
+}
+
+.js-open-menu {
+
+    .menu__burger-bars {
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

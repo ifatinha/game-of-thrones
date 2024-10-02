@@ -1,9 +1,18 @@
+@use "../base/mixins"as *;
+@use "../global/responsive"as *;
 @import "../base/typography";
 
-h1 {
-    @include font-primary();
-}
+.header {
+    padding-top   : 1rem;
+    padding-bottom: 1rem;
+    position      : absolute;
+    width         : 100%;
 
-h2 {
-    @include font-primary();
+    &__container {
+        @include flex(center, space-between);
+    }
+
+    &__brand {
+        max-width: 140px;
+    }
 }

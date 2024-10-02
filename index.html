@@ -34,15 +34,30 @@
 </head>
 
 <body>
+
    <header class="header">
-      <div class="header__brand">
-         <img src="assets/images/logo.webp" alt="Game Of Thrones Brand">
-      </div>
-      <div class="burger__menu">
-         <button type="button">Menu</button>
+      <div class="container">
+         <div class="header__container">
+            <div class="header__brand">
+               <a href="#home"><img src="assets/images/brand.png" alt="Game Of Thrones Brand"></a>
+            </div>
+            <nav class="header__menu">
+               <button class="menu__burger" type="button" id="buttonBurger" aria-controls="modalNavbar"
+                  aria-label="Abrir Menu" aria-expanded="false" aria-haspopup="menu">
+                  <span class="menu__burger-visually">Menu</span>
+                  <span class="menu__burger-bars" id="menuBar" aria-hidden="true"></span>
+               </button>
+            </nav>
+         </div>
       </div>
    </header>
+
+   <main>
+      <section class="home" id="home">Bem vindo a Westeros</section>
+   </main>
+
    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+   <script type="module" src="assets/js/script.js"></script>
 </body>
 
 </html>
