@@ -91,6 +91,11 @@ body {
   width: 100%;
 }
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 a {
   color: inherit;
   text-decoration: none;
