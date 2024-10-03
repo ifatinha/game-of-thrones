@@ -15,5 +15,10 @@
 
     &__brand {
         max-width: 140px;
+
+        img {
+            object-fit: cover;
+            width     : 100%;
+        }
     }
 }

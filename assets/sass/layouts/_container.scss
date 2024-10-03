@@ -6,11 +6,11 @@
     padding: 0 1%;
     width  : 100%;
 
-    @include devices(xl) {
+    @include devices(xxl) {
         max-width: 1440px;
     }
 
-    @include devices(l) {
+    @include devices(xl) {
         max-width: 1200px;
     }
 }

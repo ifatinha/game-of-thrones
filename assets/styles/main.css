@@ -175,17 +175,25 @@ a {
   transform: rotate(-45deg);
 }
 
+.modal {
+  background: darkcyan;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1%;
   width: 100%;
 }
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+@media screen and (min-width: 1920px) {
   .container {
     max-width: 1440px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .container {
     max-width: 1200px;
   }
@@ -219,9 +227,13 @@ a {
 .header__brand {
   max-width: 140px;
 }
+.header__brand img {
+  object-fit: cover;
+  width: 100%;
+}
 
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -235,10 +247,10 @@ a {
   width: 100%;
 }
 .home-container {
-  background: orange;
-  bottom: 160px;
-  max-width: 750px;
+  bottom: 220px;
+  max-width: 700px;
   margin: 0 auto;
+  padding: 0 1%;
   width: 100%;
   position: absolute;
 }
@@ -249,18 +261,24 @@ a {
 }
 @media screen and (max-width: calc(768px - 1px)) {
   .home-container {
-    bottom: 120px;
+    bottom: 160px;
+  }
+}
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  .home-container {
+    bottom: 80px;
   }
 }
 .home-title {
   font-family: "Game of Thrones", serif;
   font-size: 2.5rem;
-  line-height: 42px;
+  line-height: 60px;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: calc(768px - 1px)) {
   .home-title {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
+    line-height: 38px;
   }
 }
 .home-description {

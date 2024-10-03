@@ -3,7 +3,7 @@
 @use "../global/responsive"as *;
 
 .home {
-    @include bg-gradient("../images/home-bg.jpg");
+    @include bg-gradient("../images/home-bg.webp");
     @include flex(center, center);
     height    : 120%;
     position  : relative;
@@ -11,30 +11,35 @@
     width     : 100%;
 
     &-container {
-        background: orange;
-        bottom    : 160px;
-        max-width : 750px;
-        margin    : 0 auto;
-        width     : 100%;
-        position  : absolute;
+        bottom   : 220px;
+        max-width: 700px;
+        margin   : 0 auto;
+        padding  : 0 1%;
+        width    : 100%;
+        position : absolute;
 
-        @include devices(t){
+        @include devices(t) {
             bottom: 280px;
         }
 
-        @include devices(m){
-            bottom: 120px;
+        @include devices(m) {
+            bottom: 160px;
+        }
+
+        @media screen and (max-width: 640px) and (orientation: landscape) {
+            bottom: 80px;
         }
     }
 
     &-title {
         @include font-primary();
         font-size    : get-font-size(40);
-        line-height  : 42px;
+        line-height  : 60px;
         margin-bottom: 1rem;
 
         @include devices(m) {
-            font-size: get-font-size(24);
+            font-size  : get-font-size(22);
+            line-height: 38px;
         }
     }
 
