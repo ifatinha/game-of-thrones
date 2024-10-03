@@ -1,7 +1,22 @@
+@use "../base/colors"as *;
+
 .modal {
-    background: darkcyan;
     height    : 100%;
+    opacity   : 0;
     position  : fixed;
+    transform : translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    visibility: hidden;
     width     : 100%;
     z-index   : 999999;
+
+    &--navbar {
+        @include apply-bg-color("black");
+    }
+}
+
+.js-open-modal {
+    opacity   : 1;
+    visibility: visible;
+    transform : translateY(0);
 }

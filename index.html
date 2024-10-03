@@ -44,7 +44,7 @@
                </a>
             </div>
             <nav class="header__menu">
-               <button class="menu__burger" type="button" id="buttonBurger" aria-controls="modalNavbar"
+               <button class="menu__burger" type="button" id="buttonBurger" aria-controls="navbarMenuModal"
                   aria-label="Abrir Menu" aria-expanded="false" aria-haspopup="menu">
                   <span class="menu__burger-visually">Menu</span>
                   <span class="menu__burger-bars" id="menuBar" aria-hidden="true"></span>
@@ -54,8 +54,32 @@
       </div>
    </header>
 
-   <div id="modalNavbar" class="modal">
-      Menu
+   <div id="navbarMenuModal" class="modal modal--navbar js-open-modal" aria-hidden="true"
+      aria-label="Menu de navegação">
+      <button type="button" class="navbar__close-button" id="navbarCloseButton">
+         <i class="fa-solid fa-xmark"></i>
+         
+      </button>
+      <nav class="navbar__menu">
+         <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+               <a href="#about">Temporadas</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#people">Personagens</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#houses">Casas</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#map">Mapa</a>
+            </li>
+
+            <li class="navbar__menu-item">
+               <a href="#histories">Historias</a>
+            </li>
+         </ul>
+      </nav>
    </div>
 
    <main>

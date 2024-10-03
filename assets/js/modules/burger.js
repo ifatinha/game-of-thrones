@@ -1,4 +1,4 @@
-import { menuModalInit } from "./mainMenuModalInit.js";
+import { menuModalInit } from "./modalController.js";
 
 export function openBurgerMenu() {
   const buttonBurger = document.querySelector("#buttonBurger");
