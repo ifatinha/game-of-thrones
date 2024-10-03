@@ -1,0 +1,24 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
+@use "../global/responsive"as *;
+
+.section {
+    padding: 80px 1%;
+
+    &__title {
+        @include font-primary();
+        font-size : get-font-size(60);
+        text-align: center;
+
+        @include devices-small-screens {
+            font-size: get-font-size(32);
+        }
+    }
+}
+
+#about {
+    @include bg-gradient("../images/about-bg.jpg");
+    background-attachment: fixed;
+    min-height           : 100%;
+}

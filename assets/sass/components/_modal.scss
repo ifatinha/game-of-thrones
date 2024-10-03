@@ -1,6 +1,7 @@
 @use "../base/colors"as *;
 @use "../base/typography"as *;
 @use "../base/mixins"as *;
+@use "../global/responsive"as *;
 
 .modal {
     height    : 100%;
@@ -40,6 +41,11 @@
 
     @include hover {
         opacity: 0.6;
+    }
+
+    @include devices(m) {
+        left: 20px;
+        top : 20px;
     }
 
     &::before,

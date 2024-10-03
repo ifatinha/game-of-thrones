@@ -1,0 +1,6 @@
+@use "../base/mixins"as *;
+
+.about {
+    @include grid(1fr 1fr);
+    margin: 80px 0;
+}
