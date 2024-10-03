@@ -116,6 +116,20 @@ a {
   font-style: normal;
   font-display: swap;
 }
+.button__icon {
+  background: darkblue;
+}
+.button__icon-visually {
+  font-family: "Game of Thrones", serif;
+  clip: rect(0, 0, 0, 0);
+  font-size: 0.875rem;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .menu__burger {
   color: #ffffff;
   align-items: center;
@@ -126,21 +140,11 @@ a {
   border: none;
   cursor: pointer;
   min-height: 52px;
-  min-width: 38px;
+  min-width: 44px;
 }
 .menu__burger:hover .menu__burger-bars::after,
 .menu__burger:hover .menu__burger-bars::before {
   width: 100%;
-}
-.menu__burger-visually {
-  font-family: "Game of Thrones", serif;
-  clip: rect(0, 0, 0, 0);
-  font-size: 0.875rem;
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
 .menu__burger-bars {
   background-color: #ffffff;
@@ -198,18 +202,22 @@ a {
 }
 
 .modal__close-button {
+  align-items: center;
+  display: flex;
+  gap: 0;
+  justify-content: center;
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   flex-direction: column;
-  height: 32px;
+  height: 44px;
   opacity: 0.6;
   position: absolute;
   left: 30px;
   transition: 0.3s ease-in-out;
   top: 30px;
-  width: 32px;
+  width: 44px;
   z-index: 9999999;
 }
 .modal__close-button:hover {
@@ -219,7 +227,6 @@ a {
   background-color: #d9d9d9;
   content: "";
   height: 32px;
-  left: 16px;
   position: absolute;
   width: 2px;
 }

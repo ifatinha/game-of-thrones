@@ -24,18 +24,19 @@
 }
 
 .modal__close-button {
+    @include flex(center, center, 0);
     background    : transparent;
     border        : none;
     cursor        : pointer;
     font-size     : get-font-size(16);
     flex-direction: column;
-    height        : 32px;
+    height        : 44px;
     opacity       : 0.6;
     position      : absolute;
     left          : 30px;
     transition    : .3s ease-in-out;
     top           : 30px;
-    width         : 32px;
+    width         : 44px;
     z-index       : 9999999;
 
     @include hover {
@@ -47,7 +48,6 @@
         @include apply-bg-color("light-gray");
         content : "";
         height  : 32px;
-        left    : 16px;
         position: absolute;
         width   : 2px;
     }
