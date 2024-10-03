@@ -212,7 +212,6 @@ a {
   font-size: 1rem;
   flex-direction: column;
   height: 44px;
-  opacity: 0.6;
   position: absolute;
   left: 30px;
   transition: 0.3s ease-in-out;
@@ -221,10 +220,10 @@ a {
   z-index: 9999999;
 }
 .modal__close-button:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 .modal__close-button::before, .modal__close-button::after {
-  background-color: #d9d9d9;
+  background-color: #30bbe9;
   content: "";
   height: 32px;
   position: absolute;
@@ -318,11 +317,12 @@ a {
   display: flex;
   gap: 0;
   justify-content: center;
-  flex-basis: 20%;
+  flex-basis: 16.6666666667%;
   filter: grayscale(100%);
   height: 100%;
   position: relative;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 .navbar__menu-item a {
   font-family: "Game of Thrones", serif;
@@ -330,24 +330,24 @@ a {
   font-size: 0.875rem;
 }
 .navbar__menu-item:nth-child(1) {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/link-bg-01.jpg");
+  background: url("../images/link-bg-01.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
   .navbar__menu-item:nth-child(1) {
-    background-position: 0% 26%;
+    background-position: 0% 30%;
   }
 }
 @media screen and (max-width: calc(768px - 1px)) {
   .navbar__menu-item:nth-child(1) {
-    background-position: 0% 26%;
+    background-position: 0% 30%;
   }
 }
 @media screen and (max-width: 480px) {
   .navbar__menu-item:nth-child(1) {
-    background-position: 0% 26%;
+    background-position: 0% 30%;
   }
 }
 .navbar__menu-item:nth-child(2) {
@@ -372,10 +372,25 @@ a {
   }
 }
 .navbar__menu-item:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/link-bg-03.jpg");
+  background: url("../images/link-bg-03.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .navbar__menu-item:nth-child(3) {
+    background-position: 0% 50%;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .navbar__menu-item:nth-child(3) {
+    background-position: 0% 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar__menu-item:nth-child(3) {
+    background-position: 0% 50%;
+  }
 }
 .navbar__menu-item:nth-child(4) {
   background: url("../images/link-bg-04.jpg");
@@ -404,12 +419,39 @@ a {
     background-position: 0% 24%;
   }
 }
+.navbar__menu-item:nth-child(6) {
+  background: url("../images/link-bg-06.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .navbar__menu-item:nth-child(6) {
+    background-position: 0% 24%;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .navbar__menu-item:nth-child(6) {
+    background-position: 0% 24%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar__menu-item:nth-child(6) {
+    background-position: 0% 24%;
+  }
+}
 .navbar__menu-item:hover {
   filter: grayscale(0);
 }
+@media screen and (max-width: 680px) and (orientation: landscape) {
+  .navbar__menu-item {
+    background: black !important;
+    filter: grayscale(0);
+  }
+}
 
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-bg.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

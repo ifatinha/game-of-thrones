@@ -31,7 +31,6 @@
     font-size     : get-font-size(16);
     flex-direction: column;
     height        : 44px;
-    opacity       : 0.6;
     position      : absolute;
     left          : 30px;
     transition    : .3s ease-in-out;
@@ -40,12 +39,12 @@
     z-index       : 9999999;
 
     @include hover {
-        opacity: 1;
+        opacity: 0.6;
     }
 
     &::before,
     &::after {
-        @include apply-bg-color("light-gray");
+        @include apply-bg-color("sky-blue");
         content : "";
         height  : 32px;
         position: absolute;

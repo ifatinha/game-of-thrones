@@ -77,3 +77,9 @@ $xs-device : 480px;
         @content;
     }
 }
+
+@mixin orientation {
+    @media screen and (max-width: 680px) and (orientation: landscape) {
+        @content
+    }
+}
