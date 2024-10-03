@@ -44,7 +44,7 @@
                </a>
             </div>
             <nav class="header__menu">
-               <button class="menu__burger" type="button" id="buttonBurger" aria-controls="navbarMenuModal"
+               <button class="menu__burger" type="button" id="navbarOpenButton" aria-controls="navbarMenuModal"
                   aria-label="Abrir Menu" aria-expanded="false" aria-haspopup="menu">
                   <span class="menu__burger-visually">Menu</span>
                   <span class="menu__burger-bars" id="menuBar" aria-hidden="true"></span>
@@ -54,11 +54,10 @@
       </div>
    </header>
 
-   <div id="navbarMenuModal" class="modal modal--navbar js-open-modal" aria-hidden="true"
+   <div id="navbarMenuModal" class="modal modal--navbar" aria-hidden="true"
       aria-label="Menu de navegação">
-      <button type="button" class="navbar__close-button" id="navbarCloseButton">
-         <i class="fa-solid fa-xmark"></i>
-         
+      <button type="button" class="modal__close-button" id="navbarCloseButton">
+         <!-- <span>Fechar</span> -->
       </button>
       <nav class="navbar__menu">
          <ul class="navbar__menu-list">

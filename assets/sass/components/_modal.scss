@@ -1,4 +1,6 @@
 @use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
 
 .modal {
     height    : 100%;
@@ -19,4 +21,42 @@
     opacity   : 1;
     visibility: visible;
     transform : translateY(0);
+}
+
+.modal__close-button {
+    background    : transparent;
+    border        : none;
+    cursor        : pointer;
+    font-size     : get-font-size(16);
+    flex-direction: column;
+    height        : 32px;
+    opacity       : 0.6;
+    position      : absolute;
+    left          : 30px;
+    transition    : .3s ease-in-out;
+    top           : 30px;
+    width         : 32px;
+    z-index       : 9999999;
+
+    @include hover {
+        opacity: 1;
+    }
+
+    &::before,
+    &::after {
+        @include apply-bg-color("light-gray");
+        content : "";
+        height  : 32px;
+        left    : 16px;
+        position: absolute;
+        width   : 2px;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
 }

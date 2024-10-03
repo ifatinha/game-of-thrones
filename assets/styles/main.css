@@ -197,6 +197,39 @@ a {
   transform: translateY(0);
 }
 
+.modal__close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  flex-direction: column;
+  height: 32px;
+  opacity: 0.6;
+  position: absolute;
+  left: 30px;
+  transition: 0.3s ease-in-out;
+  top: 30px;
+  width: 32px;
+  z-index: 9999999;
+}
+.modal__close-button:hover {
+  opacity: 1;
+}
+.modal__close-button::before, .modal__close-button::after {
+  background-color: #d9d9d9;
+  content: "";
+  height: 32px;
+  left: 16px;
+  position: absolute;
+  width: 2px;
+}
+.modal__close-button::before {
+  transform: rotate(45deg);
+}
+.modal__close-button::after {
+  transform: rotate(-45deg);
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1%;
@@ -366,28 +399,6 @@ a {
 }
 .navbar__menu-item:hover {
   filter: grayscale(0);
-}
-
-.navbar__close-button {
-  color: #ffffff;
-  font-family: "Constantia", serif;
-  align-items: center;
-  display: flex;
-  gap: 6px;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  flex-direction: column;
-  position: absolute;
-  left: 30px;
-  text-transform: uppercase;
-  top: 30px;
-  z-index: 9999999;
-}
-.navbar__close-button i {
-  font-size: 2rem;
 }
 
 .home {
