@@ -15,6 +15,10 @@
         @include grid(1fr 1fr);
         margin-bottom: 80px;
 
+        @include devices-large-screens {
+            gap: 3rem;
+        }
+
         @include devices-small-screens {
             grid-template-columns: 1fr;
             margin-bottom        : 2rem;
@@ -56,7 +60,12 @@
         h3 {
             @include font-primary();
             font-size    : get-font-size(24);
+            line-height  : 40px;
             margin-bottom: 1rem;
+
+            @include devices-small-screens{
+                font-size    : get-font-size(22);
+            }
 
             span {
                 font-size: get-font-size(32);
@@ -65,14 +74,14 @@
 
         strong {
             @include font-secondary();
-            font-size: get-font-size(18);
-            display: block;
+            font-size    : get-font-size(20);
+            display      : block;
             margin-bottom: 1rem;
         }
 
         p {
             @include jost-font();
-            font-size    : get-font-size(16);
+            font-size    : get-font-size(18);
             margin-bottom: 1rem;
         }
     }
