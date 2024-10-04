@@ -12,13 +12,12 @@
     }
 
     &__row {
-        background: orange;
-        @include flex(start, space-between);
-        margin-bottom: 3rem;
+        @include grid(1fr 1fr);
+        margin-bottom: 80px;
 
         @include devices-small-screens {
-            //grid-template-columns: 1fr;
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            margin-bottom        : 2rem;
 
             &:nth-child(2n+1) {
                 .plot__image {
@@ -33,12 +32,10 @@
     }
 
     &__image {
-        background     : green;
-        flex-basis     : 40%;
-        // align-self  : center;
-        // justify-self: center;
-        height         : 780px;
-        width          : 100%;
+        align-self  : self-start;
+        justify-self: self-start;
+        height      : 100%;
+        width       : 100%;
 
         img {
             height    : 100%;
@@ -49,10 +46,7 @@
     }
 
     &__description {
-        background: red;
         align-self: self-start;
-        flex-basis: 60%;
-        max-width : 700px;
         padding   : 2rem 0;
 
         @include devices-large-screens {
@@ -63,11 +57,22 @@
             @include font-primary();
             font-size    : get-font-size(24);
             margin-bottom: 1rem;
+
+            span {
+                font-size: get-font-size(32);
+            }
+        }
+
+        strong {
+            @include font-secondary();
+            font-size: get-font-size(18);
+            display: block;
+            margin-bottom: 1rem;
         }
 
         p {
             @include jost-font();
-            font-size    : get-font-size(18);
+            font-size    : get-font-size(16);
             margin-bottom: 1rem;
         }
     }

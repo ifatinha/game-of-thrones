@@ -13,4 +13,8 @@
     @include devices(xl) {
         max-width: 1200px;
     }
+
+    @include devices(l) {
+        max-width: 1024px;
+    }
 }

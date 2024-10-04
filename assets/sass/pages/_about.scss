@@ -7,8 +7,12 @@
 .about {
     @include grid(1fr 1fr);
     gap       : 2rem;
-    min-height: 600px;
+    height    : 600px;
     margin-top: 60px;
+
+    @include devices(l) {
+        height: 660px;
+    }
 
     @include devices(m) {
         grid-template-columns: 1fr;
@@ -24,7 +28,7 @@
     }
 
     @media screen and (max-width: 1024px) and (orientation: landscape) {
-        min-height: 700px;
+        min-height: 660px;
     }
 
     &__column {
