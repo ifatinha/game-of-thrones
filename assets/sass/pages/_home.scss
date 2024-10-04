@@ -34,7 +34,7 @@
     &-title {
         @include font-primary();
         font-size    : get-font-size(40);
-        line-height  : 60px;
+        line-height  : 72px;
         margin-bottom: 1rem;
 
         @include devices(m) {
@@ -46,5 +46,6 @@
     &-description {
         @include font-secondary();
         font-size: get-font-size(18);
+        line-height: 28px;
     }
 }

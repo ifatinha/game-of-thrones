@@ -436,11 +436,13 @@ a {
 }
 
 .section {
-  padding: 80px 1%;
+  padding: 100px 2%;
 }
 .section__title {
   font-family: "Game of Thrones", serif;
-  font-size: 3.75rem;
+  color: #000000;
+  font-size: 2.5rem;
+  line-height: 50px;
   text-align: center;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
@@ -460,9 +462,9 @@ a {
 }
 
 #about {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-bg.jpg");
+  background: url("../images/about-bg-01.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
@@ -508,7 +510,7 @@ a {
 .home-title {
   font-family: "Game of Thrones", serif;
   font-size: 2.5rem;
-  line-height: 60px;
+  line-height: 72px;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: calc(768px - 1px)) {
@@ -520,12 +522,159 @@ a {
 .home-description {
   font-family: "Constantia", serif;
   font-size: 1.125rem;
+  line-height: 28px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 80px 0;
+  gap: 2rem;
+  min-height: 600px;
+  margin-top: 60px;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .about {
+    height: auto;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .about {
+    height: auto;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    height: auto;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .about {
+    min-height: 700px;
+  }
+}
+.about__column {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem 24px;
+}
+.about__column:nth-child(1) {
+  align-self: self-start;
+}
+.about__column:nth-child(2) {
+  align-self: self-end;
+}
+.about__column p {
+  color: #000000;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+}
+.about__column p + p {
+  margin-top: 28px;
+}
+
+.plot {
+  background-color: #ffffff;
+  color: #000000;
+}
+.plot__container {
+  margin-top: 60px;
+}
+.plot__row {
+  background: orange;
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .plot__row {
+    flex-direction: column;
+  }
+  .plot__row:nth-child(2n+1) .plot__image {
+    order: 1;
+  }
+  .plot__row:nth-child(2n+1) .plot__description {
+    order: 2;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .plot__row {
+    flex-direction: column;
+  }
+  .plot__row:nth-child(2n+1) .plot__image {
+    order: 1;
+  }
+  .plot__row:nth-child(2n+1) .plot__description {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .plot__row {
+    flex-direction: column;
+  }
+  .plot__row:nth-child(2n+1) .plot__image {
+    order: 1;
+  }
+  .plot__row:nth-child(2n+1) .plot__description {
+    order: 2;
+  }
+}
+.plot__image {
+  background: green;
+  flex-basis: 40%;
+  height: 780px;
+  width: 100%;
+}
+.plot__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.plot__description {
+  background: red;
+  align-self: self-start;
+  flex-basis: 60%;
+  max-width: 700px;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 1920px) {
+  .plot__description {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .plot__description {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .plot__description {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+.plot__description h3 {
+  font-family: "Game of Thrones", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.plot__description p {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

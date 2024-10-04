@@ -1,6 +1,51 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
 @use "../base/mixins"as *;
+@use "../global/responsive"as *;
+
 
 .about {
     @include grid(1fr 1fr);
-    margin: 80px 0;
+    gap       : 2rem;
+    min-height: 600px;
+    margin-top: 60px;
+
+    @include devices(m) {
+        grid-template-columns: 1fr;
+    }
+
+    @include devices(xs) {
+        grid-template-columns: 1fr;
+    }
+
+    @include devices-small-screens {
+        height    : auto;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
+        min-height: 700px;
+    }
+
+    &__column {
+        background: rgba($color: #ffffff, $alpha: .7);
+        padding   : 2rem 24px;
+
+        &:nth-child(1) {
+            align-self: self-start;
+        }
+
+        &:nth-child(2) {
+            align-self: self-end;
+        }
+
+        p {
+            @include apply-color("black");
+            @include jost-font();
+        }
+
+        p+p {
+            margin-top: 28px;
+        }
+    }
 }

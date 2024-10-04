@@ -2,14 +2,17 @@
 @use "../base/typography"as *;
 @use "../base/mixins"as *;
 @use "../global/responsive"as *;
+@use "../util/functions"as *;
 
 .section {
-    padding: 80px 1%;
+    padding: 100px 2%;
 
     &__title {
         @include font-primary();
-        font-size : get-font-size(60);
-        text-align: center;
+        @include apply-color("black");
+        font-size  : get-font-size(40);
+        line-height: 50px;
+        text-align : center;
 
         @include devices-small-screens {
             font-size: get-font-size(32);
@@ -18,7 +21,7 @@
 }
 
 #about {
-    @include bg-gradient("../images/about-bg.jpg");
+    @include bg-img("../images/about-bg-01.jpg");
     background-attachment: fixed;
     min-height           : 100%;
 }

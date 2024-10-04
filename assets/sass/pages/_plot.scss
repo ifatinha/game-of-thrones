@@ -1,0 +1,74 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
+@use "../global/responsive"as *;
+
+.plot {
+    @include apply-bg-color("pure-white");
+    @include apply-color("black");
+
+    &__container {
+        margin-top: 60px;
+    }
+
+    &__row {
+        background: orange;
+        @include flex(start, space-between);
+        margin-bottom: 3rem;
+
+        @include devices-small-screens {
+            //grid-template-columns: 1fr;
+            flex-direction: column;
+
+            &:nth-child(2n+1) {
+                .plot__image {
+                    order: 1;
+                }
+
+                .plot__description {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    &__image {
+        background     : green;
+        flex-basis     : 40%;
+        // align-self  : center;
+        // justify-self: center;
+        height         : 780px;
+        width          : 100%;
+
+        img {
+            height    : 100%;
+            object-fit: cover;
+            width     : 100%;
+        }
+
+    }
+
+    &__description {
+        background: red;
+        align-self: self-start;
+        flex-basis: 60%;
+        max-width : 700px;
+        padding   : 2rem 0;
+
+        @include devices-large-screens {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        h3 {
+            @include font-primary();
+            font-size    : get-font-size(24);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            @include jost-font();
+            font-size    : get-font-size(18);
+            margin-bottom: 1rem;
+        }
+    }
+}

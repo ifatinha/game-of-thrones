@@ -13,6 +13,11 @@
    font-family: "Constantia", serif;
 }
 
+@mixin jost-font() {
+   font-family        : "Jost", sans-serif;
+   font-optical-sizing: auto;
+}
+
 @function get-font-size($size) {
    @return px-to-rem($size);
 }
