@@ -1,4 +1,5 @@
 @use "colors"as *;
+@use "typography"as *;
 
 html {
    scroll-behavior: smooth;
@@ -10,14 +11,10 @@ body {
    width : 100%
 }
 
-main {
-   background: red;
-   //height: 100%;
-}
-
 body {
    @include apply-bg-color("black");
    @include apply-color("pure-white");
+   @include font-secondary();
 }
 
 a {
