@@ -1,0 +1,7 @@
+@use "../base/colors"as *;
+
+.histories {
+    .section__title {
+        @include apply-color("pure-white");
+    }
+}

@@ -7,10 +7,6 @@
     @include apply-bg-color("pure-white");
     @include apply-color("black");
 
-    &__container {
-        margin-top: 60px;
-    }
-
     &__row {
         @include grid(1fr 1fr);
         margin-bottom: 80px;

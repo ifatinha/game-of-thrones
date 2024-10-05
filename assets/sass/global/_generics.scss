@@ -1,3 +1,5 @@
+@use "../base/typography"as *;
+
 .button-text-visually {
     @include font-primary();
     clip     : rect(0, 0, 0, 0);

@@ -1,0 +1,7 @@
+@use "../base/colors"as *;
+
+.houses {
+    .section__title {
+        @include apply-color("pure-white");
+    }
+}
