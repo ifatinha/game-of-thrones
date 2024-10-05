@@ -5,7 +5,7 @@
 .home {
     @include bg-gradient("../images/home-bg.webp");
     @include flex(center, center);
-    height    : 120%;
+    height    : 120vh;
     position  : relative;
     text-align: center;
     width     : 100%;
