@@ -6,8 +6,8 @@
 
 .about {
     @include grid(1fr 1fr);
-    gap       : 2rem;
-    height    : 600px;
+    gap   : 2rem;
+    height: 600px;
 
     @include devices(l) {
         height: 660px;

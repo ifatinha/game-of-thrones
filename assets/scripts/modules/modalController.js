@@ -1,8 +1,4 @@
-import {
-  updateAriaHidden,
-  updateAriaAttributes,
-} from "./ariaAttributesUtils.js";
-import { toggleClass } from "./toggleClasses.js";
+import { toggleClass, toggleModalAndButtonClasses } from "./toggleClasses.js";
 
 function getElements() {
   const navbarOpenButton = document.querySelector("#navbarOpenButton");
@@ -12,20 +8,6 @@ function getElements() {
   return navbarOpenButton && navbarCloseButton && navbarCloseButton
     ? { navbarOpenButton, navbarModal, navbarCloseButton }
     : null;
-}
-
-function toggleModalAndButtonClasses(navbarButton, modal) {
-  const classesNames = ["js-open-menu", "js-open-modal"];
-
-  [navbarButton, modal].forEach((element, index) => {
-    toggleClass(element, classesNames[index]);
-  });
-
-  const isOpenMenu = navbarButton.classList.contains("js-open-menu");
-  updateAriaAttributes(isOpenMenu, navbarButton);
-
-  const isOpenModal = modal.classList.contains("js-open-modal");
-  updateAriaHidden(!isOpenModal, modal);
 }
 
 export function openNavbarModal() {

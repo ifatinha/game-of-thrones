@@ -13,7 +13,7 @@
     &__wrapper {
         display   : flex;
         margin-top: 3rem;
-        overflow-x: hidden;
+        overflow-x: auto;
         transition: 0.5s ease-in-out;
     }
 }

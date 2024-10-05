@@ -5,7 +5,7 @@
 
 .footer {
     @include flex(center, center, 0);
-    @include bg-gradient("../images/footer-bg.jpeg");
+    @include bg-gradient("../images/footer-bg.jpeg", 0.78);
     background-attachment: fixed;
     padding              : 80px 0;
 

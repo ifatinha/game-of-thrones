@@ -13,17 +13,18 @@
         font-size     : get-font-size(40);
         line-height   : 54px;
         letter-spacing: 3px;
-        margin-bottom : 1rem;
+        margin-bottom : 3rem;
         text-align    : center;
 
         @include devices-small-screens {
             font-size: get-font-size(32);
+            margin-bottom: 2rem;
         }
     }
 
     &__description {
         @include font-secondary();
-        font-size  : get-font-size(18);
+        font-size  : get-font-size(20);
         line-height: 28px;
         margin     : 20px auto 30px;
         max-width  : 1024px;

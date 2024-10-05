@@ -1,9 +1,14 @@
-import { openNavbarModal, closeNavbarModal } from "./modules/modalController.js";
+import {
+  openNavbarModal,
+  closeNavbarModal,
+} from "./modules/modalController.js";
+import { smoothScrollTo } from "./modules/navigation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const functionsToCall = [
     { name: "openNavbarModal", func: openNavbarModal },
     { name: "closeNavbarModal", func: closeNavbarModal },
+    { name: "smoothScrollTo", func: smoothScrollTo },
   ];
 
   functionsToCall.forEach(({ name, func }) => {

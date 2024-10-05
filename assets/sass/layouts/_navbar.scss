@@ -37,7 +37,7 @@
             @include bg-img("../images/link-bg-01.jpg");
 
             @include devices-small-screens {
-                background-position: 0% 30%;
+                background-position: 0% 28%;
             }
         }
 
@@ -45,7 +45,7 @@
             @include bg-img("../images/link-bg-02.jpg");
 
             @include devices-small-screens {
-                background-position: 0% 16%;
+                background-position: 0% 40%;
             }
         }
 
@@ -53,7 +53,7 @@
             @include bg-img("../images/link-bg-03.jpg");
 
             @include devices-small-screens {
-                background-position: 0% 35%;
+                background-position: 0% 20%;
             }
         }
 
