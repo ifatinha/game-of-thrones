@@ -118,16 +118,6 @@ a {
 }
 
 .carousel {
-  background: darkcyan;
-  width: 100%;
-}
-.carousel__content {
-  background: darkblue;
-  align-items: start;
-  display: flex;
-  gap: 0;
-  justify-content: start;
-  overflow-x: hidden;
   width: 100%;
 }
 .carousel__arrows {
@@ -893,47 +883,14 @@ a {
 }
 .characters__list {
   display: flex;
-  flex: 1 0 100%;
+  margin-top: 3rem;
   overflow-x: hidden;
+  transition: transform 0.5s ease;
   transition: 0.5s ease-in-out;
   width: 100%;
-  background: red;
-  height: 480px;
-}
-@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
-  .characters__list {
-    overflow: auto;
-  }
-}
-@media screen and (max-width: calc(768px - 1px)) {
-  .characters__list {
-    overflow: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .characters__list {
-    overflow: auto;
-  }
-}
-.characters__list li {
-  border: 1px solid white;
-  flex: 1 0 20%;
-  background: orange;
-}
-@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
-  .characters__list li {
-    flex-basis: 100%;
-  }
-}
-@media screen and (max-width: calc(768px - 1px)) {
-  .characters__list li {
-    flex-basis: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .characters__list li {
-    flex-basis: 100%;
-  }
+  /*@include devices-small-screens {
+      overflow-x: hidden;
+  }*/
 }
 
 .character {
@@ -1022,7 +979,7 @@ a {
   margin: 1rem 0 10px;
 }
 .character__image {
-  height: 90vh;
+  height: 80vh;
   overflow: hidden;
   transition: 0.6s ease-in-out;
 }

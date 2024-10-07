@@ -10,28 +10,16 @@
     }
 
     &__list {
-        display     : flex;
-        flex        : 1 0 100%;
-        overflow-x  : hidden;
-        //transition: transform 0.5s ease;
-        transition  : .5s ease-in-out;
-        width       : 100%;
-        background  : red;
-        height      : 480px;
+        display   : flex;
+        margin-top: 3rem;
+        overflow-x: hidden;
+        transition: transform 0.5s ease;
+        transition: .5s ease-in-out;
+        width     : 100%;
 
-        @include devices-small-screens {
-            overflow: auto;
-        }
-
-        li {
-            border    : 1px solid white;
-            flex      : 1 0 calc(100% / 5);
-            background: orange;
-
-            @include devices-small-screens {
-                flex-basis: 100%;
-            }
-        }
+        /*@include devices-small-screens {
+            overflow-x: hidden;
+        }*/
     }
 }
 
@@ -68,7 +56,6 @@
     }
 
     @include devices-large-screens {
-        //padding: 1rem;
 
         &:nth-child(2n+1) {
             align-self: self-end;
@@ -98,7 +85,7 @@
     }
 
     &__image {
-        height    : 90vh;
+        height    : 80vh;
         overflow  : hidden;
         transition: .6s ease-in-out;
 

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "openNavbarModal", func: openNavbarModal },
     { name: "closeNavbarModal", func: closeNavbarModal },
     { name: "smoothScrollTo", func: smoothScrollTo },
+    { name: "renderCharacterElements", func: renderCharacterElements },
     { name: "initializeCharacterSlider", func: initializeCharacterSlider },
   ];
 

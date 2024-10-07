@@ -2,48 +2,59 @@ export const initializeCharacterSlider = () => {
   const characterList = document.querySelectorAll(".character");
   const prevButton = document.querySelector("#character-arrow-left");
   const nextButton = document.querySelector("#character-arrow-right");
-  let carouselDisplay = 2;
-  let qtdItems = characterList.length;
+  let currentIndex = 2;
+  let totalItems = characterList.length;
 
   if (!characterList || !prevButton || !nextButton) {
-    console.error("Elements not found!");
+    console.error("Required elements not found!");
     return;
   }
 
-  const highlightCurrentItem = (currentIndex) => {
+  /**
+   * Atualiza a classe "character-active" para o item atualmente em exibição.
+   * @param {number} index - Índice do item ativo.
+   */
+  const highlightCurrentItem = (i) => {
     characterList.forEach((item, index) => {
-      item.classList.toggle("character-active", index === currentIndex);
+      item.classList.toggle("character-active", index === i);
     });
   };
 
-  const scroolToInto = (currentIndex) => {
-    characterList[currentIndex].scrollIntoView({
+  /**
+   * Faz scroll suave para o item com base no índice fornecido.
+   * @param {number} index - Índice do item para scroll.
+   */
+  const scrollToItem = (index) => {
+    characterList[index].scrollIntoView({
       behavior: "smooth",
       inline: "center",
     });
 
-    highlightCurrentItem(currentIndex);
+    highlightCurrentItem(index);
   };
 
+  /**
+   * Trata os cliques nas setas, atualizando o índice atual e ajustando o carrossel.
+   * @param {Event} event - Evento de clique ou toque.
+   * @param {string} direction - Direção do movimento ("next" ou "prev").
+   */
   const handleArrowClick = (event, direction) => {
     if (event.type === "touchstart") event.preventDefault();
 
     if (direction === "next") {
-      carouselDisplay++;
-      if (carouselDisplay > qtdItems - 1) {
-        carouselDisplay = 0;
-      }
+      currentIndex++;
+      if (currentIndex > totalItems - 1) currentIndex = 0;
     } else if (direction === "prev") {
-      carouselDisplay--;
-      if (carouselDisplay < 0) {
-        carouselDisplay = qtdItems - 1;
-      }
+      currentIndex--;
+      if (currentIndex < 0) currentIndex = totalItems - 1;
     }
-    console.log(carouselDisplay);
-    scroolToInto(carouselDisplay);
+
+    console.log(currentIndex);
+    scrollToItem(currentIndex);
   };
 
-  scroolToInto(carouselDisplay);
+  // Inicializa o carrossel exibindo o item no índice atual
+  scrollToItem(currentIndex);
 
   ["click", "touchstart"].forEach((eventType) => {
     prevButton.addEventListener(eventType, (event) => {
@@ -54,11 +65,20 @@ export const initializeCharacterSlider = () => {
       handleArrowClick(event, "next");
     });
   });
-};
 
-const updateScreenSize = () => {
-  const screenWidth = window.innerWidth;
-  console.log(screenWidth);
-};
+  /**
+   * Faz scroll automaticamente para o item ativo quando a tela é redimensionada.
+   */
+  const scrollToActiveCharacterOnResize = () => {
+    const activeItem = document.querySelector(".character-active");
+    if (activeItem) {
+      activeItem.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+      });
+    }
+  };
 
-window.addEventListener("resize", updateScreenSize);
+  // Redimensiona a tela e ajusta para o item ativo
+  window.addEventListener("resize", scrollToActiveCharacterOnResize);
+};
