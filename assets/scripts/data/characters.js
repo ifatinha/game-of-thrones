@@ -1,8 +1,8 @@
-const characters = [
+export const characters = [
   {
     urlImage: "assets/images/jon_snow_image.jpg",
     alt: "Jon Snow, o herdeiro de Winterfell",
-    characterName: "Jon Snow",
+    nameCharacters: "Jon Snow",
     house: "Stark / Targaryen",
     origin: "Winterfell",
     quote: "Eu não quero isso. Eu nunca quis.",
@@ -103,7 +103,7 @@ const characters = [
   },
 
   {
-    urlImage: "assets/images/brienne_de_tarth.jpg",
+    urlImage: "assets/images/brienne_of_tarth.jpg",
     alt: "Brienne de Tarth, a guerreira leal e destemida",
     nameCharacters: "Brienne de Tarth",
     origin: "Tarth",
@@ -425,7 +425,7 @@ const characters = [
   },
 
   {
-    urlImage: "assets/images/sor_jorah.jpg",
+    urlImage: "assets/images/jorah_mormont.jpg",
     alt: "Sor Jorah Mormont, o leal cavaleiro e protetor de Daenerys Targaryen",
     nameCharacters: "Sor Jorah Mormont",
     origin: "Ilha de Bear, Westeros",
@@ -769,7 +769,7 @@ const characters = [
   },
 
   {
-    urlImage: "assets/images/aemon.jpg",
+    urlImage: "assets/images/aemon_targaryen.jpg",
     alt: "Aemon Targaryen, o Maestre da Patrulha da Noite e último Targaryen vivo",
     nameCharacters: "Aemon Targaryen",
     origin: "Casa Targaryen",
@@ -1108,6 +1108,24 @@ const characters = [
       "assets/images/septa_unella_1.jpg",
       "assets/images/septa_unella_2.jpg",
       "assets/images/septa_unella_3.jpg",
+    ],
+  },
+
+  {
+    urlImage: "assets/images/gregor_clegane.jpg",
+    alt: "Gregor Clegane, conhecido como A Montanha",
+    nameCharacters: "Gregor Clegane",
+    origin: "Oeste de Westeros, nas terras da Casa Lannister",
+    house: "Casa Clegane",
+    title: "A Montanha",
+    quote: "Sua brutalidade não conhece limites.",
+    description:
+      "Gregor Clegane, também conhecido como 'A Montanha', é um dos personagens mais temidos de Westeros. Enorme em estatura e temido por sua crueldade, ele é leal à Casa Lannister e serve como instrumento de violência e intimidação. Sua infâmia se consolidou durante as Guerras de Robert, quando se envolveu em massacres brutais. Além de sua força incomparável, a Montanha também é conhecida por sua lealdade incansável a Tywin Lannister e, mais tarde, a Cersei. Após ser gravemente ferido, ele é ressuscitado por Qyburn e se torna ainda mais aterrorizante, com uma força sobre-humana.",
+    backgroundImage: "assets/images/gregor_clegane_background.jpg",
+    gallery: [
+      "assets/images/gregor_clegane_1.jpg",
+      "assets/images/gregor_clegane_2.jpg",
+      "assets/images/gregor_clegane_3.jpg",
     ],
   },
 ];

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -114,6 +115,34 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+}
+.carousel__arrows {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.carousel .arrow {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.875rem;
+  transition: 0.3s ease-in-out;
+}
+.carousel .arrow:hover {
+  opacity: 0.6;
+}
+.carousel .arrow:nth-child(1)::before {
+  content: "↞";
+}
+.carousel .arrow:nth-child(2)::after {
+  content: "↠";
 }
 
 .button__icon {
@@ -849,33 +878,39 @@ a {
   margin-bottom: 1rem;
 }
 
-.characters {
-  min-height: 100%;
-}
 .characters .section__title {
   color: #ffffff;
 }
-.characters__wrapper {
+.characters__list {
   display: flex;
   margin-top: 3rem;
-  overflow-x: auto;
+  overflow-x: hidden;
   transition: 0.5s ease-in-out;
+  width: 100%;
 }
 
 .character {
   font-family: "Constantia", serif;
   border-left: 1px solid #19191d;
+  cursor: pointer;
   display: flex;
   filter: grayscale(100%);
   flex-direction: column;
-  flex: 1 0 20%;
+  flex: 0 0 20%;
+  margin-bottom: 1rem;
   opacity: 0.2;
+  overflow: hidden;
   padding: 1rem;
-  transition: 0.3s ease-in-out;
+  transition: 0.9s cubic-bezier(0.47, 0.13, 0.15, 0.89);
+}
+.character:hover {
+  filter: none;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
   .character {
-    flex-basis: 50%;
+    flex-basis: 33.3333333333%;
+    padding: 1rem;
   }
 }
 @media screen and (max-width: calc(768px - 1px)) {
@@ -930,50 +965,56 @@ a {
     order: 0;
   }
 }
-.character:hover {
-  filter: none;
-  opacity: 1;
+@media screen and (max-width: 680px) and (orientation: landscape) {
+  .character {
+    padding: 1rem;
+  }
 }
 .character__name {
-  font-size: 1.25rem;
-  margin: 1rem 0;
+  font-size: 1.125rem;
+  margin: 1rem 0 10px;
 }
 .character__image {
-  height: 520px;
+  height: 90vh;
   overflow: hidden;
+  transition: 0.6s ease-in-out;
 }
 @media screen and (min-width: 1920px) {
   .character__image {
-    height: 560px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .character__image {
-    height: 560px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
   .character__image {
-    height: 560px;
+    height: 520px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
   .character__image {
-    height: 640px;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 680px) and (orientation: landscape) {
   .character__image {
-    height: auto;
+    height: 100%;
   }
 }
 .character__image img {
   height: 100%;
   object-fit: cover;
+  transition: 0.5s ease-in;
   width: 100%;
 }
+.character__image img:hover {
+  transform: scale(1.03);
+}
 
-.character.activo {
+.character-active {
   filter: none;
   opacity: 1;
 }
