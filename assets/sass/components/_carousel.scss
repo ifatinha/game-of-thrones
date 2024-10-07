@@ -3,7 +3,15 @@
 @use "../base/typography"as *;
 
 .carousel {
+    background: darkcyan;
     width     : 100%;
+
+    &__content {
+        background: darkblue;
+        @include flex(start, start, 0);
+        overflow-x: hidden;
+        width     : 100%
+    }
 
     &__arrows {
         @include flex(center, center);

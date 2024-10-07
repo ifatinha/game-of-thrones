@@ -11,11 +11,27 @@
 
     &__list {
         display     : flex;
-        margin-top  : 3rem;
+        flex        : 1 0 100%;
         overflow-x  : hidden;
         //transition: transform 0.5s ease;
         transition  : .5s ease-in-out;
         width       : 100%;
+        background  : red;
+        height      : 480px;
+
+        @include devices-small-screens {
+            overflow: auto;
+        }
+
+        li {
+            border    : 1px solid white;
+            flex      : 1 0 calc(100% / 5);
+            background: orange;
+
+            @include devices-small-screens {
+                flex-basis: 100%;
+            }
+        }
     }
 }
 
