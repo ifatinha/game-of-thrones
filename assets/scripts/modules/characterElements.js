@@ -9,21 +9,22 @@ const generateCharacterElement = (character, index) => {
     return;
   }
 
-  const li = createElement({
+  const characterCard = createElement({
     elementName: "li",
-    classes: "character",
+    classes: "characater__card",
   });
 
-  characterList.appendChild(li);
+  characterCard.dataset.characterCode = character.code;
+  characterList.appendChild(characterCard);
 
-  //if (index === 2) li.classList.add("active");
+  if (index === 2) characterCard.classList.add("character__active");
 
   const characterImageDiv = createElement({
     elementName: "div",
     classes: "character__image",
   });
 
-  li.appendChild(characterImageDiv);
+  characterCard.appendChild(characterImageDiv);
 
   const characterImageTag = createElement({
     elementName: "img",
@@ -38,21 +39,6 @@ const generateCharacterElement = (character, index) => {
   });
 
   characterImageDiv.appendChild(characterImageTag);
-
-  const characterNameDiv = createElement({
-    elementName: "div",
-    classes: "character__name",
-  });
-
-  li.appendChild(characterNameDiv);
-
-  const nameTitle = createElement({
-    elementName: "h3",
-    classes: "",
-  });
-
-  nameTitle.textContent = character.nameCharacters;
-  characterNameDiv.appendChild(nameTitle);
 };
 
 export const renderCharacterElements = () => {

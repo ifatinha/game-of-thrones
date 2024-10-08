@@ -4,14 +4,16 @@
 @use "../global/responsive"as *;
 
 .carousel {
-    width: 100%;
+    margin-top: 4rem;
+    position  : relative;
+    width     : 100%;
 
-    &__arrows {
+    &__buttons {
         @include flex(center, center);
         width: 100%;
     }
 
-    .arrow {
+    &__button {
         @include apply-color("pure-white");
         background: transparent;
         border    : none;

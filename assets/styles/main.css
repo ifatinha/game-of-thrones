@@ -118,16 +118,18 @@ a {
 }
 
 .carousel {
+  margin-top: 4rem;
+  position: relative;
   width: 100%;
 }
-.carousel__arrows {
+.carousel__buttons {
   align-items: center;
   display: flex;
   gap: 1rem;
   justify-content: center;
   width: 100%;
 }
-.carousel .arrow {
+.carousel__button {
   color: #ffffff;
   background: transparent;
   border: none;
@@ -135,13 +137,13 @@ a {
   font-size: 1.875rem;
   transition: 0.3s ease-in-out;
 }
-.carousel .arrow:hover {
+.carousel__button:hover {
   opacity: 0.6;
 }
-.carousel .arrow:nth-child(1)::before {
+.carousel__button:nth-child(1)::before {
   content: "↞";
 }
-.carousel .arrow:nth-child(2)::after {
+.carousel__button:nth-child(2)::after {
   content: "↠";
 }
 
@@ -871,19 +873,78 @@ a {
 }
 
 .characters {
-  background: red;
   width: 100%;
 }
 .characters .section__title {
   color: #ffffff;
 }
-.characters__list {
-  display: flex;
-  margin-top: 3rem;
-  overflow-x: hidden;
-  transition: transform 0.5s ease;
-  transition: 0.5s ease-in-out;
+.characters__wrapper {
+  position: relative;
   width: 100%;
+}
+.characters__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .characters__list {
+    grid-auto-columns: 50%;
+  }
+}
+@media screen and (max-width: 680px) and (orientation: landscape) {
+  .characters__list {
+    grid-template-columns: 50%;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .characters__list {
+    grid-auto-columns: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .characters__list {
+    grid-auto-columns: 100%;
+  }
+}
+
+.characater__card {
+  font-family: "Constantia", serif;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  filter: grayscale(100%);
+  opacity: 0.2;
+  overflow: hidden;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.characater__card:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.character__image {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.character__image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s ease-in-out;
+  width: 100%;
+}
+.character__image img:hover {
+  transform: scale(1.1);
+}
+
+.character__active {
+  border: 1px solid #19191d;
+  filter: none;
+  opacity: 1;
 }
 
 .houses .section__title {
