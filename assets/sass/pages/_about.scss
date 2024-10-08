@@ -6,12 +6,8 @@
 
 .about {
     @include grid(1fr 1fr);
-    gap   : 2rem;
-    height: 600px;
-
-    @include devices(l) {
-        height: 660px;
-    }
+    gap       : 2rem;
+    min-height: 720px;
 
     @include devices(m) {
         grid-template-columns: 1fr;
@@ -22,7 +18,6 @@
     }
 
     @include devices-small-screens {
-        height    : auto;
         margin-top: 40px;
     }
 
@@ -48,7 +43,7 @@
         }
 
         p+p {
-            margin-top: 28px;
+            margin-top: 24px;
         }
     }
 }

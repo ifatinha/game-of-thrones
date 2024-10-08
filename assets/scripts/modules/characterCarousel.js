@@ -4,6 +4,8 @@ export const initializeCharacterSlider = () => {
   const nextButton = document.querySelector("#character-arrow-right");
   let currentIndex = 2;
   let totalItems = characterList.length;
+  let touchStartX = 0;
+  let touchEndX = 0;
 
   if (!characterList || !prevButton || !nextButton) {
     console.error("Required elements not found!");
@@ -53,9 +55,6 @@ export const initializeCharacterSlider = () => {
     scrollToItem(currentIndex);
   };
 
-  // Inicializa o carrossel exibindo o item no índice atual
-  scrollToItem(currentIndex);
-
   ["click", "touchstart"].forEach((eventType) => {
     prevButton.addEventListener(eventType, (event) => {
       handleArrowClick(event, "prev");
@@ -81,4 +80,6 @@ export const initializeCharacterSlider = () => {
 
   // Redimensiona a tela e ajusta para o item ativo
   window.addEventListener("resize", scrollToActiveCharacterOnResize);
+  // Inicializa o carrossel exibindo o item no índice atual
+  scrollToItem(currentIndex);
 };

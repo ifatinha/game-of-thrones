@@ -10,14 +10,14 @@
     &__title {
         @include font-primary();
         @include apply-color("black");
-        font-size     : get-font-size(40);
-        line-height   : 54px;
-        letter-spacing: 3px;
-        margin-bottom : 3rem;
+        font-size     : get-font-size(48);
+        line-height   : 1.8;
+        letter-spacing: 0.1rem;
+        margin-bottom : 20px;
         text-align    : center;
 
         @include devices-small-screens {
-            font-size: get-font-size(32);
+            font-size    : get-font-size(32);
             margin-bottom: 2rem;
         }
     }

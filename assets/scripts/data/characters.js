@@ -1,5 +1,6 @@
 export const characters = [
   {
+    code: 0,
     urlImage: "assets/images/jon_snow_image.jpg",
     alt: "Jon Snow, o herdeiro de Winterfell",
     nameCharacters: "Jon Snow",
@@ -17,6 +18,7 @@ export const characters = [
   },
 
   {
+    code: 1,
     urlImage: "assets/images/tyrion_lannister_image.jpg",
     alt: "Tyrion Lannister, o estrategista sagaz de Casterly Rock",
     nameCharacters: "Tyrion Lannister",
@@ -34,6 +36,7 @@ export const characters = [
   },
 
   {
+    code: 2,
     urlImage: "assets/images/daenerys_targaryen_image.jpg",
     alt: "Daenerys Targaryen, a última da casa Targaryen",
     nameCharacters: "Daenerys Targaryen",
@@ -52,6 +55,7 @@ export const characters = [
   },
 
   {
+    code: 3,
     urlImage: "assets/images/cersei_lannister_image.jpg",
     alt: "Cersei Lannister, a Rainha Regente de Westeros",
     nameCharacters: "Cersei Lannister",
@@ -69,6 +73,7 @@ export const characters = [
   },
 
   {
+    code: 4,
     urlImage: "assets/images/arya_stark_image.jpg",
     alt: "Arya Stark, a jovem guerreira de Winterfell",
     nameCharacters: "Arya Stark",
@@ -86,6 +91,7 @@ export const characters = [
   },
 
   {
+    code: 5,
     urlImage: "assets/images/sansa_stark_image.jpg",
     alt: "Sansa Stark, a estrategista e sobrevivente de Winterfell",
     nameCharacters: "Sansa Stark",
@@ -103,6 +109,7 @@ export const characters = [
   },
 
   {
+    code: 6,
     urlImage: "assets/images/brienne_of_tarth.jpg",
     alt: "Brienne de Tarth, a guerreira leal e destemida",
     nameCharacters: "Brienne de Tarth",
@@ -120,6 +127,7 @@ export const characters = [
   },
 
   {
+    code: 7,
     urlImage: "assets/images/joffrey_baratheon.jpg",
     alt: "Joffrey Baratheon, o jovem rei cruel",
     nameCharacters: "Joffrey Baratheon",
@@ -137,6 +145,7 @@ export const characters = [
   },
 
   {
+    code: 8,
     urlImage: "assets/images/petyr_baelish.jpg",
     alt: "Petyr Baelish, o manipulador astuto",
     nameCharacters: "Petyr Baelish",
@@ -154,6 +163,7 @@ export const characters = [
   },
 
   {
+    code: 9,
     urlImage: "assets/images/jaime_lannister.jpg",
     alt: "Jaime Lannister, o cavaleiro complexo e redentor",
     nameCharacters: "Jaime Lannister",
@@ -172,6 +182,7 @@ export const characters = [
   },
 
   {
+    code: 10,
     urlImage: "assets/images/robb_stark.jpg",
     alt: "Robb Stark, o jovem lorde de Winterfell",
     nameCharacters: "Robb Stark",
@@ -190,6 +201,7 @@ export const characters = [
   },
 
   {
+    code: 11,
     urlImage: "assets/images/melisandre.jpg",
     alt: "Melisandre, a Sacerdotisa Vermelha",
     nameCharacters: "Melisandre",
@@ -208,6 +220,7 @@ export const characters = [
   },
 
   {
+    code: 12,
     urlImage: "assets/images/sandor_clegane.jpg",
     alt: "Sandor Clegane, o Cão de Caça",
     nameCharacters: "Sandor Clegane",
@@ -226,6 +239,7 @@ export const characters = [
   },
 
   {
+    code: 13,
     urlImage: "assets/images/bran_stark.jpg",
     alt: "Bran Stark, o Corvo de Três Olhos",
     nameCharacters: "Bran Stark",
@@ -244,6 +258,7 @@ export const characters = [
   },
 
   {
+    code: 14,
     urlImage: "assets/images/stannis_baratheon.jpg",
     alt: "Stannis Baratheon, o Rei do Fogo e do Gelo",
     nameCharacters: "Stannis Baratheon",
@@ -262,6 +277,7 @@ export const characters = [
   },
 
   {
+    code: 15,
     urlImage: "assets/images/renly_baratheon_image.jpg",
     alt: "Renly Baratheon, o Rei da Luz Verde",
     nameCharacters: "Renly Baratheon",
@@ -280,6 +296,7 @@ export const characters = [
   },
 
   {
+    code: 16,
     urlImage: "assets/images/theon_greyjoy.jpg",
     alt: "Theon Greyjoy, o Príncipe de Ferro",
     nameCharacters: "Theon Greyjoy",
@@ -298,6 +315,7 @@ export const characters = [
   },
 
   {
+    code: 17,
     urlImage: "assets/images/tywin_lannister.jpg",
     alt: "Tywin Lannister, o Patriarca da Casa Lannister",
     nameCharacters: "Tywin Lannister",
@@ -316,6 +334,7 @@ export const characters = [
   },
 
   {
+    code: 18,
     urlImage: "assets/images/davos_seaworth.jpg",
     alt: "Davos Seaworth, o Cavaleiro das Cebolas",
     nameCharacters: "Davos Seaworth",
@@ -334,6 +353,7 @@ export const characters = [
   },
 
   {
+    code: 19,
     urlImage: "assets/images/ygritte.jpg",
     alt: "Ygritte, a mulher do Povo Livre",
     nameCharacters: "Ygritte",
@@ -352,6 +372,7 @@ export const characters = [
   },
 
   {
+    code: 20,
     urlImage: "assets/images/margaery_tyrell.jpg",
     alt: "Margaery Tyrell, a astuta e carismática",
     nameCharacters: "Margaery Tyrell",
@@ -370,6 +391,7 @@ export const characters = [
   },
 
   {
+    code: 21,
     urlImage: "assets/images/tormund_giantsbane.jpg",
     alt: "Tormund Giantsbane, o feroz guerreiro dos Livres",
     nameCharacters: "Tormund Giantsbane",
@@ -389,6 +411,7 @@ export const characters = [
   },
 
   {
+    code: 22,
     urlImage: "assets/images/ned_stark.jpg",
     alt: "Ned Stark, o Senhor de Winterfell e Warden do Norte",
     nameCharacters: "Eddard 'Ned' Stark",
@@ -407,6 +430,7 @@ export const characters = [
   },
 
   {
+    code: 23,
     urlImage: "assets/images/missandei.jpg",
     alt: "Missandei, a conselheira sábia e intérprete de Daenerys Targaryen",
     nameCharacters: "Missandei",
@@ -425,6 +449,7 @@ export const characters = [
   },
 
   {
+    code: 24,
     urlImage: "assets/images/jorah_mormont.jpg",
     alt: "Sor Jorah Mormont, o leal cavaleiro e protetor de Daenerys Targaryen",
     nameCharacters: "Sor Jorah Mormont",
@@ -443,6 +468,7 @@ export const characters = [
   },
 
   {
+    code: 25,
     urlImage: "assets/images/khal_drogo.jpg",
     alt: "Khal Drogo, o poderoso líder dos Dothraki",
     nameCharacters: "Khal Drogo",
@@ -461,6 +487,7 @@ export const characters = [
   },
 
   {
+    code: 26,
     urlImage: "assets/images/mirri_maz_duur.jpg",
     alt: "Mirri Maz Duur, a curandeira de Essos",
     nameCharacters: "Mirri Maz Duur",
@@ -479,6 +506,7 @@ export const characters = [
   },
 
   {
+    code: 27,
     urlImage: "assets/images/catelyn_stark.jpg",
     alt: "Catelyn Stark, a matriarca de Winterfell",
     nameCharacters: "Catelyn Stark",
@@ -497,6 +525,7 @@ export const characters = [
   },
 
   {
+    code: 28,
     urlImage: "assets/images/hodor.jpg",
     alt: "Hodor, o leal protetor de Bran Stark",
     nameCharacters: "Hodor",
@@ -515,6 +544,7 @@ export const characters = [
   },
 
   {
+    code: 29,
     urlImage: "assets/images/ramsay_bolton.jpg",
     alt: "Ramsay Bolton, o cruel e impiedoso senhor de Winterfell",
     nameCharacters: "Ramsay Bolton",
@@ -533,6 +563,7 @@ export const characters = [
   },
 
   {
+    code: 30,
     urlImage: "assets/images/jaqen_hghar.jpg",
     alt: "Jaqen H'ghar, o misterioso assassino de Braavos",
     nameCharacters: "Jaqen H'ghar",
@@ -551,6 +582,7 @@ export const characters = [
   },
 
   {
+    code: 31,
     urlImage: "assets/images/samwell_tarly.jpg",
     alt: "Samwell Tarly, o leal amigo de Jon Snow e aprendiz de mestre",
     nameCharacters: "Samwell Tarly",
@@ -569,6 +601,7 @@ export const characters = [
   },
 
   {
+    code: 32,
     urlImage: "assets/images/lorde_varys.jpg",
     alt: "Lorde Varys, o Espião Mestre de Westeros",
     nameCharacters: "Lorde Varys",
@@ -588,6 +621,7 @@ export const characters = [
   },
 
   {
+    code: 33,
     urlImage: "assets/images/oberyn_martell.jpg",
     alt: "Oberyn Martell, o Príncipe da Dorne",
     nameCharacters: "Oberyn Martell",
@@ -607,6 +641,7 @@ export const characters = [
   },
 
   {
+    code: 34,
     urlImage: "assets/images/verme_cinzento.jpg",
     alt: "Verme Cinzento, o leal aliado de Daenerys Targaryen",
     nameCharacters: "Verme Cinzento",
@@ -625,6 +660,7 @@ export const characters = [
   },
 
   {
+    code: 35,
     urlImage: "assets/images/lyanna_mormont.jpg",
     alt: "Lyanna Mormont, a jovem líder de Casa Mormont",
     nameCharacters: "Lyanna Mormont",
@@ -643,6 +679,7 @@ export const characters = [
   },
 
   {
+    code: 36,
     urlImage: "assets/images/ellaria_sand.jpg",
     alt: "Ellaria Sand, a amante de Oberyn Martell",
     nameCharacters: "Ellaria Sand",
@@ -661,6 +698,7 @@ export const characters = [
   },
 
   {
+    code: 37,
     urlImage: "assets/images/yara_greyjoy.jpg",
     alt: "Yara Greyjoy, a destemida filha de Balon Greyjoy",
     nameCharacters: "Yara Greyjoy",
@@ -679,6 +717,7 @@ export const characters = [
   },
 
   {
+    code: 38,
     urlImage: "assets/images/alto_pardal.jpg",
     alt: "Alto Pardal, o líder religioso dos Sparrows",
     nameCharacters: "Alto Pardal",
@@ -697,6 +736,7 @@ export const characters = [
   },
 
   {
+    code: 39,
     urlImage: "assets/images/olenna_tyrell.jpg",
     alt: "Olenna Tyrell, a matriarca astuta da Casa Tyrell",
     nameCharacters: "Olenna Tyrell",
@@ -715,6 +755,7 @@ export const characters = [
   },
 
   {
+    code: 40,
     urlImage: "assets/images/night_king.jpg",
     alt: "Rei da Noite, o líder temível dos Caminhantes Brancos",
     nameCharacters: "Rei da Noite",
@@ -733,6 +774,7 @@ export const characters = [
   },
 
   {
+    code: 41,
     urlImage: "assets/images/shireen_baratheon.jpg",
     alt: "Shireen Baratheon, a corajosa filha de Stannis Baratheon",
     nameCharacters: "Shireen Baratheon",
@@ -751,6 +793,7 @@ export const characters = [
   },
 
   {
+    code: 42,
     urlImage: "assets/images/brown.jpg",
     alt: "Bronn, o astuto mercenário e aliado de Tyrion Lannister",
     nameCharacters: "Bronn",
@@ -769,6 +812,7 @@ export const characters = [
   },
 
   {
+    code: 43,
     urlImage: "assets/images/aemon_targaryen.jpg",
     alt: "Aemon Targaryen, o Maestre da Patrulha da Noite e último Targaryen vivo",
     nameCharacters: "Aemon Targaryen",
@@ -787,6 +831,7 @@ export const characters = [
   },
 
   {
+    code: 44,
     urlImage: "assets/images/osha.jpg",
     alt: "Osha, a sobrevivente feroz e astuta do Norte",
     nameCharacters: "Osha",
@@ -805,6 +850,7 @@ export const characters = [
   },
 
   {
+    code: 45,
     urlImage: "assets/images/jojen_reed.jpg",
     alt: "Jojen Reed, o jovem visionário e portador de sonhos",
     nameCharacters: "Jojen Reed",
@@ -823,6 +869,7 @@ export const characters = [
   },
 
   {
+    code: 46,
     urlImage: "assets/images/barristan_selmy.jpg",
     alt: "Barristan Selmy, o lendário cavaleiro da Guarda Real",
     nameCharacters: "Barristan Selmy",
@@ -841,6 +888,7 @@ export const characters = [
   },
 
   {
+    code: 47,
     urlImage: "assets/images/walder_frey.jpg",
     alt: "Walder Frey, o Senhor dos Frey",
     nameCharacters: "Walder Frey",
@@ -859,6 +907,7 @@ export const characters = [
   },
 
   {
+    code: 48,
     urlImage: "assets/images/roose_bolton.jpg",
     alt: "Roose Bolton, o Senhor de Ponta Tempestade",
     nameCharacters: "Roose Bolton",
@@ -877,6 +926,7 @@ export const characters = [
   },
 
   {
+    code: 49,
     urlImage: "assets/images/olly.jpg",
     alt: "Olly, o jovem do povo livre",
     nameCharacters: "Olly",
@@ -895,6 +945,7 @@ export const characters = [
   },
 
   {
+    code: 50,
     urlImage: "assets/images/alliser_thorne.jpg",
     alt: "Alliser Thorne, um dos líderes da Patrulha da Noite",
     nameCharacters: "Alliser Thorne",
@@ -913,6 +964,7 @@ export const characters = [
   },
 
   {
+    code: 51,
     urlImage: "assets/images/jeor_mormont.jpg",
     alt: "Jeor Mormont, o Senhor Comandante da Patrulha da Noite",
     nameCharacters: "Jeor Mormont",
@@ -931,6 +983,7 @@ export const characters = [
   },
 
   {
+    code: 52,
     urlImage: "assets/images/viserys_targaryen.jpg",
     alt: "Viserys Targaryen, o Príncipe das Cidades",
     nameCharacters: "Viserys Targaryen",
@@ -949,6 +1002,7 @@ export const characters = [
   },
 
   {
+    code: 53,
     urlImage: "assets/images/podrick_payne.jpg",
     alt: "Podrick Payne, o escudeiro leal",
     nameCharacters: "Podrick Payne",
@@ -968,6 +1022,7 @@ export const characters = [
   },
 
   {
+    code: 54,
     urlImage: "assets/images/meera_reed.jpg",
     alt: "Meera Reed, a corajosa e habilidosa guerreira",
     nameCharacters: "Meera Reed",
@@ -986,6 +1041,7 @@ export const characters = [
   },
 
   {
+    code: 55,
     urlImage: "assets/images/gendry.jpg",
     alt: "Gendry, o habilidoso ferreiro e bastardo de Robert Baratheon",
     nameCharacters: "Gendry",
@@ -1004,6 +1060,7 @@ export const characters = [
   },
 
   {
+    code: 56,
     urlImage: "assets/images/qyburn.jpg",
     alt: "Qyburn, o ex-mestre e especialista em medicina",
     nameCharacters: "Qyburn",
@@ -1022,6 +1079,7 @@ export const characters = [
   },
 
   {
+    code: 57,
     urlImage: "assets/images/euron_greyjoy.jpg",
     alt: "Euron Greyjoy, o temido capitão dos Irmãos de Ferro",
     nameCharacters: "Euron Greyjoy",
@@ -1040,6 +1098,7 @@ export const characters = [
   },
 
   {
+    code: 58,
     urlImage: "assets/images/gilly.jpg",
     alt: "Gilly, a corajosa mulher do Muro",
     nameCharacters: "Gilly",
@@ -1058,6 +1117,7 @@ export const characters = [
   },
 
   {
+    code: 59,
     urlImage: "assets/images/robin_arryn.jpg",
     alt: "Robin Arryn, o jovem Lorde de Ninho da Águia",
     nameCharacters: "Robin Arryn",
@@ -1076,6 +1136,7 @@ export const characters = [
   },
 
   {
+    code: 60,
     urlImage: "assets/images/lysa_arryn.jpg",
     alt: "Lysa Arryn, a mãe controladora de Robin Arryn",
     nameCharacters: "Lysa Arryn",
@@ -1094,6 +1155,7 @@ export const characters = [
   },
 
   {
+    code: 61,
     urlImage: "assets/images/septa_unella.jpg",
     alt: "Septã Unella, a sacerdotisa devota e implacável",
     nameCharacters: "Septã Unella",
@@ -1112,6 +1174,7 @@ export const characters = [
   },
 
   {
+    code: 62,
     urlImage: "assets/images/gregor_clegane.jpg",
     alt: "Gregor Clegane, conhecido como A Montanha",
     nameCharacters: "Gregor Clegane",
