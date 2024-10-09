@@ -2,26 +2,27 @@ export const initializeCharacterSlider = () => {
   const wrapper = document.querySelector(".characters__wrapper");
   const carousel = document.querySelector(".js-characters");
   const carouselButtons = document.querySelectorAll(".characters__button");
+  const carouselCards = [...carousel.children];
   const firstCardWidth =
     carousel.querySelector(".characater__card").offsetWidth;
-  const carouselChildrens = [...carousel.children];
+
   let isDragging = false;
   let startX;
   let startScrollLeft;
   let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
   let timeOutId;
 
-  if (!carousel || !carouselButtons || !carouselChildrens) return;
+  if (!carousel || !carouselButtons || !carouselCards) return;
 
   /** Clonar os cards no inicio e no final do carousel */
-  carouselChildrens
+  carouselCards
     .slice(-cardPerView)
     .reverse()
     .forEach((card) => {
       carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
     });
 
-  carouselChildrens.slice(0, cardPerView).forEach((card) => {
+  carouselCards.slice(0, cardPerView).forEach((card) => {
     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
   });
 
@@ -84,10 +85,46 @@ export const initializeCharacterSlider = () => {
   //   };
 
   // autoPlay();
+
+  const updateActiveSlide = () => {
+    const carouselReact = carousel.getBoundingClientRect();
+    const carouselCenter = (carouselReact.left + carouselReact.width) / 2;
+    let closestSlide = null;
+    let closestDistance = Infinity;
+
+    carouselCards.forEach((card) => {
+      const cardReact = card.getBoundingClientRect();
+      const cardCenter = (cardReact.left + cardReact.width) / 2;
+
+      // Verifica qual slide está mais próximo do centro
+      const distance = Math.abs(carouselCenter - cardCenter);
+
+      if (
+        cardReact.left >= carouselReact.left &&
+        cardReact.right <= carouselReact.right &&
+        distance < closestDistance
+      ) {
+        closestDistance = distance;
+        closestSlide = card;
+      }
+
+      carouselCards.forEach((card) =>
+        card.classList.remove("character__active")
+      );
+
+      if (closestSlide) {
+        closestSlide.classList.add("character__active");
+      }
+    });
+  };
+
   carousel.addEventListener("mousedown", dragStart);
   carousel.addEventListener("mousemove", dragging);
   document.addEventListener("mouseup", dragStop);
-  carousel.addEventListener("scroll", infiniteScroll);
+  carousel.addEventListener("scroll", () => {
+    infiniteScroll();
+    updateActiveSlide();
+  });
   //   wrapper.addEventListener("mouseenter", () => clearInterval(timeOutId));
   //   wrapper.addEventListener("mouseleave", autoPlay);
 };
