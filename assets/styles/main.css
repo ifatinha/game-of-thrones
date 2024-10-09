@@ -893,17 +893,17 @@ a {
 }
 @media screen and (min-width: 1920px) {
   .characters__list {
-    height: 520px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .characters__list {
-    height: 520px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
   .characters__list {
-    height: 520px;
+    height: 500px;
   }
 }
 .characters__list::-webkit-scrollbar {

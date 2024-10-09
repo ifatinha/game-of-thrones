@@ -1,575 +1,477 @@
-<!-- <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/jon_snow_image.jpg" alt="Jon Snow, o herdeiro de Winterfell" height="1722"
-                        width="1500">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Explore o mundo épico de Game of Thrones, repleto de intrigas políticas, batalhas épicas e personagens inesquecíveis. Descubra mais sobre os reinos de Westeros e Essos.">
+   <meta name="keywords"
+      content="Game of Thrones, série, Westeros, Essos, HBO, fantasia, dragões, intriga, Trono de Ferro, Jon Snow, Daenerys Targaryen">
+   <meta name="author" content="Fatima Ferreira">
+   <meta name="copyright" content="© 2024, Todos os direitos reservados">
+   <meta name="robots" content="index, follow">
+
+   <!-- Social Media Metadata -->
+   <meta property="og:title" content="Game of Thrones - A Série Épica da HBO">
+   <meta property="og:description"
+      content="Reviva as batalhas e intrigas da série Game of Thrones. Explore o mundo de Westeros e além.">
+   <meta property="og:image" content="assets/images/got-banner.jpg">
+   <meta property="og:url" content="https://www.got-landingpage.com">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Game of Thrones - A Série Épica da HBO">
+   <meta name="twitter:description"
+      content="Reviva as batalhas e intrigas da série Game of Thrones. Explore o mundo de Westeros e além.">
+   <meta name="twitter:image" content="assets/images/got-banner.jpg">
+
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+   <!-- icon -->
+   <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+
+   <!-- css -->
+   <link rel="stylesheet" href="assets/styles/main.css">
+
+   <title>Game of Thrones - A Série Épica da HBO</title>
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="container">
+         <div class="header__container">
+            <div class="header__brand">
+               <a href="#home">
+                  <img src="assets/images/brand.webp" alt="Game Of Thrones Brand" height="310" width="800">
+               </a>
+            </div>
+            <nav class="header__menu">
+               <button class="button__icon menu__burger" type="button" id="navbarOpenButton"
+                  aria-controls="navbarMenuModal" aria-label="Abrir Menu" aria-expanded="false" aria-haspopup="menu">
+                  <span class="button__icon-visually">Menu</span>
+                  <span class="menu__burger-bars" id="menuBar" aria-hidden="true"></span>
+               </button>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <div id="navbarMenuModal" class="modal modal--navbar" aria-hidden="true" aria-label="Menu de navegação">
+      <button type="button" class="button__icon modal__close-button" id="navbarCloseButton" aria-label="Fechar menu">
+         <span class="button__icon-visually">Fechar</span>
+      </button>
+      <nav class="navbar__menu">
+         <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+               <a href="#about">Sobre</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#characters">Personagens</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#houses">Casas</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#map">Mapa</a>
+            </li>
+            <li class="navbar__menu-item">
+               <a href="#histories">Historias</a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+
+   <main>
+      <!-- start section home -->
+      <section id="home" class="home" aria-labelledby="home-title" aria-describedby="home-description">
+         <div class="home-container">
+            <h1 id="home-title" class="home-title">Bem-vindo a Westeros, Terra dos devotos!</h1>
+            <p id="home-description" class="home-description">
+               Junte-se a nós na exploração do fascinante mundo de Westeros! Aqui, você encontrará informações sobre
+               seus personagens favoritos, casas nobres e as intrigas que moldam os Sete Reinos. Reviva momentos
+               marcantes, descubra teorias intrigantes e conecte-se com outros fãs. Prepare-se para uma
+               jornada épica!
+            </p>
+         </div>
+      </section>
+      <!-- end section home -->
+
+      <!-- start section about -->
+      <section id="about" class="section" aria-labelledby="section-title-about">
+         <h2 id="section-title-about" class="section__title">A CANÇÃO de Gelo e Fogo</h2>
+         <div class="container">
+            <article class="about">
+               <div class="about__column">
+                  <p><strong>Game of Thrones</strong> é uma série de televisão icônica baseada na aclamada saga
+                     literária A Song of Ice and Fire, escrita por George R. R. Martin. Desde sua estreia em 2011, a
+                     série rapidamente se transformou em um fenômeno cultural global, elogiada por suas narrativas
+                     complexas e um universo ricamente detalhado.
+                  </p>
+
+                  <p>A história se desenrola principalmente em Westeros, um continente fictício marcado por intrigas
+                     políticas, traições e batalhas épicas. No cerne da trama, diversas casas nobres, como Stark,
+                     Lannister e Targaryen, competem pelo controle do Trono de Ferro. Martin habilmente desenvolve
+                     personagens multifacetados que refletem a complexidade da natureza humana. Em um mundo onde heróis
+                     podem se tornar vilões e vilões podem exibir traços nobres, a narrativa se torna uma intrincada
+                     tapeçaria de lealdades e conflitos.
+                  </p>
+
+                  <p>Além da luta pelo poder entre as casas, uma ameaça sobrenatural se ergue ao norte. Os White
+                     Walkers, criaturas míticas que simbolizam um perigo existencial para a humanidade, adicionam uma
+                     camada de tensão e urgência à trama. Esta dualidade entre a guerra política e o terror do
+                     desconhecido proporciona à série um tom único e envolvente, desafiando personagens e espectadores a
+                     confrontarem seus medos mais profundos.
+                  </p>
+
+                  <p><strong>Game of Thrones</strong> não se limita apenas a batalhas e traições. A série explora temas
+                     universais como poder, vingança, lealdade e sacrifício. A conexão emocional entre o público e os
+                     personagens é um dos pilares do seu sucesso, tornando as jornadas de Jon Snow, Daenerys Targaryen e
+                     Tyrion Lannister profundamente impactantes. Cada decisão e dilema moral que os personagens
+                     enfrentam ressoam com o espectador, refletindo as complexidades da vida real.
+                  </p>
+               </div>
+               <div class="about__column">
+                  <p>Com suas oito temporadas, Game of Thrones redefiniu o padrão para a produção de fantasia na
+                     televisão. As cenas de batalhas épicas, como a Batalha dos Bastardos e a Queda de Winterfell,
+                     tornaram-se marcos que elevaram as expectativas do público. A cinematografia impressionante, os
+                     efeitos especiais e uma trilha sonora memorável contribuíram para uma experiência visual imersiva,
+                     estabelecendo novos paradigmas para a narrativa visual.
+                  </p>
+
+                  <p>O final da série em 2019 deixou um legado duradouro na cultura pop. Game of Thrones não apenas
+                     influenciou outras produções de fantasia, mas também gerou discussões apaixonadas entre os fãs
+                     sobre suas tramas e escolhas narrativas. O impacto da série pode ser sentido em diversas áreas,
+                     desde obras literárias até produções cinematográficas e séries de TV, mostrando que o mundo criado
+                     por Martin permanece relevante.
+                  </p>
+
+                  <p>Mesmo após seu término, Game of Thrones continua a ressoar na cultura popular. Spin-offs e
+                     prequelas, como House of the Dragon, estão em desenvolvimento, explorando a rica história da Casa
+                     Targaryen e prometendo expandir ainda mais o universo de Martin. Essas novas narrativas não apenas
+                     atraem novos públicos, mas também oferecem aos fãs a oportunidade de revisitar um mundo que
+                     continua a fascinar e intrigar.
+                  </p>
+
+                  <p>Game of Thrones é mais do que uma série; é um fenômeno cultural que desafia a narrativa
+                     convencional. A habilidade de George R. R. Martin em entrelaçar temas universais com uma rica
+                     tapeçaria de personagens complexos assegura que tanto os livros quanto a série continuarão a ser
+                     debatidos e apreciados por gerações futuras. O apelo atemporal de suas histórias e a profundidade
+                     de seus temas garantem que o legado de Game of Thrones permanecerá vivo no imaginário dos fãs ao
+                     redor do mundo.
+                  </p>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <section class="section plot" aria-labelledby="section-title-plot">
+         <h2 id="section-title-plot" class="section__title">O Caminho para o Trono de Ferro</h2>
+
+         <div class="container">
+            <div class="plot__container">
+
+               <div class="plot__row" id="general">
+                  <div class="plot__description">
+                     <h3>A Danca dos Dragoes e das Espadas</h3>
+                     <p>Em um mundo onde as estações duram anos e o poder é o objetivo final, *Game of Thrones* narra a
+                        luta pelo controle dos Sete Reinos de Westeros. A história é marcada por intrigas políticas,
+                        traições, batalhas épicas e a constante luta pela sobrevivência. A nobreza das casas Stark,
+                        Lannister, Baratheon, Targaryen e Greyjoy navega em um cenário implacável, onde lealdades são
+                        testadas e alianças são frequentemente quebradas.</p>
+                     <p>Enquanto as famílias nobres lutam entre si, uma ameaça antiga ressurgiu além da Muralha: os
+                        Caminhantes Brancos e seus exércitos de mortos-vivos. Com os protagonistas enfrentando dilemas
+                        morais e escolhas difíceis, a série explora temas de poder, ambição, amor e a verdadeira
+                        natureza da guerra. O impacto emocional dos eventos é amplificado por personagens complexos,
+                        cada um com suas próprias motivações e arcos de desenvolvimento.</p>
+                     <p>À medida que a história avança, os destinos dos personagens entrelaçam-se de maneiras
+                        inesperadas, levando a uma série de reviravoltas que desafiam as expectativas. O jogo pelo trono
+                        de ferro culmina em confrontos dramáticos e escolhas que moldarão o futuro de Westeros. *Game of
+                        Thrones* não é apenas uma história sobre poder, mas também sobre o custo humano de se lutar por
+                        ele, criando um legado duradouro que ressoa nas mentes e corações dos espectadores.</p>
                   </div>
-                  <div class="character__name">
-                     <h3>Jon Snow</h3>
+                  <div class="plot__image">
+                     <img src="assets/images/general-bg.jpg" alt="Winter is comming" height="2400" width="2000">
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/tyrion_lannister_image.jpg"
-                        alt="Tyrion Lannister, o estrategista sagaz de Casterly Rock" height="1722" width="1500">
+
+               <div class="plot__row" id="season1">
+                  <div class="plot__image">
+                     <img src="assets/images/season1-bg.jpg" alt="Eddard Stark" height="2500" width="2000">
                   </div>
-                  <div class="character__name">
-                     <h3>Tyrion Lannister</h3>
-                  </div>
-               </div>
-               <div class="character activo">
-                  <div class="character__image">
-                     <img src="assets/images/daenerys_targaryen_image.jpg"
-                        alt="Daenerys Targaryen, a última da casa Targaryen" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Daenerys Targaryen</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/cersei_lannister_image.jpg"
-                        alt="Cersei Lannister, a Rainha Regente de Westeros" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Cersei Lannister</h3>
+                  <div class="plot__description">
+                     <h3>Temporada <span>1</span></h3>
+                     <strong>Os começos de uma saga</strong>
+                     <p>O ex-governante das Stormlands, Robert Baratheon, busca seu velho amigo Eddard "Ned" Stark,
+                        guardião do Norte, para se tornar seu novo conselheiro. Ao chegar a King's Landing, Ned se
+                        depara com um ambiente cheio de intrigas políticas e rivalidades entre as casas nobres. A tensão
+                        entre os Stark e os Lannister, especialmente com a Rainha Cersei e seu pai, Tywin Lannister, se
+                        intensifica, e Ned se vê em meio a uma teia de conflitos que ameaçam a estabilidade do reino.
+                     </p>
+                     <p>Enquanto Ned luta para proteger sua família e entender as dinâmicas do poder em jogo, ele também
+                        deve lidar com os mistérios que cercam a morte de Jon Arryn, o anterior conselheiro de Robert.
+                        Ao mesmo tempo, o filho ilegítimo de Ned, Jon Snow, se junta à Patrulha da Noite, encarregada de
+                        proteger a Muralha de Gelo no extremo norte. O perigo à espreita nas terras além da Muralha
+                        começa a se manifestar, prometendo ameaçar todo Westeros.</p>
+                     <p>Com o desenrolar da temporada, lealdades são testadas, alianças são formadas e traídas, e os
+                        primeiros sinais de uma guerra iminente aparecem no horizonte. A temporada culmina em eventos
+                        dramáticos que transformam o cenário político e estabelecem os rumos que a história tomará nas
+                        temporadas seguintes.</p>
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/arya_stark_image.jpg" alt="Arya Stark, a jovem guerreira de Winterfell"
-                        height="1722" width="1500">
+
+               <div class="plot__row" id="season2">
+                  <div class="plot__description">
+                     <h3>Temporada <span>2</span></h3>
+                     <strong>Ecos da Guerra</strong>
+                     <p>Após a morte de Robert Baratheon, os Sete Reinos mergulham em um estado de anarquia e guerra
+                        civil. Vários pretendentes ao trono, incluindo Stannis e Renly Baratheon, emergem e buscam
+                        fortalecer suas posições, enquanto os Lannister tentam manter o controle em King's Landing sob a
+                        liderança do jovem e imprevisível Príncipe Joffrey. A luta pelo poder se torna uma dança mortal,
+                        com traições e alianças em constante mudança.</p>
+                     <p>Os Stark enfrentam desafios no Norte, onde Robb Stark se autoproclama Rei do Norte e busca
+                        vingar a morte de seu pai. Enquanto isso, Jon Snow descobre segredos sobre os Caminhantes
+                        Brancos e a verdadeira ameaça que eles representam, enquanto serve na Patrulha da Noite. As
+                        tensões entre as casas nobres se intensificam, levando a conflitos que não só testam as
+                        lealdades, mas também revelam a verdadeira natureza dos personagens envolvidos.</p>
+                     <p>A temporada se destaca pelo desenvolvimento de personagens complexos e por suas motivações
+                        conflitantes, culminando em eventos de grande impacto que moldarão o futuro de Westeros. Cada
+                        batalha travada e cada estratégia elaborada revelam o custo do poder e a fragilidade da paz em
+                        um mundo governado por interesses próprios.</p>
                   </div>
-                  <div class="character__name">
-                     <h3>Arya Stark</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/sansa_stark_image.jpg"
-                        alt="Sansa Stark, a estrategista e sobrevivente de Winterfell" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Sansa Stark</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/brienne_of_tarth.jpg" alt="Brienne de Tarth, a guerreira leal e destemida"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Brienne de Tarth</h3>
+                  <div class="plot__image">
+                     <img src="assets/images/season2-bg.jpg" alt="Tyrion Lannister" height="2400" width="2000">
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/joffrey_baratheon.jpg" alt="Joffrey Baratheon, o jovem rei cruel"
-                        height="1722" width="1500">
+
+               <div class="plot__row" id="season3">
+                  <div class="plot__image">
+                     <img src="assets/images/season3-bg.jpg" alt="Robb Stark" height="2400" width="2000">
                   </div>
-                  <div class="character__name">
-                     <h3>Joffrey Baratheon</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/petyr_baelish.jpg" alt="Petyr Baelish, o manipulador astuto" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Petyr Baelish</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/jaime_lannister.jpg" alt="Jaime Lannister, o cavaleiro complexo e redentor"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Jaime Lannister</h3>
+                  <div class="plot__description">
+                     <h3>Temporada <span>3</span></h3>
+                     <strong>Caminhos da Traição</strong>
+                     <p>A terceira temporada aprofunda o conflito em Westeros, com os Stark e Lannister cada vez mais
+                        emaranhados em uma rede de intrigas e traições. Enquanto Robb Stark tenta cumprir suas promessas
+                        de casamento para garantir alianças, os Lannister manipulam as situações a seu favor. A
+                        complexidade da guerra se intensifica, com cada movimento sendo meticulosamente calculado.</p>
+                     <p>As batalhas são travadas tanto em campos de batalha quanto em conselhos privados, com
+                        estratégias que revelam a astúcia de seus líderes. Além disso, novos personagens se juntam à
+                        luta, trazendo suas próprias agendas e complicações. A temporada destaca a vulnerabilidade das
+                        promessas feitas e o impacto devastador que a traição pode ter em todos os envolvidos.</p>
+                     <p>O clímax da temporada culmina em um evento chocante que redefine as expectativas dos
+                        espectadores, mostrando que em Westeros, as consequências das ações são muitas vezes mortais. As
+                        alianças se desintegram, e os Stark enfrentam perdas irreparáveis, deixando uma marca indelével
+                        na narrativa e preparando o palco para os conflitos que se seguirão.</p>
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/robb_stark.jpg" alt="Robb Stark, o jovem lobo e herói caído" height="1722"
-                        width="1500">
+
+               <div class="plot__row" id="season4">
+                  <div class="plot__description">
+                     <h3>Temporada <span>4</span></h3>
+                     <strong>Ressurgir das Cinzas</strong>
+                     <p>Com a morte de Robb Stark, os Lannister consolidam seu poder em King's Landing, enquanto os
+                        Stark restantes tentam se reerguer após as perdas devastadoras. Tyrion Lannister, em particular,
+                        enfrenta desafios inimagináveis ao ser acusado de um crime que não cometeu, forçando-o a lutar
+                        por sua vida e honra em um julgamento que revela as verdades mais sombrias da corte.</p>
+                     <p>Enquanto isso, em outras partes de Westeros, os conflitos se intensificam. Os aliados dos Stark
+                        buscam vingança, e a luta pelo controle dos Sete Reinos se torna mais sangrenta. A temporada
+                        explora as consequências das escolhas feitas por cada personagem e como suas ações moldam o
+                        destino do reino.</p>
+                     <p>O desfecho da temporada traz reviravoltas inesperadas e batalhas épicas que marcam a luta pela
+                        sobrevivência e a busca por justiça. Com personagens em posições de vulnerabilidade, as alianças
+                        são testadas mais uma vez, deixando o público ansioso pelo que está por vir. A queda e a
+                        ascensão de poder se entrelaçam, preparando o caminho para os próximos conflitos.</p>
                   </div>
-                  <div class="character__name">
-                     <h3>Robb Start</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/melisandre.jpg" alt="Melisandre, a sacerdotisa do Senhor da Luz"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Melisandre</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/sandor_clegane.jpg" alt="Sandor Clegane, o Cão de Caça feroz e atormentado"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Sandor Clegane</h3>
+                  <div class="plot__image">
+                     <img src="assets/images/season4-bg.jpg" alt="Joffrey Baratheon" height="1000" width="680">
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/bran_stark.jpg" alt="Bran Stark, o Corvo de Três Olhos e vidente"
-                        height="1722" width="1500">
+
+               <div class="plot__row" id="season5">
+                  <div class="plot__image">
+                     <img src="assets/images/season5-bg.jpg" alt="Melisandre" height="1000" width="680">
                   </div>
-                  <div class="character__name">
-                     <h3>Bran Stark</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/stannis_baratheon.jpg"
-                        alt="Stannis Baratheon, o guerreiro frio e ambicioso" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Stannis Baratheon</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/renly_baratheon_image.jpg" alt="Renly Baratheon, o Rei da Luz Verde"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Renly Baratheon</h3>
+                  <div class="plot__description">
+                     <h3>Temporada <span>5</span></h3>
+                     <strong>Mudanças e Sacrifícios</strong>
+                     <p>A quinta temporada é marcada por mudanças significativas e sacrifícios dolorosos. Com os Stark
+                        dispersos e tentando recuperar seu poder, Jon Snow enfrenta novos desafios na Patrulha da Noite,
+                        onde sua liderança é testada por forças tanto internas quanto externas. A ameaça dos Caminhantes
+                        Brancos se intensifica, e a Muralha se torna um ponto crítico de defesa para o reino.</p>
+                     <p>No Sul, Daenerys Targaryen luta para governar Meereen, enfrentando rebeliões e descontentamentos
+                        que ameaçam sua posição. Ao mesmo tempo, os Lannister continuam a manipular a política em King's
+                        Landing, enquanto novos personagens surgem, trazendo suas próprias ambições e complicações ao já
+                        turbulento cenário.</p>
+                     <p>Os temas de lealdade, ambição e sacrifício se entrelaçam enquanto os personagens buscam seus
+                        objetivos, muitas vezes custando mais do que esperavam. A temporada culmina em eventos que mudam
+                        o equilíbrio de poder, levando a um clímax emocional que deixa os espectadores refletindo sobre
+                        as consequências das escolhas feitas e o futuro de Westeros.</p>
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/theon_greyjoy.jpg" alt="Theon Greyjoy, o herdeiro perdido e redimido"
-                        height="1722" width="1500">
+
+               <div class="plot__row" id="season6">
+                  <div class="plot__description">
+                     <h3>Temporada <span>6</span></h3>
+                     <strong>Desfechos e Recomeços</strong>
+                     <p>Com Westeros em frangalhos, cada casa busca recuperar seu prestígio. Os Stark, agora dispersos,
+                        começam a unir suas forças novamente, enquanto novos desafios surgem de todas as direções. Jon
+                        Snow, após experiências transformadoras, assume um papel de liderança, tentando unir as forças
+                        contra a ameaça crescente dos Caminhantes Brancos que paira sobre o reino.</p>
+                     <p>Ao mesmo tempo, Daenerys avança em sua busca pelo trono, reunindo aliados enquanto se prepara
+                        para voltar a Westeros. As tramas se entrelaçam e segredos há muito enterrados começam a ser
+                        revelados, mudando a compreensão de muitos personagens sobre seu passado e futuro. As alianças
+                        se tornam ainda mais complexas, à medida que antigos rivais se tornam aliados e vice-versa.</p>
+                     <p>Os momentos de revelação e redenção definem a temporada, com cada decisão trazendo consequências
+                        inesperadas. O clímax culmina em confrontos que moldarão o futuro de Westeros, estabelecendo o
+                        cenário para a luta final pela sobrevivência e controle. As escolhas feitas por cada personagem
+                        terão ramificações duradouras, deixando o público ansioso por mais.</p>
                   </div>
-                  <div class="character__name">
-                     <h3>Theon Greyjoy</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/tywin_lannister.jpg" alt="Tywin Lannister, o estrategista impiedoso"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Tywin Lannister</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/davos_seaworth.jpg" alt="Davos Seaworth, o cavaleiro leal e humilde"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Davos Seaworth</h3>
+                  <div class="plot__image">
+                     <img src="assets/images/season6-bg.jpg" alt="Arya Stark" height="1000" width="680">
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/ygritte.jpg" alt="Ygritte, a guerreira selvagem e apaixonada" height="1722"
-                        width="1500">
+
+               <div class="plot__row" id="season7">
+                  <div class="plot__image">
+                     <img src="assets/images/season7-bg.jpg" alt="Walkers White" height="1000" width="680">
                   </div>
-                  <div class="character__name">
-                     <h3>Ygritte</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/margaery_tyrell.jpg" alt="Margaery Tyrell, a rainha astuta e ambiciosa"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Margaery Tyrell</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/tormund_giantsbane.jpg" alt="Tormund Giantsbane, o selvagem e aliado leal"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Tormund Giantsbane</h3>
+                  <div class="plot__description">
+                     <h3>Temporada <span>7</span></h3>
+                     <strong>Conflitos Crescentes</strong>
+                     <p>Na sétima temporada, as tensões atingem um ponto crítico, à medida que os personagens se movem
+                        em direção a confrontos inevitáveis. Jon Snow e Daenerys Targaryen formam uma aliança inesperada
+                        para enfrentar a ameaça dos Caminhantes Brancos, que se torna cada vez mais real. A dinâmica
+                        entre eles se desenvolve enquanto tentam unir seus respectivos reinos contra um inimigo comum.
+                     </p>
+                     <p>As rivalidades antigas ressurgem à medida que as casas nobres de Westeros tentam garantir seu
+                        lugar na nova ordem que se aproxima. As intrigas políticas em King's Landing se intensificam,
+                        enquanto Cersei Lannister faz movimentos estratégicos para solidificar seu poder, não hesitando
+                        em sacrificar aqueles que se opõem a ela. As consequências de suas ações se tornam mais
+                        evidentes à medida que os conflitos se intensificam.</p>
+                     <p>A temporada se aproxima de um clímax explosivo, com batalhas épicas e reviravoltas que deixam os
+                        espectadores em suspense. À medida que as verdades são reveladas e alianças são testadas, os
+                        personagens enfrentam as realidades de suas escolhas e o preço que precisam pagar por elas. O
+                        final da temporada deixa muitas perguntas sem resposta, preparando o terreno para a conclusão
+                        épica que se aproxima.</p>
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/ned_stark.jpg" alt="Ned Stark, o patriarca honrado e guardião do Norte"
-                        height="1722" width="1500">
+
+               <div class="plot__row" id="season8">
+                  <div class="plot__description">
+                     <h3>Temporada <span>8</span></h3>
+                     <strong>O Fim de uma Era</strong>
+                     <p>A oitava e última temporada traz a conclusão de anos de narrativas complexas e desenvolvimento
+                        de personagens. À medida que o Exército dos Mortos avança, todos os lados da luta pelo trono de
+                        ferro se unem temporariamente para enfrentar a ameaça comum. A Batalha de Winterfell se torna um
+                        momento decisivo, testando a coragem e a determinação de cada personagem diante de um inimigo
+                        mortal.</p>
+                     <p>Depois da batalha, as tensões entre os aliados se intensificam à medida que Jon Snow e Daenerys
+                        Targaryen enfrentam a realidade de suas ambições e desejos. Cersei Lannister, determinada a
+                        manter seu controle, se torna uma adversária implacável. As escolhas que cada um faz durante
+                        esses momentos críticos definirão o destino de Westeros e o que acontecerá com o trono de ferro.
+                     </p>
+                     <p>O desfecho da série é repleto de emoções, reviravoltas e a inevitabilidade das consequências. Ao
+                        final, os destinos dos personagens são selados em um clímax que entrega tanto resolução quanto
+                        controvérsia, deixando um legado duradouro na memória dos fãs. A série termina, mas as histórias
+                        e os dilemas apresentados continuam a ressoar, reafirmando o impacto que *Game of Thrones* teve
+                        na cultura pop.</p>
                   </div>
-                  <div class="character__name">
-                     <h3>Ned Stark</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/missandei.jpg" alt="Missandei, a conselheira fiel de Daenerys"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Missandei</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/jorah_mormont.jpg" alt="Sor Jorah Mormont, o cavaleiro exilado e leal"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Sor Jorah Mormont</h3>
+                  <div class="plot__image">
+                     <img src="assets/images/season8-bg.jpg" alt="Daenerys Targaryen" height="1000" width="680">
                   </div>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/khal_drogo.jpg" alt="Khal Drogo, o líder poderoso dos Dothraki"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Khal Drogo</h3>
-                  </div>
+
+            </div>
+         </div>
+      </section>
+      <!-- end section about -->
+
+      <!-- start section personages -->
+      <section id="characters" class="section characters" aria-labelledby="section-title-characters">
+         <h2 id="section-title-characters" class="section__title">As Faces do Reino</h2>
+         <p class="section__description">Conheça os personagens mais emblemáticos de GOT, cada um com suas histórias,
+            desafios e motivações. Os nobres e vilões representam aspectos únicos do intricado jogo de poder, lealdade e
+            traição em Westeros. Aqui, você encontrará os rostos que moldaram a narrativa da série, explorando suas
+            contribuições e legados. Mergulhe nas histórias dessas figuras memoráveis que definem o destino do reino.
+         </p>
+
+         <div class="container">
+            <div class="characters__wrapper">
+               <ul class="characters__list"></ul>
+               <div class="characters__buttons">
+                  <button type="button" class="characters__button" id="buttonCarouselLeft"></button>
+                  <button type="button" class="characters__button" id="buttonCarouselRight"></button>
                </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/mirri_maz_duur.jpg" alt="Mirri Maz Duur, a curandeira de Essos"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Mirri Maz Duur</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/catelyn_stark.jpg" alt="Catelyn Stark, a matriarca protetora da Casa Stark"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Catelyn Stark</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/hodor.jpg" alt="Hodor, o protetor gigante de Bran Stark" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Hodor</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/ramsay_bolton.jpg"
-                        alt="Ramsay Bolton, o sádico e impiedoso senhor de Winterfell" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Ramsay Bolton</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/jaqen_hghar.jpg"
-                        alt="Jaqen H'ghar, o misterioso assassino do Deus de Muitas Faces" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Jaqen H´ghar</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/samwell_tarly.jpg"
-                        alt="Samwell Tarly, o corajoso estudioso da Patrulha da Noite" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Samwell Tarly</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/lorde_varys.jpg"
-                        alt="Lorde Varys, o mestre dos sussurros e manipulador político" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Lorde Varys Tarly</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/oberyn_martell.jpg"
-                        alt="Oberyn Martell, o príncipe de Dorne, ágil e vingativo" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Oberyn Martell</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/verme_cinzento.jpg"
-                        alt="Verme Cinzento, o comandante implacável dos Imaculados" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Verme Cinzento</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/lyanna_mormont.jpg"
-                        alt="Lyanna Mormont, a jovem e destemida líder da Casa Mormont" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Lyanna Mormont</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/ellaria_sand.jpg" alt="Ellaria Sand, a vingativa amante de Oberyn Martell"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Ellaria Sand</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/yara_greyjoy.jpg"
-                        alt="Yara Greyjoy, a comandante naval e líder audaz das Ilhas de Ferro" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Yara Greyjoy</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/alto_pardal.jpg" alt="Alto Pardal, o devoto líder religioso e estrategista"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Alto Pardal</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/olenna_tyrell.jpg"
-                        alt="Olenna Tyrell, a Rainha dos Espinhos e a mente por trás da Casa Tyrell" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Olenna Tyrell</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/night_king.jpg" alt="Rei da Noite, o líder temível dos Caminhantes Brancos"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Rei da Noite</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/shireen-baratheon.jpg"
-                        alt="Shireen Baratheon, a filha determinada de Stannis Baratheon" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Shireen Baratheon</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/brown.jpg" alt="Bronw, conhecido por sua lealdade e astúcia" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Bronw</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/aemon_targaryen.jpg"
-                        alt="Aemon Targaryen, o velho e sábio mestre da Patrulha da Noite" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Aemon Targaryen</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/osha.jpg" alt="Osha, uma guerreira feroz e protetora dos Stark"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Osha</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/jojen_reed.jpg" alt="Jojen Reed, com suas visões e ligação com Bran Stark"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Jojen Reed</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/barristan_selmy.jpg"
-                        alt="Barristan Selmy, o lendário Cavaleiro da Guarda Real" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Barristan Selmy</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/walder_frey.jpg" alt="Walder Frey, o astuto Senhor dos Freys" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Walder Frey</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/roose_bolton.jpg"
-                        alt="Roose Bolton, o cruel e calculista Senhor de Winterfell" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Roose Bolton</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/olly.jpg" alt="Olly, jovem membro da Patrulha da Noite, que trai Jon Snow"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Olly</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/alliser_thorne.jpg"
-                        alt="Alliser Thorne, um dos comandantes da Patrulha da Noite e antagonista de Jon Snow"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Alliser Thorne</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/lord_commander_mormont.jpg"
-                        alt="Jeor Mormont, Lorde Comandante da Patrulha da Noite antes de Jon Snow" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Jeor Mormont</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/viserys_targaryen.jpg"
-                        alt="Viserys Targaryen, o príncipe exilado da Casa Targaryen, obcecado pelo trono" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Viserys Targaryen</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/podrick_payne.jpg"
-                        alt="Podrick Payne, o leal escudeiro de Tyrion Lannister e amigo fiel" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Podrick Payne</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/meera_reed.jpg"
-                        alt="Meera Reed, a corajosa e habilidosa guerreira de Greywater" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Meera Reed</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/gendry.jpg"
-                        alt="Gendry, o ferreiro habilidoso e bastardo de Robert Baratheon" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Gendry</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/qyburn.jpg"
-                        alt="Qyburn, o ex-médico da Cidadela e aliado de Cersei Lannister" height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Qyburn</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/euron_greyjoy.jpg"
-                        alt="Euron Greyjoy, o ambicioso e traiçoeiro Senhor das Ilhas de Ferro" height="1722"
-                        width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Euron Greyjoy</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/gilly.jpg"
-                        alt="Gilly, a mulher forte e corajosa que luta pela sobrevivência e proteção de sua filha"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Gilly</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/robin_arryn.jpg" alt="Robin Arryn, o jovem e frágil herdeiro da Casa Arryn"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Robin Arryn</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/lysa_arryn.jpg" alt="Lysa Arryn, a mãe controladora de Robin Arryn"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Lysa Arryn</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/septa_unella.jpg" alt="Septã Unella, a sacerdotisa devota e implacável"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Septã Unella</h3>
-                  </div>
-               </div>
-               <div class="character">
-                  <div class="character__image">
-                     <img src="assets/images/gregor_clegane.jpg" alt="Gregor Clegane, conhecido como A Montanha"
-                        height="1722" width="1500">
-                  </div>
-                  <div class="character__name">
-                     <h3>Gregor Clegane</h3>
-                  </div>
-               </div> -->
+            </div>
+         </div>
+      </section>
+      <!-- end section personages -->
+
+      <!-- start section houses -->
+      <!-- <section id="houses" class="section houses" aria-labelledby="section-title-characters">
+         <h2 id="section-title-characters" class="section__title">Senhores e Senhoras de Westeros</h2>
+         <p class="section__description">Conheça as grandes casas que moldam o destino do reino, revelando suas
+            histórias, alianças e rivalidades. Os nobres, com suas intrigas e conflitos, definem o cenário de Game of
+            Thrones, refletindo a luta por poder e a busca por honra em um mundo implacável. Cada casa traz consigo uma
+            herança que ressoa através das páginas dos livros e dos episódios da série.
+         </p>
+      </section> -->
+      <!-- end section houses -->
+
+      <!-- start section mapa -->
+      <!-- <section id="map" class="section map" aria-labelledby="section-title-map">
+         <div class="container">
+            <h2 id="section-title-map" class="section__title">Rumo Às Terras Antigas</h2>
+            <p class="section__description">Explore os vastos e intrigantes mapas de Westeros, revelando a geografia e
+               os reinos onde as grandes histórias de Game of Thrones se desenrolam. Descubra detalhes das principais
+               localizações, desde as geladas terras do Norte até os quentes desertos de Dorne, compreendendo melhor as
+               estratégias e alianças formadas ao longo da narrativa. Conheça os caminhos percorridos pelos personagens
+               e as fronteiras que definem suas histórias em um mundo repleto de aventuras.
+            </p>
+         </div>
+      </section> -->
+      <!-- end section map -->
+
+      <!-- start section histories -->
+      <!-- <section id="histories" class="section histories" aria-labelledby="section-title-histories">
+         <h2 id="section-title-histories" class="section__title">Ecos de um Passado</h2>
+         <p class="section__description">Mergulhe nas ricas histórias que entrelaçam as vidas dos personagens e as
+            grandes casas de Westeros. Revelando narrativas emocionantes de heroísmo, traição, amor e sacrifício, essas
+            crônicas exploram como os eventos moldam o destino do reino. Cada narrativa convida você a descobrir as
+            complexidades que definem o universo de Game of Thrones, onde cada escolha traz consequências profundas e
+            lendas são forjadas no calor do conflito.
+         </p>
+      </section> -->
+      <!-- end section histories -->
+   </main>
+
+   <!-- <footer class="footer">
+      <div class="container">
+         <div class="footer__content">
+            <div class="footer__brand">
+               <img src="assets/images/got.png" alt="Logo da série Game of Thrones" class="footer__logo">
+            </div>
+            <div class="footer__description">
+               <h3 class="footer__title">Encerramos por Aqui, mas a Saga Continua</h3>
+               <p class="footer__text">Obrigado por explorar Westeros conosco. Continue sua jornada pelas terras dos
+                  Sete Reinos e além, onde histórias épicas nunca terminam. Nos vemos na próxima aventura!</p>
+               <p class="footer__text">Sua lealdade aos reinos nos honra. Volte sempre para descobrir novas lendas e
+                  mistérios de Westeros!</p>
+               <h4 class="footer__subtitle">O inverno estÁ chegando.</h4>
+            </div>
+            <div class="footer__max">
+               <img src="assets/images/max.webp" alt="Logo da HBO Max">
+            </div>
+         </div>
+      </div>
+   </footer> -->
+
+   <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+   <script type="module" src="assets/scripts/script.js"></script>
+</body>
+
+</html>
