@@ -964,6 +964,10 @@ a {
   user-select: none;
 }
 
+.no-transition {
+  scroll-behavior: auto;
+}
+
 .houses .section__title {
   color: #ffffff;
 }
