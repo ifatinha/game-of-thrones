@@ -17,8 +17,6 @@ const generateCharacterElement = (character, index) => {
   characterCard.dataset.characterCode = character.code;
   characterList.appendChild(characterCard);
 
-  if (index === 2) characterCard.classList.add("character__active");
-
   const characterImageDiv = createElement({
     elementName: "div",
     classes: "character__image",

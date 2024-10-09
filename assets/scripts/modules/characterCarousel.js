@@ -57,6 +57,7 @@ export const initializeCharacterSlider = () => {
   const dragStop = () => {
     isDragging = false;
     carousel.classList.remove("dragging");
+    setSelectedCard();
   };
 
   const infiniteScroll = () => {
