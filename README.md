@@ -39,7 +39,7 @@ Essas imagens ajudarão a criar uma experiência visual rica e alinhada ao tema 
 
 1. Clone este repositório:
     ```bash
-    git clone [https://github.com/ifatinha/game-of-thrones.git](https://github.com/ifatinha/game-of-thrones.git)
+    git clone https://github.com/ifatinha/game-of-thrones.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
