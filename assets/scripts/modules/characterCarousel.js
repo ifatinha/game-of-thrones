@@ -13,6 +13,7 @@ export const initializeCharacterSlider = () => {
 
   if (!carousel || !carouselButtons || !carouselChildrens) return;
 
+  /** Clonar os cards no inicio e no final do carousel */
   carouselChildrens
     .slice(-cardPerView)
     .reverse()
@@ -24,6 +25,7 @@ export const initializeCharacterSlider = () => {
     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
   });
 
+  /** fução para atualizar o card ao clicar nos botões */
   const updateCard = (event) => {
     if (event?.type === "touchstart") event.preventDefault();
     const button = event.currentTarget;
@@ -37,6 +39,8 @@ export const initializeCharacterSlider = () => {
       button.addEventListener(eventType, updateCard);
     });
   });
+
+  /** ********************* */
 
   const dragStart = (event) => {
     isDragging = true;
