@@ -79,7 +79,7 @@ export const initializeCharacterSlider = () => {
   //     timeOutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 1000);
   //   };
 
-  autoPlay();
+  // autoPlay();
   carousel.addEventListener("mousedown", dragStart);
   carousel.addEventListener("mousemove", dragging);
   document.addEventListener("mouseup", dragStop);
