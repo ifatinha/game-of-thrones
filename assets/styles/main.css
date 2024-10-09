@@ -855,8 +855,10 @@ a {
 .characters .section__title {
   color: #ffffff;
 }
+.characters .container {
+  margin-top: 3rem;
+}
 .characters__wrapper {
-  margin-top: 4rem;
   position: relative;
   width: 100%;
 }

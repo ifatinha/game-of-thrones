@@ -1,5 +1,5 @@
 export const initializeCharacterSlider = () => {
-  const carousel = document.querySelector(".js-characters");
+  const carousel = document.querySelector(".characters__list");
   const carouselButtons = document.querySelectorAll(".characters__button");
   const carouselCards = [...carousel.children];
   const firstCardWidth =

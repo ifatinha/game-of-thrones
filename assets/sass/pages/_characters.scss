@@ -10,10 +10,13 @@
         @include apply-color("pure-white");
     }
 
+    .container {
+        margin-top: 3rem;
+    }
+
     &__wrapper {
-        margin-top: 4rem;
-        position  : relative;
-        width     : 100%;
+        position: relative;
+        width   : 100%;
     }
 
     &__list {

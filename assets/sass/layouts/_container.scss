@@ -2,9 +2,9 @@
 @use "../global/responsive"as *;
 
 .container {
-    margin : 0 auto;
-    padding: 0 2%;
-    width  : 100%;
+    margin    : 0 auto;
+    padding   : 0 2%;
+    width     : 100%;
 
     @include devices(xxl) {
         max-width: 1440px;
