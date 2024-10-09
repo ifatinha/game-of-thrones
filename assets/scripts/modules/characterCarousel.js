@@ -69,21 +69,21 @@ export const initializeCharacterSlider = () => {
       carousel.classList.remove("no-transition");
     }
 
-    clearInterval(timeOutId);
-    if (!wrapper.matches(":hover")) autoPlay();
+    // clearInterval(timeOutId);
+    // if (!wrapper.matches(":hover")) autoPlay();
   };
 
-  const autoPlay = () => {
-    if (window.innerWidth < 800) return;
+  //   const autoPlay = () => {
+  //     if (window.innerWidth < 800) return;
 
-    timeOutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 1000);
-  };
+  //     timeOutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 1000);
+  //   };
 
   autoPlay();
   carousel.addEventListener("mousedown", dragStart);
   carousel.addEventListener("mousemove", dragging);
   document.addEventListener("mouseup", dragStop);
   carousel.addEventListener("scroll", infiniteScroll);
-  wrapper.addEventListener("mouseenter", () => clearInterval(timeOutId));
-  wrapper.addEventListener("mouseleave", autoPlay);
+  //   wrapper.addEventListener("mouseenter", () => clearInterval(timeOutId));
+  //   wrapper.addEventListener("mouseleave", autoPlay);
 };
