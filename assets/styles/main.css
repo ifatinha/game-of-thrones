@@ -119,32 +119,9 @@ a {
 
 .carousel {
   margin-top: 4rem;
+  overflow: hidden;
   position: relative;
   width: 100%;
-}
-.carousel__buttons {
-  align-items: center;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  width: 100%;
-}
-.carousel__button {
-  color: #ffffff;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1.875rem;
-  transition: 0.3s ease-in-out;
-}
-.carousel__button:hover {
-  opacity: 0.6;
-}
-.carousel__button:nth-child(1)::before {
-  content: "↞";
-}
-.carousel__button:nth-child(2)::after {
-  content: "↠";
 }
 
 .button__icon {
@@ -879,6 +856,7 @@ a {
   color: #ffffff;
 }
 .characters__wrapper {
+  margin-top: 4rem;
   position: relative;
   width: 100%;
 }
@@ -886,7 +864,10 @@ a {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 20%;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
   .characters__list {
@@ -908,6 +889,34 @@ a {
     grid-auto-columns: 100%;
   }
 }
+.characters__list::-webkit-scrollbar {
+  display: none;
+}
+.characters__buttons {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.characters__button {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.875rem;
+  transition: 0.3s ease-in-out;
+}
+.characters__button:hover {
+  opacity: 0.6;
+}
+.characters__button:nth-child(1)::before {
+  content: "↞";
+}
+.characters__button:nth-child(2)::after {
+  content: "↠";
+}
 
 .characater__card {
   font-family: "Constantia", serif;
@@ -915,9 +924,10 @@ a {
   display: flex;
   flex-direction: column;
   filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.1;
   overflow: hidden;
   padding: 1rem;
+  scroll-snap-align: start;
   transition: 0.5s ease-in-out;
 }
 .characater__card:hover {
@@ -937,14 +947,21 @@ a {
   transition: 1s ease-in-out;
   width: 100%;
 }
-.character__image img:hover {
-  transform: scale(1.1);
-}
 
 .character__active {
   border: 1px solid #19191d;
   filter: none;
   opacity: 1;
+}
+
+.dragging {
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.dragging .characater__card {
+  cursor: grab !important;
+  user-select: none;
 }
 
 .houses .section__title {

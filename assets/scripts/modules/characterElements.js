@@ -36,6 +36,7 @@ const generateCharacterElement = (character, index) => {
     alt: character.alt,
     height: "1722",
     width: "1500",
+    draggable: false,
   });
 
   characterImageDiv.appendChild(characterImageTag);

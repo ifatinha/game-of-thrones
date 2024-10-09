@@ -11,15 +11,19 @@
     }
 
     &__wrapper {
-        position: relative;
-        width   : 100%;
+        margin-top: 4rem;
+        position  : relative;
+        width     : 100%;
     }
 
     &__list {
         display          : grid;
         grid-auto-flow   : column;
         grid-auto-columns: calc((100% / 5));
-        overflow         : hidden;
+        overflow-x       : auto;
+        scroll-behavior  : smooth;
+        scroll-snap-type : x mandatory;
+        scrollbar-width  : 0;
 
         @include devices(t) {
             grid-auto-columns: calc((100% / 2));
@@ -36,19 +40,55 @@
         @include devices(xs) {
             grid-auto-columns: 100%;
         }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__buttons {
+        @include flex(center, center);
+        margin-top: 1rem;
+        width     : 100%;
+    }
+
+    &__button {
+        @include apply-color("pure-white");
+        background: transparent;
+        border    : none;
+        cursor    : pointer;
+        font-size : get-font-size(30);
+        transition: .3s ease-in-out;
+
+        @include hover {
+            opacity: .6;
+        }
+
+        &:nth-child(1) {
+            &::before {
+                content: "\219E";
+            }
+        }
+
+        &:nth-child(2) {
+            &::after {
+                content: "\21A0";
+            }
+        }
     }
 }
 
 .characater__card {
     @include font-secondary();
-    cursor        : pointer;
-    display       : flex;
-    flex-direction: column;
-    filter        : grayscale(100%);
-    opacity       : .2;
-    overflow      : hidden;
-    padding       : 1rem;
-    transition    : .5s ease-in-out;
+    cursor           : pointer;
+    display          : flex;
+    flex-direction   : column;
+    filter           : grayscale(100%);
+    opacity          : .1;
+    overflow         : hidden;
+    padding          : 1rem;
+    scroll-snap-align: start;
+    transition       : .5s ease-in-out;
 
     @include hover {
         filter : none;
@@ -67,10 +107,6 @@
         object-fit: cover;
         transition: 1s ease-in-out;
         width     : 100%;
-
-        @include hover {
-            transform: scale(1.1);
-        }
     }
 }
 
@@ -78,4 +114,17 @@
     border : 1px solid #19191d;
     filter : none;
     opacity: 1;
+}
+
+.dragging {
+    scroll-behavior : auto;
+    scroll-snap-type: none;
+}
+
+.dragging {
+
+    .characater__card {
+        cursor     : grab !important;
+        user-select: none;
+    }
 }
