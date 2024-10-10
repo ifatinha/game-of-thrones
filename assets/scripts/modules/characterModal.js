@@ -1,8 +1,15 @@
-import { toggleClass } from "./toggleClasses.js";
 import { characters } from "../data/characters.js";
 
 let touchStartX = 0;
 let touchEndX = 0;
+
+const getModalDom = () => {
+  const modalCharacter = document.querySelector("#modalCharacter");
+
+  if (!modalCharacter) return;
+
+  return modalCharacter;
+};
 
 const handleCharacterModal = (characterCode, card) => {
   const characterIdx = characters.findIndex((character) => {
@@ -10,14 +17,10 @@ const handleCharacterModal = (characterCode, card) => {
   });
 
   if (characterIdx !== -1) {
+    const modalCharacter = getModalDom();
     const character = characters[characterIdx];
-    const modalCharacter = document.querySelector("#modalCharacter");
-
-    if (!modalCharacter) return;
-
     modalCharacter.classList.add("actived");
-    modalCharacter.innerHTML = character.code;
-    card.setAttribute("aria-expandes", true);
+    card.setAttribute("aria-expanded", "true");
   }
 };
 
@@ -36,8 +39,7 @@ const openModal = (event, characterCode) => {
     }
   }
 
-  if (event?.type === "keydown") {
-    console.log(event);
+  if (event?.type === "keydown" || event?.type === "click") {
     event.preventDefault(); // Previne o comportamento padrão no clique ou tecla
     handleCharacterModal(characterCode, card);
   }
@@ -67,7 +69,22 @@ export const initializeModal = () => {
   });
 };
 
-export const closeModalCharacter = (card) => {
-  //modalCharacter.classList.remove("js-open-modal");
-  //card.setAttribute("aria-expandes", true);
+export const closeModalCharacter = () => {
+  const closeModalButton = document.querySelector("#closeModalCharacterButton");
+  const modalCharacter = getModalDom();
+  if (!closeModalButton) return;
+
+  const closeModal = (event) => {
+    if (event?.type === "touchstart") event.preventDefault();
+    const cartActived = document.querySelector("[aria-expanded='true']");
+
+    if (!cartActived) return;
+
+    cartActived.setAttribute("aria-expanded", "false");
+    modalCharacter.classList.remove("actived");
+  };
+
+  [("touchstart", "click")].forEach((eventType) => {
+    closeModalButton.addEventListener(eventType, closeModal);
+  });
 };
