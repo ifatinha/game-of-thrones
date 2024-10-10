@@ -199,7 +199,6 @@
 
 .character__container {
     @include flex(end, center);
-    //background         : url("../images/cersei_background.jpg");
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -320,8 +319,9 @@
     }
 
     .bio__image {
+        padding: 8px;
+
         img {
-            //height    : 100%;
             object-fit: cover;
             width     : 100%;
         }
@@ -333,7 +333,7 @@
 
         p {
             @include marcellus-font();
-            font-size    : get-font-size(22);
+            font-size    : get-font-size(26);
             margin-bottom: 8px;
         }
 

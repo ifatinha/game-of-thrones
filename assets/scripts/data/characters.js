@@ -1,12 +1,12 @@
 export const characters = [
   {
-    code: 0,
+    code: 1,
     urlImage: "assets/images/jon_snow_image.jpg",
     alt: "Jon Snow, o herdeiro de Winterfell",
     nameCharacters: "Jon Snow",
-    house: "Stark / Targaryen",
+    house: "Casa Stark / Targaryen",
     origin: "Winterfell",
-    quote: [
+    quotes: [
       "Eu não quero isso. Eu nunca quis.",
       "A única guerra que importa é a guerra contra os mortos.",
     ],
@@ -17,12 +17,8 @@ export const characters = [
       "Jon Snow é um símbolo de sacrifício, lealdade e liderança. Sua trajetória ao longo da série faz dele um dos personagens mais amados e admirados, reconhecido por seu compromisso com a justiça e a proteção dos mais fracos. Ao final da série, sua história deixa uma marca indelével na história de Westeros, sendo lembrado como um herói que lutou contra as forças das trevas e defendeu os valores da honra e da família.",
     ],
     backgroundImage: "assets/images/jon_snow_background.jpg",
-    gallery: [
-      "assets/images/jon_snow_1.jpg",
-      "assets/images/jon_snow_2.jpg",
-      "assets/images/jon_snow_3.jpg",
-    ],
-    titles: ["Lord Comandante da Patrulha da Noite"],
+    gallery: ["assets/images/jon_snow_1.jpg", "assets/images/jon_snow_2.jpg"],
+    title: "O 998º Lord Comandante da Patrulha da Noite",
     aliases: [
       "Lord Snow",
       "Bastardo de Ned Stark",
@@ -36,13 +32,13 @@ export const characters = [
   },
 
   {
-    code: 1,
+    code: 2,
     urlImage: "assets/images/tyrion_lannister_image.jpg",
     alt: "Tyrion Lannister, o estrategista sagaz de Casterly Rock",
     nameCharacters: "Tyrion Lannister",
     origin: "Casterly Rock",
-    house: "Lannister",
-    quote: ["Eu bebo e sei das coisas.", "Um homem deve sempre ter um plano."],
+    house: "Casa Lannister",
+    quotes: ["Eu bebo e sei das coisas.", "Um homem deve sempre ter um plano."],
     description: [
       "Tyrion Lannister é o filho mais novo de Tywin Lannister, e sua vida é marcada pelo desprezo que sofre devido à sua estatura e à percepção de ser uma desonra para sua família. Apesar disso, Tyrion é uma das mentes mais brilhantes de Westeros, conhecido por sua sagacidade, inteligência estratégica e habilidade em manipular situações a seu favor.",
       "Desde jovem, ele aprendeu a utilizar o sarcasmo e a astúcia para sobreviver em um mundo que frequentemente o subestima. Ao longo da série, Tyrion se destaca como um jogador-chave no jogo dos tronos, oferecendo conselhos valiosos e formando alianças inesperadas. Sua relação com Cersei e Jaime é complexa, marcada por amor, rivalidade e ressentimento.",
@@ -50,12 +46,8 @@ export const characters = [
       "Tyrion Lannister é lembrado como um dos personagens mais complexos e intrigantes da série. Sua luta contra o preconceito, sua busca por reconhecimento e sua capacidade de ver além dos jogos de poder fazem dele um herói inesperado em um mundo brutal. Através de sua inteligência e resiliência, Tyrion se torna uma figura central na luta por justiça e igualdade em Westeros, provando que a verdadeira força não está na altura, mas na mente e no caráter.",
     ],
     backgroundImage: "assets/images/tyrion_background.jpg",
-    gallery: [
-      "assets/images/tyrion_1.jpg",
-      "assets/images/tyrion_2.jpg",
-      "assets/images/tyrion_3.jpg",
-    ],
-    titles: ["Mão da Rainha"],
+    gallery: ["assets/images/tyrion_1.jpg", "assets/images/tyrion_2.jpg"],
+    title: "O Duende de Casterly Rock",
     aliases: [
       "O Duende",
       "O Meio-Homem",
@@ -66,13 +58,13 @@ export const characters = [
   },
 
   {
-    code: 2,
+    code: 3,
     urlImage: "assets/images/daenerys_targaryen_image.jpg",
     alt: "Daenerys Targaryen, a última da casa Targaryen",
     nameCharacters: "Daenerys Targaryen",
     origin: "Dragonstone",
-    house: "Targaryen",
-    quote: [
+    house: "Casa Targaryen",
+    quotes: [
       "Eu sou Daenerys Targaryen e eu vou pegar o que é meu com sangue e fogo.",
       "Eu não sou uma princesa. Sou uma rainha.",
     ],
@@ -83,12 +75,8 @@ export const characters = [
       "Daenerys Targaryen é uma das personagens mais icônicas e controversas da série, representando a luta pelo poder, a busca por justiça e as complexidades da moralidade em um mundo brutal. Sua jornada de opressão à liderança é marcada por sua resiliência e determinação, tornando-a uma figura central na narrativa de 'Game of Thrones'. Através de suas escolhas, ela questiona o que significa ser uma verdadeira governante e a natureza do poder, deixando um legado duradouro na história de Westeros.",
     ],
     backgroundImage: "assets/images/daenerys_background.jpg",
-    gallery: [
-      "assets/images/daenerys_1.jpg",
-      "assets/images/daenerys_2.jpg",
-      "assets/images/daenerys_3.jpg",
-    ],
-    titles: ["Mãe dos Dragões", "Rainha de Meereen", "Rainha dos Sete Reinos"],
+    gallery: ["assets/images/daenerys_1.jpg", "assets/images/daenerys_2.jpg"],
+    title: "A Mãe de Dragões e Rainha dos Sete Reinos",
     aliases: [
       "Daenerys Targaryen",
       "Dany",
@@ -99,13 +87,13 @@ export const characters = [
   },
 
   {
-    code: 3,
+    code: 4,
     urlImage: "assets/images/cersei_lannister_image.jpg",
     alt: "Cersei Lannister, a astuta rainha de Westeros",
     nameCharacters: "Cersei Lannister",
     origin: "Casterly Rock",
-    house: "Lannister",
-    quote: [
+    house: "Casa Lannister",
+    quotes: [
       "Quando você joga o jogo dos tronos, você ganha ou você morre.",
       "Eu não sou o que você pensa. Eu sou mais do que isso.",
     ],
@@ -117,7 +105,7 @@ export const characters = [
     ],
     backgroundImage: "assets/images/cersei_background.jpg",
     gallery: ["assets/images/cersei_1.jpg", "assets/images/cersei_2.jpg"],
-    titles: ["A Rainha Regente", "Rainha de Westeros", "Mãe da Rainha"],
+    title: "A Rainha Regente",
     aliases: [
       "Cersei Baratheon",
       "Cersei Lannister",
@@ -128,13 +116,13 @@ export const characters = [
   },
 
   {
-    code: 4,
+    code: 5,
     urlImage: "assets/images/arya_stark_image.jpg",
     alt: "Arya Stark, a jovem guerreira de Winterfell",
     nameCharacters: "Arya Stark",
-    origin: "Winterfell",
+    origin: "Casa Winterfell",
     house: "Stark",
-    quote: [
+    quotes: [
       "Ninguém é mais forte do que quem não tem nada a perder.",
       "Ninguém é ninguém.",
     ],
@@ -146,18 +134,8 @@ export const characters = [
       "Arya Stark representa a resiliência, a força e a busca pela justiça em um mundo cruel. Sua trajetória de crescimento e transformação, de uma jovem inocente a uma assassina habilidosa, ilustra temas de vingança, perda e identidade. Ao longo da série, Arya se torna um símbolo de empoderamento, desafiando os papéis tradicionais de gênero e mostrando que o verdadeiro poder reside na determinação e na capacidade de se adaptar e sobreviver.",
     ],
     backgroundImage: "assets/images/arya_background.jpg",
-    gallery: [
-      "assets/images/arya_1.jpg",
-      "assets/images/arya_2.jpg",
-      "assets/images/arya_3.jpg",
-    ],
-    titles: [
-      "A Pequena Loba",
-      "Dama de Winterfell",
-      "A Nascida na Tempestade",
-      "A Garota que Viajou",
-      "A Filha de Eddard Stark",
-    ],
+    gallery: ["assets/images/arya_1.jpg", "assets/images/arya_2.jpg"],
+    title: "A Pequena Loba",
     aliases: [
       "Arry",
       "Ned Stark's Daughter",
@@ -170,13 +148,13 @@ export const characters = [
   },
 
   {
-    code: 5,
+    code: 6,
     urlImage: "assets/images/sansa_stark_image.jpg",
     alt: "Sansa Stark, a estrategista e sobrevivente de Winterfell",
     nameCharacters: "Sansa Stark",
     origin: "Winterfell",
-    house: "Stark",
-    quote: [
+    house: "Casa Stark",
+    quotes: [
       "A dor é um presente. A dor é o que nos torna mais fortes.",
       "Eu sou Sansa Stark, filha de Eddard Stark. E eu vou lutar.",
     ],
@@ -187,28 +165,19 @@ export const characters = [
       "O legado de Sansa Stark se destaca por sua transformação de uma jovem ingênua e sonhadora em uma líder forte e resiliente. Ao longo da série 'Game of Thrones', Sansa aprende a importância da estratégia, da diplomacia e da autoconfiança, o que a torna uma figura fundamental na luta pelo controle do Norte e na proteção de sua família.",
     ],
     backgroundImage: "assets/images/sansa_background.jpg",
-    gallery: [
-      "assets/images/sansa_1.jpg",
-      "assets/images/sansa_2.jpg",
-      "assets/images/sansa_3.jpg",
-    ],
-    titles: [
-      "Senhora do Norte",
-      "Dama de Winterfell",
-      "A Pequena Loba",
-      "A Filha de Eddard Stark",
-    ],
+    gallery: ["assets/images/sansa_1.jpg", "assets/images/sansa_2.jpg"],
+    title: "Protetora do Norte",
     aliases: ["Sansa Stark", "A Dama da Canção", "A Última Stark"],
   },
 
   {
-    code: 6,
+    code: 7,
     urlImage: "assets/images/brienne_of_tarth.jpg",
     alt: "Brienne de Tarth, a guerreira leal e destemida",
     nameCharacters: "Brienne de Tarth",
     origin: "Tarth",
-    house: "Tarth",
-    quote: [
+    house: "Casa Tarth",
+    quotes: [
       "A honra é tudo que temos.",
       "Um cavaleiro é jurado à valentia. Seu coração conhece apenas a virtude.",
     ],
@@ -219,27 +188,19 @@ export const characters = [
       "O legado de Brienne de Tarth é uma poderosa combinação de coragem, lealdade e integridade, representando uma nova visão de heroísmo em 'Game of Thrones'. Sua trajetória ilustra a luta contra o preconceito e a busca pela honra em um mundo muitas vezes implacável.",
     ],
     backgroundImage: "assets/images/brienne_background.jpg",
-    gallery: [
-      "assets/images/brienne_1.jpg",
-      "assets/images/brienne_2.jpg",
-      "assets/images/brienne_3.jpg",
-    ],
-    titles: [
-      "Cavaleira de Tarth",
-      "Brienne, a Bela",
-      "Protetora de Sansa Stark",
-    ],
+    gallery: ["assets/images/brienne_1.jpg", "assets/images/brienne_2.jpg"],
+    title: "A Cavaleira de Tarth",
     aliases: ["Brienne, a Bela", "A Dama de Tarth", "A Espada de Tarth"],
   },
 
   {
-    code: 7,
+    code: 8,
     urlImage: "assets/images/joffrey_baratheon.jpg",
     alt: "Joffrey Baratheon, o jovem rei cruel",
     nameCharacters: "Joffrey Baratheon",
     origin: "Porto Real",
     house: "Casa Baratheon",
-    quotes: ["Eu sou o rei!", "Eu farei o que eu quiser!"],
+    quotes: ["Eu sou o rei!", "O rei pode fazer o que quiser!"],
     description: [
       "Joffrey Baratheon é o filho mais velho de Cersei Lannister e Robert Baratheon, embora a verdadeira paternidade de Joffrey seja um tema de especulação e conflito ao longo da série, já que é amplamente sugerido que seu verdadeiro pai é Jaime Lannister, o irmão gêmeo de Cersei.",
       "Desde jovem, Joffrey demonstra um comportamento cruel e egocêntrico. Ele é mimado por sua mãe e frequentemente usa sua posição de poder para intimidar e ferir os outros. Sua personalidade tirânica e impiedosa se torna evidente quando ele ascende ao trono após a morte de seu pai. Joffrey se deleita em torturar aqueles que considera inferiores e se envolve em diversas ações brutais, incluindo a execução de Ned Stark, o que provoca descontentamento generalizado.",
@@ -247,12 +208,8 @@ export const characters = [
       "Joffrey Baratheon é lembrado como um dos piores reis da história de Westeros, conhecido por sua crueldade e abuso de poder. Sua morte violenta durante seu próprio casamento, conhecida como o 'Casamento Púrpura', simboliza a justiça poética para muitos personagens e espectadores que o viam como um tirano insuportável. Sua trajetória ressalta os temas da corrupção do poder e as consequências da tirania.",
     ],
     backgroundImage: "assets/images/joffrey_background.jpg",
-    gallery: [
-      "assets/images/joffrey_1.jpg",
-      "assets/images/joffrey_2.jpg",
-      "assets/images/joffrey_3.jpg",
-    ],
-    titles: ["O Rei Sádico", "Protetor do Reino", "Senhor de Porto Real"],
+    gallery: ["assets/images/joffrey_1.jpg", "assets/images/joffrey_2.jpg"],
+    title: "O Rei Sádico",
     aliases: [
       "Joffrey, o Cruel",
       "O Rei Sádico",
@@ -262,13 +219,13 @@ export const characters = [
   },
 
   {
-    code: 8,
+    code: 9,
     urlImage: "assets/images/petyr_baelish.jpg",
     alt: "Petyr Baelish, o manipulador astuto",
     nameCharacters: "Petyr Baelish",
     origin: "Porto Real",
     house: "Casa Baelish",
-    quote: [
+    quotes: [
       "Caos não é uma cela. Caos é uma escada.",
       "As pessoas são mais fáceis de manipular quando têm um desejo que não podem satisfazer.",
     ],
@@ -279,27 +236,19 @@ export const characters = [
       "Petyr Baelish é lembrado como um dos principais antagonistas da série, simbolizando a corrupção e a ambição desmedida que caracterizam muitos personagens em Westeros. Seu papel em diversas reviravoltas na trama, bem como sua morte trágica, destacam a inevitabilidade das consequências de suas ações manipuladoras.",
     ],
     backgroundImage: "assets/images/petyr_background.jpg",
-    gallery: [
-      "assets/images/petyr_1.jpg",
-      "assets/images/petyr_2.jpg",
-      "assets/images/petyr_3.jpg",
-    ],
-    titles: [
-      "Senhor de Harrenhal",
-      "Mestre da Moeda",
-      "Protetor de Sansa Stark",
-    ],
+    gallery: ["assets/images/petyr_1.jpg", "assets/images/petyr_2.jpg"],
+    title: "O Senhor de Harrenhal",
     aliases: ["Littlefinger", "O Mestre do Caos", "O Senhor das Trapaças"],
   },
 
   {
-    code: 9,
+    code: 10,
     urlImage: "assets/images/jaime_lannister.jpg",
     alt: "Jaime Lannister, o cavaleiro complexo e redentor",
     nameCharacters: "Jaime Lannister",
     origin: "Porto Real",
     house: "Casa Lannister",
-    quote: [
+    quotes: [
       "O homem que não tem nada a perder é o mais perigoso.",
       "Apenas um homem sem honra pode quebrar a sua palavra.",
     ],
@@ -310,27 +259,19 @@ export const characters = [
       "Jaime Lannister é lembrado como um dos personagens mais trágicos e complexos de 'Game of Thrones'. Sua jornada de um cavaleiro desprezado a um homem em busca de redenção ressoa com muitos fãs, destacando a ideia de que as pessoas podem mudar e que o verdadeiro heroísmo muitas vezes surge de situações adversas.",
     ],
     backgroundImage: "assets/images/jaime_background.jpg",
-    gallery: [
-      "assets/images/jaime_1.jpg",
-      "assets/images/jaime_2.jpg",
-      "assets/images/jaime_3.jpg",
-    ],
-    titles: [
-      "Regicida",
-      "Lord Comandante da Guarda Real",
-      "Cavaleiro da Rainha",
-    ],
+    gallery: ["assets/images/jaime_1.jpg", "assets/images/jaime_2.jpg"],
+    title: "O Regicida",
     aliases: ["A Mão do Rei", "Cavaleiro Dourado", "O Rei da Montanha"],
   },
 
   {
-    code: 10,
+    code: 11,
     urlImage: "assets/images/robb_stark.jpg",
     alt: "Robb Stark, o jovem lorde de Winterfell",
     nameCharacters: "Robb Stark",
     origin: "Winterfell",
     house: "Casa Stark",
-    quote: ["O Norte nunca esquece.", "Eu não sou um rei, eu sou um Stark."],
+    quotes: ["O Norte nunca esquece.", "Eu não sou um rei, eu sou um Stark."],
     description: [
       "Robb Stark é o filho mais velho de Eddard e Catelyn Stark e o herdeiro de Winterfell. Desde jovem, ele é ensinado a ser um líder justo e a proteger seu lar e sua família. Robb é caracterizado por seu senso de dever, lealdade e coragem, sempre disposto a lutar pelo que é certo.",
       "Após a execução de seu pai, Eddard Stark, Robb assume o comando da Casa Stark e é proclamado Rei do Norte por seus vassalos. Ele lidera uma revolta contra a Coroa, buscando vingar a morte de seu pai e restaurar a honra da família Stark. Ao longo de sua jornada, Robb demonstra habilidades de liderança excepcionais e é respeitado por seus aliados.",
@@ -338,23 +279,19 @@ export const characters = [
       "Robb Stark é lembrado como um líder carismático e justo, cuja determinação e bravura inspiraram aqueles ao seu redor. Seu trágico destino serve como um lembrete da fragilidade do poder e das complexidades da guerra em Westeros.",
     ],
     backgroundImage: "assets/images/robb_background.jpg",
-    gallery: [
-      "assets/images/robb_1.jpg",
-      "assets/images/robb_2.jpg",
-      "assets/images/robb_3.jpg",
-    ],
-    titles: ["Rei do Norte"],
+    gallery: ["assets/images/robb_1.jpg", "assets/images/robb_2.jpg"],
+    title: "O Rei Lobo",
     aliases: ["O Jovem Lobo"],
   },
 
   {
-    code: 11,
+    code: 12,
     urlImage: "assets/images/talisa_maegyr.jpg",
     alt: "Talisa Maegyr, a curandeira de Volantis e esposa de Robb Stark",
     nameCharacters: "Talisa Maegyr",
     origin: "Volantis",
-    house: "Maegyr",
-    quote: [
+    house: "Casa Maegyr",
+    quotes: [
       "As pessoas não são boas ou más. Elas são apenas pessoas.",
       "Não quero ser uma rainha. Quero ser a mulher do homem que amo.",
     ],
@@ -365,23 +302,19 @@ export const characters = [
       "Talisa é lembrada como uma mulher forte que trouxe amor e humanidade ao mundo de Robb Stark. Sua vida e morte trágica durante os eventos de 'O Casamento Vermelho' ressaltam os altos custos da guerra e as realidades brutais que os personagens enfrentam em Westeros.",
     ],
     backgroundImage: "assets/images/talisa_background.jpg",
-    gallery: [
-      "assets/images/talisa_1.jpg",
-      "assets/images/talisa_2.jpg",
-      "assets/images/talisa_3.jpg",
-    ],
-    titles: ["Rainha do Norte"],
+    gallery: ["assets/images/talisa_1.jpg", "assets/images/talisa_2.jpg"],
+    title: "A Rainha do Norte",
     aliases: ["A Curandeira"],
   },
 
   {
-    code: 12,
+    code: 13,
     urlImage: "assets/images/melisandre.jpg",
     alt: "Melisandre, a Sacerdotisa Vermelha",
     nameCharacters: "Melisandre de Asshai",
     origin: "Asshai",
     house: "Não pertence a nenhuma casa de Westeros",
-    quote: [
+    quotes: [
       "A morte é uma parte da vida, e a vida não pode existir sem ela.",
       "A escuridão não é a ausência de luz. É a presença do medo.",
     ],
@@ -395,20 +328,19 @@ export const characters = [
     gallery: [
       "assets/images/melisandre_1.jpg",
       "assets/images/melisandre_2.jpg",
-      "assets/images/melisandre_3.jpg",
     ],
-    titles: ["Sra. do Fogo", "Profetisa de R'hllor"],
+    title: "A Sacerdotisa de R'hllor",
     aliases: ["A Sacerdotisa do Fogo", "A Mulher Vermelha"],
   },
 
   {
-    code: 13,
+    code: 14,
     urlImage: "assets/images/sandor_clegane.jpg",
     alt: "Sandor Clegane, o Cão de Caça",
     nameCharacters: "Sandor Clegane",
     origin: "Ferro",
     house: "Não pertence a uma casa nobre, mas serve a Casa Lannister",
-    quote: [
+    quotes: [
       "A morte é a única coisa que não pode ser evitada.",
       "Eu sou um cão de caça. Eu não sou um cavaleiro.",
     ],
@@ -422,20 +354,22 @@ export const characters = [
     gallery: [
       "assets/images/sandor_clegane_1.jpg",
       "assets/images/sandor_clegane_2.jpg",
-      "assets/images/sandor_clegane_3.jpg",
     ],
-    titles: ["Cavaleiro"],
+    title: "O Cão de Caça",
     aliases: ["Cão de Caça"],
   },
 
   {
-    code: 14,
+    code: 15,
     urlImage: "assets/images/bran_stark.jpg",
     alt: "Bran Stark, o Corvo de Três Olhos",
     nameCharacters: "Bran Stark",
     origin: "Winterfell",
-    house: "Stark",
-    quote: "O passado não pode ser mudado.",
+    house: "Casa Stark",
+    quotes: [
+      "Eu não sou um homem, eu sou um Corvo.",
+      "O passado é tudo o que temos.",
+    ],
     description: [
       "Bran Stark é o segundo filho de Eddard e Catelyn Stark. Desde jovem, Bran sempre teve um interesse particular pela escalada e pela exploração, mas sua vida muda drasticamente após um acidente em que ele cai de uma torre, resultando em sua paralisia da cintura para baixo. Essa experiência o leva a descobrir seus poderes místicos, que incluem a capacidade de ver visões do passado e do futuro.",
       "Ao longo da série, Bran se transforma em uma figura essencial no desenrolar da história de Westeros. Sua jornada o leva a encontrar o Corvo de Três Olhos, que o treina e o ensina a controlar suas habilidades. Através de suas visões, Bran torna-se um repositório de conhecimento, capaz de entender eventos importantes que moldaram a história dos Sete Reinos.",
@@ -446,13 +380,9 @@ export const characters = [
     gallery: [
       "assets/images/bran_stark_1.jpg",
       "assets/images/bran_stark_2.jpg",
-      "assets/images/bran_stark_3.jpg",
     ],
-    titles: ["O Corvo de Três Olhos"],
-    aliases: [
-      "Eu não sou um homem, eu sou um Corvo.",
-      "O passado é tudo o que temos.",
-    ],
+    title: "O Corvo de Três Olhos",
+    aliases: ["Príncipe de Winterfell", "Senhor dos Seis Reinos"],
   },
 
   {
@@ -461,8 +391,8 @@ export const characters = [
     alt: "Stannis Baratheon, o Rei do Fogo e do Gelo",
     nameCharacters: "Stannis Baratheon",
     origin: "Dragonstone",
-    house: "Baratheon",
-    quote: [
+    house: "Casa Baratheon",
+    quotes: [
       "A verdade é que todos os homens devem morrer. Mas nem todos os homens viverão.",
       "A única coisa que me preocupa é o que é justo.",
     ],
@@ -476,9 +406,8 @@ export const characters = [
     gallery: [
       "assets/images/stannis_baratheon_1.jpg",
       "assets/images/stannis_baratheon_2.jpg",
-      "assets/images/stannis_baratheon_3.jpg",
     ],
-    titles: ["Rei de Westeros", "Senhor de Dragonstone"],
+    title: "Senhor de Dragonstone",
     aliases: ["O Rei que não se Move", "Stannis, o Justo"],
   },
 
@@ -488,8 +417,8 @@ export const characters = [
     alt: "Renly Baratheon, o Rei da Luz Verde",
     nameCharacters: "Renly Baratheon",
     origin: "Ponta Tempestade",
-    house: "Baratheon",
-    quote: [
+    house: "Casa Baratheon",
+    quotes: [
       "O poder não é dado. É tomado.",
       "As pessoas devem ter algo em que acreditar.",
     ],
@@ -503,9 +432,8 @@ export const characters = [
     gallery: [
       "assets/images/renly_baratheon_1.jpg",
       "assets/images/renly_baratheon_2.jpg",
-      "assets/images/renly_baratheon_3.jpg",
     ],
-    titles: ["Rei de Westeros (auto-proclamado)", "Senhor de Ponta Tempestade"],
+    title: "Rei de Westeros (auto-proclamado)",
     aliases: ["O Rei do Sol", "Renly, o Brilhante", "O Veado de Aço"],
   },
 
@@ -516,7 +444,7 @@ export const characters = [
     nameCharacters: "Theon Greyjoy",
     origin: "Ilhas de Ferro",
     house: "Casa Greyjoy",
-    quote: ["O que eu fiz... eu fiz por amor.", "Eu não sou um Stark!"],
+    quotes: ["O que eu fiz... eu fiz por amor.", "Eu não sou um Stark!"],
     description: [
       "Theon Greyjoy é o único filho vivo de Balon Greyjoy, o Senhor das Ilhas de Ferro. Desde jovem, ele foi criado como um 'refém na Casa Stark, servindo como garantia da lealdade de seu pai a Eddard Stark. Essa educação em Winterfell lhe dá uma perspectiva única, dividida entre suas raízes nas Ilhas de Ferro e seu desejo de se encaixar no mundo dos Stark.",
       "Ao retornar às Ilhas de Ferro, Theon busca provar seu valor para seu pai e sua casa. Ele assume o controle de Winterfell, mas suas ações resultam em consequências trágicas e arrasadoras. Sua tentativa de se afirmar como um líder leva à captura de Bran e Rickon Stark, além de um confronto com Robb Stark, o que resulta em sua queda e subsequente captura por seus inimigos.",
@@ -527,9 +455,8 @@ export const characters = [
     gallery: [
       "assets/images/theon_greyjoy_1.jpg",
       "assets/images/theon_greyjoy_2.jpg",
-      "assets/images/theon_greyjoy_3.jpg",
     ],
-    titles: ["Senhor de Winterfell"],
+    title: "Príncipe das Ilhas de Ferro",
     aliases: ["O Filho de Ferro", "Theon, o Cão de Guerra"],
   },
 
@@ -540,7 +467,7 @@ export const characters = [
     nameCharacters: "Tywin Lannister",
     origin: "Casterly Rock",
     house: "Casa Lannister",
-    quote: [
+    quotes: [
       "Um leão não se preocupa com a opinião das ovelhas.",
       "A qualquer um que duvide da força da Casa Lannister, que não se esqueça: nós sempre pagamos nossas dívidas.",
     ],
@@ -554,9 +481,8 @@ export const characters = [
     gallery: [
       "assets/images/tywin_lannister_1.jpg",
       "assets/images/tywin_lannister_2.jpg",
-      "assets/images/tywin_lannister_3.jpg",
     ],
-    titles: ["Senhor de Casterly Rock", "Protetor do Oeste", "Mão do Rei"],
+    title: "Senhor de Casterly Rock",
     aliases: ["Leão de Casterly Rock", "O Grande Lannister", "A Mão do Rei"],
   },
 
@@ -567,7 +493,7 @@ export const characters = [
     nameCharacters: "Davos Seaworth",
     origin: "Porto de King’s Landing",
     house: "Nenhuma (foi um contrabandista e, posteriormente, um lorde)",
-    quote: [
+    quotes: [
       "Um homem que não pode confiar em seus próprios amigos, em quem pode confiar?",
       "Às vezes, um homem é obrigado a fazer coisas que não gostaria de fazer.",
     ],
@@ -581,9 +507,8 @@ export const characters = [
     gallery: [
       "assets/images/davos_seaworth_1.jpg",
       "assets/images/davos_seaworth_2.jpg",
-      "assets/images/davos_seaworth_3.jpg",
     ],
-    titles: ["Senhor de Claw Isle", "Mestre da Luz"],
+    title: "O Cavaleiro da Cebola",
     aliases: [
       "O Cavaleiro da Cebola",
       "Davos, a Mão de Stannis",
@@ -598,7 +523,7 @@ export const characters = [
     nameCharacters: "Ygritte",
     origin: "Povo Livre",
     house: "Nenhuma (parte do Povo Livre)",
-    quote: [
+    quotes: [
       "Você sabe nada, Jon Snow.",
       "O que importa é o que você é por dentro.",
     ],
@@ -613,7 +538,7 @@ export const characters = [
       "assets/images/ygritte_2.jpg",
       "assets/images/ygritte_3.jpg",
     ],
-    titles: ["Guerrreira do Povo Livre"],
+    title: "Guerrreira do Povo Livre",
     aliases: ["A Garota do Povo Livre", "A Caçadora"],
   },
 
@@ -623,8 +548,8 @@ export const characters = [
     alt: "Margaery Tyrell, a astuta e carismática",
     nameCharacters: "Margaery Tyrell",
     origin: "Alto Jardim",
-    house: "Tyrell",
-    quote: [
+    house: "Casa Tyrell",
+    quotes: [
       "Às vezes, a melhor maneira de proteger aqueles que amamos é nos tornarmos aquilo que eles temem.",
       "Eu gostaria de poder ver o futuro. Então, eu poderia fazer planos.",
     ],
@@ -638,9 +563,8 @@ export const characters = [
     gallery: [
       "assets/images/margaery_tyrell_1.jpg",
       "assets/images/margaery_tyrell_2.jpg",
-      "assets/images/margaery_tyrell_3.jpg",
     ],
-    titles: ["Rainha de Westeros"],
+    title: "A Rainha do Sol",
     aliases: ["A Rosa de Altojardim", "A Rainha do Sol"],
   },
 
@@ -651,7 +575,7 @@ export const characters = [
     nameCharacters: "Tormund Giantsbane",
     origin: "Nascido no Norte, além da Muralha",
     house: "Não possui casa formal, pertence ao Povo Livre.",
-    quote: [
+    quotes: [
       "Eu não sou um gigante, sou apenas um homem que se recusa a ser domado.",
       "A vida é curta. O que você vai fazer com ela? Você vai se esconder ou vai lutar?",
     ],
@@ -665,9 +589,8 @@ export const characters = [
     gallery: [
       "assets/images/tormund_giantsbane_1.jpg",
       "assets/images/tormund_giantsbane_2.jpg",
-      "assets/images/tormund_giantsbane_3.jpg",
     ],
-    titles: ["Líder dos Selvagens"],
+    title: "Líder dos Selvagens",
     aliases: ["Giantsbane", "Tormund, o Grande"],
   },
 
@@ -677,8 +600,8 @@ export const characters = [
     alt: "Ned Stark, o Senhor de Winterfell e Warden do Norte",
     nameCharacters: "Eddard 'Ned' Stark",
     origin: "Winterfell",
-    house: "Stark",
-    quote: [
+    house: "Casa Stark",
+    quotes: [
       "O homem que veste a armadura não é o homem que a usa.",
       "A desonra não é um destino que eu aceito.",
     ],
@@ -689,12 +612,8 @@ export const characters = [
       "Eddard Stark é lembrado como um símbolo de honra e integridade em um mundo onde a traição e a manipulação são comuns. Sua morte trágica em Porto Real serve como um catalisador para muitos eventos subsequentes na série, impactando profundamente a trajetória de seus filhos e a luta pelo controle do Norte.",
     ],
     backgroundImage: "assets/images/ned_stark_background.jpg",
-    gallery: [
-      "assets/images/ned_stark_1.jpg",
-      "assets/images/ned_stark_2.jpg",
-      "assets/images/ned_stark_3.jpg",
-    ],
-    titles: ["Guardião do Norte", "Lord de Winterfell", "Mão do Rei"],
+    gallery: ["assets/images/ned_stark_1.jpg", "assets/images/ned_stark_2.jpg"],
+    title: "Guardião do Norte",
     aliases: ["Ned", "Eddard, o Honrado"],
   },
 
@@ -702,10 +621,10 @@ export const characters = [
     code: 24,
     urlImage: "assets/images/missandei.jpg",
     alt: "Missandei, a conselheira sábia e intérprete de Daenerys Targaryen",
-    nameCharacters: "Missandei",
+    nameCharacters: "Missandei de Astapor",
     origin: "Astapor",
-    house: "Nenhuma (escrava libertada)",
-    quote: ["Dracarys.", "Meu nome é Missandei de Astapor."],
+    house: "Não possui casa formal (escrava libertada)",
+    quotes: ["Dracarys.", "Meu nome é Missandei de Astapor."],
     description: [
       "Missandei é uma ex-escrava que se tornou uma das mais próximas conselheiras de Daenerys Targaryen. Nascida em Astapor, onde foi comprada como escrava, ela serviu como intérprete para os mestres da cidade. Quando Daenerys conquistou Astapor, Missandei foi libertada e se juntou à causa da Targaryen.",
       "Inteligente e astuta, Missandei rapidamente se tornou uma aliada valiosa para Daenerys, oferecendo conselhos estratégicos e servindo como sua intérprete em negociações diplomáticas. Sua habilidade com idiomas e conhecimento das culturas de Essos a tornaram uma ponte importante entre Daenerys e os povos que ela buscava unir.",
@@ -713,12 +632,8 @@ export const characters = [
       "Missandei é lembrada por sua força, resiliência e inteligência. Ela simboliza a luta contra a opressão e a busca por liberdade, representando a importância da voz e da agência para aqueles que foram marginalizados. Sua morte trágica impacta profundamente Daenerys, catalisando mudanças significativas em sua jornada e decisões.",
     ],
     backgroundImage: "assets/images/missandei_background.jpg",
-    gallery: [
-      "assets/images/missandei_1.jpg",
-      "assets/images/missandei_2.jpg",
-      "assets/images/missandei_3.jpg",
-    ],
-    titles: ["Conselheira de Daenerys Targaryen"],
+    gallery: ["assets/images/missandei_1.jpg", "assets/images/missandei_2.jpg"],
+    title: "Conselheira de Daenerys Targaryen",
     aliases: ["Missandei de Astapor"],
   },
 
@@ -728,8 +643,8 @@ export const characters = [
     alt: "Sor Jorah Mormont, o leal cavaleiro e protetor de Daenerys Targaryen",
     nameCharacters: "Sor Jorah Mormont",
     origin: "Invernalia, Westeros",
-    house: "Mormont",
-    quote: [
+    house: "Casa Mormont",
+    quotes: [
       "Eu farei qualquer coisa para proteger a rainha.",
       "A vida é uma luta constante. A luta é tudo o que temos.",
     ],
@@ -740,12 +655,8 @@ export const characters = [
       "Sor Jorah Mormont é lembrado por sua lealdade inabalável, coragem e sacrifício. Sua jornada reflete a busca por redenção e o poder do amor, demonstrando que, mesmo com um passado complicado, é possível encontrar um propósito e lutar por aqueles que se ama.",
     ],
     backgroundImage: "assets/images/sor_jorah_background.jpg",
-    gallery: [
-      "assets/images/sor_jorah_1.jpg",
-      "assets/images/sor_jorah_2.jpg",
-      "assets/images/sor_jorah_3.jpg",
-    ],
-    titles: ["Cavaleiro de Daenerys Targaryen", "Senhor das Ilhas de Mormont"],
+    gallery: ["assets/images/sor_jorah_1.jpg", "assets/images/sor_jorah_2.jpg"],
+    title: "Cavaleiro de Daenerys Targaryen",
     aliases: ["O exilado"],
   },
 
@@ -756,7 +667,7 @@ export const characters = [
     nameCharacters: "Khal Drogo",
     origin: "Essos",
     house: "Dothraki",
-    quote: [
+    quotes: [
       "Se você não pode ser o melhor, seja o mais temido.",
       "Apenas o sangue de um dragão pode domar um dragão.",
     ],
@@ -770,9 +681,8 @@ export const characters = [
     gallery: [
       "assets/images/khal_drogo_1.jpg",
       "assets/images/khal_drogo_2.jpg",
-      "assets/images/khal_drogo_3.jpg",
     ],
-    titles: ["Khal"],
+    title: "Khal",
     aliases: ["O homem que montou um dragão", "Khal do Khalasar"],
   },
 
@@ -782,16 +692,15 @@ export const characters = [
     alt: "Mirri Maz Duur, a curandeira de Essos",
     nameCharacters: "Mirri Maz Duur",
     origin: "Lhaesh, Essos",
-    house: "N/A",
-    title: "Curandeira",
-    quote: "O que foi feito não pode ser desfeito.",
+    house: "Não possui casa formal",
+    title: "A Curandeira",
+    quotes: "O que foi feito não pode ser desfeito.",
     description:
       "Mirri Maz Duur é uma curandeira e sacerdotisa da cultura Lhazareen, conhecida por seus conhecimentos em medicina e magia. Ela é trazida a Khal Drogo para tratar suas feridas, mas suas habilidades são envoltas em mistério e tragédia. A personagem desempenha um papel crucial na trama, especialmente na transformação de Daenerys Targaryen. Mirri Maz Duur representa o conflito entre a ciência e a magia, e suas ações têm consequências significativas para a narrativa, refletindo temas de sacrifício e moralidade. Sua presença no enredo desafia os personagens a enfrentarem as complexidades da vida e da morte.",
     backgroundImage: "assets/images/mirri_maz_duur_background.jpg",
     gallery: [
       "assets/images/mirri_maz_duur_1.jpg",
       "assets/images/mirri_maz_duur_2.jpg",
-      "assets/images/mirri_maz_duur_3.jpg",
     ],
   },
 
@@ -803,7 +712,7 @@ export const characters = [
     origin: "Winterfell, Westeros",
     house: "Stark",
     title: "Lady de Winterfell",
-    quote: "A família é tudo.",
+    quotes: "A família é tudo.",
     description:
       "Catelyn Stark, née Tully, é a matriarca da Casa Stark e uma mulher forte e decidida. Ela é conhecida por seu amor inabalável pela família e sua lealdade aos Stark. Catelyn toma decisões difíceis para proteger seus filhos e sua casa, refletindo a complexidade das relações familiares em um mundo de intrigas e perigos. Sua jornada é marcada por tragédias e sacrifícios, e seu papel na história destaca a importância das mulheres nas narrativas de 'Game of Thrones'. Catelyn representa tanto a força quanto a vulnerabilidade da maternidade em meio ao caos.",
     backgroundImage: "assets/images/catelyn_stark_background.jpg",
@@ -820,9 +729,9 @@ export const characters = [
     alt: "Hodor, o leal protetor de Bran Stark",
     nameCharacters: "Hodor",
     origin: "Winterfell, Westeros",
-    house: "Stark",
+    house: "Casa Stark",
     title: "Guardião de Bran Stark",
-    quote: "Hodor.",
+    quotes: "Hodor.",
     description:
       "Hodor, cujo nome verdadeiro é Wylis, é um personagem icônico da série, conhecido por sua lealdade e simplicidade. Ele serve como um protetor dedicado de Bran Stark, sempre disposto a arriscar sua vida por ele. Sua famosa frase, 'Hodor', é uma reminiscência de sua condição e uma expressão de seu amor e devoção. A história de Hodor é trágica e cheia de emoção, culminando em um sacrifício heroico que ressoa profundamente com os fãs da série. Ele simboliza a pureza e a bondade em um mundo frequentemente repleto de traições e violência.",
     backgroundImage: "assets/images/hodor_background.jpg",
@@ -839,9 +748,9 @@ export const characters = [
     alt: "Ramsay Bolton, o cruel e impiedoso senhor de Winterfell",
     nameCharacters: "Ramsay Bolton",
     origin: "Winterfell, Westeros",
-    house: "Bolton",
+    house: "Casa Bolton",
     title: "Senhor de Winterfell",
-    quote: "Se você não pode ser bom, seja o melhor.",
+    quotes: "Se você não pode ser bom, seja o melhor.",
     description:
       "Ramsay Bolton é um dos vilões mais temidos da série, conhecido por sua crueldade e sadismo. Como o filho bastardo de Roose Bolton, ele se destaca pela brutalidade e falta de compaixão, tornando-se um verdadeiro representante da casa Bolton. Ele é famoso por suas táticas tortuosas e por seu prazer em infligir dor e sofrimento aos outros, o que faz dele um dos antagonistas mais memoráveis. Ramsay busca o poder a qualquer custo, e sua relação com Theon Greyjoy exemplifica sua natureza manipuladora e cruel. Sua história culmina em uma luta pelo controle de Winterfell, onde seu destino se entrelaça com a de outros personagens em um enredo cheio de traições e reviravoltas.",
     backgroundImage: "assets/images/ramsay_bolton_background.jpg",
@@ -858,9 +767,9 @@ export const characters = [
     alt: "Jaqen H'ghar, o misterioso assassino de Braavos",
     nameCharacters: "Jaqen H'ghar",
     origin: "Braavos, Westeros",
-    house: "Sem Casa",
+    house: "Não possui casa formal",
     title: "Homem Sem Face",
-    quote: "Um homem deve saber quando morrer.",
+    quotes: "Um homem deve saber quando morrer.",
     description:
       "Jaqen H'ghar é um dos personagens mais enigmáticos de 'Game of Thrones', conhecido por sua habilidade de mudar de aparência e sua ligação com a Casa de Preto e Branco. Ele é um assassino treinado e membro da guilda de assassinos de Braavos, que serve a uma entidade conhecida como 'A Many-Faced God'. Durante a série, Jaqen se torna uma figura crucial para Arya Stark, ajudando-a a entender o caminho do assassinato e a importância de deixar para trás sua identidade anterior. Sua personalidade calma e suas habilidades extraordinárias fazem dele um personagem fascinante, simbolizando a complexidade da moralidade no mundo de Westeros.",
     backgroundImage: "assets/images/jaqen_hghar_background.jpg",
@@ -879,7 +788,7 @@ export const characters = [
     origin: "Horn Hill, Westeros",
     house: "Casa Tarly",
     title: "Mestre",
-    quote: "Eu sou Samwell Tarly, e eu sou um homem.",
+    quotes: "Eu sou Samwell Tarly, e eu sou um homem.",
     description:
       "Samwell Tarly é um personagem que representa a coragem e a determinação em face da adversidade. Ele é inicialmente apresentado como um jovem tímido e inseguro, mas ao longo da série, ele evolui em um combatente astuto e um valioso aliado. Sam é conhecido por sua inteligência e amor pela leitura, e é um dos poucos personagens que não busca poder ou glória, mas sim o conhecimento e a proteção dos que ama. Sua amizade com Jon Snow e seu papel como aprendiz de mestre na Muralha são fundamentais para a narrativa, especialmente em tempos de necessidade extrema.",
     backgroundImage: "assets/images/samwell_tarly_background.jpg",
@@ -898,7 +807,7 @@ export const characters = [
     origin: "Cidade Livre de Lys",
     house: "Casa Varys (não tem uma casa em particular)",
     title: "Mestre dos Sussurros",
-    quote:
+    quotes:
       "O que é mais perigoso? Um homem sem medo ou um homem com uma agenda?",
     description:
       "Lorde Varys, conhecido como o 'Mestre dos Sussurros', é um intrigante e manipulador conselheiro na corte de Westeros. Nascido em Lys, sua história é marcada por segredos e espionagem. Ele serve os interesses do reino, acreditando que o bem do povo deve prevalecer, mesmo que suas táticas sejam frequentemente sombrias e imorais. Com uma habilidade única para ouvir e aprender, Varys tem uma rede de espiões que se estende por toda Westeros, o que o torna uma figura crucial nas lutas pelo poder. Sua lealdade é frequentemente questionada, mas seu profundo conhecimento da política e da dinâmica das casas nobres o torna um aliado valioso.",
@@ -918,7 +827,7 @@ export const characters = [
     origin: "Dorne",
     house: "Casa Martell",
     title: "O Príncipe de Dorne",
-    quote:
+    quotes:
       "Eu sou a vingança, e a vingança é um prato que deve ser servido frio.",
     description:
       "Oberyn Martell, também conhecido como a 'Cobra Vermelha', é o Príncipe de Dorne e um dos personagens mais carismáticos de Westeros. Ele é famoso por sua habilidade com a lança, seu espírito livre e seu charme irresistível. Oberyn é profundamente leal à sua família e busca vingar a morte de sua irmã, Elia Martell, que foi brutalmente assassinada por Gregor Clegane. Sua personalidade audaciosa e destemida, combinada com suas habilidades marciais excepcionais, o tornam um jogador importante na luta pelo poder em Westeros, especialmente quando ele se envolve na disputa pela mão de sua filha. Oberyn é um homem que vive intensamente, buscando justiça e prazer em igual medida.",
@@ -938,7 +847,7 @@ export const characters = [
     origin: "Essos",
     house: "Não tem casa",
     title: "Comandante dos Imaculados",
-    quote: "Apenas ouça as minhas ordens.",
+    quotes: "Apenas ouça as minhas ordens.",
     description:
       "Verme Cinzento é um dos personagens mais marcantes da série, conhecido por sua lealdade inabalável a Daenerys Targaryen. Originalmente um escravo, ele é um dos Imaculados, guerreiros treinados para serem perfeitos em combate. Com habilidades excepcionais, Verme Cinzento se destaca no campo de batalha e é um líder natural. Sua devoção a Daenerys é motivada não apenas por amor, mas também por um profundo respeito por sua luta contra a opressão. Ele simboliza a luta pela liberdade e a busca por uma nova vida em Westeros, onde ele pode finalmente ser livre.",
     backgroundImage: "assets/images/verme_cinzento_background.jpg",
@@ -957,7 +866,7 @@ export const characters = [
     origin: "Ilha de Bear",
     house: "Casa Mormont",
     title: "Lady de Casa Mormont",
-    quote: "O Norte se lembra.",
+    quotes: "O Norte se lembra.",
     description:
       "Lyanna Mormont é uma das personagens mais impressionantes da série, conhecida por sua coragem e determinação, apesar de sua juventude. Como a Lady de Casa Mormont, ela é responsável pela liderança de sua casa e, por extensão, da ilha de Bear. Sua personalidade forte e sua habilidade em comandar são evidentes quando ela enfrenta os desafios de seu papel em meio à guerra. Lyanna se recusa a ser subestimada por causa de sua idade e demonstra uma lealdade inabalável ao Norte e a seus aliados. Sua famosa frase, 'O Norte se lembra', reflete sua determinação em honrar a história e os deveres de sua casa.",
     backgroundImage: "assets/images/lyanna_mormont_background.jpg",
@@ -976,7 +885,7 @@ export const characters = [
     origin: "Dorne",
     house: "Casa Martell",
     title: "Amante de Oberyn Martell",
-    quote: "Eu sou o veneno que se torna o fogo.",
+    quotes: "Eu sou o veneno que se torna o fogo.",
     description:
       "Ellaria Sand é uma das personagens mais intrigantes de 'Game of Thrones', conhecida por sua beleza e ferocidade. Como a amante de Oberyn Martell, ela desempenha um papel importante nas dinâmicas políticas de Dorne e é leal à sua família, especialmente a seus filhos. Sua paixão por Oberyn é notável, e sua determinação em proteger seus entes queridos a torna uma aliada formidável e uma adversária a ser respeitada. Ellaria não hesita em desafiar aqueles que ameaçam sua família e suas crenças, refletindo a natureza ardente de seu caráter.",
     backgroundImage: "assets/images/ellaria_sand_background.jpg",
@@ -995,7 +904,7 @@ export const characters = [
     origin: "Ilhas de Ferro",
     house: "Casa Greyjoy",
     title: "Filha de Balon Greyjoy",
-    quote: "Eu sou Yara Greyjoy. Meu pai é um rei e eu sou uma mulher.",
+    quotes: "Eu sou Yara Greyjoy. Meu pai é um rei e eu sou uma mulher.",
     description:
       "Yara Greyjoy é uma das personagens mais fortes e determinadas de 'Game of Thrones'. Filha de Balon Greyjoy, ela se destaca em um mundo dominado por homens, desafiando as normas tradicionais de gênero. Yara é uma capitã de navio habilidosa e uma líder natural, que não hesita em lutar pelo que acredita. Sua lealdade à sua família e sua busca por independência a tornam uma figura complexa, mas admirável. Ao longo da série, ela busca honrar o legado de sua família enquanto busca seu próprio caminho, tornando-se uma guerreira respeitada nas Ilhas de Ferro.",
     backgroundImage: "assets/images/yara_greyjoy_background.jpg",
@@ -1014,7 +923,7 @@ export const characters = [
     origin: "King's Landing",
     house: "Sem casa",
     title: "Líder dos Sparrows",
-    quote: "Apenas os humildes têm lugar no reino de Deus.",
+    quotes: "Apenas os humildes têm lugar no reino de Deus.",
     description:
       "Alto Pardal é uma figura intrigante em 'Game of Thrones', conhecido por sua humildade e devoção religiosa. Como líder dos Sparrows, ele promove a ideia de uma moralidade simples e uma crítica à corrupção da nobreza. Sua ascensão ao poder em King's Landing traz uma nova ordem social, mas também gera conflito com as casas nobres, especialmente a Casa Lannister. Alto Pardal é um personagem complexo que explora temas de fé, poder e hipocrisia, mostrando que a verdadeira força pode vir dos mais humildes. Sua influência sobre os eventos na capital culmina em tensões dramáticas que impactam toda a narrativa.",
     backgroundImage: "assets/images/alto_pardal_background.jpg",
@@ -1033,7 +942,7 @@ export const characters = [
     origin: "Highgarden",
     house: "Tyrell",
     title: "A Rainha dos Espinhos",
-    quote: "Eu não tenho paciência para homens com o coração mole.",
+    quotes: "Eu não tenho paciência para homens com o coração mole.",
     description:
       "Olenna Tyrell, conhecida como a Rainha dos Espinhos, é uma das personagens mais astutas e intrigantes de 'Game of Thrones'. Ela é a matriarca da Casa Tyrell, uma das famílias mais poderosas de Westeros. Com uma mente afiada e um humor mordaz, Olenna é famosa por suas manobras políticas e por seu papel decisivo na corte. Ela valoriza a lealdade e a inteligência, usando sua sagacidade para proteger sua família e seus interesses. Seu caráter forte e suas estratégias políticas a tornam uma adversária formidável, capaz de enfrentar os mais poderosos, incluindo os Lannisters. Olenna é também uma das vozes mais memoráveis da série, frequentemente expressando suas opiniões de forma direta e incisiva.",
     backgroundImage: "assets/images/olenna_tyrell_background.jpg",
@@ -1052,7 +961,7 @@ export const characters = [
     origin: "Além da Muralha",
     house: "Caminhantes Brancos",
     title: "Líder dos Mortos",
-    quote: "Você não pode lutar contra a morte.",
+    quotes: "Você não pode lutar contra a morte.",
     description:
       "O Rei da Noite é uma das figuras mais enigmáticas e poderosas de 'Game of Thrones'. Ele é o líder dos Caminhantes Brancos, criaturas reanimadas que ameaçam a humanidade. Criado a partir de um homem vivo pela magia dos Filhos da Floresta, o Rei da Noite possui o poder de controlar os mortos e um conhecimento profundo das sombras e do frio. Sua presença na série simboliza a luta entre a vida e a morte, e seu objetivo é trazer o inverno eterno a Westeros. Através de sua conexão com a magia antiga, ele se tornou uma das maiores ameaças que os protagonistas enfrentam, estabelecendo-se como uma força aterrorizante e inevitável.",
     backgroundImage: "assets/images/night_king_background.jpg",
@@ -1071,7 +980,7 @@ export const characters = [
     origin: "Península de Storm's End",
     house: "Baratheon",
     title: "Princesa de Pedra",
-    quote: "Eu não sou uma princesa. Eu sou uma Baratheon.",
+    quotes: "Eu não sou uma princesa. Eu sou uma Baratheon.",
     description:
       "Shireen Baratheon é a única filha de Stannis Baratheon e Selyse Florent. Ela é uma jovem corajosa e inteligente, marcada pela doença que a deixou com cicatrizes. Apesar de seu tratamento cruel por parte de sua mãe, Shireen é gentil e valoriza a bondade em um mundo frequentemente cruel. Ela é uma grande apoiadora da causa de seu pai, mas seu destino trágico se entrelaça com as lutas de poder na Guerra dos Tronos. Seu amor por livros e histórias a torna uma figura única, mostrando que até mesmo nas circunstâncias mais sombrias, a esperança e a coragem podem prevalecer.",
     backgroundImage: "assets/images/shireen_baratheon_background.jpg",
@@ -1090,7 +999,7 @@ export const characters = [
     origin: "Forte do Pavor",
     house: "N/A",
     title: "Cavaleiro do Vale",
-    quote: "A vida é feita de escolhas.",
+    quotes: "A vida é feita de escolhas.",
     description:
       "Bronn é um mercenário pragmático e astuto que se torna aliado de Tyrion Lannister. Ele é conhecido por sua habilidade com a espada e sua disposição para fazer o que for necessário para sobreviver. Bronn é alguém que valoriza o poder e a riqueza, e sua lealdade pode ser comprada. Apesar de sua natureza egoísta, ele demonstra momentos de amizade e camaradagem, especialmente com Tyrion, a quem protege em várias ocasiões. Sua trajetória ao longo da série reflete os conflitos entre honra, ambição e sobrevivência em Westeros.",
     backgroundImage: "assets/images/bronn_background.jpg",
@@ -1109,7 +1018,7 @@ export const characters = [
     origin: "Casa Targaryen",
     house: "Targaryen",
     title: "Maestre da Patrulha da Noite",
-    quote: "O sangue de dragão ainda corre em minhas veias.",
+    quotes: "O sangue de dragão ainda corre em minhas veias.",
     description:
       "Aemon Targaryen é um membro da antiga e nobre Casa Targaryen, conhecido por seu papel como Maestre da Patrulha da Noite. Ele é um dos últimos de sua linhagem e, como tal, carrega o peso de sua herança. Apesar de sua posição na Patrulha, Aemon mantém a dignidade e a sabedoria de um Targaryen, demonstrando grande compaixão pelos homens sob seu comando. Ele tem uma profunda compreensão das questões que afligem Westeros e, muitas vezes, reflete sobre o que poderia ter sido se os Targaryen não tivessem perdido o trono. Aemon representa o legado da Casa Targaryen e a luta pela sobrevivência em um mundo que mudou drasticamente.",
     backgroundImage: "assets/images/aemon_background.jpg",
@@ -1128,7 +1037,7 @@ export const characters = [
     origin: "Norte",
     house: "N/A",
     title: "Acompanhante dos Stark",
-    quote: "Acho que a liberdade é algo a se conquistar.",
+    quotes: "Acho que a liberdade é algo a se conquistar.",
     description:
       "Osha é uma mulher selvagem do Norte, conhecida por sua astúcia e habilidades de sobrevivência. Ela se destaca como uma figura forte e independente, que desafia as normas da sociedade aristocrática de Westeros. A princípio, Osha é vista como uma ameaça para a Casa Stark, mas ao longo do tempo, ela se torna uma aliada valiosa. Sua lealdade é inegável, e seu conhecimento das terras do Norte a torna uma personagem intrigante, com um passado complexo e uma determinação feroz. Osha é um símbolo de resistência e adaptabilidade em um mundo hostil.",
     backgroundImage: "assets/images/osha_background.jpg",
@@ -1147,7 +1056,7 @@ export const characters = [
     origin: "Norte",
     house: "Casa Reed",
     title: "Greenseer",
-    quote: "Os sonhos são uma janela para o futuro.",
+    quotes: "Os sonhos são uma janela para o futuro.",
     description:
       "Jojen Reed é um jovem greenseer da Casa Reed, uma família antiga e leal ao Norte. Desde cedo, Jojen possui visões proféticas que o guiam em sua jornada. Ele é um personagem introspectivo e sábio, que carrega um profundo entendimento dos eventos que cercam os Stark e o destino de Westeros. Sua conexão com os sonhos e a natureza o torna uma figura essencial na luta contra a escuridão que se aproxima. Jojen é um aliado valioso para Bran Stark, ajudando-o a entender seu próprio poder e o caminho que deve seguir.",
     backgroundImage: "assets/images/jojen_reed_background.jpg",
@@ -1166,7 +1075,7 @@ export const characters = [
     origin: "Reino dos Sete",
     house: "Casa Selmy",
     title: "Cavaleiro da Guarda Real",
-    quote: "A honra é uma moeda de troca que vale a pena ter.",
+    quotes: "A honra é uma moeda de troca que vale a pena ter.",
     description:
       "Barristan Selmy é um dos cavaleiros mais respeitados de Westeros, conhecido por sua habilidade excepcional em combate e sua inabalável honra. Ele serviu como membro da Guarda Real, leal ao rei e ao seu dever. Selmy é um símbolo de bravura e lealdade, e seus feitos em batalha o tornaram uma lenda viva. Apesar de sua reputação, ele também carrega uma profunda tristeza e luto por tempos passados. Barristan se destaca por sua sabedoria e senso de justiça, sempre buscando fazer o que é certo, mesmo quando isso significa se opor a aqueles que deveriam ser seus superiores.",
     backgroundImage: "assets/images/barristan_selmy_background.jpg",
@@ -1185,7 +1094,7 @@ export const characters = [
     origin: "Terras Fluviais",
     house: "Casa Frey",
     title: "Senhor de Vento Frio",
-    quote: "A traição é um prato que se serve frio.",
+    quotes: "A traição é um prato que se serve frio.",
     description:
       "Walder Frey é o astuto e manipulador Senhor de Vento Frio, conhecido por sua habilidade em tecer alianças e trair seus aliados. Ele é o patriarca da Casa Frey e possui uma vasta prole, sempre pronto para utilizar a força de seus filhos e filhas para garantir a segurança e o poder de sua casa. O casamento de Edmure Tully e Roslin Frey, que se tornou um evento infame, exemplifica sua falta de honra e disposição para trair aqueles que deveriam ser aliados. Frey é um personagem emblemático da política traiçoeira de Westeros.",
     backgroundImage: "assets/images/walder_frey_background.jpg",
@@ -1204,7 +1113,7 @@ export const characters = [
     origin: "Terras Fluviais",
     house: "Casa Bolton",
     title: "Senhor de Ponta Tempestade",
-    quote: "A sombra da noite é uma aliada fiel.",
+    quotes: "A sombra da noite é uma aliada fiel.",
     description:
       "Roose Bolton é o astuto e cruel Senhor de Ponta Tempestade, conhecido por sua frieza e pelo uso da brutalidade em sua busca por poder. Ele é o patriarca da Casa Bolton e notoriamente traiu os Stark, seus antigos aliados, durante a Guerra dos Cinco Reis. Com um olhar impassível e uma reputação de impiedade, Roose manipula a política de Westeros em seu benefício, revelando-se um personagem central nas intrigas da história. Sua disposição para cometer atrocidades, como o assassinato de Robb Stark, cimenta sua posição como um dos vilões mais temidos de Westeros.",
     backgroundImage: "assets/images/roose_bolton_background.jpg",
@@ -1223,7 +1132,7 @@ export const characters = [
     origin: "Muralha",
     house: "N/A",
     title: "Jovem do Povo Livre",
-    quote: "Eu só quero que você volte.",
+    quotes: "Eu só quero que você volte.",
     description:
       "Olly é um jovem do povo livre que se une à Patrulha da Noite após perder sua família para os Caminhantes Brancos. Sua lealdade e coragem são evidentes, mas sua experiência o torna cínico em relação a aqueles que não compartilham seu sofrimento. Através de sua relação com Jon Snow, Olly representa a luta entre o dever e a amizade. Com um coração angustiado, suas ações refletem o desespero de quem busca justiça em um mundo brutal e implacável.",
     backgroundImage: "assets/images/olly_background.jpg",
@@ -1242,7 +1151,7 @@ export const characters = [
     origin: "Muralha",
     house: "N/A",
     title: "Comandante da Patrulha da Noite",
-    quote: "Você nunca será um verdadeiro Stark.",
+    quotes: "Você nunca será um verdadeiro Stark.",
     description:
       "Alliser Thorne é um membro da Patrulha da Noite, conhecido por seu comportamento rígido e sua atitude de desprezo, especialmente em relação a Jon Snow. Ele é um líder impiedoso, cujas crenças tradicionais o colocam em conflito com Jon e outros membros da Patrulha. Thorne acredita que a disciplina e a ordem são essenciais para a sobrevivência da Patrulha. No entanto, seu comportamento pode ser motivado por ciúmes e inseguranças, especialmente à medida que Jon se torna mais popular e respeitado.",
     backgroundImage: "assets/images/alliser_thorne_background.jpg",
@@ -1261,7 +1170,7 @@ export const characters = [
     origin: "Muralha",
     house: "Mormont",
     title: "Senhor Comandante da Patrulha da Noite",
-    quote: "A Muralha é nosso lar.",
+    quotes: "A Muralha é nosso lar.",
     description:
       "Jeor Mormont é o Senhor Comandante da Patrulha da Noite e um líder respeitado por sua bravura e sabedoria. Ele é um homem de princípios firmes, que valoriza a lealdade e a coragem em seus homens. Mormont é conhecido por sua preocupação com a segurança da Muralha e seu povo, especialmente quando ameaças como os Caminhantes Brancos se tornam mais iminentes. Ele é um mentor para Jon Snow, ensinando-lhe sobre a importância da honra e do dever na Patrulha.",
     backgroundImage: "assets/images/jeor_mormont_background.jpg",
@@ -1280,7 +1189,7 @@ export const characters = [
     origin: "Essos",
     house: "Targaryen",
     title: "Príncipe de Westeros",
-    quote: "Sou o legítimo herdeiro do trono de ferro.",
+    quotes: "Sou o legítimo herdeiro do trono de ferro.",
     description:
       "Viserys Targaryen é um personagem complexo da série, conhecido por sua obsessão em recuperar o trono de Westeros. Ele é o irmão mais novo de Daenerys e se considera o legítimo herdeiro do Trono de Ferro. Sua personalidade é marcada por um profundo ressentimento e uma necessidade de poder, levando-o a manipular sua irmã para alcançar seus próprios objetivos. Apesar de sua nobre origem, Viserys é frequentemente visto como arrogante e impiedoso, disposto a fazer qualquer coisa para garantir seu lugar no trono.",
     backgroundImage: "assets/images/viserys_targaryen_background.jpg",
@@ -1299,7 +1208,7 @@ export const characters = [
     origin: "Westeros",
     house: "Payne",
     title: "Escudeiro de Tyrion Lannister",
-    quote:
+    quotes:
       "Eu não sou um homem de guerra, mas farei o que for preciso para proteger aqueles que amo.",
     description:
       "Podrick Payne é um escudeiro leal e corajoso, conhecido por seu serviço a Tyrion Lannister. Ele se destaca por sua fidelidade e determinação, mesmo em face de grandes perigos. Apesar de seu jeito tímido, Podrick possui habilidades notáveis, especialmente em combate e estratégia. Sua história é marcada por momentos de bravura e um profundo senso de lealdade, tornando-o um personagem querido entre os fãs da série.",
@@ -1319,7 +1228,7 @@ export const characters = [
     origin: "Westeros",
     house: "Reed",
     title: "Guerreira de Winterfell",
-    quote: "Não se esqueça, eu sou a que vai te salvar.",
+    quotes: "Não se esqueça, eu sou a que vai te salvar.",
     description:
       "Meera Reed é uma corajosa e habilidosa guerreira, filha de Howland Reed, e é uma das principais aliadas de Bran Stark em sua jornada. Conhecida por sua bravura e habilidades de combate, Meera demonstra uma lealdade inabalável e um espírito protetor, lutando ferozmente para proteger Bran e garantir sua segurança. Sua conexão com a magia e a natureza a torna uma personagem fascinante, sendo uma das últimas representantes da Casa Reed.",
     backgroundImage: "assets/images/meera_reed_background.jpg",
@@ -1338,7 +1247,7 @@ export const characters = [
     origin: "Westeros",
     house: "Baratheon",
     title: "Ferreiro e Bastardo",
-    quote: "Eu sou um Baratheon. E isso significa algo.",
+    quotes: "Eu sou um Baratheon. E isso significa algo.",
     description:
       "Gendry é um bastardo de Robert Baratheon e um habilidoso ferreiro, conhecido por sua força e determinação. Desde sua juventude, ele tem lutado para encontrar seu lugar no mundo e entender seu legado como filho de um rei. Gendry se destaca por sua habilidade em forjar armas, especialmente quando se trata de criar armas para a luta contra os Caminhantes Brancos. Sua lealdade a seus amigos e sua coragem em enfrentar desafios o tornam um personagem cativante na história de 'Game of Thrones'.",
     backgroundImage: "assets/images/gendry_background.jpg",
@@ -1357,7 +1266,7 @@ export const characters = [
     origin: "Westeros",
     house: "Nenhuma",
     title: "Mestre e Praticante de Ciência Negra",
-    quote: "A ciência é mais poderosa do que qualquer magia.",
+    quotes: "A ciência é mais poderosa do que qualquer magia.",
     description:
       "Qyburn é um ex-mestre da Cidadela que se destacou por suas práticas não ortodoxas de medicina e ciência. Ele é conhecido por sua habilidade em reanimar os mortos e por seus experimentos com os limites da vida e da morte. Qyburn se tornou um aliado de Cersei Lannister, usando seu conhecimento e habilidades para ajudar a consolidar seu poder em King's Landing. Sua ambição e falta de ética o tornam um personagem intrigante e temido na série.",
     backgroundImage: "assets/images/qyburn_background.jpg",
@@ -1376,7 +1285,7 @@ export const characters = [
     origin: "Ilhas de Ferro",
     house: "Casa Greyjoy",
     title: "Rei dos Irmãos de Ferro",
-    quote: "Aquele que controla o mar, controla tudo.",
+    quotes: "Aquele que controla o mar, controla tudo.",
     description:
       "Euron Greyjoy é o ambicioso e traiçoeiro irmão mais novo de Balon Greyjoy. Conhecido por sua brutalidade e astúcia, ele retorna às Ilhas de Ferro após anos navegando pelos mares. Euron é um líder carismático que busca se tornar o novo Rei dos Irmãos de Ferro, desafiando a tradição e utilizando estratégias brutais para alcançar seus objetivos. Seu amor pelo caos e pela conquista o torna um adversário perigoso na luta pelo poder em Westeros.",
     backgroundImage: "assets/images/euron_greyjoy_background.jpg",
@@ -1395,7 +1304,7 @@ export const characters = [
     origin: "Muro",
     house: "N/A",
     title: "Membro dos homens livres",
-    quote: "Eu apenas quero ser livre.",
+    quotes: "Eu apenas quero ser livre.",
     description:
       "Gilly é uma mulher forte e determinada que vive entre os homens livres, sendo filha de um líder de uma das tribos. Ela foi resgatada por Samwell Tarly, e sua vida mudou drasticamente ao lado dele. Gilly é conhecida por sua lealdade e coragem, enfrentando as adversidades do Norte e lutando para proteger aqueles que ama. Sua relação com Sam é central para sua história, mostrando a luta e a busca pela liberdade em um mundo cheio de opressão e medo.",
     backgroundImage: "assets/images/gilly_background.jpg",
@@ -1414,7 +1323,7 @@ export const characters = [
     origin: "Ninho da Águia",
     house: "Arryn",
     title: "Lorde de Ninho da Águia",
-    quote: "Eu sou o Senhor de Ninho da Águia!",
+    quotes: "Eu sou o Senhor de Ninho da Águia!",
     description:
       "Robin Arryn, o jovem e frágil Lorde de Ninho da Águia, é um personagem complexo e muitas vezes visto como ingênuo. Desde a morte de sua mãe, ele ficou sob a tutela de sua mãe adotiva, que o influencia a seguir seus instintos e desejos. Robin é conhecido por seu comportamento mimado e sua conexão com sua mãe, que frequentemente o protege do mundo exterior. Sua jornada reflete a luta pelo poder e a fragilidade da liderança na luta pelo Trono de Ferro.",
     backgroundImage: "assets/images/robin_arryn_background.jpg",
@@ -1433,7 +1342,7 @@ export const characters = [
     origin: "Ninho da Águia",
     house: "Arryn",
     title: "Lady de Ninho da Águia",
-    quote: "O sangue do meu sangue!",
+    quotes: "O sangue do meu sangue!",
     description:
       "Lysa Arryn, a mãe de Robin Arryn, é uma mulher complexa marcada por traumas do passado e uma profunda possessividade em relação ao filho. Depois da morte de seu marido, Lysa se tornou uma figura protetora e controladora, temendo por sua segurança. Sua fragilidade emocional e a manipulação política a tornam um personagem intrigante. Lysa frequentemente age por impulso, guiada por suas emoções e experiências passadas, especialmente em relação a Petyr Baelish, a quem ama e odeia simultaneamente.",
     backgroundImage: "assets/images/lysa_arryn_background.jpg",
@@ -1452,7 +1361,7 @@ export const characters = [
     origin: "Cidade de Porto Real",
     house: "Nenhum",
     title: "Sacerdotisa da Fé dos Sete",
-    quote: "Confesse seus pecados.",
+    quotes: "Confesse seus pecados.",
     description:
       "Septã Unella é uma fervorosa sacerdotisa da Fé dos Sete, conhecida por sua dedicação à sua religião e pela brutalidade com que aplica a justiça. Ela se tornou uma figura proeminente durante a ascensão do Alto Pardal e é famosa por sua implacável busca pela confissão e penitência. Quando Cersei Lannister é presa, Unella é encarregada de vigiá-la e humilhá-la, simbolizando a luta entre o poder secular e a religião. Sua natureza austera e comprometida revela a profundidade da fé que ela representa.",
     backgroundImage: "assets/images/septa_unella_background.jpg",
@@ -1471,7 +1380,7 @@ export const characters = [
     origin: "Oeste de Westeros, nas terras da Casa Lannister",
     house: "Casa Clegane",
     title: "A Montanha",
-    quote: "Sua brutalidade não conhece limites.",
+    quotes: "Sua brutalidade não conhece limites.",
     description:
       "Gregor Clegane, também conhecido como 'A Montanha', é um dos personagens mais temidos de Westeros. Enorme em estatura e temido por sua crueldade, ele é leal à Casa Lannister e serve como instrumento de violência e intimidação. Sua infâmia se consolidou durante as Guerras de Robert, quando se envolveu em massacres brutais. Além de sua força incomparável, a Montanha também é conhecida por sua lealdade incansável a Tywin Lannister e, mais tarde, a Cersei. Após ser gravemente ferido, ele é ressuscitado por Qyburn e se torna ainda mais aterrorizante, com uma força sobre-humana.",
     backgroundImage: "assets/images/gregor_clegane_background.jpg",

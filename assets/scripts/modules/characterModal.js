@@ -15,12 +15,40 @@ const refreshModalData = (character) => {
   const container = document.querySelector(".character__container");
   const characaterTitle = document.querySelector("#characaterTitle");
   const characaterName = document.querySelector("#characaterName");
-
-  if (!container || !characaterTitle || !characaterName) return;
+  const houseName = document.querySelector("#houseName");
+  const quoteNameSpans = document.querySelectorAll(".quote__name");
+  const quotes = document.querySelectorAll(".quotes");
+  const bioParagraph = document.querySelectorAll(".bio__paragraph");
+  const characaterPhotos = document.querySelectorAll(".characater__photo");
+  if (
+    !container ||
+    !characaterTitle ||
+    !characaterName ||
+    !houseName ||
+    !quoteNameSpans ||
+    !quotes ||
+    !bioParagraph ||
+    !characaterPhotos
+  )
+    return;
 
   container.style.backgroundImage = `url('${character.backgroundImage}')`;
-  characaterTitle.textContent = character.titles[0];
+  characaterTitle.textContent = character.title;
   characaterName.textContent = character.nameCharacters;
+  houseName.textContent = `${character.house}`;
+  quoteNameSpans.forEach((quote) => {
+    quote.textContent = character.nameCharacters;
+  });
+  quotes.forEach((quote, index) => {
+    quote.textContent = `"${character.quotes[index]}"`;
+  });
+  bioParagraph.forEach((paragraph, index) => {
+    paragraph.textContent = character.description[index];
+  });
+  characaterPhotos.forEach((image, index) => {
+    image.src = character.gallery[index];
+    image.alt = character.alt;
+  });
 };
 
 const handleCharacterModal = (characterCode, card) => {
