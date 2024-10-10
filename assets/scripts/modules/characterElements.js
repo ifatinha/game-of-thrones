@@ -11,9 +11,13 @@ const generateCharacterElement = (character, index) => {
 
   const characterCard = createElement({
     elementName: "li",
-    classes: "characater__card",
+    classes: "character__card",
   });
 
+  characterCard.setAttribute("role", "button");
+  characterCard.setAttribute("aria-controls", "modalCharacter");
+  characterCard.setAttribute("aria-expanded", "false");
+  characterCard.setAttribute("tabindex", "0");
   characterCard.dataset.characterCode = character.code;
   characterList.appendChild(characterCard);
 

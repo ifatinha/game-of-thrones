@@ -3,13 +3,12 @@ export const initializeCharacterSlider = () => {
   const carouselButtons = document.querySelectorAll(".characters__button");
   const carouselCards = [...carousel.children];
   const firstCardWidth =
-    carousel.querySelector(".characater__card").offsetWidth;
+    carousel.querySelector(".character__card").offsetWidth;
 
   let isDragging = false;
   let startX;
   let startScrollLeft;
   let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-  let timeOutId;
 
   if (!carousel || !carouselButtons || !carouselCards) return;
 

@@ -914,6 +914,7 @@ a {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-top: 8px;
   width: 100%;
 }
 .characters__button {
@@ -921,7 +922,8 @@ a {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 1.875rem;
+  font-size: 2rem;
+  font-weight: 600;
   transition: 0.3s ease-in-out;
 }
 .characters__button:hover {
@@ -934,7 +936,7 @@ a {
   content: "↠";
 }
 
-.characater__card {
+.character__card {
   font-family: "Constantia", serif;
   cursor: pointer;
   display: flex;
@@ -946,22 +948,22 @@ a {
   scroll-snap-align: start;
   transition: 0.5s ease-in-out;
 }
-.characater__card:hover {
+.character__card:hover {
   filter: none;
   opacity: 1;
 }
 @media screen and (min-width: 1920px) {
-  .characater__card {
+  .character__card {
     padding: 1rem;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .characater__card {
+  .character__card {
     padding: 1rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .characater__card {
+  .character__card {
     padding: 1rem;
   }
 }
@@ -990,13 +992,36 @@ a {
   scroll-snap-type: none;
 }
 
-.dragging .characater__card {
+.dragging .character__card {
   cursor: grab !important;
   user-select: none;
 }
 
 .no-transition {
   scroll-behavior: auto;
+}
+
+.modal__character {
+  background: orange;
+  inset: 0;
+  opacity: 0;
+  position: fixed;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999999;
+}
+.modal__character-button {
+  background: transparent;
+}
+.modal__character-button::after {
+  content: "⤩";
+}
+
+.modal__character.actived {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .houses .section__title {
