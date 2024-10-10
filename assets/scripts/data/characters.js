@@ -386,7 +386,7 @@ export const characters = [
   },
 
   {
-    code: 15,
+    code: 16,
     urlImage: "assets/images/stannis_baratheon.jpg",
     alt: "Stannis Baratheon, o Rei do Fogo e do Gelo",
     nameCharacters: "Stannis Baratheon",
@@ -412,7 +412,7 @@ export const characters = [
   },
 
   {
-    code: 16,
+    code: 17,
     urlImage: "assets/images/renly_baratheon_image.jpg",
     alt: "Renly Baratheon, o Rei da Luz Verde",
     nameCharacters: "Renly Baratheon",
@@ -438,7 +438,7 @@ export const characters = [
   },
 
   {
-    code: 17,
+    code: 18,
     urlImage: "assets/images/theon_greyjoy.jpg",
     alt: "Theon Greyjoy, o Príncipe de Ferro",
     nameCharacters: "Theon Greyjoy",
@@ -461,7 +461,7 @@ export const characters = [
   },
 
   {
-    code: 18,
+    code: 19,
     urlImage: "assets/images/tywin_lannister.jpg",
     alt: "Tywin Lannister, o Patriarca da Casa Lannister",
     nameCharacters: "Tywin Lannister",
@@ -487,7 +487,7 @@ export const characters = [
   },
 
   {
-    code: 19,
+    code: 20,
     urlImage: "assets/images/davos_seaworth.jpg",
     alt: "Davos Seaworth, o Cavaleiro das Cebolas",
     nameCharacters: "Davos Seaworth",
@@ -517,7 +517,7 @@ export const characters = [
   },
 
   {
-    code: 20,
+    code: 21,
     urlImage: "assets/images/ygritte.jpg",
     alt: "Ygritte, a mulher do Povo Livre",
     nameCharacters: "Ygritte",
@@ -533,11 +533,7 @@ export const characters = [
       "Ygritte é lembrada como uma mulher que não se conformou com as expectativas impostas pela sociedade. Seu amor por Jon Snow e seu desejo de liberdade a tornam uma figura memorável em 'Game of Thrones'. Ela simboliza a luta pela sobrevivência e a complexidade dos relacionamentos em um mundo dividido por guerra e ideologia. A sua famosa frase 'Você sabe nada, Jon Snow' se tornou um lema da série, refletindo sua personalidade forte e a tensão entre os mundos que ela e Jon representam.",
     ],
     backgroundImage: "assets/images/ygritte_background.jpg",
-    gallery: [
-      "assets/images/ygritte_1.jpg",
-      "assets/images/ygritte_2.jpg",
-      "assets/images/ygritte_3.jpg",
-    ],
+    gallery: ["assets/images/ygritte_1.jpg", "assets/images/ygritte_2.jpg"],
     title: "Guerrreira do Povo Livre",
     aliases: ["A Garota do Povo Livre", "A Caçadora"],
   },
