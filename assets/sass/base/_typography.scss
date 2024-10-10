@@ -18,6 +18,10 @@
    font-optical-sizing: auto;
 }
 
+@mixin marcellus-font() {
+   font-family: "Marcellus", serif;
+}
+
 @function get-font-size($size) {
    @return px-to-rem($size);
 }

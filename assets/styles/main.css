@@ -1004,10 +1004,12 @@ a {
 .modal__character {
   background-color: #000000;
   inset: 0;
-  opacity: 0;
+  max-height: 100vh;
+  opacity: 1;
+  overflow: auto;
   position: fixed;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-  visibility: hidden;
+  visibility: visible;
   width: 100%;
   z-index: 999999;
 }
@@ -1028,6 +1030,7 @@ a {
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
   top: 1rem;
+  z-index: 99999;
 }
 .modal__character-button::before {
   content: "⤧";
@@ -1036,11 +1039,184 @@ a {
 .modal__character-button:hover {
   opacity: 0.7;
 }
+.modal__character::-webkit-scrollbar {
+  width: 0px;
+}
 
 .modal__character.actived {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.character__container {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.7) 100%), url("../images/cersei_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.character__container .container {
+  bottom: 40px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.character__overlay {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  height: 40%;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.character__description {
+  align-items: center;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.character__description img {
+  margin-bottom: 1rem;
+  max-width: 350px;
+}
+.character__description span {
+  font-family: "Constantia", serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.character__description h2 {
+  font-family: "Game of Thrones", serif;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.character__description hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  width: 48px;
+}
+.character__description p {
+  font-family: "Constantia", serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.character__bio {
+  padding: 100px 0;
+  width: 100%;
+}
+.character__bio .bio__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .character__bio .bio__row {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .character__bio .bio__row {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .character__bio .bio__row:nth-child(2n) .bio__description {
+    order: 1;
+  }
+  .character__bio .bio__row:nth-child(2n) .bio__image {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .character__bio .bio__row:nth-child(2n) .bio__description {
+    order: 1;
+  }
+  .character__bio .bio__row:nth-child(2n) .bio__image {
+    order: 2;
+  }
+}
+.character__bio .bio__description {
+  align-self: start;
+  padding: 0 3rem;
+}
+.character__bio .bio__description p {
+  line-height: 24px;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.character__bio .bio__description p:first-of-type::first-letter {
+  font-size: 3.75rem;
+}
+.character__bio .bio__image img {
+  object-fit: cover;
+  width: 100%;
+}
+.character__bio .bio__quote {
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+}
+.character__bio .bio__quote p {
+  font-family: "Marcellus", serif;
+  font-size: 1.375rem;
+  margin-bottom: 8px;
+}
+.character__bio .bio__quote span {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.character__bio .bio__quote span::before {
+  background-color: rgba(255, 255, 255, 0.7);
+  content: "";
+  height: 1px;
+  margin-right: 6px;
+  width: 10px;
+}
+
+.characater__house {
+  align-items: center;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
+
+.house__content {
+  text-align: center;
+}
+.house__content h2 {
+  font-family: "Marcellus", serif;
+  font-size: 2rem;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.house__content hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  width: 120px;
 }
 
 .houses .section__title {

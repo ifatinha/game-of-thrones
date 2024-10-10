@@ -84,6 +84,7 @@
             }
         }
     }
+
 }
 
 .character__card {
@@ -149,11 +150,13 @@
 .modal__character {
     @include apply-bg-color("black");
     inset       : 0;
-    opacity     : 0;
+    max-height  : 100vh;
+    opacity     : 1;
+    overflow    : auto;
     position    : fixed;
     //transform : translateY(-20px);
     transition  : opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    visibility  : hidden;
+    visibility  : visible;
     width       : 100%;
     z-index     : 999999;
 
@@ -171,6 +174,7 @@
         transition    : .3s ease-in-out;
         text-transform: uppercase;
         top           : 1rem;
+        z-index       : 99999;
 
         &::before {
             content  : "\2927";
@@ -181,10 +185,194 @@
             opacity: .7;
         }
     }
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
 }
 
 .modal__character.actived {
     opacity   : 1;
     visibility: visible;
     transform : translateY(0);
+}
+
+.character__container {
+    @include flex(end, center);
+    background         : linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.7) 100%), url("../images/cersei_background.jpg");
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    height             : 100%;
+    position           : relative;
+    width              : 100%;
+
+    .container {
+        bottom  : 40px;
+        position: absolute;
+        z-index : 1000;
+    }
+}
+
+.character__overlay {
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    height    : 40%;
+    position  : absolute;
+    width     : 100%;
+    z-index   : 999;
+}
+
+.character__description {
+    @include flex(center, center, 0);
+    flex-direction: column;
+    text-align    : center;
+    width         : 100%;
+
+    img {
+        margin-bottom: 1rem;
+        max-width    : 350px;
+    }
+
+    span {
+        @include font-secondary();
+        color         : rgba(255, 255, 255, 0.5);
+        font-size     : get-font-size(12);
+        margin-bottom : 8px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @include font-primary();
+        font-size     : get-font-size(18);
+        letter-spacing: 2px;
+        margin-bottom : 1rem;
+    }
+
+    hr {
+        @include line(48px);
+    }
+
+    p {
+        @include font-secondary();
+        color         : rgba(255, 255, 255, 0.5);
+        font-size     : get-font-size(12);
+        margin-top    : 8px;
+        text-transform: uppercase;
+    }
+}
+
+.character__bio {
+    padding: 100px 0;
+    width  : 100%;
+
+    .bio__row {
+        @include grid(1fr 1fr);
+        margin-bottom: 2rem;
+        padding      : 2rem 0;
+
+        @include devices(m) {
+            grid-template-columns: 1fr;
+        }
+
+        @include devices(xs) {
+            grid-template-columns: 1fr;
+        }
+
+        &:nth-child(2n) {
+
+            @include devices(m) {
+                .bio__description {
+                    order: 1;
+                }
+
+                .bio__image {
+                    order: 2;
+                }
+            }
+
+            @include devices(xs) {
+                .bio__description {
+                    order: 1;
+                }
+
+                .bio__image {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .bio__description {
+        align-self: start;
+        padding   : 0 3rem;
+
+        p {
+            line-height  : 24px;
+            margin-bottom: 1rem;
+            text-align   : justify;
+
+            &:first-of-type {
+                &::first-letter {
+                    font-size: get-font-size(60);
+                }
+            }
+        }
+    }
+
+    .bio__image {
+        img {
+            //height    : 100%;
+            object-fit: cover;
+            width     : 100%;
+        }
+    }
+
+    .bio__quote {
+        margin : 1rem 0;
+        padding: 1rem 3rem;
+
+        p {
+            @include marcellus-font();
+            font-size    : get-font-size(22);
+            margin-bottom: 8px;
+        }
+
+        span {
+            align-items   : center;
+            color         : rgba(255, 255, 255, 0.7);
+            display       : flex;
+            font-size     : get-font-size(12);
+            text-transform: uppercase;
+
+            &::before {
+                background-color: rgba(255, 255, 255, 0.7);
+                content         : "";
+                height          : 1px;
+                margin-right    : 6px;
+                width           : 10px;
+            }
+        }
+    }
+}
+
+.characater__house {
+    @include flex(center, center, 0);
+    background-attachment: fixed;
+    padding-bottom       : 100px;
+}
+
+.house__content {
+    text-align: center;
+
+    h2 {
+        @include marcellus-font();
+        font-size     : get-font-size(32);
+        line-height   : 40px;
+        letter-spacing: 1px;
+    }
+
+    hr {
+        @include line(120px);
+    }
+
 }

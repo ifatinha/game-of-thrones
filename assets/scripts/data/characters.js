@@ -119,7 +119,6 @@ export const characters = [
     gallery: [
       "assets/images/cersei_1.jpg",
       "assets/images/cersei_2.jpg",
-      "assets/images/cersei_3.jpg",
     ],
     titles: ["Rainha de Westeros", "Mãe da Rainha", "A Rainha Regente"],
     aliases: [
