@@ -11,6 +11,18 @@ const getModalDom = () => {
   return modalCharacter;
 };
 
+const refreshModalData = (character) => {
+  const container = document.querySelector(".character__container");
+  const characaterTitle = document.querySelector("#characaterTitle");
+  const characaterName = document.querySelector("#characaterName");
+
+  if (!container || !characaterTitle || !characaterName) return;
+
+  container.style.backgroundImage = `url('${character.backgroundImage}')`;
+  characaterTitle.textContent = character.titles[0];
+  characaterName.textContent = character.nameCharacters;
+};
+
 const handleCharacterModal = (characterCode, card) => {
   const characterIdx = characters.findIndex((character) => {
     return character.code === +characterCode;
@@ -18,9 +30,9 @@ const handleCharacterModal = (characterCode, card) => {
 
   if (characterIdx !== -1) {
     const modalCharacter = getModalDom();
-    const character = characters[characterIdx];
     modalCharacter.classList.add("actived");
     card.setAttribute("aria-expanded", "true");
+    refreshModalData(characters[characterIdx]);
   }
 };
 

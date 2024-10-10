@@ -116,11 +116,8 @@ export const characters = [
       "Cersei Lannister é uma personagem que encarna a ambição, a traição e o desejo de poder, representando as complexidades das relações humanas e os limites da moralidade em um mundo implacável. Seu legado em 'Game of Thrones' é marcado por suas táticas implacáveis e sua capacidade de manipular eventos ao seu favor, fazendo dela uma figura central na luta pelo controle de Westeros. Através de suas ações, Cersei provoca reflexão sobre as consequências do poder e o custo de manter a soberania.",
     ],
     backgroundImage: "assets/images/cersei_background.jpg",
-    gallery: [
-      "assets/images/cersei_1.jpg",
-      "assets/images/cersei_2.jpg",
-    ],
-    titles: ["Rainha de Westeros", "Mãe da Rainha", "A Rainha Regente"],
+    gallery: ["assets/images/cersei_1.jpg", "assets/images/cersei_2.jpg"],
+    titles: ["A Rainha Regente", "Rainha de Westeros", "Mãe da Rainha"],
     aliases: [
       "Cersei Baratheon",
       "Cersei Lannister",
@@ -155,9 +152,9 @@ export const characters = [
       "assets/images/arya_3.jpg",
     ],
     titles: [
+      "A Pequena Loba",
       "Dama de Winterfell",
       "A Nascida na Tempestade",
-      "A Pequena Loba",
       "A Garota que Viajou",
       "A Filha de Eddard Stark",
     ],
@@ -196,8 +193,8 @@ export const characters = [
       "assets/images/sansa_3.jpg",
     ],
     titles: [
-      "Dama de Winterfell",
       "Senhora do Norte",
+      "Dama de Winterfell",
       "A Pequena Loba",
       "A Filha de Eddard Stark",
     ],
@@ -255,11 +252,7 @@ export const characters = [
       "assets/images/joffrey_2.jpg",
       "assets/images/joffrey_3.jpg",
     ],
-    titles: [
-      "Rei dos Sete Reinos",
-      "Protetor do Reino",
-      "Senhor de Porto Real",
-    ],
+    titles: ["O Rei Sádico", "Protetor do Reino", "Senhor de Porto Real"],
     aliases: [
       "Joffrey, o Cruel",
       "O Rei Sádico",
