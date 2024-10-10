@@ -147,21 +147,29 @@
 
 //Sass modal
 .modal__character {
-    background  : orange;
+    @include apply-bg-color("black");
     inset       : 0;
-    opacity     : 0;
+    opacity     : 1;
     position    : fixed;
     //transform : translateY(-20px);
     transition  : opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    visibility  : hidden;
+    visibility  : visible;
     width       : 100%;
     z-index     : 999999;
 
     &-button {
-        background: transparent;
+        @include flex(center, center, 0);
+        @include apply-color("sky-blue");
+        flex-direction: column;
+        background    : red;
+        border        : none;
+        cursor        : pointer;
+        left          : 1rem;
+        position      : absolute;
+        top           : 1rem;
 
-        &::after {
-            content: "\2929";
+        &::before {
+            content: "\2927";
         }
     }
 }

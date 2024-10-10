@@ -1002,20 +1002,31 @@ a {
 }
 
 .modal__character {
-  background: orange;
+  background-color: #000000;
   inset: 0;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-  visibility: hidden;
+  visibility: visible;
   width: 100%;
   z-index: 999999;
 }
 .modal__character-button {
-  background: transparent;
+  align-items: center;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  color: #30bbe9;
+  flex-direction: column;
+  background: red;
+  border: none;
+  cursor: pointer;
+  left: 1rem;
+  position: absolute;
+  top: 1rem;
 }
-.modal__character-button::after {
-  content: "⤩";
+.modal__character-button::before {
+  content: "⤧";
 }
 
 .modal__character.actived {
