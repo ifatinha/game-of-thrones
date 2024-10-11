@@ -1269,26 +1269,30 @@ export const characters = [
   },
 
   {
-    code: 46,
+    code: 52,
     urlImage: "assets/images/barristan_selmy.jpg",
     alt: "Barristan Selmy, o lendário cavaleiro da Guarda Real",
-    nameCharacters: "Barristan Selmy",
-    origin: "Reino dos Sete",
-    house: "Casa Selmy",
+    nameCharacters: "Sor Barristan Selmy",
+    origin: "Ponta Tempestade, Territórios da Tempestade",
+    house: "Casa Targaryen, Casa Baratheon,",
     title: "Cavaleiro da Guarda Real",
-    quotes: "A honra é uma moeda de troca que vale a pena ter.",
+    quotes: ["Um rei que precisa gritar que é rei não é rei de verdade.","Matar reis é algo fácil. A lealdade é que é difícil."],
     description:
-      "Barristan Selmy é um dos cavaleiros mais respeitados de Westeros, conhecido por sua habilidade excepcional em combate e sua inabalável honra. Ele serviu como membro da Guarda Real, leal ao rei e ao seu dever. Selmy é um símbolo de bravura e lealdade, e seus feitos em batalha o tornaram uma lenda viva. Apesar de sua reputação, ele também carrega uma profunda tristeza e luto por tempos passados. Barristan se destaca por sua sabedoria e senso de justiça, sempre buscando fazer o que é certo, mesmo quando isso significa se opor a aqueles que deveriam ser seus superiores.",
+      ["Sor Barristan Selmy é um dos cavaleiros mais respeitados e honrados de Westeros, conhecido por sua bravura e lealdade inabaláveis. Nascido em uma casa menor dos Territórios da Tempestade, ele ganhou fama rapidamente como um talentoso espadachim, participando de diversos torneios e batalhas ao longo de sua vida. Seu feito mais impressionante foi aos dezesseis anos, quando entrou em um torneio disfarçado de cavaleiro misterioso e derrotou cavaleiros experientes, ganhando o apelido 'o Bravo'.",
+        "Ele serviu como membro da Guarda Real sob vários reis, incluindo os Targaryen e Robert Baratheon, mantendo-se firme em seu juramento de proteger o trono, independentemente de quem estivesse sentado nele. Mesmo com a queda dos Targaryen, Barristan continuou fiel ao código de cavaleiro e à honra acima de tudo. Eventualmente, ele se tornou o Lorde Comandante da Guarda Real de Robert Baratheon e continuou a servir com distinção até ser dispensado por Joffrey Baratheon, o que ele considerou uma humilhação.",
+        "Após sua expulsão, Barristan viajou para Essos e jurou lealdade a Daenerys Targaryen, oferecendo-lhe seus serviços e experiência. Sob o comando dela, ele atuou como um conselheiro confiável e guerreiro, determinado a restaurar a Casa Targaryen ao Trono de Ferro. Mesmo em idade avançada, Barristan continuou a demonstrar coragem e habilidade em batalha, sempre seguindo seu código de honra até o fim.",
+        "O legado de Barristan Selmy é o de um cavaleiro lendário, cuja vida foi dedicada à honra, à justiça e à proteção daqueles que jurou defender. Ele é lembrado não apenas por suas proezas com a espada, mas por sua inabalável integridade, algo raro no mundo político traiçoeiro de Westeros."
+      ],
     backgroundImage: "assets/images/barristan_selmy_background.jpg",
     gallery: [
       "assets/images/barristan_selmy_1.jpg",
       "assets/images/barristan_selmy_2.jpg",
-      "assets/images/barristan_selmy_3.jpg",
     ],
+    aliases:["Barristan, o Bravo"]
   },
 
   {
-    code: 47,
+    code: 53,
     urlImage: "assets/images/walder_frey.jpg",
     alt: "Walder Frey, o Senhor dos Frey",
     nameCharacters: "Walder Frey",
