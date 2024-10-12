@@ -34,7 +34,6 @@
 }
 
 #about {
-    @include bg-img("../images/about-bg-01.jpg");
+    @include bg-gradient("../images/about-bg-01.jpg", 0.4);
     background-attachment: fixed;
-    min-height           : 100%;
 }

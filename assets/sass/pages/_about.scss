@@ -6,8 +6,7 @@
 
 .about {
     @include grid(1fr 1fr);
-    gap       : 2rem;
-    min-height: 720px;
+    gap: 2rem;
 
     @include devices(m) {
         grid-template-columns: 1fr;
@@ -21,21 +20,9 @@
         margin-top: 40px;
     }
 
-    @media screen and (max-width: 1024px) and (orientation: landscape) {
-        min-height: 660px;
-    }
-
     &__column {
         background: rgba($color: #ffffff, $alpha: .7);
         padding   : 2rem 24px;
-
-        &:nth-child(1) {
-            align-self: self-start;
-        }
-
-        &:nth-child(2) {
-            align-self: self-end;
-        }
 
         p {
             @include apply-color("black");
@@ -45,5 +32,12 @@
         p+p {
             margin-top: 24px;
         }
+    }
+}
+
+#about {
+
+    .section__title {
+        @include apply-color("pure-white");
     }
 }

@@ -604,12 +604,11 @@ a {
 }
 
 #about {
-  background: url("../images/about-bg-01.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/about-bg-01.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100%;
 }
 
 .home {
@@ -671,7 +670,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  min-height: 720px;
 }
 @media screen and (max-width: calc(768px - 1px)) {
   .about {
@@ -698,20 +696,9 @@ a {
     margin-top: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-  .about {
-    min-height: 660px;
-  }
-}
 .about__column {
   background: rgba(255, 255, 255, 0.7);
   padding: 2rem 24px;
-}
-.about__column:nth-child(1) {
-  align-self: self-start;
-}
-.about__column:nth-child(2) {
-  align-self: self-end;
 }
 .about__column p {
   color: #000000;
@@ -720,6 +707,33 @@ a {
 }
 .about__column p + p {
   margin-top: 24px;
+}
+
+#about .section__title {
+  color: #ffffff;
+}
+
+#books .section__title {
+  color: #ffffff;
+}
+
+.books {
+  width: 100%;
+}
+.books__subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.books__container p {
+  font-size: 1.125rem;
+  line-height: 26px;
+  margin-bottom: 1rem;
+}
+.books__description {
+  background: red;
+  margin: 40px 0;
 }
 
 .plot {
@@ -884,6 +898,7 @@ a {
 @media screen and (max-width: calc(768px - 1px)) {
   .characters__list {
     grid-auto-columns: 100%;
+    height: 550px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -893,17 +908,17 @@ a {
 }
 @media screen and (min-width: 1920px) {
   .characters__list {
-    height: 500px;
+    height: 700px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .characters__list {
-    height: 500px;
+    height: 550px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+@media screen and (max-width: 680px) and (orientation: landscape) {
   .characters__list {
-    height: 500px;
+    height: auto;
   }
 }
 .characters__list::-webkit-scrollbar {

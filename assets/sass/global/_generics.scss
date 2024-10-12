@@ -1,4 +1,5 @@
 @use "../base/typography"as *;
+@use "../base/colors"as *;
 
 .button-text-visually {
     @include font-primary();

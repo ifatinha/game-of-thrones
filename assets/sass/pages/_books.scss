@@ -1,0 +1,32 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+
+#books {
+    .section__title {
+        @include apply-color("pure-white");
+    }
+}
+
+.books {
+    width: 100%;
+
+    &__subtitle {
+        font-size    : get-font-size(20);
+        font-style   : italic;
+        margin-bottom: 2rem;
+        text-align   : center;
+    }
+
+    &__container {
+        p {
+            font-size    : get-font-size(18);
+            line-height  : 26px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__description {
+        background: red;
+        margin    : 40px 0;
+    }
+}
