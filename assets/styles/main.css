@@ -882,6 +882,8 @@ a {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   display: block;
+  font-size: 0.75rem;
+  letter-spacing: 6px;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }

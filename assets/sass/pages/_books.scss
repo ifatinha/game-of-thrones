@@ -170,6 +170,8 @@
     span {
         @include jost-font();
         display       : block;
+        font-size     : get-font-size(12);
+        letter-spacing: 6px;
         margin-bottom : 1rem;
         text-transform: uppercase;
     }
