@@ -1,2 +1,13 @@
 // Definições de animações e transições que são usadas em várias partes do projeto.
 
+@keyframes showTextAnimated {
+    to {
+        filter   : blur(0);
+        opacity  : 1;
+        transform: translate(0);
+    }
+}
+
+@mixin showTextAnimated() {
+    animation: showTextAnimated .5s .7s ease-in-out 1 forwards;
+}

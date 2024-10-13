@@ -1,71 +1,226 @@
 export const books = [
   {
     id: 1,
-    title: "A guerra dos tronos",
+    title: "A Guerra dos Tronos",
     year: "1996",
     description:
-      "No primeiro livro, o poder político e as traições começam a desenrolar o destino dos Sete Reinos. No Norte, o inverno se aproxima, enquanto no Sul, famílias nobres lutam pelo Trono de Ferro. O início de uma batalha épica por poder, honra e sobrevivência.",
+      "O primeiro livro da saga inicia uma luta épica pelo Trono de Ferro, com traições e intrigas políticas nos Sete Reinos. No Norte, o inverno se aproxima, enquanto no Sul, as grandes casas começam a se movimentar. Uma batalha pelo poder, honra e sobrevivência está prestes a começar.",
     image: "assets/images/book-01.jpg",
     bgImage: "assets/images/book-01-bg.jpg",
+    altImageBook: "Capa do livro A Guerra dos Tronos",
+    altBgImage: "A Grande Muralha ao Norte",
+    synopsis:
+      "Neste início de saga, Eddard Stark é chamado para servir como Mão do Rei, desencadeando uma série de eventos que culminam em uma guerra por poder e a sobrevivência do reino. Enquanto isso, ao norte da Muralha, algo muito mais perigoso desperta.",
+    mainCharacters: [
+      "Eddard Stark",
+      "Daenerys Targaryen",
+      "Jon Snow",
+      "Tyrion Lannister",
+      "Cersei Lannister",
+    ],
+    mainEvents: [
+      "Eddard Stark se torna Mão do Rei",
+      "A descoberta do incesto entre Jaime e Cersei",
+      "A morte de Jon Arryn",
+      "A execução de Eddard Stark",
+      "Daenerys Targaryen dá à luz a dragões",
+    ],
+    images: [
+      "assets/images/book-01-image-01.jpg",
+      "assets/images/book-01-image-02.jpg",
+      "assets/images/book-01-image-03.jpg",
+    ],
   },
-
   {
     id: 2,
     title: "A Fúria dos Reis",
     year: "1998",
     description:
-      "Com a morte do rei, os reinos mergulham em guerra civil. Vários pretendentes ao trono surgem, cada um reivindicando sua legitimidade. Enquanto as batalhas devastam Westeros, forças antigas e misteriosas começam a se mover além da Muralha, prenunciando uma ameaça muito maior.",
+      "Após a morte do rei, os reinos se veem em guerra civil, com vários pretendentes ao trono surgindo. As batalhas devastam Westeros enquanto forças antigas e misteriosas começam a se movimentar além da Muralha, anunciando uma ameaça muito maior do que qualquer guerra.",
     image: "assets/images/book-02.jpg",
     bgImage: "assets/images/book-02-bg.jpg",
+    altImageBook: "Capa do livro A Fúria dos Reis",
+    altBgImage: "A Batalha da Baía da Água Negra",
+    synopsis:
+      "Com o trono vazio, Stannis e Renly Baratheon, Robb Stark e outros lordes disputam o poder enquanto o caos consome Westeros. Magia, dragões e profecias começam a emergir, redefinindo o cenário da guerra.",
+    mainCharacters: [
+      "Stannis Baratheon",
+      "Renly Baratheon",
+      "Robb Stark",
+      "Tyrion Lannister",
+      "Theon Greyjoy",
+    ],
+    mainEvents: [
+      "A Batalha da Água Negra",
+      "A coroação de Stannis e Renly Baratheon",
+      "A invasão de Winterfell por Theon Greyjoy",
+      "A aliança de Renly e a Casa Tyrell",
+      "A vitória de Tyrion Lannister na defesa de Porto Real",
+    ],
+    images: [
+      "assets/images/book-02-image-01.jpg",
+      "assets/images/book-02-image-02.jpg",
+      "assets/images/book-02-image-03.jpg",
+    ],
   },
-
   {
     id: 3,
-    title: "A Tormenta das espadas",
+    title: "A Tormenta de Espadas",
     year: "2000",
     description:
-      "O terceiro livro marca o clímax da guerra dos tronos. Alianças são formadas e desfeitas em meio a batalhas devastadoras, enquanto traições chocantes redefinem o destino de grandes famílias. O Casamento Vermelho, um dos momentos mais brutais e inesquecíveis da saga, ocorre nesta fase da guerra.",
+      "No terceiro livro da saga, alianças são formadas e destruídas enquanto a guerra se intensifica. Traições chocantes redefinem os rumos das grandes casas, e o Casamento Vermelho se torna um dos eventos mais brutais e inesquecíveis, marcando profundamente a história dos Sete Reinos.",
     image: "assets/images/book-03.jpg",
     bgImage: "assets/images/book-03-bg.jpg",
+    altImageBook: "Capa do livro A Tormenta de Espadas",
+    altBgImage: "Cena do Casamento Vermelho",
+    synopsis:
+      "Enquanto batalhas sangrentas continuam, alianças traiçoeiras mudam o rumo da guerra. O Casamento Vermelho é um dos momentos mais marcantes, abalando profundamente as Casas Stark e Frey, e mudando para sempre os destinos dos Sete Reinos.",
+    mainCharacters: [
+      "Robb Stark",
+      "Jon Snow",
+      "Daenerys Targaryen",
+      "Tywin Lannister",
+      "Jaime Lannister",
+    ],
+    mainEvents: [
+      "O Casamento Vermelho",
+      "A fuga de Jaime e Brienne de Harrenhal",
+      "A morte de Robb Stark",
+      "A coroação de Joffrey Baratheon",
+      "Daenerys liberta os escravos em Meereen",
+    ],
+    images: [
+      "assets/images/book-03-image-01.jpg",
+      "assets/images/book-03-image-02.jpg",
+      "assets/images/book-03-image-03.jpg",
+    ],
   },
-
   {
     id: 4,
-    title: "O festim dos corvos",
+    title: "O Festim dos Corvos",
     year: "2005",
     description:
-      "Com muitos dos grandes líderes mortos, o quarto livro foca nos efeitos da guerra sobre os sobreviventes. Westeros está quebrado e vulnerável, com seu povo devastado pela fome e pelo luto, enquanto novos desafios e ambições emergem, moldando o futuro do reino.",
+      "O quarto livro se concentra nos sobreviventes da guerra e nas cicatrizes deixadas em Westeros. Com muitos dos grandes líderes mortos, o reino está devastado pela fome e pelo luto. Novos desafios e ambições emergem, ameaçando o já fragilizado equilíbrio do poder.",
     image: "assets/images/book-04.jpg",
     bgImage: "assets/images/book-04-bg.jpg",
+    altImageBook: "Capa do livro O Festim dos Corvos",
+    altBgImage: "Westeros após batalhas devastadoras",
+    synopsis:
+      "O reino está devastado pela guerra e seus sobreviventes enfrentam as consequências. Em Porto Real, Cersei Lannister luta para manter o poder, enquanto no Norte e nas Ilhas de Ferro novos líderes surgem para reivindicar seus territórios.",
+    mainCharacters: [
+      "Cersei Lannister",
+      "Jaime Lannister",
+      "Brienne de Tarth",
+      "Arya Stark",
+      "Aeron Greyjoy",
+    ],
+    mainEvents: [
+      "A ascensão dos Greyjoy nas Ilhas de Ferro",
+      "A busca de Brienne por Sansa Stark",
+      "Cersei consolida seu poder em Porto Real",
+      "Arya Stark se junta aos Homens sem Rosto",
+      "Os conflitos nas Terras Fluviais",
+    ],
+    images: [
+      "assets/images/book-04-image-01.jpg",
+      "assets/images/book-04-image-02.jpg",
+      "assets/images/book-04-image-03.jpg",
+    ],
   },
-
   {
     id: 5,
     title: "A Dança dos Dragões",
     year: "2011",
     description:
-      "Enquanto Daenerys Targaryen luta para manter o controle sobre seus dragões e a cidade de Meereen, forças no Norte se preparam para uma guerra decisiva. Jon Snow enfrenta desafios imensos na Patrulha da Noite, enquanto o inverno finalmente começa a se instalar, trazendo caos, morte e escuridão ao continente.",
+      "Daenerys Targaryen luta para manter o controle de seus dragões e da cidade de Meereen, enquanto no Norte uma guerra decisiva está se formando. Jon Snow enfrenta desafios como líder da Patrulha da Noite, enquanto o inverno finalmente chega, trazendo caos e destruição a todo o continente.",
     image: "assets/images/book-05.jpg",
     bgImage: "assets/images/book-05-bg.jpg",
+    altImageBook: "Capa do livro A Dança dos Dragões",
+    altBgImage: "Daenerys e seus dragões em Meereen",
+    synopsis:
+      "Enquanto Daenerys luta para governar em Essos, Jon Snow enfrenta decisões impossíveis como Lorde Comandante da Patrulha da Noite. No Sul, a luta pelo Trono de Ferro continua com novas intrigas e traições.",
+    mainCharacters: [
+      "Daenerys Targaryen",
+      "Jon Snow",
+      "Tyrion Lannister",
+      "Stannis Baratheon",
+      "Theon Greyjoy",
+    ],
+    mainEvents: [
+      "A luta de Daenerys para controlar Meereen",
+      "A conspiração contra Jon Snow na Patrulha da Noite",
+      "A marcha de Stannis para Winterfell",
+      "A fuga de Theon Greyjoy",
+      "A chegada do inverno em Westeros",
+    ],
+    images: [
+      "assets/images/book-05-image-01.jpg",
+      "assets/images/book-05-image-02.jpg",
+      "assets/images/book-05-image-03.jpg",
+    ],
   },
-
   {
     id: 6,
     title: "Os Ventos do Inverno",
     year: "Livro Futuro",
     description:
-      "No sexto livro, o inverno atinge Westeros com força total. As forças do Norte enfrentam os mortos-vivos, enquanto no Sul, a guerra pelo Trono de Ferro continua. Jon Snow enfrenta decisões impossíveis, Daenerys lida com o caos em Meereen, e o futuro de Westeros nunca esteve tão incerto. O frio e a escuridão ameaçam engolir tudo.",
+      "No aguardado sexto livro, o inverno toma Westeros por completo. No Norte, a batalha contra os mortos-vivos se intensifica, enquanto no Sul a guerra pelo Trono de Ferro continua. As decisões de Jon Snow e Daenerys Targaryen moldarão o destino de Westeros, em meio à escuridão iminente.",
     image: "assets/images/book-06.jpg",
     bgImage: "assets/images/book-06-bg.jpg",
+    altImageBook: "Capa do livro Os Ventos do Inverno",
+    altBgImage: "Os Caminhantes Brancos atravessando a Muralha",
+    synopsis:
+      "O inverno finalmente chegou, e com ele uma ameaça inimaginável no Norte. Enquanto o exército dos mortos avança, Daenerys e Jon Snow se veem em decisões críticas para salvar o reino e enfrentar seus inimigos.",
+    mainCharacters: [
+      "Jon Snow",
+      "Daenerys Targaryen",
+      "Tyrion Lannister",
+      "Arya Stark",
+      "Bran Stark",
+    ],
+    mainEvents: [
+      "A luta contra os Caminhantes Brancos",
+      "Daenerys cruza o Mar Estreito",
+      "A resistência dos Sete Reinos contra os mortos-vivos",
+      "Arya Stark volta a Westeros",
+      "Jon Snow enfrenta seu destino no Norte",
+    ],
+    images: [
+      "assets/images/book-06-image-01.jpg",
+      "assets/images/book-06-image-02.jpg",
+      "assets/images/book-06-image-03.jpg",
+    ],
   },
-
   {
     id: 7,
     title: "Um Sonho de Primavera",
     year: "Livro Futuro",
     description:
-      "No último livro, Westeros tenta se reerguer após o inverno e a guerra. Os sobreviventes lutam para reconstruir o reino, mas as cicatrizes do passado são profundas. A guerra pelo Trono de Ferro está chegando ao fim, e o destino dos Sete Reinos será finalmente decidido, trazendo esperança ou mais destruição.",
+      "O sétimo e último livro da saga 'As Crônicas de Gelo e Fogo' promete trazer o desfecho final da batalha entre os vivos e os mortos. O destino de Westeros será decidido em uma última grande guerra, enquanto alianças improváveis se formam e segredos são revelados.",
     image: "assets/images/book-07.jpg",
     bgImage: "assets/images/book-07-bg.jpg",
+    altImageBook: "Capa do livro Um Sonho de Primavera",
+    altBgImage: "O Trono de Ferro no centro de uma Westeros devastada",
+    synopsis:
+      "Na conclusão épica da saga, o destino de Westeros está em jogo. As últimas alianças serão formadas enquanto os sobreviventes lutam para derrotar os Caminhantes Brancos. Daenerys e Jon devem encarar seus destinos e lutar pelo futuro dos Sete Reinos.",
+    mainCharacters: [
+      "Jon Snow",
+      "Daenerys Targaryen",
+      "Tyrion Lannister",
+      "Arya Stark",
+      "Bran Stark",
+    ],
+    mainEvents: [
+      "A batalha final contra os Caminhantes Brancos",
+      "Jon Snow enfrenta a verdade sobre sua linhagem",
+      "Daenerys reivindica o Trono de Ferro",
+      "O destino do Trono de Ferro é decidido",
+      "O fim da longa noite",
+    ],
+    images: [
+      "assets/images/book-07-image-01.jpg",
+      "assets/images/book-07-image-02.jpg",
+      "assets/images/book-07-image-03.jpg",
+    ],
   },
 ];

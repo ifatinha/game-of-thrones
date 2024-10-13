@@ -13,8 +13,10 @@
         font-size     : get-font-size(48);
         line-height   : 1.8;
         letter-spacing: 0.1rem;
-        margin-bottom : 20px;
+        max-width     : 600px;
+        margin        : 0 auto 30px;
         text-align    : center;
+        width         : 100%;
 
         @include devices-small-screens {
             font-size    : get-font-size(32);
