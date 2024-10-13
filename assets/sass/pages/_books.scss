@@ -113,18 +113,16 @@
 }
 
 .release__row {
-    @include grid(1fr 1fr);
-    grid-template-rows: 600px;
-    margin-bottom     : 50px;
+    background: orange;
+    @include grid(1fr);
+    margin-bottom: 50px;
 
-    @include devices(t) {
-        grid-template-rows: auto;
+    @include devices-large-screens {
+        grid-template-columns: 1fr 1fr;
+        //grid-template-rows   : 600px;
     }
 
     @include devices(m) {
-        grid-template-columns: 1fr;
-        grid-template-rows   : auto;
-
         &:nth-child(3) {
             .release__column {
                 &:nth-child(1) {
@@ -139,9 +137,6 @@
     }
 
     @include devices(xs) {
-        grid-template-columns: 1fr;
-        grid-template-rows   : auto;
-
         &:nth-child(3) {
             .release__column {
                 &:nth-child(1) {
@@ -157,9 +152,10 @@
 }
 
 .release__column {
-    align-self: center;
-    height    : 100%;
-    padding   : 1rem;
+    background  : darkblue;
+    align-self  : center;
+    //height    : 100%;
+    padding     : 1rem;
 
     img {
         height    : 100%;
