@@ -56,7 +56,7 @@
     flex-shrink: 0;
     height     : 100%;
     transition : .5s ease-in-out;
-    width      : 200px;
+    width      : 160px;
 
     @include hover {
         opacity: 1;
@@ -71,6 +71,14 @@
     }
 
     @include orientation {
+        width: 200px;
+    }
+
+    @include devices(xxl) {
+        width: 200px;
+    }
+
+    @include devices(xl) {
         width: 200px;
     }
 
@@ -102,24 +110,23 @@
 
 .books__releases {
     margin-top: 120px;
+    padding   : 2rem 0;
 
     h2 {
         @include font-primary();
         font-size     : get-font-size(32);
-        margin-bottom : 2rem;
+        margin-bottom : 3rem;
         text-align    : center;
         text-transform: uppercase;
     }
 }
 
 .release__row {
-    background: orange;
     @include grid(1fr);
     margin-bottom: 50px;
 
     @include devices-large-screens {
         grid-template-columns: 1fr 1fr;
-        //grid-template-rows   : 600px;
     }
 
     @include devices(m) {
@@ -152,10 +159,8 @@
 }
 
 .release__column {
-    background  : darkblue;
-    align-self  : center;
-    //height    : 100%;
-    padding     : 1rem;
+    align-self: center;
+    padding   : 1rem;
 
     img {
         height    : 100%;

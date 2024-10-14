@@ -778,7 +778,7 @@ a {
   flex-shrink: 0;
   height: 100%;
   transition: 0.5s ease-in-out;
-  width: 200px;
+  width: 160px;
 }
 .book__item:hover {
   opacity: 1;
@@ -794,6 +794,16 @@ a {
   }
 }
 @media screen and (max-width: 680px) and (orientation: landscape) {
+  .book__item {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .book__item {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .book__item {
     width: 200px;
   }
@@ -823,17 +833,17 @@ a {
 
 .books__releases {
   margin-top: 120px;
+  padding: 2rem 0;
 }
 .books__releases h2 {
   font-family: "Game of Thrones", serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 .release__row {
-  background: orange;
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 50px;
@@ -871,7 +881,6 @@ a {
 }
 
 .release__column {
-  background: darkblue;
   align-self: center;
   padding: 1rem;
 }
