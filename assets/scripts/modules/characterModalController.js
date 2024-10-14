@@ -13,41 +13,52 @@ const getModalDom = () => {
 
 const refreshModalData = (character) => {
   const container = document.querySelector(".character__container");
-  const characaterTitle = document.querySelector("#characaterTitle");
-  const characaterName = document.querySelector("#characaterName");
+  const characterTitle = document.querySelector("#characaterTitle");
+  const characterName = document.querySelector("#characaterName");
   const houseName = document.querySelector("#houseName");
   const quoteNameSpans = document.querySelectorAll(".quote__name");
   const quotes = document.querySelectorAll(".quotes");
   const bioParagraph = document.querySelectorAll(".bio__paragraph");
-  const characaterPhotos = document.querySelectorAll(".characater__photo");
+  const characterPhotos = document.querySelectorAll(".characater__photo");
+
+  // Verificar se todos os elementos necessários estão disponíveis
   if (
     !container ||
-    !characaterTitle ||
-    !characaterName ||
+    !characterTitle ||
+    !characterName ||
     !houseName ||
-    !quoteNameSpans ||
-    !quotes ||
-    !bioParagraph ||
-    !characaterPhotos
-  )
+    !quoteNameSpans.length ||
+    !quotes.length ||
+    !bioParagraph.length ||
+    !characterPhotos.length
+  ) {
+    console.warn("Alguns elementos do modal não foram encontrados.");
     return;
+  }
 
   container.style.backgroundImage = `url('${character.backgroundImage}')`;
-  characaterTitle.textContent = character.title;
-  characaterName.textContent = character.nameCharacters;
+  characterTitle.textContent = character.title;
+  characterName.textContent = character.nameCharacters;
   houseName.textContent = `${character.house}`;
+
   quoteNameSpans.forEach((quote) => {
-    quote.textContent = character.nameCharacters;
+    quote.textContent = character.nameCharacters || "Personagem";
   });
+
   quotes.forEach((quote, index) => {
-    quote.textContent = `"${character.quotes[index]}"`;
+    quote.textContent = character.quotes?.[index]
+      ? `"${character.quotes[index]}"`
+      : "Sem citação";
   });
+
   bioParagraph.forEach((paragraph, index) => {
-    paragraph.textContent = character.description[index];
+    paragraph.textContent =
+      character.description?.[index] || "Descrição não disponível";
   });
-  characaterPhotos.forEach((image, index) => {
-    image.src = character.gallery[index];
-    image.alt = character.alt;
+
+  characterPhotos.forEach((image, index) => {
+    image.src = character.gallery?.[index] || "assets/images/imagem.jpg";
+    image.alt = character.alt || "Foto do personagem";
   });
 };
 

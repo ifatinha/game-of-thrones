@@ -1,14 +1,14 @@
 import {
   openNavbarModal,
   closeNavbarModal,
-} from "./modules/modalController.js";
+} from "./modules/modalMenuController.js";
 import { smoothScrollTo } from "./modules/navigation.js";
 import { renderCharacterElements } from "./modules/characterElements.js";
 import { initializeCharacterSlider } from "./modules/characterCarousel.js";
 import {
   initializeModal,
   closeModalCharacter,
-} from "./modules/characterModal.js";
+} from "./modules/characterModalController.js";
 
 //{ name: "renderCharacterElements", func: renderCharacterElements }
 

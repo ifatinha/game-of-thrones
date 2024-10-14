@@ -189,3 +189,13 @@
         margin-bottom: 1rem;
     }
 }
+
+//book modal
+.book__modal {
+    background: orange;
+    height    : 100vh;
+    inset     : 0;
+    position  : fixed;
+    width     : 100%;
+    z-index   : 999999;
+}

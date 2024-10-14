@@ -61,7 +61,7 @@
       </div>
    </header>
 
-   <div id="navbarMenuModal" class="modal modal--navbar" aria-hidden="true" aria-label="Menu de navegação">
+   <div id="navbarMenuModal" class="menu__modal" aria-hidden="true" aria-label="Menu de navegação">
       <button type="button" class="button__icon modal__close-button" id="navbarCloseButton" aria-label="Fechar menu">
          <span class="button__icon-visually">Fechar</span>
       </button>
@@ -87,6 +87,7 @@
    </div>
 
    <main>
+
       <!-- start section home -->
       <section id="home" class="home" aria-labelledby="home-title" aria-describedby="home-description">
          <div class="home-container">
@@ -293,6 +294,13 @@
             </div>
          </div>
       </section>
+
+      <div class="book__modal">
+         <button class="modal__button">
+            <span>Fechar</span>
+         </button>
+      </div>
+
       <!-- section plot -->
       <section class="section plot" aria-labelledby="section-title-plot">
          <h2 id="section-title-plot" class="section__title">O Caminho para o Trono de Ferro</h2>
@@ -545,7 +553,7 @@
       </section>
 
       <div class="modal__character" id="modalCharacter">
-         <button class="modal__character-button" id="closeModalCharacterButton">Fechar</button>
+         <button class="modal__button" id="closeModalCharacterButton">Fechar</button>
          <div class="character__container">
             <div class="container">
                <div class="character__description">

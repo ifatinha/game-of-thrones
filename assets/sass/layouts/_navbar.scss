@@ -79,3 +79,64 @@
         }
     }
 }
+
+//navbar modal
+.menu__modal {
+    @include apply-bg-color("black");
+    height    : 100%;
+    opacity   : 0;
+    position  : fixed;
+    transform : translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    visibility: hidden;
+    width     : 100%;
+    z-index   : 999999;
+}
+
+.menu__modal-open {
+    opacity   : 1;
+    visibility: visible;
+    transform : translateY(0);
+}
+
+.modal__close-button {
+    @include flex(center, center, 0);
+    background    : transparent;
+    border        : none;
+    cursor        : pointer;
+    font-size     : get-font-size(16);
+    flex-direction: column;
+    height        : 44px;
+    position      : absolute;
+    left          : 30px;
+    transition    : .3s ease-in-out;
+    top           : 30px;
+    width         : 44px;
+    z-index       : 9999999;
+
+    @include hover {
+        opacity: 0.6;
+    }
+
+    @include devices(m) {
+        left: 20px;
+        top : 20px;
+    }
+
+    &::before,
+    &::after {
+        @include apply-bg-color("sky-blue");
+        content : "";
+        height  : 32px;
+        position: absolute;
+        width   : 2px;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
