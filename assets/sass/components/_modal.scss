@@ -5,11 +5,11 @@
 
 .modal {
     height    : 100%;
-    opacity   : 0;
+    opacity   : 1;
     position  : fixed;
     transform : translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    visibility: hidden;
+    visibility: visible;
     width     : 100%;
     z-index   : 999999;
 
