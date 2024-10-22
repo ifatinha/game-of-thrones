@@ -118,10 +118,13 @@ a {
 }
 
 .carousel {
-  margin-top: 4rem;
   overflow: hidden;
+  padding: 1rem 0.5rem;
   position: relative;
   width: 100%;
+}
+.carousel__buttons {
+  text-align: center;
 }
 
 .button__icon-visually {
@@ -133,6 +136,15 @@ a {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.button__round {
+  color: #ffffff;
+  background: #007BFF;
+  border: none;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
 }
 
 .menu__burger {
@@ -663,70 +675,65 @@ a {
 .books__list {
   display: flex;
   gap: 2rem;
-  overflow: auto;
-}
-@media screen and (min-width: 1920px) {
-  .books__list {
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .books__list {
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .books__list {
-    justify-content: center;
-  }
+  margin-bottom: 1rem;
 }
 
 .book__item {
+  border: 3px solid transparent;
   cursor: pointer;
+  flex: 1 0 260px;
+  height: 380px;
   opacity: 0.4;
-  flex-shrink: 0;
-  height: 100%;
+  overflow: hidden;
+  position: relative;
   transition: 0.5s ease-in-out;
-  width: 160px;
 }
 .book__item:hover {
+  border-color: #007BFF;
   opacity: 1;
 }
-@media screen and (max-width: calc(768px - 1px)) {
-  .book__item {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .book__item {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 680px) and (orientation: landscape) {
-  .book__item {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .book__item {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .book__item {
-    width: 200px;
-  }
-}
-.book__item-image {
+.book__item:hover .book__content {
   height: 100%;
-  object-fit: cover;
-  width: 100%;
+  opacity: 1;
 }
-.book__item-image img {
+.book__item img {
+  height: 100%;
+  inset: 0;
   object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.book__content {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  background: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  flex-direction: column;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.book__content h2 {
+  font-family: "Marcellus", serif;
+  font-size: 1.125rem;
+}
+.book__content p {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+}
+.book__content button {
+  cursor: pointer;
 }
 
 .book__activated {
+  border-color: #007BFF;
   opacity: 1;
 }
 

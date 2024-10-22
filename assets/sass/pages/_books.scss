@@ -41,60 +41,71 @@
 }
 
 .books__list {
-    display : flex;
-    gap     : 2rem;
-    overflow: auto;
-
-    @include devices-large-screens {
-        justify-content: center;
-    }
+    display      : flex;
+    gap          : 2rem;
+    margin-bottom: 1rem;
 }
 
 .book__item {
-    cursor     : pointer;
-    opacity    : .4;
-    flex-shrink: 0;
-    height     : 100%;
-    transition : .5s ease-in-out;
-    width      : 160px;
+    border    : 3px solid transparent;
+    cursor    : pointer;
+    flex      : 1 0 260px;
+    height    : 380px;
+    opacity   : .4;
+    overflow  : hidden;
+    position  : relative;
+    transition: .5s ease-in-out;
 
     @include hover {
-        opacity: 1;
-    }
+        border-color: #007BFF;
+        opacity     : 1;
 
-    @include devices(m) {
-        width: 100%;
-    }
-
-    @include devices(xs) {
-        width: 100%;
-    }
-
-    @include orientation {
-        width: 200px;
-    }
-
-    @include devices(xxl) {
-        width: 200px;
-    }
-
-    @include devices(xl) {
-        width: 200px;
-    }
-
-    &-image {
-        height    : 100%;
-        object-fit: cover;
-        width     : 100%;
-
-        img {
-            object-fit: cover;
+        .book__content {
+            height : 100%;
+            opacity: 1;
         }
+    }
+
+    img {
+        height      : 100%;
+        inset       : 0;
+        //opacity   : .3;
+        object-fit  : cover;
+        position    : absolute;
+        width       : 100%;
+        z-index     : -1;
+    }
+}
+
+.book__content {
+    @include flex(start, end);
+    background    : rgba($color: #000000, $alpha: .9);
+    bottom        : 0;
+    flex-direction: column;
+    height        : 100%;
+    opacity       : 0;
+    position      : absolute;
+    padding       : 1rem;
+    transition    : .5s ease-in-out;
+
+    h2 {
+        @include marcellus-font();
+        font-size: get-font-size(18);
+    }
+
+    p {
+        @include jost-font();
+        font-size: get-font-size(16)
+    }
+
+    button {
+        cursor: pointer;
     }
 }
 
 .book__activated {
-    opacity: 1;
+    border-color: #007BFF;
+    opacity     : 1;
 }
 
 .book__quote {
