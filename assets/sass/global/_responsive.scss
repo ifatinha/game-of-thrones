@@ -83,3 +83,11 @@ $xs-device : 480px;
         @content
     }
 }
+
+;
+
+@mixin table-landscape {
+    @media screen and (max-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}

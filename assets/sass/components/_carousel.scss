@@ -12,6 +12,10 @@
     &__buttons {
         text-align: center;
 
+        @include devices(xxl) {
+            display: none;
+        }
+
         button {
             @include apply-color("pure-white");
             background : transparent;
