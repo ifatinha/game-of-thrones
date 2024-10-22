@@ -36,6 +36,6 @@
 }
 
 #about {
-    @include bg-gradient("../images/about-bg-01.jpg", 0.4);
+    @include bg-gradient("../images/backgrounds/about-bg.webp", 0.8);
     background-attachment: fixed;
 }

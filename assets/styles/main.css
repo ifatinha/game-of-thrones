@@ -515,7 +515,7 @@ a {
 }
 
 #about {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/about-bg-01.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/backgrounds/about-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
