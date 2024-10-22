@@ -126,6 +126,24 @@ a {
 .carousel__buttons {
   text-align: center;
 }
+.carousel__buttons button {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.carousel__buttons button:hover {
+  opacity: 0.6;
+}
+.carousel__buttons button:nth-child(1)::before {
+  content: "↞";
+}
+.carousel__buttons button:nth-child(2)::after {
+  content: "↠";
+}
 
 .button__icon-visually {
   font-family: "Game of Thrones", serif;
@@ -136,15 +154,6 @@ a {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.button__round {
-  color: #ffffff;
-  background: #007BFF;
-  border: none;
-  border-radius: 50%;
-  height: 32px;
-  width: 32px;
 }
 
 .menu__burger {
@@ -674,16 +683,33 @@ a {
 
 .books__list {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 1rem;
+  justify-content: space-around;
+  text-align: center;
+}
+@media screen and (min-width: 1920px) {
+  .books__list {
+    gap: 1.4rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .books__list {
+    gap: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .books__list {
+    gap: 1.4rem;
+  }
 }
 
 .book__item {
   border: 3px solid transparent;
   cursor: pointer;
-  flex: 1 0 260px;
-  height: 380px;
-  opacity: 0.4;
+  flex: 1 0 300px;
+  height: 440px;
+  opacity: 1;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease-in-out;
@@ -692,7 +718,7 @@ a {
   border-color: #007BFF;
   opacity: 1;
 }
-.book__item:hover .book__content {
+.book__item:hover .book__info {
   height: 100%;
   opacity: 1;
 }
@@ -705,7 +731,7 @@ a {
   z-index: -1;
 }
 
-.book__content {
+.book__info {
   align-items: start;
   display: flex;
   gap: 1rem;
@@ -716,19 +742,21 @@ a {
   height: 100%;
   opacity: 0;
   position: absolute;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   transition: 0.5s ease-in-out;
+  text-align: left;
+  width: 100%;
 }
-.book__content h2 {
+.book__info h2 {
   font-family: "Marcellus", serif;
   font-size: 1.125rem;
 }
-.book__content p {
+.book__info p {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-size: 1rem;
 }
-.book__content button {
+.book__info button {
   cursor: pointer;
 }
 

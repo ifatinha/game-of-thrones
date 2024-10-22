@@ -11,5 +11,31 @@
 
     &__buttons {
         text-align: center;
+
+        button {
+            @include apply-color("pure-white");
+            background : transparent;
+            border     : none;
+            cursor     : pointer;
+            font-size  : get-font-size(32);
+            font-weight: 600;
+            transition : .3s ease-in-out;
+
+            @include hover {
+                opacity: .6;
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    content: "\219E";
+                }
+            }
+
+            &:nth-child(2) {
+                &::after {
+                    content: "\21A0";
+                }
+            }
+        }
     }
 }
