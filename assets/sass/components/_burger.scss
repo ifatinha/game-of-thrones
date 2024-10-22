@@ -13,9 +13,18 @@
 
     @include hover {
 
-        .menu__burger-bars::after,
-        .menu__burger-bars::before {
-            width: 100%;
+        opacity: .5;
+
+        .menu__burger-bars {
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
         }
 
     }

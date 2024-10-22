@@ -61,28 +61,31 @@
       </div>
    </header>
 
-   <div id="navbarMenuModal" class="menu__modal" aria-hidden="true" aria-label="Menu de navegação">
-      <button type="button" class="button__icon modal__close-button" id="navbarCloseButton" aria-label="Fechar menu">
-         <span class="button__icon-visually">Fechar</span>
+   <!-- modal menu -->
+   <div id="navbarMenuModal" class="modal" aria-hidden="true" aria-label="Menu de navegação">
+      <button type="button" class="modal__close-button" id="navbarCloseButton" aria-label="Fechar menu">
+         <span>Fechar</span>
       </button>
       <nav class="navbar__menu">
-         <ul class="navbar__menu-list">
-            <li class="navbar__menu-item">
-               <a href="#about">Sobre</a>
-            </li>
-            <li class="navbar__menu-item">
-               <a href="#characters">Personagens</a>
-            </li>
-            <li class="navbar__menu-item">
-               <a href="#houses">Casas</a>
-            </li>
-            <li class="navbar__menu-item">
-               <a href="#map">Mapa</a>
-            </li>
-            <li class="navbar__menu-item">
-               <a href="#histories">Historias</a>
-            </li>
-         </ul>
+         <div class="container">
+            <ul class="navbar__list">
+               <li class="navbar__item">
+                  <a href="#characters" class="activated">Origens</a>
+               </li>
+               <li class="navbar__item">
+                  <a href="#characters">Heróis</a>
+               </li>
+               <li class="navbar__item">
+                  <a href="#houses">Clãs</a>
+               </li>
+               <li class="navbar__item">
+                  <a href="#map">Reinos</a>
+               </li>
+               <li class="navbar__item">
+                  <a href="#histories">Crônicas</a>
+               </li>
+            </ul>
+         </div>
       </nav>
    </div>
 

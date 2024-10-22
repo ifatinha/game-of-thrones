@@ -3,7 +3,7 @@
 @use "../global/responsive"as *;
 
 .home {
-    @include bg-gradient("../images/home-bg.webp", 0.3);
+    @include bg-gradient("../images/backgrounds/home-bg.webp", 0.3);
     @include flex(center, center);
     height    : 120vh;
     position  : relative;

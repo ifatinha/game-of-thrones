@@ -4,139 +4,46 @@
 @use "../global/responsive"as *;
 
 .navbar__menu {
-    height: 100%;
-    width : 100%;
-
-    &-list {
-        display : flex;
-        height  : 100%;
-        overflow: hidden;
-        width   : 100%;
-
-        @include devices-small-screens {
-            flex-direction: column;
-        }
-    }
-
-    &-item {
-        @include flex(center, center, 0);
-        flex-basis: calc(100% / 5);
-        filter    : grayscale(100%);
-        height    : 100%;
-        position  : relative;
-        text-align: center;
-        transition: .3s ease-in-out;
-
-        a {
-            @include font-primary();
-            display  : inline-block;
-            font-size: get-font-size(14);
-        }
-
-        &:nth-child(1) {
-            @include bg-img("../images/link-bg-01.jpg");
-
-            @include devices-small-screens {
-                background-position: 0% 28%;
-            }
-        }
-
-        &:nth-child(2) {
-            @include bg-img("../images/link-bg-02.jpg");
-
-            @include devices-small-screens {
-                background-position: 0% 40%;
-            }
-        }
-
-        &:nth-child(3) {
-            @include bg-img("../images/link-bg-03.jpg");
-
-            @include devices-small-screens {
-                background-position: 0% 20%;
-            }
-        }
-
-        &:nth-child(4) {
-            @include bg-img("../images/link-bg-04.jpg");
-        }
-
-        &:nth-child(5) {
-            @include bg-img("../images/link-bg-05.jpg");
-
-            @include devices-small-screens {
-                background-position: 0% 24%;
-            }
-        }
-
-        @include hover() {
-            filter: grayscale(0);
-        }
-
-        @include orientation() {
-            background: black !important;
-            filter    : grayscale(0);
-        }
-    }
-}
-
-//navbar modal
-.menu__modal {
-    @include apply-bg-color("black");
+    @include flex(center, center);
+    @include bg-gradient("../images/backgrounds/navbar-bg.webp", .8);
     height    : 100%;
-    opacity   : 0;
-    position  : fixed;
-    transform : translateY(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    visibility: hidden;
+    overflow-y: auto;
     width     : 100%;
-    z-index   : 999999;
 }
 
-.menu__modal-open {
-    opacity   : 1;
-    visibility: visible;
-    transform : translateY(0);
-}
-
-.modal__close-button {
-    @include flex(center, center, 0);
-    background    : transparent;
-    border        : none;
-    cursor        : pointer;
-    font-size     : get-font-size(16);
+.navbar__list {
+    @include flex(start, center);
     flex-direction: column;
-    height        : 44px;
-    position      : absolute;
-    left          : 30px;
-    transition    : .3s ease-in-out;
-    top           : 30px;
-    width         : 44px;
-    z-index       : 9999999;
+    gap           : 1rem;
+    padding       : 1rem;
+}
 
-    @include hover {
-        opacity: 0.6;
+.navbar__item {
+    a {
+        @include marcellus-font();
+        display       : inline-block;
+        font-size     : get-font-size(50);
+        font-weight   : 700;
+        position      : relative;
+        text-transform: uppercase;
+        transition    : .5s ease-in-out;
+
+        @include devices-large-screens {
+            font-size: get-font-size(58);
+        }
+
+        @include orientation {
+            font-size: get-font-size(32);
+        }
+
+        @include hover {
+            opacity: .5;
+        }
     }
+}
 
-    @include devices(m) {
-        left: 20px;
-        top : 20px;
-    }
-
-    &::before,
-    &::after {
-        @include apply-bg-color("sky-blue");
-        content : "";
-        height  : 32px;
-        position: absolute;
-        width   : 2px;
-    }
-
-    &::before {
-        transform: rotate(45deg);
-    }
-
-    &::after {
-        transform: rotate(-45deg);
+.navbar__item {
+    .activated {
+        opacity: .5;
     }
 }

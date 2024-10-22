@@ -3,8 +3,6 @@
 @use "../base/mixins"as *;
 
 .button__icon {
-    background: darkblue;
-
     &-visually {
         @include font-primary();
         clip     : rect(0, 0, 0, 0);
@@ -14,31 +12,5 @@
         padding  : 0;
         position : absolute;
         width    : 1px;
-    }
-}
-
-.modal__button {
-    @include flex(center, center, 0);
-    @include apply-color("sky-blue");
-    @include font-secondary();
-    flex-direction: column;
-    background    : transparent;
-    border        : none;
-    cursor        : pointer;
-    font-size     : get-font-size(12);
-    left          : 1rem;
-    position      : absolute;
-    transition    : .3s ease-in-out;
-    text-transform: uppercase;
-    top           : 1rem;
-    z-index       : 99999;
-
-    &::before {
-        content  : "\2927";
-        font-size: get-font-size(28);
-    }
-
-    @include hover {
-        opacity: .7;
     }
 }

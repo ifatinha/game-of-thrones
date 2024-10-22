@@ -4,21 +4,19 @@
 @use "../global/responsive"as *;
 
 .modal {
+    background  : rgba($color: #000000, $alpha: 1);
     height    : 100%;
-    opacity   : 1;
+    opacity   : 0;
+    overflow  : auto;
     position  : fixed;
     transform : translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-    visibility: visible;
+    visibility: hidden;
     width     : 100%;
-    z-index   : 999999;
-
-    &--navbar {
-        @include apply-bg-color("black");
-    }
+    z-index   : 9999;
 }
 
-.menu__modal-open {
+.modal-open {
     opacity   : 1;
     visibility: visible;
     transform : translateY(0);
@@ -26,42 +24,26 @@
 
 .modal__close-button {
     @include flex(center, center, 0);
+    @include apply-color("pure-white");
+    @include font-secondary();
+    flex-direction: column;
     background    : transparent;
     border        : none;
     cursor        : pointer;
-    font-size     : get-font-size(16);
-    flex-direction: column;
-    height        : 44px;
+    font-size     : get-font-size(12);
+    right         : 1rem;
     position      : absolute;
-    left          : 30px;
     transition    : .3s ease-in-out;
-    top           : 30px;
-    width         : 44px;
-    z-index       : 9999999;
-
-    @include hover {
-        opacity: 0.6;
-    }
-
-    @include devices(m) {
-        left: 20px;
-        top : 20px;
-    }
-
-    &::before,
-    &::after {
-        @include apply-bg-color("sky-blue");
-        content : "";
-        height  : 32px;
-        position: absolute;
-        width   : 2px;
-    }
+    text-transform: uppercase;
+    top           : 1rem;
+    z-index       : 9999;
 
     &::before {
-        transform: rotate(45deg);
+        content  : "\2927";
+        font-size: get-font-size(28);
     }
 
-    &::after {
-        transform: rotate(-45deg);
+    @include hover {
+        opacity: .7;
     }
 }
