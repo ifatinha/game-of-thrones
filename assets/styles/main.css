@@ -948,17 +948,17 @@ a {
 }
 @media screen and (min-width: 1920px) {
   .synopsis__description {
-    padding: 3rem 140px;
+    padding: 3rem 220px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .synopsis__description {
-    padding: 3rem 140px;
+    padding: 3rem 220px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
   .synopsis__description {
-    padding: 3rem 140px;
+    padding: 3rem 220px;
   }
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
