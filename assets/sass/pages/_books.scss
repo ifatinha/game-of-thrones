@@ -81,7 +81,7 @@
 
         .book__info {
             height : 100%;
-            opacity: .8;
+            opacity: .9;
         }
     }
 
@@ -110,7 +110,8 @@
 
     h2 {
         @include marcellus-font();
-        font-size: get-font-size(18);
+        font-size  : get-font-size(22);
+        font-weight: 600;
     }
 
     p {
@@ -140,11 +141,77 @@
 }
 
 //book modal
-.book__modal {
-    background: orange;
-    height    : 100vh;
-    inset     : 0;
-    position  : fixed;
-    width     : 100%;
-    z-index   : 999999;
+.modal__book {
+    @include apply-bg-color("black");
+    inset       : 0;
+    max-height  : 100vh;
+    opacity     : 1;
+    overflow-y  : scroll;
+    position    : fixed;
+    //transform : translateY(-20px);
+    transition  : opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    visibility  : visible;
+    width       : 100%;
+    z-index     : 999999;
+
+    &::-webkit-scrollbar {
+        //width: 0px;
+    }
+
+    &-container {
+        background         : url("../images/books/book-bg.webp");
+        background-position: center;
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        @include flex(center, center);
+        height  : 100%;
+        position: absolute;
+        width   : 100%;
+    }
+
+    &-info {
+        @include flex(center, center, 0);
+        flex-direction: column;
+        max-width     : 600px;
+        text-align    : center;
+
+        img {
+            max-width    : 240px;
+            margin-bottom: 1rem;
+        }
+
+        span {
+            @include font-secondary();
+            color         : rgba(255, 255, 255, 0.5);
+            font-size     : get-font-size(16);
+            letter-spacing: 2px;
+            margin-bottom : 10px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            @include font-primary();
+            font-size     : get-font-size(24);
+            letter-spacing: 2px;
+            margin-bottom : 1rem;
+        }
+
+        hr {
+            @include line(48px);
+        }
+
+        p {
+            @include font-secondary();
+            color         : rgba(255, 255, 255, 0.5);
+            font-size     : get-font-size(16);
+            margin-top    : 8px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.modal__book.actived {
+    opacity   : 1;
+    visibility: visible;
+    transform : translateY(0);
 }

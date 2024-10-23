@@ -6,9 +6,13 @@ import { smoothScrollTo } from "./modules/navigation.js";
 import { renderCharacterElements } from "./modules/characterElements.js";
 import { initializeCharacterSlider } from "./modules/characterCarousel.js";
 import {
-  initializeModal,
+  openCharacterModal,
   closeModalCharacter,
 } from "./modules/characterModalController.js";
+import {
+  openBookModal,
+  closeBookModal,
+} from "./modules/modalBookController.js";
 
 //{ name: "renderCharacterElements", func: renderCharacterElements }
 
@@ -19,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "smoothScrollTo", func: smoothScrollTo },
     { name: "renderCharacterElements", func: renderCharacterElements },
     { name: "initializeCharacterSlider", func: initializeCharacterSlider },
-    { name: "initializeModal", func: initializeModal },
+    { name: "openCharacterModal", func: openCharacterModal },
     { name: "closeModalCharacter", func: closeModalCharacter },
+    { name: "openBookModal", func: openBookModal },
+    { name: "closeBookModal", func: closeBookModal },
   ];
 
   functionsToCall.forEach(({ name, func }) => {

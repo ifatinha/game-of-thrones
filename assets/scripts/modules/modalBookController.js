@@ -1,10 +1,10 @@
-import { characters } from "../data/characters.js";
+import { books } from "../data/books.js";
 
 let touchStartX = 0;
 let touchEndX = 0;
 
 const getModalDom = () => {
-  const modalCharacter = document.querySelector("#modalCharacter");
+  const modalCharacter = document.querySelector("#bookModal");
 
   if (!modalCharacter) return;
 
@@ -62,21 +62,22 @@ const refreshModalData = (character) => {
   });
 };
 
-const handleCharacterModal = (characterCode, card) => {
-  const characterIdx = characters.findIndex((character) => {
-    return character.code === +characterCode;
+const handleCharacterModal = (card) => {
+  const bookId = +card.dataset.bookId;
+
+  const bookIdx = books.findIndex((book) => {
+    return book.id === bookId;
   });
 
-  if (characterIdx !== -1) {
-    const modalCharacter = getModalDom();
-    modalCharacter.classList.add("actived");
+  if (bookIdx !== -1) {
+    const modal = getModalDom();
+    console.log(modal);
+    modal.classList.add("actived");
     card.setAttribute("aria-expanded", "true");
-    refreshModalData(characters[characterIdx]);
   }
 };
 
-const initializeModal = (event, characterCode) => {
-  const card = event.currentTarget;
+const initializeModal = (event, card) => {
   if (event?.type === "touchstart") {
     touchStartX = event.changedTouches[0].screenX;
   }
@@ -86,56 +87,59 @@ const initializeModal = (event, characterCode) => {
 
     if (Math.abs(touchStartX - touchEndX) < 10) {
       event.preventDefault();
-      handleCharacterModal(characterCode, card);
+      handleCharacterModal(card);
     }
   }
 
   if (event?.type === "keydown" || event?.type === "click") {
-    event.preventDefault(); // Previne o comportamento padrão no clique ou tecla
-    handleCharacterModal(characterCode, card);
+    event.preventDefault();
+    handleCharacterModal(card);
   }
 };
 
-export const openCharacterModal = () => {
-  const cards = document.querySelectorAll(".character__card");
+export const openBookModal = () => {
+  const cards = document.querySelectorAll(".book__item");
 
-  if (!cards) return;
+  if (!cards) {
+    console.warn("Elementos não encontrados.");
+  }
 
   cards.forEach((card) => {
     card.addEventListener("touchstart", (event) =>
-      initializeModal(event, card.dataset.characterCode)
+      initializeModal(event, card)
     );
-    card.addEventListener("touchend", (event) =>
-      initializeModal(event, card.dataset.characterCode)
-    );
+    card.addEventListener("touchend", (event) => initializeModal(event, card));
+    card.addEventListener("click", (event) => initializeModal(event, card));
 
-    card.addEventListener("click", (event) =>
-      initializeModal(event, card.dataset.characterCode)
-    );
     card.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
-        initializeModal(event, card.dataset.characterCode);
+        initializeModal(event, card);
       }
     });
   });
 };
 
-export const closeModalCharacter = () => {
-  const closeModalButton = document.querySelector("#closeModalCharacterButton");
-  const modalCharacter = getModalDom();
-  if (!closeModalButton) return;
+export const closeBookModal = () => {
+  const closeButton = document.querySelector("#bookCloseButton");
+  const modal = getModalDom();
+
+  if (!closeButton) {
+    console.warn("Elemento não encontrado.");
+    return;
+  }
 
   const closeModal = (event) => {
     if (event?.type === "touchstart") event.preventDefault();
-    const cartActived = document.querySelector("[aria-expanded='true']");
 
-    if (!cartActived) return;
+    const cardActived = document.querySelector("[aria-expanded='true']");
 
-    cartActived.setAttribute("aria-expanded", "false");
-    modalCharacter.classList.remove("actived");
+    if (!cardActived) return;
+
+    cardActived.setAttribute("aria-expanded", "false");
+    modal.classList.remove("actived");
   };
 
   [("touchstart", "click")].forEach((eventType) => {
-    closeModalButton.addEventListener(eventType, closeModal);
+    closeButton.addEventListener(eventType, closeModal);
   });
 };

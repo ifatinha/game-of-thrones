@@ -4,7 +4,7 @@
 @use "../global/responsive"as *;
 
 .modal {
-    background  : rgba($color: #000000, $alpha: 1);
+    background: rgba($color: #000000, $alpha: 1);
     height    : 100%;
     opacity   : 0;
     overflow  : auto;
@@ -36,7 +36,7 @@
     transition    : .3s ease-in-out;
     text-transform: uppercase;
     top           : 1rem;
-    z-index       : 9999;
+    z-index       : 9999999;
 
     &::before {
         content  : "\2927";
