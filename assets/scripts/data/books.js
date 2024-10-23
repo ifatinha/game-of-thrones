@@ -5,28 +5,20 @@ export const books = [
     year: "1996",
     description:
       "O primeiro livro da saga inicia uma luta épica pelo Trono de Ferro, com traições e intrigas políticas nos Sete Reinos. No Norte, o inverno se aproxima, enquanto no Sul, as grandes casas começam a se movimentar. Uma batalha pelo poder, honra e sobrevivência está prestes a começar.",
-    image: "assets/images/books/book-01.webp",
     bgImage: "assets/images/books/book-01-bg.webp",
-    altImageBook: "Capa do livro A Guerra dos Tronos",
-    altBgImage: "A Grande Muralha ao Norte",
-    synopsis:
-      "Neste início de saga, Eddard Stark é chamado para servir como Mão do Rei, desencadeando uma série de eventos que culminam em uma guerra por poder e a sobrevivência do reino. Enquanto isso, ao norte da Muralha, algo muito mais perigoso desperta.",
-    sinopseAGuerraDosTronos: [
-      "A Guerra dos Tronos, o primeiro livro da série As Crônicas de Gelo e Fogo de George R. R. Martin, se passa em um continente fictício chamado Westeros. Este mundo é repleto de intrigas políticas, lutas pelo poder e um clima hostil, onde as estações podem durar anos. O jogo pelo Trono de Ferro, símbolo supremo de poder, é o foco central da narrativa, que entrelaça diversas histórias de personagens e famílias nobres.",
-      'A história começa com a morte misteriosa de Jon Arryn, o Mão do Rei, um evento que desencadeia uma série de acontecimentos que mudarão o curso da história. Sua morte levanta questões sobre a legitimidade dos filhos de Cersei Lannister e a estabilidade do reino. Em resposta a essa crise, o Rei Robert Baratheon decide visitar Winterfell, buscando seu velho amigo Eddard "Ned" Stark para assumir o cargo de Mão.',
-      "Ned Stark é o Senhor de Winterfell e um homem de honra. Relutante em aceitar a oferta do rei, ele teme que isso possa colocar sua família em perigo. No entanto, a lealdade a Robert e a necessidade de proteger seus filhos o forçam a concordar. Esta decisão irá levá-lo a um caminho perigoso repleto de traições e desafios, tanto pessoais quanto políticos.",
-      "A família Stark é composta por Ned, sua esposa Catelyn, e seus filhos: Robb, Sansa, Arya, Bran e Rickon. Cada um deles enfrenta seus próprios desafios ao longo da narrativa. Os Stark são conhecidos por seu senso de honra e dever, e esses valores se tornam fundamentais à medida que a história avança e os perigos se intensificam.",
-      "A história se complica quando Bran Stark, um dos filhos de Ned, é empurrado da torre por Jaime Lannister, após testemunhar um ato ilícito entre Jaime e sua irmã Cersei. A queda de Bran resulta em sua paralisia e marca o início da desgraça para a casa Stark, gerando tensões entre os Stark e os Lannister que se intensificam ao longo da trama.",
-      "Ao chegar a Porto Real, Ned descobre um ambiente político repleto de traições e alianças enganosas. Ele começa a investigar a morte de Jon Arryn e percebe que sua investigação pode levá-lo a um segredo devastador: a verdadeira linhagem dos filhos de Cersei, que pode ameaçar a legitimidade do Trono de Ferro. Essa busca pela verdade o coloca em risco e muda o rumo de sua vida e da de sua família.",
-      "Enquanto isso, a história de Daenerys Targaryen, a última sobrevivente da dinastia deposta, se desenrola. Ela e seu irmão Viserys vivem em exílio, longe do trono que acreditam ser seu por direito. Através de um casamento arranjado com Khal Drogo, um poderoso líder dothraki, Daenerys começa a descobrir sua própria força e a se adaptar ao novo mundo ao seu redor.",
-      "Com o passar do tempo, Daenerys se transforma de uma jovem submissa em uma líder forte e determinada. Após a morte de Drogo, ela ganha a lealdade de seus seguidores e começa a entender seu verdadeiro potencial. O nascimento de seus dragões, criaturas místicas que representam o poder de sua casa, marca um ponto de virada em sua jornada.",
-      "Enquanto as tensões aumentam, a casa Stark se vê em guerra aberta contra a casa Lannister. A execução de Ned Stark, um dos momentos mais impactantes do livro, cria uma onda de choque que se espalha por todo Westeros, levando Robb Stark a assumir o comando das forças do Norte e a lutar contra seus inimigos.",
-      "A guerra resulta em um conflito brutal, com várias casas se aliando ou se opondo umas às outras. A luta pelo Trono de Ferro se intensifica à medida que as traições e as reviravoltas se tornam mais frequentes. Cada personagem é forçado a fazer escolhas difíceis, e os lemas de suas casas tornam-se provas de seus destinos.",
-      "Jon Snow, o filho bastardo de Ned, se junta à Patrulha da Noite, uma ordem encarregada de proteger a Muralha no norte de Westeros. Jon enfrenta desafios tanto físicos quanto morais, enquanto luta contra a crescente ameaça dos White Walkers, seres sobrenaturais que representam um perigo real para todos os reinos.",
-      "À medida que a história avança, os caminhos dos diversos personagens começam a se entrelaçar. As decisões tomadas em Porto Real, Winterfell e além têm repercussões em toda Westeros. Cada escolha e cada traição impactam o destino não apenas dos envolvidos, mas também de toda a população.",
-      "A morte de Ned Stark ressoa em toda a narrativa, influenciando as ações de seus filhos e sua esposa. O senso de honra e dever que ele cultivou em sua família é testado em várias frentes, enquanto seus filhos lutam para honrar seu legado e enfrentar as adversidades.",
-      "Paralelamente às intrigas políticas, a magia começa a ressurgir em Westeros. O retorno dos dragões e a ameaça dos White Walkers introduzem um elemento sobrenatural à história, mostrando que a luta pelo poder vai além da política e envolve forças que os humanos mal compreendem.",
-      "A Guerra dos Tronos é uma narrativa rica e complexa, onde a lealdade, a traição e a luta pelo poder se entrelaçam em um tecido intricado de relações. George R. R. Martin apresenta um mundo onde as regras são diferentes e as consequências são reais. A busca pelo Trono de Ferro não é apenas uma luta pelo poder, mas uma reflexão sobre a natureza humana e os preços que se paga pela ambição.",
+    synopsis: [
+      "A Guerra dos Tronos, o primeiro volume da série As Crônicas de Gelo e Fogo, de George R.R. Martin, introduz o vasto continente de Westeros, onde as estações podem durar anos e as grandes casas nobres competem pelo controle do Trono de Ferro, o símbolo máximo de poder nos Sete Reinos. A história começa quando o rei Robert Baratheon visita seu antigo amigo, Eddard ‘Ned’ Stark, o Senhor de Winterfell, para convidá-lo a se tornar a nova Mão do Rei, substituindo Jon Arryn, morto de forma misteriosa.",
+      "Relutante, Ned aceita o chamado e viaja para Porto Real, a capital do reino, levando suas filhas Sansa e Arya. Em Porto Real, ele descobre uma corte cheia de intrigas e segredos perigosos, principalmente ligados à poderosa Casa Lannister, à qual pertence a rainha Cersei. Ned investiga as circunstâncias da morte de Jon Arryn e, eventualmente, descobre que os filhos de Cersei, incluindo o herdeiro do trono, o príncipe Joffrey, são fruto de um relacionamento incestuoso entre Cersei e seu irmão gêmeo, Jaime Lannister.",
+      "Enquanto isso, de volta a Winterfell, o jovem Bran Stark sofre um acidente ao cair de uma torre depois de flagrar Cersei e Jaime juntos. Ele sobrevive, mas fica paralisado da cintura para baixo e perde a memória do que viu, o que mantém o segredo dos Lannister a salvo temporariamente. Esse incidente desencadeia uma série de eventos que colocam os Stark em um caminho perigoso de confronto com os Lannister.",
+      "No extremo norte, Jon Snow, o filho bastardo de Ned, decide juntar-se à Patrulha da Noite, uma antiga ordem que protege os reinos dos homens das ameaças além da imensa Muralha. Lá, Jon enfrenta os desafios de ser um recém-chegado à Patrulha, enquanto eventos estranhos começam a ocorrer, como a reemergência dos mitológicos Caminhantes Brancos, ameaças sobrenaturais que há muito tempo estavam esquecidas.",
+      "Enquanto as intrigas crescem em Westeros, no continente oriental de Essos, Daenerys Targaryen, a última descendente da casa real deposta, os Targaryen, é vendida em casamento pelo seu irmão Viserys ao líder dothraki Khal Drogo, em troca de um exército para reconquistar o Trono de Ferro. No início, Dany é submissa, mas ao longo da narrativa, ela encontra sua força interior, especialmente após a morte de Drogo e o nascimento de seus três dragões.",
+      "Em Porto Real, Ned Stark continua suas investigações e descobre o segredo que Jon Arryn havia descoberto: Joffrey e seus irmãos não são filhos legítimos do rei Robert, mas de Jaime e Cersei. Ned tenta alertar o rei, mas antes que possa agir, Robert morre em um acidente suspeito de caça. Isso permite que Joffrey ascenda ao trono, manipulando o poder nas mãos dos Lannister.",
+      "Ao mesmo tempo, Ned tenta expor a verdade sobre Joffrey, mas é traído e preso por traição. Arya consegue fugir da cidade, enquanto Sansa é mantida refém pelos Lannister. Em um momento decisivo, Ned é forçado a confessar uma traição que não cometeu, na esperança de salvar sua vida e proteger suas filhas. No entanto, Joffrey ordena sua execução, um ato impiedoso que choca o reino e dá início a uma guerra civil.",
+      "Após a morte de Ned, seu filho mais velho, Robb Stark, é proclamado Rei do Norte por seus vassalos. Ele reúne um exército e marcha contra os Lannisters, iniciando a Guerra dos Cinco Reis, onde várias facções lutam pelo controle do trono. Entre esses rivais estão Stannis e Renly Baratheon, irmãos do falecido rei Robert, cada um com suas próprias reivindicações ao Trono de Ferro.",
+      "Em meio à guerra, Catelyn Stark, esposa de Ned, tenta buscar alianças para apoiar seu filho, enquanto Robb vai conquistando vitórias contra os Lannisters. No entanto, as tensões e traições continuam a se intensificar entre os diversos reinos, enquanto alianças frágeis são feitas e desfeitas.",
+      "Enquanto Westeros está em guerra, Jon Snow continua a enfrentar os perigos no norte. Ele começa a perceber que as ameaças além da Muralha, como os selvagens e os Caminhantes Brancos, representam um perigo maior do que qualquer disputa pelo Trono de Ferro. A Patrulha da Noite precisa preparar-se para enfrentar uma ameaça que pode destruir toda a civilização.",
+      "Em Essos, Daenerys finalmente emerge como uma líder por direito próprio. Após a morte de Drogo e a perda de seu filho ainda não nascido, ela se prova como a última esperança dos Targaryen ao eclodir três dragões de seus ovos. Esses dragões são vistos como símbolos de poder, marcando o renascimento de sua linhagem e seu potencial para reivindicar Westeros.",
+      "A trama do primeiro livro culmina com todas as peças no tabuleiro de Westeros posicionadas para um conflito maior. A guerra se intensifica entre as grandes casas, enquanto o inverno se aproxima, trazendo consigo uma ameaça muito maior do que o simples desejo pelo poder. O destino de Westeros está em jogo, e a luta pelo Trono de Ferro apenas começou.",
     ],
 
     quotes: [
@@ -36,38 +28,32 @@ export const books = [
           "A lealdade é um traço nobre, mas também pode ser uma armadilha. Você deve saber quando é hora de se levantar e lutar por aquilo que é certo.",
       },
       {
+        character: "Jon Snow",
+        quote: "O medo corta mais profundamente que espadas.",
+      },
+      {
         character: "Catelyn Stark",
         quote:
-          "Eu vou fazer o que for preciso para proteger meus filhos. Não há poder maior do que o amor de uma mãe.",
+          "Deixe-me ensinar-lhe uma lição: a morte é mais suave que a derrota.",
+      },
+      {
+        character: "Tyrion Lannister",
+        quote:
+          "Nunca esqueça o que você é, o resto do mundo não esquecerá. Use isso como uma armadura, e isso nunca poderá ser usado para feri-lo.",
       },
       {
         character: "Daenerys Targaryen",
         quote:
           "Eu não sou uma mulher a ser subestimada. Meu destino é o Trono de Ferro, e eu não vou parar até que o reivindique.",
       },
-      {
-        character: "Robb Stark",
-        quote:
-          "A casa Stark sempre cumpre seus deveres. Se a guerra vier, lutaremos com honra e coragem.",
-      },
-      {
-        character: "Tyrion Lannister",
-        quote:
-          "O conhecimento é poder. No jogo dos tronos, você deve ser mais astuto do que os outros para sobreviver.",
-      },
-      {
-        character: "Jaime Lannister",
-        quote:
-          "A honra é uma espada de dois gumes. Você pode se cortar tanto quanto aqueles a quem você tenta proteger.",
-      },
     ],
 
     images: [
       "assets/images/book-01-image-01.webp",
-      "assets/images/book-01-image-02.jpg",
-      "assets/images/book-01-image-03.jpg",
-      "assets/images/book-01-image-04.jpg",
-      "assets/images/book-01-image-05.jpg",
+      "assets/images/book-01-image-02.webp",
+      "assets/images/book-01-image-03.webp",
+      "assets/images/book-01-image-04.webp",
+      "assets/images/book-01-image-05.webp",
     ],
   },
   {

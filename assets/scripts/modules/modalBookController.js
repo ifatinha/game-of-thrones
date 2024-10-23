@@ -15,9 +15,10 @@ const refreshModalData = (book) => {
   const container = document.querySelector(".book__description");
   const bookYear = document.querySelector("#bookYear");
   const bookTitle = document.querySelector("#bookTitle");
+  const paragraphs = document.querySelectorAll(".synopsis__paragraphs p");
 
   // Verificar se todos os elementos necessários estão disponíveis
-  if (!container || !bookYear || !bookTitle) {
+  if (!container || !bookYear || !bookTitle || !paragraphs.length) {
     console.warn("Alguns elementos do modal não foram encontrados.");
     return;
   }
@@ -25,6 +26,10 @@ const refreshModalData = (book) => {
   container.style.backgroundImage = `url('${book.bgImage}')`;
   bookYear.textContent = book.year;
   bookTitle.textContent = book.title;
+  book.synopsis.forEach((paragraph, index) => {
+    paragraphs[index].textContent = paragraph;
+  });
+  //console.log(paragraphs);
 };
 
 const handleBookModal = (card) => {
