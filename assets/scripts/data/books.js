@@ -5,8 +5,8 @@ export const books = [
     year: "1996",
     description:
       "O primeiro livro da saga inicia uma luta épica pelo Trono de Ferro, com traições e intrigas políticas nos Sete Reinos. No Norte, o inverno se aproxima, enquanto no Sul, as grandes casas começam a se movimentar. Uma batalha pelo poder, honra e sobrevivência está prestes a começar.",
-    image: "assets/images/book-01.jpg",
-    bgImage: "assets/images/book-01-bg.jpg",
+    image: "assets/images/books/book-01.webp",
+    bgImage: "assets/images/books/book-01-bg.webp",
     altImageBook: "Capa do livro A Guerra dos Tronos",
     altBgImage: "A Grande Muralha ao Norte",
     synopsis:
@@ -77,8 +77,8 @@ export const books = [
     description:
       "Após a morte do rei, os reinos se veem em guerra civil, com vários pretendentes ao trono surgindo. As batalhas devastam Westeros enquanto forças antigas e misteriosas começam a se movimentar além da Muralha, anunciando uma ameaça muito maior do que qualquer guerra.",
     image: "assets/images/book-02.jpg",
-    bgImage: "assets/images/book-02-bg.jpg",
-    altImageBook: "Capa do livro A Fúria dos Reis",
+    bgImage: "assets/images/books/book-02-bg.webp",
+    altImageBook: "Capa do livro A FÚria dos Reis",
     altBgImage: "A Batalha da Baía da Água Negra",
     synopsis:
       "Com o trono vazio, Stannis e Renly Baratheon, Robb Stark e outros lordes disputam o poder enquanto o caos consome Westeros. Magia, dragões e profecias começam a emergir, redefinindo o cenário da guerra.",
@@ -109,7 +109,7 @@ export const books = [
     description:
       "No terceiro livro da saga, alianças são formadas e destruídas enquanto a guerra se intensifica. Traições chocantes redefinem os rumos das grandes casas, e o Casamento Vermelho se torna um dos eventos mais brutais e inesquecíveis, marcando profundamente a história dos Sete Reinos.",
     image: "assets/images/book-03.jpg",
-    bgImage: "assets/images/book-03-bg.jpg",
+    bgImage: "assets/images/books/book-03-bg.webp",
     altImageBook: "Capa do livro A Tormenta de Espadas",
     altBgImage: "Cena do Casamento Vermelho",
     synopsis:
@@ -141,7 +141,7 @@ export const books = [
     description:
       "O quarto livro se concentra nos sobreviventes da guerra e nas cicatrizes deixadas em Westeros. Com muitos dos grandes líderes mortos, o reino está devastado pela fome e pelo luto. Novos desafios e ambições emergem, ameaçando o já fragilizado equilíbrio do poder.",
     image: "assets/images/book-04.jpg",
-    bgImage: "assets/images/book-04-bg.jpg",
+    bgImage: "assets/images/books/book-04-bg.webp",
     altImageBook: "Capa do livro O Festim dos Corvos",
     altBgImage: "Westeros após batalhas devastadoras",
     synopsis:
@@ -173,8 +173,8 @@ export const books = [
     description:
       "Daenerys Targaryen luta para manter o controle de seus dragões e da cidade de Meereen, enquanto no Norte uma guerra decisiva está se formando. Jon Snow enfrenta desafios como líder da Patrulha da Noite, enquanto o inverno finalmente chega, trazendo caos e destruição a todo o continente.",
     image: "assets/images/book-05.jpg",
-    bgImage: "assets/images/book-05-bg.jpg",
-    altImageBook: "Capa do livro A Dança dos Dragões",
+    bgImage: "assets/images/books/book-05-bg.webp",
+    altImageBook: "Capa do livro A DanÇa dos DragÕes",
     altBgImage: "Daenerys e seus dragões em Meereen",
     synopsis:
       "Enquanto Daenerys luta para governar em Essos, Jon Snow enfrenta decisões impossíveis como Lorde Comandante da Patrulha da Noite. No Sul, a luta pelo Trono de Ferro continua com novas intrigas e traições.",

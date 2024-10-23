@@ -11,58 +11,23 @@ const getModalDom = () => {
   return modalCharacter;
 };
 
-const refreshModalData = (character) => {
-  const container = document.querySelector(".character__container");
-  const characterTitle = document.querySelector("#characaterTitle");
-  const characterName = document.querySelector("#characaterName");
-  const houseName = document.querySelector("#houseName");
-  const quoteNameSpans = document.querySelectorAll(".quote__name");
-  const quotes = document.querySelectorAll(".quotes");
-  const bioParagraph = document.querySelectorAll(".bio__paragraph");
-  const characterPhotos = document.querySelectorAll(".characater__photo");
+const refreshModalData = (book) => {
+  const container = document.querySelector(".book__description");
+  const bookYear = document.querySelector("#bookYear");
+  const bookTitle = document.querySelector("#bookTitle");
 
   // Verificar se todos os elementos necessários estão disponíveis
-  if (
-    !container ||
-    !characterTitle ||
-    !characterName ||
-    !houseName ||
-    !quoteNameSpans.length ||
-    !quotes.length ||
-    !bioParagraph.length ||
-    !characterPhotos.length
-  ) {
+  if (!container || !bookYear || !bookTitle) {
     console.warn("Alguns elementos do modal não foram encontrados.");
     return;
   }
 
-  container.style.backgroundImage = `url('${character.backgroundImage}')`;
-  characterTitle.textContent = character.title;
-  characterName.textContent = character.nameCharacters;
-  houseName.textContent = `${character.house}`;
-
-  quoteNameSpans.forEach((quote) => {
-    quote.textContent = character.nameCharacters || "Personagem";
-  });
-
-  quotes.forEach((quote, index) => {
-    quote.textContent = character.quotes?.[index]
-      ? `"${character.quotes[index]}"`
-      : "Sem citação";
-  });
-
-  bioParagraph.forEach((paragraph, index) => {
-    paragraph.textContent =
-      character.description?.[index] || "Descrição não disponível";
-  });
-
-  characterPhotos.forEach((image, index) => {
-    image.src = character.gallery?.[index] || "assets/images/imagem.jpg";
-    image.alt = character.alt || "Foto do personagem";
-  });
+  container.style.backgroundImage = `url('${book.bgImage}')`;
+  bookYear.textContent = book.year;
+  bookTitle.textContent = book.title;
 };
 
-const handleCharacterModal = (card) => {
+const handleBookModal = (card) => {
   const bookId = +card.dataset.bookId;
 
   const bookIdx = books.findIndex((book) => {
@@ -71,9 +36,10 @@ const handleCharacterModal = (card) => {
 
   if (bookIdx !== -1) {
     const modal = getModalDom();
-    console.log(modal);
     modal.classList.add("actived");
+    modal.removeAttribute("aria-hidden");
     card.setAttribute("aria-expanded", "true");
+    refreshModalData(books[bookIdx]);
   }
 };
 
@@ -87,13 +53,13 @@ const initializeModal = (event, card) => {
 
     if (Math.abs(touchStartX - touchEndX) < 10) {
       event.preventDefault();
-      handleCharacterModal(card);
+      handleBookModal(card);
     }
   }
 
   if (event?.type === "keydown" || event?.type === "click") {
     event.preventDefault();
-    handleCharacterModal(card);
+    handleBookModal(card);
   }
 };
 
@@ -137,6 +103,7 @@ export const closeBookModal = () => {
 
     cardActived.setAttribute("aria-expanded", "false");
     modal.classList.remove("actived");
+    modal.setAttribute("aria-hidden", "true");
   };
 
   [("touchstart", "click")].forEach((eventType) => {

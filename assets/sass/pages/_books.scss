@@ -144,9 +144,9 @@
 .modal__book {
     @include apply-bg-color("black");
     inset       : 0;
-    max-height  : 100vh;
+    height      : 100%;
     opacity     : 1;
-    overflow-y  : scroll;
+    overflow-y  : auto;
     position    : fixed;
     //transform : translateY(-20px);
     transition  : opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
@@ -155,58 +155,7 @@
     z-index     : 999999;
 
     &::-webkit-scrollbar {
-        //width: 0px;
-    }
-
-    &-container {
-        background         : url("../images/books/book-bg.webp");
-        background-position: center;
-        background-size    : cover;
-        background-repeat  : no-repeat;
-        @include flex(center, center);
-        height  : 100%;
-        position: absolute;
-        width   : 100%;
-    }
-
-    &-info {
-        @include flex(center, center, 0);
-        flex-direction: column;
-        max-width     : 600px;
-        text-align    : center;
-
-        img {
-            max-width    : 240px;
-            margin-bottom: 1rem;
-        }
-
-        span {
-            @include font-secondary();
-            color         : rgba(255, 255, 255, 0.5);
-            font-size     : get-font-size(16);
-            letter-spacing: 2px;
-            margin-bottom : 10px;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            @include font-primary();
-            font-size     : get-font-size(24);
-            letter-spacing: 2px;
-            margin-bottom : 1rem;
-        }
-
-        hr {
-            @include line(48px);
-        }
-
-        p {
-            @include font-secondary();
-            color         : rgba(255, 255, 255, 0.5);
-            font-size     : get-font-size(16);
-            margin-top    : 8px;
-            text-transform: uppercase;
-        }
+        width: 0px;
     }
 }
 
@@ -214,4 +163,140 @@
     opacity   : 1;
     visibility: visible;
     transform : translateY(0);
+}
+
+.book__description {
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    height             : 100%;
+    position           : relative;
+    width              : 100%;
+
+    &::after {
+        background: rgba($color: #000000, $alpha: .5);
+        content   : "";
+        height    : 100%;
+        inset     : 0;
+        padding   : 1rem;
+        position  : absolute;
+        width     : 100%;
+    }
+
+    &-info {
+        @include flex(center, center, .5rem);
+        bottom        : 10%;
+        flex-direction: column;
+        max-width     : 780px;
+        position      : absolute;
+        width         : 100%;
+        z-index       : 1;
+
+        @include devices-large-screens {
+            align-items: center;
+            left       : 50%;
+            transform  : translate(-50%);
+        }
+
+        img {
+            width     : 300px;
+            object-fit: cover;
+        }
+
+        span {
+            @include font-secondary();
+            color         : rgba(255, 255, 255, 0.5);
+            display       : block;
+            font-size     : get-font-size(14);
+            letter-spacing: 2px;
+            margin-bottom : 8px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            @include font-primary();
+            font-size     : get-font-size(20);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            @include line(50px);
+        }
+
+        p {
+            @include font-secondary();
+            color         : rgba(255, 255, 255, 0.5);
+            font-size     : get-font-size(14);
+            margin-top    : 8px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.book__synopsis {
+    background-color: orange;
+    width           : 100%;
+}
+
+.synopsis__row {
+    @include grid(1fr);
+
+    @include devices-large-screens {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.synopsis__description {
+    background: blue;
+    padding   : 1rem;
+
+    @include devices-large-screens {
+        padding: 3rem 140px;
+    }
+
+    @include table-landscape {
+        padding: 2rem;
+    }
+}
+
+.synopsis__quote {
+    margin-bottom: 2rem;
+
+    p {
+        @include marcellus-font();
+        font-size    : get-font-size(20);
+        margin-bottom: 8px;
+    }
+
+    span {
+        align-items   : center;
+        color         : rgba(255, 255, 255, 0.7);
+        display       : flex;
+        font-size     : get-font-size(12);
+        text-transform: uppercase;
+
+        &::before {
+            background-color: rgba(255, 255, 255, 0.7);
+            content         : "";
+            height          : 1px;
+            margin-right    : 6px;
+            width           : 10px;
+        }
+    }
+}
+
+.synopsis__paragraphs {
+    p {
+        @include jost-font();
+        margin-bottom: 1rem;
+    }
+}
+
+.synopsis__image {
+    img {
+        display   : block;
+        height    : 100%;
+        object-fit: cover;
+    }
 }
