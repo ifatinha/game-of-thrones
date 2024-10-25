@@ -16,20 +16,49 @@ const refreshModalData = (book) => {
   const bookYear = document.querySelector("#bookYear");
   const bookTitle = document.querySelector("#bookTitle");
   const paragraphs = document.querySelectorAll(".synopsis__paragraphs p");
+  const quoteParagraphs = document.querySelectorAll(".synopsis__quote p");
+  const quoteCharacter = document.querySelectorAll(".synopsis__quote span");
+  const images = document.querySelectorAll(".synopsis__image img");
 
   // Verificar se todos os elementos necessários estão disponíveis
-  if (!container || !bookYear || !bookTitle || !paragraphs.length) {
-    console.warn("Alguns elementos do modal não foram encontrados.");
+  if (!container || !bookYear || !bookTitle) {
+    console.warn("Elementos principais do modal não foram encontrados.");
     return;
   }
 
-  container.style.backgroundImage = `url('${book.bgImage}')`;
-  bookYear.textContent = book.year;
-  bookTitle.textContent = book.title;
-  book.synopsis.forEach((paragraph, index) => {
+  if (!paragraphs.length) {
+    console.warn("Nenhum parágrafo de sinopse encontrado.");
+  }
+
+  if (!quoteParagraphs.length || !quoteCharacter.length) {
+    console.warn("Elementos de citação não foram encontrados.");
+  }
+
+  if (!images.length) {
+    console.warn("Elementos de imagens não foram encontrados.");
+  }
+
+  // Atualizar elementos do modal
+  container.style.backgroundImage = `url('${book.bgImage || ""}')`;
+  bookYear.textContent = book.year || "Ano desconhecido";
+  bookTitle.textContent = book.title || "Titulo desconhecido";
+
+  // Atualizar sinopse
+  book.synopsis?.forEach((paragraph, index) => {
     paragraphs[index].textContent = paragraph;
   });
-  //console.log(paragraphs);
+
+  //Atualiza citações
+  book.quotes?.forEach((quote, index) => {
+    quoteParagraphs[index].textContent = `"${quote.quote}"`;
+    quoteCharacter[index].textContent = quote.character;
+  });
+
+  //Atualiza imagens
+  book.images?.forEach((image, index) => {
+    images[index].src = image.src;
+    images[index].alt = image.alt;
+  });
 };
 
 const handleBookModal = (card) => {
@@ -44,6 +73,7 @@ const handleBookModal = (card) => {
     modal.classList.add("actived");
     modal.removeAttribute("aria-hidden");
     card.setAttribute("aria-expanded", "true");
+    console.log(books[bookIdx]);
     refreshModalData(books[bookIdx]);
   }
 };

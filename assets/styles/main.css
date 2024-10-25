@@ -918,7 +918,6 @@ a {
 }
 
 .book__synopsis {
-  background-color: orange;
   width: 100%;
 }
 
@@ -941,10 +940,33 @@ a {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
+  .synopsis__row:nth-child(2n+1) .synopsis__image {
+    order: 1;
+  }
+  .synopsis__row:nth-child(2n+1) .synopsis__description {
+    order: 2;
+  }
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .synopsis__row:nth-child(2n+1) .synopsis__image {
+    order: 1;
+  }
+  .synopsis__row:nth-child(2n+1) .synopsis__description {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .synopsis__row:nth-child(2n+1) .synopsis__image {
+    order: 1;
+  }
+  .synopsis__row:nth-child(2n+1) .synopsis__description {
+    order: 2;
+  }
+}
 
 .synopsis__description {
-  background: blue;
-  padding: 1rem;
+  padding: 3rem;
 }
 @media screen and (min-width: 1920px) {
   .synopsis__description {
@@ -953,12 +975,7 @@ a {
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .synopsis__description {
-    padding: 3rem 220px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .synopsis__description {
-    padding: 3rem 220px;
+    padding: 3rem 150px;
   }
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -994,6 +1011,9 @@ a {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   margin-bottom: 1rem;
+}
+.synopsis__paragraphs p:first-of-type::first-letter {
+  font-size: 5rem;
 }
 
 .synopsis__image img {

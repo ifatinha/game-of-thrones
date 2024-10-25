@@ -235,8 +235,7 @@
 }
 
 .book__synopsis {
-    background-color: orange;
-    width           : 100%;
+    width: 100%;
 }
 
 .synopsis__row {
@@ -245,15 +244,32 @@
     @include devices-large-screens {
         grid-template-columns: 1fr 1fr;
     }
+
+    @include devices-small-screens {
+        &:nth-child(2n+1) {
+            .synopsis__image {
+                order: 1;
+            }
+
+            .synopsis__description {
+                order: 2;
+            }
+        }
+    }
 }
 
 .synopsis__description {
-    background: blue;
-    padding   : 1rem;
+    //@include apply-color("black");
+    padding: 3rem;
 
-    @include devices-large-screens {
+    @include devices(xxl) {
         padding: 3rem 220px;
     }
+
+    @include devices(xl) {
+        padding: 3rem 150px;
+    }
+
 
     @include table-landscape {
         padding: 2rem;
@@ -290,10 +306,17 @@
     p {
         @include jost-font();
         margin-bottom: 1rem;
+
+        &:first-of-type {
+            &::first-letter {
+                font-size: get-font-size(80);
+            }
+        }
     }
 }
 
 .synopsis__image {
+
     img {
         display   : block;
         height    : 100%;
