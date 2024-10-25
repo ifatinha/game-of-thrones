@@ -210,11 +210,11 @@ export const books = [
       },
       {
         src: "assets/images/books/book-03-image-02.webp",
-        alt: "Tyrion Lannister",
+        alt: "Jon Snow e Ygritte",
       },
       {
         src: "assets/images/books/book-03-image-03.webp",
-        alt: "Theon Greyjoy",
+        alt: "Robb Stark",
       },
       {
         src: "assets/images/books/book-03-image-04.webp",
@@ -222,7 +222,7 @@ export const books = [
       },
       {
         src: "assets/images/books/book-03-image-05.webp",
-        alt: "Daenerys Targaryen",
+        alt: "Arya Stark",
       },
     ],
   },
@@ -264,8 +264,7 @@ export const books = [
       },
       {
         character: "Asha Greyjoy",
-        quote:
-          "Eu não sou homem, mas posso ser rei.",
+        quote: "Eu não sou homem, mas posso ser rei.",
       },
       {
         character: "Arya Stark",
@@ -285,15 +284,15 @@ export const books = [
       },
       {
         src: "assets/images/books/book-04-image-02.webp",
-        alt: "Tyrion Lannister",
+        alt: "Brienne de Tarth",
       },
       {
         src: "assets/images/books/book-04-image-03.webp",
-        alt: "Theon Greyjoy",
+        alt: "Asha Greyjoy",
       },
       {
         src: "assets/images/books/book-04-image-04.webp",
-        alt: "Daenerys Targaryen",
+        alt: "Arya Stark",
       },
       {
         src: "assets/images/books/book-04-image-05.webp",
@@ -307,94 +306,68 @@ export const books = [
     year: "2011",
     description:
       "Daenerys Targaryen luta para manter o controle de seus dragões e da cidade de Meereen, enquanto no Norte uma guerra decisiva está se formando. Jon Snow enfrenta desafios como líder da Patrulha da Noite, enquanto o inverno finalmente chega, trazendo caos e destruição a todo o continente.",
-    image: "assets/images/book-05.jpg",
     bgImage: "assets/images/books/book-05-bg.webp",
-    altImageBook: "Capa do livro A DanÇa dos DragÕes",
-    altBgImage: "Daenerys e seus dragões em Meereen",
-    synopsis:
-      "Enquanto Daenerys luta para governar em Essos, Jon Snow enfrenta decisões impossíveis como Lorde Comandante da Patrulha da Noite. No Sul, a luta pelo Trono de Ferro continua com novas intrigas e traições.",
-    mainCharacters: [
-      "Daenerys Targaryen",
-      "Jon Snow",
-      "Tyrion Lannister",
-      "Stannis Baratheon",
-      "Theon Greyjoy",
+    synopsis: [
+      "'A Dança dos Dragões', o quinto livro da série As Crônicas de Gelo e Fogo, de George R. R. Martin, retoma os eventos de O Festim dos Corvos e expande a trama em novas frentes, centrando-se em personagens icônicos e distantes de Westeros. Enquanto o inverno se aproxima, os reinos mergulham em lutas pelo poder, em desespero e no despertar de ameaças antigas. No norte, no leste e no sul, as intrigas políticas, as profecias e a guerra se entrelaçam em um enredo tão perigoso quanto imprevisível.",
+      "No norte, Jon Snow, agora Senhor Comandante da Patrulha da Noite, enfrenta um dilema perigoso ao tentar proteger a Muralha dos selvagens e das ameaças sobrenaturais. Com a chegada de Stannis Baratheon, Jon vê uma chance de fortalecer a Patrulha, mas sua aliança com Stannis e seus esforços para acolher os selvagens na Muralha trazem conflitos com seus próprios irmãos, que questionam suas lealdades e sua autoridade.",
+      "Stannis Baratheon continua sua campanha pelo Trono de Ferro, marchando pelo norte e buscando o apoio dos nortenhos leais à Casa Stark. Entretanto, ele enfrenta um clima implacável e resistência em Winterfell, agora ocupado pelos Bolton. A presença de Stannis no norte se revela uma batalha de resistência e sacrifício, enquanto ele e seus seguidores lidam com as duras condições do inverno e as traições que se tornam cada vez mais comuns.",
+      "Em Meereen, Daenerys Targaryen, Rainha dos Dragões, luta para governar uma cidade infestada de inimigos e dividir suas lealdades entre a segurança de seu povo e a proteção de seus dragões. Sua política de liberdade aos escravos a coloca em constante conflito com os senhores escravistas, que ameaçam sua estabilidade e trazem intrigas que desgastam sua autoridade. Ao mesmo tempo, seus dragões estão cada vez mais indomáveis e perigosos, complicando sua luta para governar com justiça.",
+      "Enquanto Daenerys tenta manter o controle, a cidade de Meereen sofre com as pragas, a fome e uma revolta iminente. Em meio a tudo isso, o misterioso mercenário Quentyn Martell chega à cidade com uma proposta arriscada: uma aliança com Dorne e um casamento que poderia consolidar o poder de Daenerys. No entanto, Quentyn subestima o desafio de lidar com dragões e com o jogo político na cidade, levando sua missão a um desfecho trágico.",
+      "Tyrion Lannister, fugindo de Westeros após assassinar o próprio pai, é levado para o continente de Essos, onde enfrenta uma sequência de provações e reflexões sobre seu passado e seu papel na guerra. Capturado e vendido como escravo, Tyrion experimenta uma nova visão de mundo e reflete sobre sua identidade e a falta de destino. Em Essos, ele eventualmente se alia aos Segundos Filhos, um grupo de mercenários, na tentativa de encontrar Daenerys e servi-la – uma missão cheia de incertezas e perigos.",
+      "Nas Ilhas de Ferro, os Greyjoys ainda se debatem com a sucessão ao trono do Mar de Ferro. Asha Greyjoy tenta garantir seu direito de governar, enquanto Euron, seu tio ambicioso, conquista territórios com brutalidade e impõe seu poder à força. Euron busca uma aliança com Daenerys para usar seus dragões na guerra em Westeros, mas suas ações violentas e sua crueldade o tornam um governante temido e odiado.",
+      "Bran Stark, guiado por Meera e Jojen Reed, continua sua jornada para além da Muralha em busca do corvo de três olhos. Através de visões e encontros com seres antigos, Bran aprende sobre seus poderes de warg e a capacidade de enxergar o passado e o futuro. Ele descobre segredos dos antigos habitantes de Westeros e começa a entender que seu destino está ligado à magia e ao futuro dos Sete Reinos.",
+      "Arya Stark, em Braavos, continua seu treinamento com o Deus de Muitas Faces, cada vez mais próxima de abandonar sua identidade e se tornar uma assassina. Ela aprende a controlar sua mente, ocultar seus sentimentos e realizar tarefas secretas para a ordem. Em uma jornada de autodescoberta e transformação, Arya começa a aprender que os sacrifícios para seguir sua missão exigem renúncias que talvez ela não esteja pronta para fazer.",
+      "Em Dorne, as Serpentes da Areia, bastardas de Oberyn Martell, buscam vingança e conspiram para reverter o governo de Doran Martell. O príncipe Doran, porém, revela que tem planos muito mais cuidadosos e estratégicos para garantir a segurança e a honra de Dorne. Ele espera por um momento propício para agir, mantendo seus inimigos próximos e monitorando cada passo das Serpentes da Areia e dos senhores que questionam sua autoridade.",
+      "Jaime Lannister, em uma missão diplomática, continua seu processo de transformação, tentando recuperar a honra perdida. Ele tenta mediar a paz nas Terras Fluviais, mas encontra resistência e desconfiança por onde passa. Jaime é confrontado com questões de lealdade e compaixão, começando a ver que a honra que buscava pode não ser alcançável em um mundo tão corrompido.",
+      "Theon Greyjoy, agora transformado em 'Fedor' sob o domínio brutal de Ramsay Bolton, sofre uma longa e tortuosa jornada de autoabandono e humilhação. Ele é forçado a trair seu passado e obedece cegamente seu torturador, mas, conforme os eventos avançam, ele começa a recuperar fragmentos de sua antiga identidade e lutar contra a dominação imposta por Ramsay.",
+      "Enquanto o inverno se aproxima, as ameaças sobrenaturais além da Muralha aumentam. Os Outros e os mortos-vivos continuam a se aproximar, e as lendas antigas tomam forma. A Patrulha da Noite, sob o comando de Jon Snow, precisa se preparar para uma batalha contra uma força que o mundo não vê há milhares de anos. A luta para proteger os reinos dos homens se torna uma questão de sobrevivência para todos.",
+      "Na Muralha, as tensões entre Jon e os homens da Patrulha atingem um ponto crítico. Suas decisões controversas e alianças inesperadas geram ódio e ressentimento entre seus irmãos, culminando em uma traição brutal. Em um desfecho chocante, Jon enfrenta uma ameaça mortal de seus próprios homens, lançando o destino da Patrulha e do norte em uma incerteza devastadora.",
+      "O livro termina com várias tramas suspensas e um clima de inquietude. A dança dos dragões – tanto literal, com as feras de Daenerys, quanto figurativa, com a luta pelo poder em Westeros – se intensifica. Cada personagem enfrenta desafios e traições, enquanto o mundo de Westeros se aproxima de um destino perigoso e imprevisível.",
+      "Assim, A Dança dos Dragões mantém o tom épico da série e aprofunda a complexidade dos personagens e de suas lutas, pintando um quadro sombrio e fascinante dos Sete Reinos. O livro, como a própria guerra pelo Trono de Ferro, é uma batalha entre honra e ambição, esperança e desespero, que prenuncia um desfecho cada vez mais sombrio para Westeros.",
     ],
-    mainEvents: [
-      "A luta de Daenerys para controlar Meereen",
-      "A conspiração contra Jon Snow na Patrulha da Noite",
-      "A marcha de Stannis para Winterfell",
-      "A fuga de Theon Greyjoy",
-      "A chegada do inverno em Westeros",
-    ],
-    images: [
-      "assets/images/book-05-image-01.jpg",
-      "assets/images/book-05-image-02.jpg",
-      "assets/images/book-05-image-03.jpg",
-    ],
-  },
-  {
-    id: 6,
-    title: "Os Ventos do Inverno",
-    year: "Livro Futuro",
-    description:
-      "No aguardado sexto livro, o inverno toma Westeros por completo. No Norte, a batalha contra os mortos-vivos se intensifica, enquanto no Sul a guerra pelo Trono de Ferro continua. As decisões de Jon Snow e Daenerys Targaryen moldarão o destino de Westeros, em meio à escuridão iminente.",
-    image: "assets/images/book-06.jpg",
-    bgImage: "assets/images/book-06-bg.jpg",
-    altImageBook: "Capa do livro Os Ventos do Inverno",
-    altBgImage: "Os Caminhantes Brancos atravessando a Muralha",
-    synopsis:
-      "O inverno finalmente chegou, e com ele uma ameaça inimaginável no Norte. Enquanto o exército dos mortos avança, Daenerys e Jon Snow se veem em decisões críticas para salvar o reino e enfrentar seus inimigos.",
-    mainCharacters: [
-      "Jon Snow",
-      "Daenerys Targaryen",
-      "Tyrion Lannister",
-      "Arya Stark",
-      "Bran Stark",
-    ],
-    mainEvents: [
-      "A luta contra os Caminhantes Brancos",
-      "Daenerys cruza o Mar Estreito",
-      "A resistência dos Sete Reinos contra os mortos-vivos",
-      "Arya Stark volta a Westeros",
-      "Jon Snow enfrenta seu destino no Norte",
+    quotes: [
+      {
+        character: "Jon Snow",
+        quote: "O medo corta mais fundo que espadas.",
+      },
+      {
+        character: "Daenerys Targaryen",
+        quote: "A injustiça deixa marcas tão profundas quanto o aço.",
+      },
+      {
+        character: "Bran Stark",
+        quote: "O passado é o que é. Todo corvo precisa voar.",
+      },
+      {
+        character: "Theon 'Fedor' Greyjoy",
+        quote: "Meu nome é Reek. Isso eu sei. Isso eu sei.",
+      },
+      {
+        character: "Melisandre",
+        quote: "Eu vejo chamas e sombras dançando, um jogo de luz e escuridão.",
+      },
     ],
     images: [
-      "assets/images/book-06-image-01.jpg",
-      "assets/images/book-06-image-02.jpg",
-      "assets/images/book-06-image-03.jpg",
-    ],
-  },
-  {
-    id: 7,
-    title: "Um Sonho de Primavera",
-    year: "Livro Futuro",
-    description:
-      "O sétimo e último livro da saga 'As Crônicas de Gelo e Fogo' promete trazer o desfecho final da batalha entre os vivos e os mortos. O destino de Westeros será decidido em uma última grande guerra, enquanto alianças improváveis se formam e segredos são revelados.",
-    image: "assets/images/book-07.jpg",
-    bgImage: "assets/images/book-07-bg.jpg",
-    altImageBook: "Capa do livro Um Sonho de Primavera",
-    altBgImage: "O Trono de Ferro no centro de uma Westeros devastada",
-    synopsis:
-      "Na conclusão épica da saga, o destino de Westeros está em jogo. As últimas alianças serão formadas enquanto os sobreviventes lutam para derrotar os Caminhantes Brancos. Daenerys e Jon devem encarar seus destinos e lutar pelo futuro dos Sete Reinos.",
-    mainCharacters: [
-      "Jon Snow",
-      "Daenerys Targaryen",
-      "Tyrion Lannister",
-      "Arya Stark",
-      "Bran Stark",
-    ],
-    mainEvents: [
-      "A batalha final contra os Caminhantes Brancos",
-      "Jon Snow enfrenta a verdade sobre sua linhagem",
-      "Daenerys reivindica o Trono de Ferro",
-      "O destino do Trono de Ferro é decidido",
-      "O fim da longa noite",
-    ],
-    images: [
-      "assets/images/book-07-image-01.jpg",
-      "assets/images/book-07-image-02.jpg",
-      "assets/images/book-07-image-03.jpg",
+      {
+        src: "assets/images/books/book-05-image-01.webp",
+        alt: "Jon Snow",
+      },
+      {
+        src: "assets/images/books/book-05-image-02.webp",
+        alt: "Daenerys Targaryen",
+      },
+      {
+        src: "assets/images/books/book-05-image-03.webp",
+        alt: "Bran Stark",
+      },
+      {
+        src: "assets/images/books/book-05-image-04.webp",
+        alt: "Theon 'Fedor' Greyjoy",
+      },
+      {
+        src: "assets/images/books/book-05-image-05.webp",
+        alt: "Melisandre",
+      },
     ],
   },
 ];
