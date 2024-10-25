@@ -183,28 +183,23 @@ export const books = [
     quotes: [
       {
         character: "Joffrey Baratheon",
-        quote:
-          "Eu sou o rei! Eu sou o rei! E você não pode me desobedecer.",
+        quote: "Eu sou o rei! Eu sou o rei! E você não pode me desobedecer.",
       },
       {
         character: "Ygritte",
-        quote:
-          "Você sabe nada, Jon Snow.",
+        quote: "Você sabe nada, Jon Snow.",
       },
       {
         character: "Walder Frey",
-        quote:
-          "A promessa que fizemos não valia nada.",
+        quote: "A promessa que fizemos não valia nada.",
       },
       {
         character: "Daenerys Targaryen",
-        quote:
-          "Eu vou quebrar suas correntes.",
+        quote: "Eu vou quebrar suas correntes.",
       },
       {
         character: "Arya Stark",
-        quote:
-          "A lista é uma lembrança do que eu perdi. É o que eu sou.",
+        quote: "A lista é uma lembrança do que eu perdi. É o que eu sou.",
       },
     ],
 
@@ -238,30 +233,72 @@ export const books = [
     year: "2005",
     description:
       "O quarto livro se concentra nos sobreviventes da guerra e nas cicatrizes deixadas em Westeros. Com muitos dos grandes líderes mortos, o reino está devastado pela fome e pelo luto. Novos desafios e ambições emergem, ameaçando o já fragilizado equilíbrio do poder.",
-    image: "assets/images/book-04.jpg",
     bgImage: "assets/images/books/book-04-bg.webp",
-    altImageBook: "Capa do livro O Festim dos Corvos",
-    altBgImage: "Westeros após batalhas devastadoras",
-    synopsis:
-      "O reino está devastado pela guerra e seus sobreviventes enfrentam as consequências. Em Porto Real, Cersei Lannister luta para manter o poder, enquanto no Norte e nas Ilhas de Ferro novos líderes surgem para reivindicar seus territórios.",
-    mainCharacters: [
-      "Cersei Lannister",
-      "Jaime Lannister",
-      "Brienne de Tarth",
-      "Arya Stark",
-      "Aeron Greyjoy",
+    synopsis: [
+      "Após a Guerra dos Cinco Reis, Westeros encontra-se devastado, com seu povo sofrendo as consequências de um conflito longo e brutal. As principais casas nobres, antes unidas por alianças e juramentos de lealdade, agora se veem divididas por interesses próprios e ameaças internas. O caos político é uma sombra constante sobre o Trono de Ferro, onde o jovem Tommen Baratheon governa sob a regência de sua mãe, Cersei Lannister.",
+      "Cersei, agora com mais poder do que jamais teve, tenta consolidar o domínio dos Lannister sobre os Sete Reinos. Suas ações, no entanto, revelam uma governante que muitas vezes é impulsionada pela arrogância e paranoia, criando mais inimigos do que aliados. A rainha regente toma decisões arriscadas, especialmente ao lidar com as ameaças veladas dentro do próprio conselho real, que julga serem controláveis.",
+      "Enquanto isso, Jaime Lannister vive uma crise de identidade após a perda de sua mão direita, um trauma que o afastou de seu papel como o guerreiro invencível de outrora. Em missões diplomáticas e militares longe de Porto Real, Jaime confronta os horrores da guerra e tenta recuperar o respeito que havia perdido. Seu relacionamento com Cersei também se desgasta, levando-o a repensar sua lealdade e o legado que deseja deixar.",
+      "Ao mesmo tempo, Samwell Tarly, membro da Patrulha da Noite e grande amigo de Jon Snow, parte de Castelo Negro em uma jornada para Vilavelha. Encarregado de reunir conhecimento sobre os Outros e o inverno iminente, Sam enfrenta seus próprios medos, enquanto tenta provar seu valor e superar sua baixa autoestima. Acompanhado por Goiva e um bebê, ele experimenta os desafios e as incertezas do caminho em terras distantes.",
+      "Mais ao norte, as Ilhas de Ferro são tomadas por disputas de poder após a morte de Balon Greyjoy. Seu irmão, Euron Greyjoy, ascende ao comando das ilhas, trazendo um novo ciclo de violência e ambição para os já agressivos homens do mar. Euron sonha em expandir o domínio dos Greyjoy pelo continente, desafiando seus inimigos e estabelecendo uma nova ordem que os favoreça.",
+      "Nas Terras Fluviais, a guerra deixou rastros de destruição. Vilarejos, outrora pacíficos, são agora redutos de desolação e violência, onde soldados e saqueadores impõem sua própria lei. É nesse cenário sombrio que Brienne de Tarth, leal a Catelyn Stark, começa uma jornada em busca de Sansa Stark. Ao longo de sua viagem, Brienne enfrenta inimigos e ameaças que testam sua coragem e revelam a dureza da vida em um reino devastado.",
+      "Em Dorne, o príncipe Doran Martell lida com as tensões internas provocadas pela morte de seu irmão Oberyn Martell em Porto Real. Seus filhos e seguidores desejam vingança, e Doran, um governante calculista, tenta controlar essas paixões, equilibrando seus impulsos pessoais e sua responsabilidade pelo povo dornês. Seu dilema é entre preservar a paz em Dorne e sacrificar sua honra para vingar a família.",
+      "Em Essos, Arya Stark continua sua jornada de vingança e autodescoberta. Tendo sobrevivido a inúmeras provações e à perda de sua família, Arya chega à cidade de Braavos, onde encontra abrigo na Casa do Preto e Branco, sede dos Homens sem Rosto. Lá, ela embarca em um treinamento sombrio que exige o abandono de sua antiga identidade para se tornar uma assassina sem passado ou vínculos.",
+      "A transformação de Arya em Braavos é intensa e dolorosa. Para abraçar o novo destino, ela deve renunciar às memórias e sentimentos que antes a guiavam. Essa luta interna torna sua jornada um verdadeiro teste de caráter, revelando o preço emocional e psicológico que a vingança cobra daqueles que a buscam.",
+      "Nas sombras de Westeros, outras forças conspiram para tomar o poder ou estabelecer um novo equilíbrio. A Irmandade sem Estandartes, liderada pela enigmática Senhora Coração de Pedra, inicia uma série de ataques contra aqueles que considera responsáveis pelo sofrimento de seu povo. O grupo de justiceiros age nas regiões devastadas, buscando vingança de uma forma implacável.",
+      "Entre os cavaleiros e lordes restantes, o esgotamento é evidente. Cada um deles lida com a incerteza do futuro em um reino onde lealdades mudam e alianças são quebradas com frequência. O custo humano da guerra começa a se tornar insuportável, e as esperanças de paz tornam-se cada vez mais ilusórias à medida que cada personagem age em seu próprio interesse.",
+      "A ausência de alguns protagonistas marcantes como Jon Snow e Daenerys Targaryen oferece uma nova perspectiva para os acontecimentos. O Festim dos Corvos mostra o impacto da guerra na vida dos personagens que vivem nas sombras dos grandes eventos, evidenciando o preço que cada um paga em um mundo de conflitos e instabilidade política.",
+      "George R.R. Martin tece uma narrativa que enfatiza a profundidade emocional e psicológica dos personagens. Ele explora seus dilemas e motivações, revelando o lado humano e, muitas vezes, falho de cada um. O autor constrói um universo onde a busca pelo poder raramente leva à felicidade, mas frequentemente à ruína.",
+      "À medida que a trama se desenrola, o leitor é conduzido a questionar se haverá um fim para o ciclo de violência e intrigas em Westeros. As ambições das casas e seus líderes parecem perpetuar o caos, e os laços humanos, que poderiam trazer esperança, tornam-se frágeis e quebradiços.",
+      "Com um foco maior nos personagens secundários e nas nuances do mundo de Westeros, 'O Festim dos Corvos' explora os desdobramentos de uma guerra que deixa marcas profundas. O livro é uma reflexão sombria sobre a condição humana e sobre os efeitos corrosivos do poder em um mundo dividido.",
+      "Por fim, a obra levanta uma questão inquietante: será possível haver paz em Westeros, ou o reino está condenado a repetir seus erros?",
     ],
-    mainEvents: [
-      "A ascensão dos Greyjoy nas Ilhas de Ferro",
-      "A busca de Brienne por Sansa Stark",
-      "Cersei consolida seu poder em Porto Real",
-      "Arya Stark se junta aos Homens sem Rosto",
-      "Os conflitos nas Terras Fluviais",
+    quotes: [
+      {
+        character: "Cersei Lannister",
+        quote: 
+          "Qualquer um pode usar uma coroa, mas é o poder que confere o direito de governar. O poder, não o sangue, não o nome, não a aparência de força.",
+      },
+      {
+        character: "Brienne de Tarth",
+        quote: "A batalha não é menos real porque você luta sozinho.",
+      },
+      {
+        character: "Arya Stark",
+        quote:
+          "Sou ninguém. Sou nada, apenas uma garota em busca de silêncio e sombras, onde ninguém sabe quem fui ou quem serei.",
+      },
+      {
+        character: "Oberyn Martell",
+        quote:
+          "Diga a eles que a vingança de um homem pode ser mortal, mas a de uma família é eterna. Eles podem ter nosso sangue, mas jamais terão nossa rendição.",
+      },
+      {
+        character: "Jaime Lannister",
+        quote:
+          "A honra é uma mentira que contamos a nós mesmos para esconder nossos pecados.",
+      },
     ],
     images: [
-      "assets/images/book-04-image-01.jpg",
-      "assets/images/book-04-image-02.jpg",
-      "assets/images/book-04-image-03.jpg",
+      {
+        src: "assets/images/books/book-04-image-01.webp",
+        alt: "Cersei Lannister",
+      },
+      {
+        src: "assets/images/books/book-04-image-02.webp",
+        alt: "Tyrion Lannister",
+      },
+      {
+        src: "assets/images/books/book-04-image-03.webp",
+        alt: "Theon Greyjoy",
+      },
+      {
+        src: "assets/images/books/book-04-image-04.webp",
+        alt: "Daenerys Targaryen",
+      },
+      {
+        src: "assets/images/books/book-04-image-05.webp",
+        alt: "Daenerys Targaryen",
+      },
     ],
   },
   {
