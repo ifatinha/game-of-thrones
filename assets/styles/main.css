@@ -124,12 +124,8 @@ a {
   width: 100%;
 }
 .carousel__buttons {
+  margin-top: 1rem;
   text-align: center;
-}
-@media screen and (min-width: 1920px) {
-  .carousel__buttons {
-    display: none;
-  }
 }
 .carousel__buttons button {
   color: #ffffff;
@@ -507,7 +503,7 @@ a {
   font-size: 3rem;
   line-height: 1.8;
   letter-spacing: 0.1rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 30px;
   text-align: center;
   width: 100%;
@@ -1499,6 +1495,91 @@ a {
 
 .houses .section__title {
   color: #ffffff;
+}
+
+.houses__list {
+  background: darkblue;
+  position: relative;
+  width: 100%;
+}
+
+.house {
+  display: grid;
+  grid-template-columns: 1fr;
+  inset: 0;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1920px) {
+  .house {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .house {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .house {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+.house__image {
+  width: 100%;
+}
+.house__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.house__info {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  flex-direction: column;
+  padding: 1rem;
+}
+.house__description h2 {
+  font-family: "Game of Thrones", serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.house__description p {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.house__members ul {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.house__members ul li {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-align: center;
+  width: 90px;
+}
+.house__members ul li img {
+  height: 90px;
+  object-fit: cover;
+  width: 90px;
+}
+.house__members ul li span {
+  font-size: 0.9375rem;
+}
+
+.house__activated {
+  opacity: 1;
 }
 
 .histories .section__title {

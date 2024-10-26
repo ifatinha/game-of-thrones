@@ -10,11 +10,8 @@
     width   : 100%;
 
     &__buttons {
+        margin-top: 1rem;
         text-align: center;
-
-        @include devices(xxl) {
-            display: none;
-        }
 
         button {
             @include apply-color("pure-white");
