@@ -13,6 +13,7 @@ import {
   openBookModal,
   closeBookModal,
 } from "./modules/modalBookController.js";
+import { scrollToHouse } from "./modules/scrollToHouse.js";
 
 //{ name: "renderCharacterElements", func: renderCharacterElements }
 
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "closeModalCharacter", func: closeModalCharacter },
     { name: "openBookModal", func: openBookModal },
     { name: "closeBookModal", func: closeBookModal },
+    { name: "scrollToHouse", func: scrollToHouse },
   ];
 
   functionsToCall.forEach(({ name, func }) => {

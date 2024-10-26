@@ -118,14 +118,14 @@ a {
 }
 
 .carousel {
-  overflow: hidden;
-  padding: 1rem 0.5rem;
+  background: darkblue;
   position: relative;
   width: 100%;
 }
 .carousel__buttons {
-  margin-top: 1rem;
+  background: orange;
   text-align: center;
+  width: 100%;
 }
 .carousel__buttons button {
   color: #ffffff;
@@ -1497,17 +1497,37 @@ a {
   color: #ffffff;
 }
 
+.houses__carousel .swiper-pagination {
+  color: #ffffff;
+}
+.houses__carousel .swiper-button-next,
+.houses__carousel .swiper-button-prev {
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+}
+.houses__carousel .swiper-button-next::after,
+.houses__carousel .swiper-button-prev::after {
+  font-size: 30px;
+}
+
 .houses__list {
-  background: darkblue;
-  position: relative;
   width: 100%;
+}
+@media screen and (max-width: calc(768px - 1px)) {
+  .houses__list {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .houses__list {
+    margin-bottom: 1rem;
+  }
 }
 
 .house {
   display: grid;
   grid-template-columns: 1fr;
-  inset: 0;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 1920px) {
   .house {
@@ -1525,6 +1545,7 @@ a {
   }
 }
 .house__image {
+  height: 100%;
   width: 100%;
 }
 .house__image img {

@@ -34,6 +34,9 @@
    <!-- icon -->
    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
 
+   <!-- swiper css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
    <!-- css -->
    <link rel="stylesheet" href="assets/styles/main.css">
 
@@ -678,9 +681,9 @@
       </section>
 
       <!-- carousel houses -->
-      <div class="carousel">
-         <div class="houses__list">
-            <div class="house house__activated">
+      <div class="swiper houses__carousel">
+         <div class="houses__list swiper-wrapper">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-stark.jpg" alt="House Stark">
                </div>
@@ -728,7 +731,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-lannister.jpg" alt="House Lannister">
                </div>
@@ -773,7 +776,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-batatheon.jpg" alt="House Baratheon">
                </div>
@@ -810,7 +813,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-targaryen.jpg" alt="House Targaryen">
                </div>
@@ -850,7 +853,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-greyjoy.jpg" alt="House Greyjoy">
                </div>
@@ -886,7 +889,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-martell.jpg" alt="House Martell">
                </div>
@@ -934,7 +937,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-tyrell.jpg" alt="House Tyrell">
                </div>
@@ -970,7 +973,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-tully.jpg" alt="House Tully">
                </div>
@@ -1007,7 +1010,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-arryn.jpg" alt="House Arryn">
                </div>
@@ -1035,7 +1038,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-bolton.jpg" alt="House Bolton">
                </div>
@@ -1068,7 +1071,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-frey.jpg" alt="House Frey">
                </div>
@@ -1105,7 +1108,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-mormont.jpg" alt="House Mormont">
                </div>
@@ -1135,7 +1138,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-tarly.jpg" alt="House Tarly">
                </div>
@@ -1173,7 +1176,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-karstark.jpg" alt="House Karstark">
                </div>
@@ -1202,7 +1205,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-umber.jpg" alt="House Umber">
                </div>
@@ -1231,7 +1234,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-reed.jpg" alt="House Reed">
                </div>
@@ -1261,7 +1264,7 @@
                   </div>
                </div>
             </div>
-            <div class="house">
+            <div class="house swiper-slide">
                <div class="house__image">
                   <img src="assets/images/houses/house-tarth.jpg" alt="House Tarth">
                </div>
@@ -1288,15 +1291,19 @@
                </div>
             </div>
          </div>
-         <div class="carousel__buttons">
-            <button id="nextHouseButton"></button>
-            <button id="prevHouseButton"></button>
-         </div>
+
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+
       </div>
       <!-- end section houses -->
 
       <!-- start section mapa -->
-      <!-- <section id="map" class="section map" aria-labelledby="section-title-map">
+      <section id="map" class="section map" aria-labelledby="section-title-map">
          <div class="container">
             <h2 id="section-title-map" class="section__title">Rumo Às Terras Antigas</h2>
             <p class="section__description">Explore os vastos e intrigantes mapas de Westeros, revelando a geografia e
@@ -1306,7 +1313,7 @@
                e as fronteiras que definem suas histórias em um mundo repleto de aventuras.
             </p>
          </div>
-      </section> -->
+      </section>
       <!-- end section map -->
 
       <!-- start section histories -->
@@ -1344,7 +1351,9 @@
    </footer> -->
 
    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script type="module" src="assets/scripts/script.js"></script>
+
 </body>
 
 </html>
