@@ -683,66 +683,21 @@ a {
 }
 
 .books__list {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  overflow-x: auto;
   text-align: center;
   transition: 0.5s ease-in-out;
   width: 100%;
-}
-@media screen and (min-width: 1920px) {
-  .books__list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .books__list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .books__list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
 .book__item {
   border: 3px solid transparent;
   cursor: pointer;
-  flex: 0 0 85%;
-  height: 70vh;
+  height: 440px;
   margin-bottom: 2rem;
   opacity: 1;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease-in-out;
-}
-@media screen and (min-width: 1920px) {
-  .book__item {
-    flex-basis: 330px;
-    height: 440px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .book__item {
-    flex-basis: 330px;
-    height: 440px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .book__item {
-    flex-basis: 330px;
-    height: 440px;
-  }
-}
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-  .book__item {
-    flex-basis: 30%;
-  }
+  width: 330px;
 }
 .book__item:hover {
   border-color: #007BFF;
