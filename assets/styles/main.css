@@ -149,19 +149,19 @@ a {
 .card {
   border: 3px solid transparent;
   cursor: pointer;
-  height: 440px;
+  height: 450px;
   margin-bottom: 2rem;
   opacity: 1;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease-in-out;
-  width: 330px;
+  width: 300px;
 }
 .card:hover {
   border-color: #007BFF;
   opacity: 1;
 }
-.card:hover .book__info {
+.card:hover .card__info {
   height: 100%;
   opacity: 0.9;
 }
@@ -177,7 +177,7 @@ a {
 .card__info {
   align-items: start;
   display: flex;
-  gap: 1rem;
+  gap: 0;
   justify-content: end;
   background: rgba(0, 0, 0, 0.9);
   bottom: 0;
@@ -185,7 +185,6 @@ a {
   height: 100%;
   opacity: 0;
   position: absolute;
-  padding: 1rem 0.5rem;
   transition: 0.5s ease-in-out;
   text-align: left;
   width: 100%;
@@ -194,11 +193,13 @@ a {
   font-family: "Marcellus", serif;
   font-size: 1.375rem;
   font-weight: 600;
+  margin-left: 1rem;
 }
 .card__info p {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-size: 1rem;
+  padding: 1rem;
 }
 .card__info button {
   cursor: pointer;
@@ -1633,9 +1634,13 @@ a {
 }
 
 .map__container {
-  padding: 80px 2%;
+  padding: 80px 0;
 }
 
+.map__content {
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .map__content h2 {
   font-family: "Game of Thrones", serif;
   font-size: 2rem;
@@ -1652,8 +1657,8 @@ a {
 }
 
 .map__areas {
-  background: orange;
-  margin: 2rem 0;
+  margin: 4rem 0;
+  padding: 1rem;
   width: 100%;
 }
 

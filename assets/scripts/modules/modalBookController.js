@@ -73,7 +73,6 @@ const handleBookModal = (card) => {
     modal.classList.add("actived");
     modal.removeAttribute("aria-hidden");
     card.setAttribute("aria-expanded", "true");
-    console.log(books[bookIdx]);
     refreshModalData(books[bookIdx]);
   }
 };

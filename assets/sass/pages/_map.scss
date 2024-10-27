@@ -9,10 +9,12 @@
 }
 
 .map__container {
-    padding: 80px 2%;
+    padding: 80px 0;
 }
 
 .map__content {
+    padding-left : 2%;
+    padding-right: 2%;
 
     h2 {
         @include font-primary();
@@ -32,7 +34,7 @@
 }
 
 .map__areas {
-    background: orange;
-    margin    : 2rem 0;
-    width     : 100%;
+    margin : 4rem 0;
+    padding: 1rem;
+    width  : 100%;
 }

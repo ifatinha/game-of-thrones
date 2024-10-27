@@ -1365,18 +1365,88 @@
             <div class="map__areas">
                <div class="swiper westeros__areas" id="westeros">
                   <ul class="swiper-wrapper">
-                     <li class="swiper-slide">Slide 1</li>
-                     <li class="swiper-slide">Slide 2</li>
-                     <li class="swiper-slide">Slide 3</li>
-                     <li class="swiper-slide">Slide 4</li>
-                     <li class="swiper-slide">Slide 5</li>
-                     <li class="swiper-slide">Slide 6</li>
-                     <li class="swiper-slide">Slide 7</li>
-                     <li class="swiper-slide">Slide 8</li>
-                     <li class="swiper-slide">Slide 9</li>
-                     <li class="swiper-slide">Slide 10</li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="1" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/a_muralha.jpg" alt="Para lá da Muralha">
+                        <div class="card__info">
+                           <h2>Para lá da Muralha</h2>
+                           <p>Um território gélido e selvagem, habitado por tribos e criaturas míticas, onde o frio é
+                              intenso e a natureza é implacável.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="2" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/reino_do_norte.jpg" alt="Reino do Norte">
+                        <div class="card__info">
+                           <h2>Reino do Norte</h2>
+                           <p>Terra de florestas densas, montanhas e campos cobertos de neve, com fortes e castelos
+                              isolados que resistem ao frio rigoroso, como Winterfell.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="3" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/vale_of_arryn.jpg" alt="Vale de Arryn">
+                        <div class="card__info">
+                           <h2>Vale de Arryn</h2>
+                           <p>Região montanhosa e remota, com o imponente Ninho da Águia no alto dos precipícios,
+                              conhecido por suas paisagens inóspitas e climas severos.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="4" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/riverrun.jpg" alt="Riverrun">
+                        <div class="card__info">
+                           <h2>Terras Fluviais</h2>
+                           <p>Campos férteis e rios que formam um labirinto natural, lar de várias casas nobres e
+                              frequentada por conflitos devido à sua posição central.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="5" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/westerlands.jpg" alt="Westerlands">
+                        <div class="card__info">
+                           <h2>Terras Ocidentais</h2>
+                           <p>Montanhosas e ricas em minas de ouro, com Rochedo Casterly como sede, símbolo da força e
+                              riqueza da região.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="5" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/reach.jpg" alt="Reach">
+                        <div class="card__info">
+                           <h2>Campina</h2>
+                           <p>Terra verdejante e fértil, coberta de campos e vilarejos prósperos, com o castelo Jardim
+                              de Cima refletindo seu esplendor e riqueza.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="6" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/dorne.jpg" alt="Dorne">
+                        <div class="card__info">
+                           <h2>Dorne</h2>
+                           <p>Região quente e desértica, marcada por dunas e oásis, com uma cultura única e Lançassolar
+                              como símbolo de sua independência e exotismo.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="7" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/crownlands.jpg" alt="Crownlands">
+                        <div class="card__info">
+                           <h2>Terras da Coroa</h2>
+                           <p>Região central com a capital, Porto Real, uma cidade movimentada e sede do Trono de Ferro,
+                              onde o poder e a intriga são constantes.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="8" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/iron_islands.jpg" alt="Ilhas de Ferro">
+                        <div class="card__info">
+                           <h2>Ilhas de Ferro</h2>
+                           <p>Ilhas rochosas e austeras, cercadas por mares turbulentos e habitadas por marinheiros
+                              endurecidos pelo mar e pela guerra.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide" data-mapa-id="9" role="button" tabindex="0" aria-expanded="false">
+                        <img src="assets/images/mapas/stormlands.jpg" alt="Ilhas de Ferro">
+                        <div class="card__info">
+                           <h2>Terras da Tempestade</h2>
+                           <p>Região costeira com clima imprevisível, famosa por suas tempestades e por Ponta
+                              Tempestade, um castelo que enfrenta o mar bravio.</p>
+                        </div>
+                     </li>
                   </ul>
-                  <div class="swiper-pagination" id="westerosAreasPagination"></div>
                </div>
             </div>
          </div>
@@ -1384,41 +1454,118 @@
          <div class="container">
             <div class="map__content">
                <h2>Essos</h2>
-               <p>Westeros é um continente diverso e imponente, dividido em várias regiões com características únicas.
-                  No extremo norte, uma vasta e gelada extensão selvagem é separada pelo colossal Muralha de gelo,
-                  seguida pelas Terras do Norte, frias e cobertas de florestas densas. O Vale de Arryn é montanhoso e
-                  remoto, enquanto as férteis Terras Fluviais são atravessadas por rios. </p>
-               <p>Nas Terras Ocidentais, destacam-se as minas de ouro e o luxuoso Rochedo Casterly. As Ilhas de Ferro
-                  são ilhas rochosas e austeras, habitadas por marinheiros ferozes. Mais ao sul, Porto Real, nas Terras
-                  da Coroa, é a capital, enquanto as ventosas Terras da Tempestade abrigam Ponta Tempestade. A Campina,
-                  fértil e próspera, contrasta com o desértico e quente Dorne ao extremo sul, uma região exótica e
-                  independente. Cada área é rica em tradições e intrigas, compondo o complexo cenário de Westeros. </p>
+               <p>Essos é um continente vasto e variado que se estende para além do Mar Estreito, em frente a Westeros.
+                  Sua paisagem abrange desde as cidades livres costeiras, com economias robustas e culturas mercantis,
+                  até as áridas e intermináveis planícies do Mar Dothraki, onde cavaleiros nômades vagam em khalasares.
+                  Ao sul, a região das Cidades Escravagistas, como Meereen e Astapor, prospera com o comércio de
+                  escravos, ostentando uma arquitetura grandiosa e marcada por pirâmides. </p>
+               <p>Seguindo para o leste, Qarth, uma cidade portuária exótica entre o deserto e o mar, destaca-se como um
+                  ponto de encontro de culturas e comércio. Mais adiante, o Deserto Vermelho estende-se como uma
+                  paisagem árida e hostil, quase intransitável. Nos confins orientais, Asshai e as Terras das Sombras
+                  são envoltas em mistério e lendas sombrias, com suas práticas de magia e mistérios antigos. </p>
+            </div>
+
+            <div class="map__areas">
+               <div class="swiper westeros__areas" id="essos">
+                  <ul class="swiper-wrapper">
+                     <li class="card swiper-slide card__activated" data-mapa-id="10" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/braavos.jpg" alt="Cidades Livres">
+                        <div class="card__info">
+                           <h2>Cidades Livres</h2>
+                           <p>Localizadas ao longo da costa ocidental, são cidades-estado independentes, como Braavos,
+                              Pentos e Volantis. Cada cidade tem cultura e política únicas, influenciadas pelo comércio,
+                              pirataria e práticas mágicas.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="11" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/dothraki.jpg" alt="Dothraki Sea">
+                        <div class="card__info">
+                           <h2>Dothraki Sea</h2>
+                           <p>Uma imensa e selvagem planície de gramíneas, habitada pelos guerreiros nômades Dothraki,
+                              que vivem em khalasares e seguem uma cultura de guerra e cavalaria.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="12" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/meereen.jpg" alt="Vale das Cidades Escravagistas">
+                        <div class="card__info">
+                           <h2>Vale das Cidades Escravagistas</h2>
+                           <p>Ao longo da Baía dos Escravos, cidades como Meereen, Yunkai e Astapor prosperam com o
+                              comércio de escravos, com arquitetura grandiosa e rica em pirâmides e zigurates.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="13" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/qarth.jpg" alt="Qarth">
+                        <div class="card__info">
+                           <h2>Qarth</h2>
+                           <p>Uma cidade portuária situada entre o mar e o deserto, conhecida como a “Rainha das
+                              Cidades.” Rica e extravagante, mistura influências culturais e é famosa por seu comércio e
+                              misticismo.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="12" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/red_desert.jpg" alt="Deserto Vermelho">
+                        <div class="card__info">
+                           <h2>Deserto Vermelho</h2>
+                           <p>Uma vasta extensão árida e inóspita, quase sem vida, que desafia qualquer viajante com
+                              calor intenso e falta de recursos.</p>
+                        </div>
+                     </li>
+                     <li class="card swiper-slide card__activated" data-mapa-id="12" role="button" tabindex="0"
+                        aria-expanded="false">
+                        <img src="assets/images/mapas/asshai.jpg" alt="Asshai e as Terras das Sombras">
+                        <div class="card__info">
+                           <h2>Asshai e as Terras das Sombras</h2>
+                           <p>Regiões misteriosas e distantes no extremo sudeste, conhecidas por sua magia sombria e
+                              perigos desconhecidos, com a cidade de Asshai envolta em misticismo e lendas.</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="map__content">
+               <h2>Sothoryos</h2>
+               <p>Sothoryos é um continente misterioso e perigoso localizado ao sul de Essos e Westeros, conhecido por
+                  seu clima tropical, florestas densas e vida selvagem mortal. Ele é pouco explorado e envolto em
+                  lendas, sendo descrito como um lugar onde a natureza é implacável e hostil aos visitantes. Suas
+                  florestas tropicais são habitadas por criaturas exóticas e mortais, incluindo animais selvagens e
+                  insetos que espalham doenças fatais, o que torna a sobrevivência na região extremamente difícil.</p>
+               <p>Ruínas antigas e cidades perdidas, como Yeen — construída com blocos de pedra negra e possivelmente
+                  erguida por uma civilização esquecida — sugerem que o continente teve sociedades avançadas, agora
+                  extintas ou abandonadas. Além das selvas perigosas, Sothoryos é habitado por tribos que vivem de
+                  maneira isolada, adaptadas ao ambiente hostil e desconfiadas de estrangeiros. Com seu clima severo,
+                  criaturas ameaçadoras e mistérios não resolvidos, Sothoryos permanece uma fronteira inexplorada,
+                  reservando seus segredos para aqueles corajosos ou tolos o bastante para tentar desvendá-los.</p>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="map__content">
+               <h2>Ilhas de VerÃo</h2>
+               <p>As Ilhas de Verão são um arquipélago exuberante e tropical ao sul de Westeros e Essos, conhecido por
+                  suas paisagens paradisíacas, praias de areia branca e águas cristalinas. Suas ilhas principais, como a
+                  Ilha dos Macacos e Naath, são cobertas por densas florestas tropicais e montanhas verdejantes, criando
+                  um cenário de rara beleza natural.</p>
+               <p>Os habitantes das Ilhas de Verão têm uma cultura vibrante e pacífica, famosa por sua habilidade em
+                  construir navios rápidos e coloridos, conhecidos como "cascos de verão." Eles são habilidosos
+                  navegadores e comerciantes, explorando os mares para o comércio pacífico com outras regiões. Suas
+                  tradições incluem uma rica arte oral, música, dança, e o culto ao deus conhecido como o Pai da Ilha,
+                  refletindo um estilo de vida harmonioso e em profunda conexão com a natureza.</p>
+               <p>A ilha de Naath, em particular, é conhecida como a "Ilha das Borboletas" devido à presença de
+                  borboletas exóticas e coloridas, embora algumas carreguem doenças fatais para estrangeiros, tornando-a
+                  uma barreira natural contra invasores. As Ilhas de Verão são, portanto, um paraíso exótico e
+                  protegido, onde a beleza natural se mistura com uma cultura rica e uma história de paz e liberdade.
+               </p>
             </div>
          </div>
       </div>
-      </div>
-
-      <!-- 
-         Westeros
-         Para lá da Muralha
-         Norte
-         Vale de Arryn
-         Terras Fluviais
-         Terras Ocidentais
-         Ilhas de Ferro
-         Terras da Coroa
-         Terras da Tempestade
-         Campina
-         Dorne
-         
-         Essos
-         Cidades Livres • Mar Dothraki • Deserto Vermelho • Península Valiriana • Terras das Sombras
-
-         Sothoryos
-
-         Ilhas de Verão
-
-         -->
       <!-- end section map -->
 
       <!-- start section histories -->
