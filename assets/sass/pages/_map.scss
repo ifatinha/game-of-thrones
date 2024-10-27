@@ -6,19 +6,33 @@
     .section__title {
         @include apply-color("pure-white");
     }
+}
 
-    &__content {
-        background: orange;
-        @include grid(3fr 1fr);
-        position: relative;
+.map__container {
+    padding: 80px 2%;
+}
+
+.map__content {
+
+    h2 {
+        @include font-primary();
+        font-size    : get-font-size(32);
+        margin-bottom: 2rem;
     }
 
-    &__navegation {
-        background: darkblue;
-        bottom    : 10px;
-        position  : absolute;
-        text-align: center;
-        width     : 100%;
-        z-index   : 999;
+    p {
+        @include jost-font();
+        font-size    : get-font-size(20);
+        margin-bottom: 1rem;
     }
+
+    img {
+        margin-top: 2rem;
+    }
+}
+
+.map__areas {
+    background: orange;
+    margin    : 2rem 0;
+    width     : 100%;
 }

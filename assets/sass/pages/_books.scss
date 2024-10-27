@@ -124,7 +124,7 @@
 
 //book modal
 .modal__book {
-    @include apply-bg-color("black");
+    @include apply-bg-color("pure-white");
     inset     : 0;
     height    : 100%;
     opacity   : 0;
@@ -241,7 +241,7 @@
 }
 
 .synopsis__description {
-    //@include apply-color("black");
+    @include apply-color("black");
     padding: 3rem;
 
     @include devices(xxl) {

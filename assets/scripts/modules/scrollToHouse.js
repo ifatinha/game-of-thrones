@@ -1,15 +1,15 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 export const scrollToHouse = () => {
-  const swiper = new Swiper(".houses__carousel", {
+  const swiper = new Swiper(".houses__swiper", {
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: "#housesPagination",
       type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#houseButtonNext",
+      prevEl: "#houseButtonPrev",
     },
   });
 };

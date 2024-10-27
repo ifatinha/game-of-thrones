@@ -216,35 +216,40 @@
             <div class="container">
                <div class="swiper swiper__books">
                   <ul class="books__list swiper-wrapper">
-                     <li class="book__item swiper-slide book__activated" data-book-id="1" role="button" tabindex="0" aria-expanded="false">
+                     <li class="book__item swiper-slide book__activated" data-book-id="1" role="button" tabindex="0"
+                        aria-expanded="false">
                         <img src="assets/images/books/book-01.webp" alt="Capa Game Of Thrones">
                         <div class="book__info">
                            <h2>Game of Thrones</h2>
                            <p>Nobres de Westeros lutam pelo Trono de Ferro em meio a traições.</p>
                         </div>
                      </li>
-                     <li class="book__item swiper-slide" data-book-id="2" role="button" tabindex="0" aria-expanded="false">
+                     <li class="book__item swiper-slide" data-book-id="2" role="button" tabindex="0"
+                        aria-expanded="false">
                         <img src="assets/images/books/book-02.webp" alt="Capa de A Fúria dos Reis">
                         <div class="book__info">
                            <h2>A Fúria dos Rei</h2>
                            <p>A guerra civil irrompe, com facções em conflito e um perigo no norte.</p>
                         </div>
                      </li>
-                     <li class="book__item swiper-slide" data-book-id="3" role="button" tabindex="0" aria-expanded="false">
+                     <li class="book__item swiper-slide" data-book-id="3" role="button" tabindex="0"
+                        aria-expanded="false">
                         <img src="assets/images/books/book-03.webp" alt="Capa de A Tormenta da Espadas">
                         <div class="book__info">
                            <h2>A Tormenta das Espadas</h2>
                            <p>Conflitos intensificam-se, revelando traições e reviravoltas impactantes.</p>
                         </div>
                      </li>
-                     <li class="book__item swiper-slide" data-book-id="4" role="button" tabindex="0" aria-expanded="false">
+                     <li class="book__item swiper-slide" data-book-id="4" role="button" tabindex="0"
+                        aria-expanded="false">
                         <img src="assets/images/books/book-04.webp" alt="Capa de O Festim dos Corvos">
                         <div class="book__info">
                            <h2>O Festim dos Corvos</h2>
                            <p>O reino se reorganiza após a guerra, com novos desafios e lutas.</p>
                         </div>
                      </li>
-                     <li class="book__item swiper-slide" data-book-id="5" role="button" tabindex="0" aria-expanded="false">
+                     <li class="book__item swiper-slide" data-book-id="5" role="button" tabindex="0"
+                        aria-expanded="false">
                         <img src="assets/images/books/book-05.webp" alt="Capa de Dança dos Dragões">
                         <div class="book__info">
                            <h2>A Dança dos Dragões</h2>
@@ -683,7 +688,7 @@
       </section>
 
       <!-- carousel houses -->
-      <div class="swiper houses__carousel">
+      <div class="swiper houses__swiper">
          <div class="houses__list swiper-wrapper">
             <div class="house swiper-slide">
                <div class="house__image">
@@ -1292,16 +1297,41 @@
                   </div>
                </div>
             </div>
+            <div class="house swiper-slide">
+               <div class="house__image">
+                  <img src="assets/images/houses/house-clegane.jpg" alt="House Clegane">
+               </div>
+               <div class="house__info">
+                  <div class="house__description">
+                     <h2>Casa Clegane</h2>
+                     <p>Casa nobre menor, mas bastante conhecida por seu envolvimento com os
+                        Lannisters e pelos brutais guerreiros que originaram seu nome.
+                     </p>
+                  </div>
+                  <div class="house__members">
+                     <ul>
+                        <li>
+                           <img src="assets/images/houses/sandor_clegane.jpg" alt="Sandor Clegane">
+                           <span>Sandor</span>
+                        </li>
+                        <li>
+                           <img src="assets/images/houses/gregor_clegane.jpg" alt="Gregor Clegane">
+                           <span>Gregor</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
 
-         <!-- If we need navigation buttons -->
-         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
-
          <!-- If we need pagination -->
-         <div class="swiper-pagination"></div>
+         <div class="swiper-pagination" id="housesPagination"></div>
 
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev" id="houseButtonPrev"></div>
+         <div class="swiper-button-next" id="houseButtonNext"></div>
       </div>
+
       <!-- end section houses -->
 
       <!-- start section mapa -->
@@ -1316,6 +1346,79 @@
             </p>
          </div>
       </section>
+
+      <div class="map__container">
+         <div class="container">
+            <div class="map__content">
+               <h2>Westeros</h2>
+               <p>Westeros é um continente diverso e imponente, dividido em várias regiões com características únicas.
+                  No extremo norte, uma vasta e gelada extensão selvagem é separada pelo colossal Muralha de gelo,
+                  seguida pelas Terras do Norte, frias e cobertas de florestas densas. O Vale de Arryn é montanhoso e
+                  remoto, enquanto as férteis Terras Fluviais são atravessadas por rios. </p>
+               <p>Nas Terras Ocidentais, destacam-se as minas de ouro e o luxuoso Rochedo Casterly. As Ilhas de Ferro
+                  são ilhas rochosas e austeras, habitadas por marinheiros ferozes. Mais ao sul, Porto Real, nas Terras
+                  da Coroa, é a capital, enquanto as ventosas Terras da Tempestade abrigam Ponta Tempestade. A Campina,
+                  fértil e próspera, contrasta com o desértico e quente Dorne ao extremo sul, uma região exótica e
+                  independente. Cada área é rica em tradições e intrigas, compondo o complexo cenário de Westeros. </p>
+            </div>
+
+            <div class="map__areas">
+               <div class="swiper westeros__areas" id="westeros">
+                  <ul class="swiper-wrapper">
+                     <li class="swiper-slide">Slide 1</li>
+                     <li class="swiper-slide">Slide 2</li>
+                     <li class="swiper-slide">Slide 3</li>
+                     <li class="swiper-slide">Slide 4</li>
+                     <li class="swiper-slide">Slide 5</li>
+                     <li class="swiper-slide">Slide 6</li>
+                     <li class="swiper-slide">Slide 7</li>
+                     <li class="swiper-slide">Slide 8</li>
+                     <li class="swiper-slide">Slide 9</li>
+                     <li class="swiper-slide">Slide 10</li>
+                  </ul>
+                  <div class="swiper-pagination" id="westerosAreasPagination"></div>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="map__content">
+               <h2>Essos</h2>
+               <p>Westeros é um continente diverso e imponente, dividido em várias regiões com características únicas.
+                  No extremo norte, uma vasta e gelada extensão selvagem é separada pelo colossal Muralha de gelo,
+                  seguida pelas Terras do Norte, frias e cobertas de florestas densas. O Vale de Arryn é montanhoso e
+                  remoto, enquanto as férteis Terras Fluviais são atravessadas por rios. </p>
+               <p>Nas Terras Ocidentais, destacam-se as minas de ouro e o luxuoso Rochedo Casterly. As Ilhas de Ferro
+                  são ilhas rochosas e austeras, habitadas por marinheiros ferozes. Mais ao sul, Porto Real, nas Terras
+                  da Coroa, é a capital, enquanto as ventosas Terras da Tempestade abrigam Ponta Tempestade. A Campina,
+                  fértil e próspera, contrasta com o desértico e quente Dorne ao extremo sul, uma região exótica e
+                  independente. Cada área é rica em tradições e intrigas, compondo o complexo cenário de Westeros. </p>
+            </div>
+         </div>
+      </div>
+      </div>
+
+      <!-- 
+         Westeros
+         Para lá da Muralha
+         Norte
+         Vale de Arryn
+         Terras Fluviais
+         Terras Ocidentais
+         Ilhas de Ferro
+         Terras da Coroa
+         Terras da Tempestade
+         Campina
+         Dorne
+         
+         Essos
+         Cidades Livres • Mar Dothraki • Deserto Vermelho • Península Valiriana • Terras das Sombras
+
+         Sothoryos
+
+         Ilhas de Verão
+
+         -->
       <!-- end section map -->
 
       <!-- start section histories -->
@@ -1331,7 +1434,7 @@
       <!-- end section histories -->
    </main>
 
-   <!-- <footer class="footer">
+   <!--<footer class="footer">
       <div class="container">
          <div class="footer__content">
             <div class="footer__brand">
@@ -1350,7 +1453,7 @@
             </div>
          </div>
       </div>
-   </footer> -->
+   </footer>-->
 
    <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

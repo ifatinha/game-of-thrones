@@ -9,11 +9,8 @@
     }
 }
 
-.houses__carousel {
-    .swiper-pagination {
-        @include apply-color("pure-white");
-    }
-
+.houses__swiper {
+    
     .swiper-button-next,
     .swiper-button-prev {
         @include apply-color("pure-white");
@@ -27,7 +24,7 @@
 }
 
 .houses__list {
-    width: 100%;
+    width     : 100%;
 
     @include devices(m) {
         margin-bottom: 1rem;
