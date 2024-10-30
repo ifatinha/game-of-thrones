@@ -19,7 +19,7 @@
         width         : 100%;
 
         @include devices-small-screens {
-            font-size    : get-font-size(32);
+            font-size    : get-font-size(30);
             margin-bottom: 2rem;
         }
     }
