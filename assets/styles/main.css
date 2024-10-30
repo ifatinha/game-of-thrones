@@ -1698,21 +1698,62 @@ a {
 .kingdom {
   background: darkblue;
   min-height: 100vh;
+  overflow: hidden;
   padding: 100px 2%;
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
+}
+.kingdom:nth-child(2n) .kingdom__info {
+  background: purple;
+  right: 1rem;
+  text-align: right;
+}
+@media screen and (min-width: 1920px) {
+  .kingdom:nth-child(2n) .kingdom__info {
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .kingdom:nth-child(2n) .kingdom__info {
+    right: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .kingdom:nth-child(2n) .kingdom__info {
+    right: 2rem;
+  }
+}
+.kingdom:nth-child(2n+1) .kingdom__info {
+  left: 1rem;
 }
 
 .kingdom__info {
   background: green;
   max-width: 500px;
   position: absolute;
-  text-align: right;
   width: 100%;
 }
-.kingdom__info:nth-child(2) {
-  background: purple;
+.kingdom__info span {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 6.25rem;
+  font-weight: bolder;
+}
+@media screen and (min-width: 1920px) {
+  .kingdom__info span {
+    font-size: 8.125rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .kingdom__info span {
+    font-size: 8.125rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .kingdom__info span {
+    font-size: 8.125rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
