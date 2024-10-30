@@ -1654,33 +1654,46 @@ a {
   background: #007BFF;
 }
 
-.map__container {
-  padding: 80px 0;
-}
-
-.map__content {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.map__content h2 {
-  font-family: "Game of Thrones", serif;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.map__content p {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-.map__content img {
-  margin-top: 2rem;
-}
-
-.map__areas {
-  margin: 4rem 0;
-  padding: 1rem;
+/** sass das paginas */
+.map__home {
+  background: orange;
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  height: 100vh;
   width: 100%;
+}
+.map__home .section__title {
+  color: #ffffff;
+}
+
+#westerosHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/westeros_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#essosHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/essos_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sothoryosHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/sothoryos_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#ilhasDeVeraoHome {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/ilhas_verao_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
