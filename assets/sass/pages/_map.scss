@@ -8,6 +8,30 @@
     }
 }
 
+.map__list {
+    @include flex(center, space-around);
+    flex-wrap : wrap;
+    margin-top: 3rem;
+
+    .card {
+        cursor: default;
+
+        a {
+            border    : #007BFF 0.15em solid;
+            cursor    : pointer;
+            display   : inline-block;
+            margin    : .5rem 1rem;
+            padding   : .5rem;
+            transition: all 0.6s ease;
+            text-align: center;
+
+            @include hover {
+                background: #007BFF;
+            }
+        }
+    }
+}
+
 .map__container {
     padding: 80px 0;
 }
