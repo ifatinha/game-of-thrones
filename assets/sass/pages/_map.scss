@@ -1,6 +1,7 @@
 @use "../base/colors"as *;
 @use "../base/mixins"as *;
 @use "../base/typography"as *;
+@use "../global/responsive"as *;
 
 .map {
     .section__title {
@@ -58,4 +59,27 @@
 
 #ilhasDeVeraoHome {
     @include bg-gradient("../images/mapas/ilhas_verao_bg.webp", .8);
+}
+
+// section kingdon
+.kingdom {
+    background: darkblue;
+    min-height: 100vh;
+    padding   : 100px 2%;
+    position  : relative;
+    width     : 100%;
+
+    margin-bottom: 1rem;
+}
+
+.kingdom__info {
+    background: green;
+    max-width : 500px;
+    position  : absolute;
+    text-align: right;
+    width     : 100%;
+
+    &:nth-child(2) {
+        background: purple;
+    }
 }

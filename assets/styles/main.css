@@ -1695,4 +1695,24 @@ a {
   background-size: cover;
 }
 
+.kingdom {
+  background: darkblue;
+  min-height: 100vh;
+  padding: 100px 2%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.kingdom__info {
+  background: green;
+  max-width: 500px;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+.kingdom__info:nth-child(2) {
+  background: purple;
+}
+
 /*# sourceMappingURL=main.css.map */
