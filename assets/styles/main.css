@@ -1661,99 +1661,185 @@ a {
   gap: 1rem;
   justify-content: center;
   height: 100vh;
+  position: relative;
   width: 100%;
 }
 .map__home .section__title {
   color: #ffffff;
 }
+.map__home .container {
+  z-index: 999;
+}
 
 #westerosHome {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/westeros_bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/mapas/westeros_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
   background-size: cover;
+  background-position: center;
 }
 
 #essosHome {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/essos_bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/mapas/essos_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
   background-size: cover;
+  background-position: center;
 }
 
 #sothoryosHome {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/sothoryos_bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/mapas/sothoryos_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
   background-size: cover;
+  background-position: center;
 }
 
 #ilhasDeVeraoHome {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/mapas/ilhas_verao_bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/mapas/ilhas_verao_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
   background-size: cover;
+  background-position: center;
 }
 
 .kingdom {
-  background: darkblue;
-  min-height: 100vh;
-  overflow: hidden;
+  align-items: start;
+  display: flex;
   padding: 100px 2%;
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
 }
+.kingdom:nth-child(2n) {
+  justify-content: end;
+}
 .kingdom:nth-child(2n) .kingdom__info {
-  background: purple;
-  right: 1rem;
   text-align: right;
 }
-@media screen and (min-width: 1920px) {
-  .kingdom:nth-child(2n) .kingdom__info {
-    right: 2rem;
-  }
+.kingdom:nth-child(2n) .kingdom__header .kingdom__region {
+  right: 0;
 }
-@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .kingdom:nth-child(2n) .kingdom__info {
-    right: 2rem;
-  }
+.kingdom:nth-child(2n) .kingdom__header .kingdom__region::before {
+  background-color: #D97941;
+  bottom: 40%;
+  content: "";
+  height: 2px;
+  left: -100px;
+  position: absolute;
+  width: 80px;
 }
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .kingdom:nth-child(2n) .kingdom__info {
-    right: 2rem;
-  }
+.kingdom:nth-child(2n) .kingdom__header .kingdom__title {
+  right: 0;
 }
-.kingdom:nth-child(2n+1) .kingdom__info {
-  left: 1rem;
+.kingdom:nth-child(2n+1) .kingdom__header .kingdom__region::after {
+  background-color: #D97941;
+  bottom: 40%;
+  content: "";
+  height: 2px;
+  right: -100px;
+  position: absolute;
+  width: 80px;
 }
 
 .kingdom__info {
-  background: green;
   max-width: 500px;
-  position: absolute;
+  overflow: hidden;
+  padding: 0.5rem;
+  position: relative;
   width: 100%;
+  z-index: 999;
 }
-.kingdom__info span {
+
+.kingdom__header {
+  position: relative;
+}
+.kingdom__header .kingdom__number {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
+  color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
   font-size: 6.25rem;
   font-weight: bolder;
 }
 @media screen and (min-width: 1920px) {
-  .kingdom__info span {
-    font-size: 8.125rem;
+  .kingdom__header .kingdom__number {
+    font-size: 9.375rem;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .kingdom__info span {
-    font-size: 8.125rem;
+  .kingdom__header .kingdom__number {
+    font-size: 9.375rem;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .kingdom__info span {
-    font-size: 8.125rem;
+  .kingdom__header .kingdom__number {
+    font-size: 9.375rem;
   }
+}
+.kingdom__header .kingdom__region {
+  color: #D97941;
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+}
+.kingdom__header .kingdom__title {
+  font-family: "Game of Thrones", serif;
+  bottom: 1rem;
+  letter-spacing: 2px;
+  position: absolute;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1920px) {
+  .kingdom__header .kingdom__title {
+    bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
+  .kingdom__header .kingdom__title {
+    bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
+  .kingdom__header .kingdom__title {
+    bottom: 2rem;
+  }
+}
+
+.kingdom__description {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  margin-bottom: 1rem;
+}
+
+.kingdom__link {
+  color: #D97941;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  align-items: center;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: end;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 0.4rem;
+  text-transform: lowercase;
+  transition: 0.5s ease-in-out;
+}
+.kingdom__link:hover {
+  opacity: 0.5;
+}
+.kingdom__link::after {
+  content: "↠";
+  font-size: 1.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+#ironIslands {
+  background-image: url("../images/mapas/ilhas_verao_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -32,6 +32,14 @@
     background-size    : cover;
 }
 
+@mixin bg-radial-gradient($url) {
+    background-image: url($url),
+        radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 1) 100%);
+    background-blend-mode: multiply;
+    background-size      : cover;
+    background-position  : center;
+}
+
 @mixin line($width) {
     border    : 0;
     height    : 1px;
