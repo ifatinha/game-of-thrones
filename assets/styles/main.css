@@ -1660,6 +1660,7 @@ a {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  box-shadow: inset 0px 100px 100px 0px rgb(1, 1, 1), inset 0px -78px 100px 0px rgb(1, 1, 1);
   height: 100vh;
   position: relative;
   width: 100%;
@@ -1700,6 +1701,7 @@ a {
 }
 
 .kingdom {
+  box-shadow: inset 0px 100px 100px 0px rgb(1, 1, 1), inset 0px -78px 100px 0px rgb(1, 1, 1);
   align-items: start;
   display: flex;
   padding: 100px 2%;
@@ -1835,8 +1837,113 @@ a {
   transition: 0.3s ease-in-out;
 }
 
+#north {
+  background-image: url("../images/mapas/north_kingdom_bg.png"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
 #ironIslands {
-  background-image: url("../images/mapas/ilhas_verao_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/iron_islands_bg.png"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#arrynValley {
+  background-image: url("../images/mapas/vale_of_arryn_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#casterlyRock {
+  background-image: url("../images/mapas/castery_rock_bg.png"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#dragonstone {
+  background-image: url("../images/mapas/dragonstone_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#gardenAbove {
+  background-image: url("../images/mapas/garden_above_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#dorne {
+  background-image: url("../images/mapas/dorne_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#pentos {
+  background-image: url("../images/mapas/pentos_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#braavos {
+  background-image: url("../images/mapas/braavos_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#meereen {
+  background-image: url("../images/mapas/meereen_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#volantis {
+  background-image: url("../images/mapas/volantis_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#astapor {
+  background-image: url("../images/mapas/astapor_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#qarth {
+  background-image: url("../images/mapas/qarth_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#lorath {
+  background-image: url("../images/mapas/lorath_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#dothraki {
+  background-image: url("../images/mapas/dothraki_bg_2.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#valyria {
+  background-image: url("../images/mapas/valyria_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;

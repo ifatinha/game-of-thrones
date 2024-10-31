@@ -36,9 +36,10 @@
 /** sass das paginas */
 .map__home {
     @include flex(end, center);
-    height  : 100vh;
-    position: relative;
-    width   : 100%;
+    box-shadow: inset 0px 100px 100px 0px rgba(1, 1, 1, 1.1), inset 0px -78px 100px 0px rgba(1, 1, 1, 1.1);
+    height    : 100vh;
+    position  : relative;
+    width     : 100%;
 
     .section__title {
         @include apply-color("pure-white");
@@ -51,7 +52,6 @@
 
 #westerosHome {
     @include bg-radial-gradient("../images/mapas/westeros_bg.webp");
-
 }
 
 #essosHome {
@@ -69,6 +69,7 @@
 
 // section kingdon
 .kingdom {
+    box-shadow : inset 0px 100px 100px 0px rgba(1, 1, 1, 1.1), inset 0px -78px 100px 0px rgba(1, 1, 1, 1.1);
     align-items: start;
     display    : flex;
     padding    : 100px 2%;
@@ -197,6 +198,66 @@
     }
 }
 
+#north {
+    @include bg-radial-gradient("../images/mapas/north_kingdom_bg.png");
+}
+
 #ironIslands {
-    @include bg-radial-gradient("../images/mapas/ilhas_verao_bg.webp");
+    @include bg-radial-gradient("../images/mapas/iron_islands_bg.png");
+}
+
+#arrynValley {
+    @include bg-radial-gradient("../images/mapas/vale_of_arryn_bg.webp");
+}
+
+#casterlyRock {
+    @include bg-radial-gradient("../images/mapas/castery_rock_bg.png");
+}
+
+#dragonstone {
+    @include bg-radial-gradient("../images/mapas/dragonstone_bg.jpg");
+}
+
+#gardenAbove {
+    @include bg-radial-gradient("../images/mapas/garden_above_bg.webp");
+}
+
+#dorne {
+    @include bg-radial-gradient("../images/mapas/dorne_bg.webp");
+}
+
+#pentos {
+    @include bg-radial-gradient("../images/mapas/pentos_bg.webp")
+}
+
+#braavos {
+    @include bg-radial-gradient("../images/mapas/braavos_bg.webp")
+}
+
+#meereen {
+    @include bg-radial-gradient("../images/mapas/meereen_bg.webp")
+}
+
+#volantis {
+    @include bg-radial-gradient("../images/mapas/volantis_bg.webp")
+}
+
+#astapor {
+    @include bg-radial-gradient("../images/mapas/astapor_bg.webp")
+}
+
+#qarth {
+    @include bg-radial-gradient("../images/mapas/qarth_bg.webp")
+}
+
+#lorath {
+    @include bg-radial-gradient("../images/mapas/lorath_bg.webp")
+}
+
+#dothraki {
+    @include bg-radial-gradient("../images/mapas/dothraki_bg_2.jpg")
+}
+
+#valyria {
+    @include bg-radial-gradient("../images/mapas/valyria_bg.webp")
 }
