@@ -227,37 +227,37 @@
 }
 
 #pentos {
-    @include bg-radial-gradient("../images/mapas/pentos_bg.webp")
+    @include bg-radial-gradient("../images/mapas/pentos_bg.jpg");
 }
 
 #braavos {
-    @include bg-radial-gradient("../images/mapas/braavos_bg.webp")
+    @include bg-radial-gradient("../images/mapas/braavos_bg.webp");
 }
 
 #meereen {
-    @include bg-radial-gradient("../images/mapas/meereen_bg.webp")
+    @include bg-radial-gradient("../images/mapas/meereen_bg.webp");
 }
 
 #volantis {
-    @include bg-radial-gradient("../images/mapas/volantis_bg.webp")
+    @include bg-radial-gradient("../images/mapas/volantis_bg.webp");
 }
 
 #astapor {
-    @include bg-radial-gradient("../images/mapas/astapor_bg.webp")
+    @include bg-radial-gradient("../images/mapas/astapor_bg.jpg");
 }
 
 #qarth {
-    @include bg-radial-gradient("../images/mapas/qarth_bg.webp")
+    @include bg-radial-gradient("../images/mapas/qarth_bg.webp");
 }
 
 #lorath {
-    @include bg-radial-gradient("../images/mapas/lorath_bg.webp")
+    @include bg-radial-gradient("../images/mapas/lorath_bg.jpg");
 }
 
 #dothraki {
-    @include bg-radial-gradient("../images/mapas/dothraki_bg_2.jpg")
+    @include bg-radial-gradient("../images/mapas/dothraki_bg.jpg");
 }
 
 #valyria {
-    @include bg-radial-gradient("../images/mapas/valyria_bg.webp")
+    @include bg-radial-gradient("../images/mapas/valyria_bg.png");
 }

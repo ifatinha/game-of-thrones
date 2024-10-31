@@ -1887,7 +1887,7 @@ a {
 }
 
 #pentos {
-  background-image: url("../images/mapas/pentos_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/pentos_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -1915,7 +1915,7 @@ a {
 }
 
 #astapor {
-  background-image: url("../images/mapas/astapor_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/astapor_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -1929,21 +1929,21 @@ a {
 }
 
 #lorath {
-  background-image: url("../images/mapas/lorath_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/lorath_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 
 #dothraki {
-  background-image: url("../images/mapas/dothraki_bg_2.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/dothraki_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 
 #valyria {
-  background-image: url("../images/mapas/valyria_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-image: url("../images/mapas/valyria_bg.png"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
