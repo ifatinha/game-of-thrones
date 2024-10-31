@@ -69,14 +69,13 @@
 
 // section kingdon
 .kingdom {
-    box-shadow : inset 0px 100px 100px 0px rgba(1, 1, 1, 1.1), inset 0px -78px 100px 0px rgba(1, 1, 1, 1.1);
-    align-items: start;
-    display    : flex;
-    padding    : 100px 2%;
-    position   : relative;
-    width      : 100%;
-
-    margin-bottom: 1rem;
+    background-attachment: fixed;
+    box-shadow           : inset 10px 100px 100px 30px rgba(1, 1, 1, 1), inset 10px -100px 100px 30px rgba(1, 1, 1, 1);
+    align-items          : start;
+    display              : flex;
+    padding              : 100px 2%;
+    position             : relative;
+    width                : 100%;
 
     &:nth-child(2n) {
         justify-content: end;
@@ -260,4 +259,20 @@
 
 #valyria {
     @include bg-radial-gradient("../images/mapas/valyria_bg.png");
+}
+
+#ilhaDasLagrimas {
+    @include bg-radial-gradient("../images/mapas/ilha_das_lagrimas_bg.webp");
+}
+
+#zoqora {
+    @include bg-radial-gradient("../images/mapas/zoqora_bg.webp");
+}
+
+#yeen {
+    @include bg-radial-gradient("../images/mapas/yeen_bg.jpg");
+}
+
+#basiliskIsles {
+    @include bg-radial-gradient("../images/mapas/basilisk_isles_bg.webp");
 }

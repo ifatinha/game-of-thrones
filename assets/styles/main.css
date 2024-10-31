@@ -1701,13 +1701,13 @@ a {
 }
 
 .kingdom {
-  box-shadow: inset 0px 100px 100px 0px rgb(1, 1, 1), inset 0px -78px 100px 0px rgb(1, 1, 1);
+  background-attachment: fixed;
+  box-shadow: inset 10px 100px 100px 30px rgb(1, 1, 1), inset 10px -100px 100px 30px rgb(1, 1, 1);
   align-items: start;
   display: flex;
   padding: 100px 2%;
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
 }
 .kingdom:nth-child(2n) {
   justify-content: end;
@@ -1944,6 +1944,34 @@ a {
 
 #valyria {
   background-image: url("../images/mapas/valyria_bg.png"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#ilhaDasLagrimas {
+  background-image: url("../images/mapas/ilha_das_lagrimas_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#zoqora {
+  background-image: url("../images/mapas/zoqora_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#yeen {
+  background-image: url("../images/mapas/yeen_bg.jpg"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+#basiliskIsles {
+  background-image: url("../images/mapas/basilisk_isles_bg.webp"), radial-gradient(circle, transparent 0%, rgb(0, 0, 0) 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
